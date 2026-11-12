@@ -1,0 +1,27 @@
+{
+  "cases": {
+    "gh.case.json": "51c3b8565a5ac220e9fe4d8b70e4a05419536d532f17d0f925d9d0e530da0c17",
+    "wiki.case.json": "a433461bd64b3f994218c8a4d35a01ff6feebe5a9cf18e29a86729ab514e621a"
+  },
+  "policies": [
+    "always_verify",
+    "lazy_group",
+    "lazy_full",
+    "eager_full"
+  ],
+  "code": {
+    "agent.py": "dfa2122c044bfea2260859d6fdab4342444ba5a8f46c530bf331cd415f8daaa9",
+    "data.py": "16c7ffcd9764fabd1f73abc0cb290a870a4cb10e137e42af11b58604aed8a8e2",
+    "evidence.py": "4c64ac956cf0360fb34baddc418860b389440c9ccb268bbb9c79db4507093281",
+    "fixtures.py": "48c5ccaf94ffe4441ee8581cf6b08e2bbe90275f8bc9239f32429cf3b360e1b1",
+    "grading.py": "643b96dd8f6fc28c82b34cfbcc8c30605982123d4b1f180d782c0f1ef9e31f92",
+    "prepare_public.py": "d3c106eba15b2dcd85ae137226822ba959e33fa736c83643d2bd1bf361138794",
+    "run.py": "6b6a9a7c59fbac3ea3d8e26e6d5fe660c28ea681fda260de24b4b1b861483c64",
+    "suite.py": "19cbef855332a1560fd4fb1b77f5190e9f157486979cbf32c4bba09f9442c8c3",
+    "__init__.py": "f1bdc3d2790606327f6a21f8c4339fa39375b237a8166cd7c574812c3151ee80"
+  },
+  "new_model_calls_cap": 0,
+  "new_api_usd_cap": 0,
+  "protocol_sha256": "5745a6807fbfa43e47dbe6a0337797b4fcad9dcec149477f2bb464009c92afff",
+  "run_order": "case, then the listed policies; not a randomized timing comparison"
+}

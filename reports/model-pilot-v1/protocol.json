@@ -1,0 +1,32 @@
+{
+  "case": "engineering cross stream, 8 requests, previously constructed smoke data",
+  "max_model_calls": 90,
+  "max_usd": 0.1,
+  "max_tokens": 384,
+  "model": "deepseek-flash",
+  "thinking": "disabled",
+  "temperature": 0,
+  "no_retry": true,
+  "stop_paid_calls_on_first_adapter_or_provider_error": true,
+  "scope": "Cooperative external model adapter engineering pilot, no method comparison or generalization claim",
+  "pricing": {
+    "cache_hit": 0.006,
+    "cache_miss": 0.3,
+    "output": 1.2
+  },
+  "pricing_source": "https://api-docs.deepseek.com/quick_start/pricing/",
+  "input_code_sha256": {
+    "local-runs/fixtures-v1/cross.case.json": "83f53f5ae1c8503779ff857bda928471327bf98a9aace7c2c3c71fa9837e8758",
+    "adapter/agent.py": "cce72c1a53bc0a639121ff8ed56e21a70938b03046563791b169dc0ad833c181",
+    "metered-client/deepseek_client.py": "23e2acaa1dde06239a7bf020cde6a49f16697d04f7763760edf88a00be337041",
+    "trustmem_runtime/agent.py": "dfa2122c044bfea2260859d6fdab4342444ba5a8f46c530bf331cd415f8daaa9",
+    "trustmem_runtime/data.py": "16c7ffcd9764fabd1f73abc0cb290a870a4cb10e137e42af11b58604aed8a8e2",
+    "trustmem_runtime/evidence.py": "4c64ac956cf0360fb34baddc418860b389440c9ccb268bbb9c79db4507093281",
+    "trustmem_runtime/fixtures.py": "48c5ccaf94ffe4441ee8581cf6b08e2bbe90275f8bc9239f32429cf3b360e1b1",
+    "trustmem_runtime/grading.py": "643b96dd8f6fc28c82b34cfbcc8c30605982123d4b1f180d782c0f1ef9e31f92",
+    "trustmem_runtime/prepare_public.py": "d3c106eba15b2dcd85ae137226822ba959e33fa736c83643d2bd1bf361138794",
+    "trustmem_runtime/run.py": "6b6a9a7c59fbac3ea3d8e26e6d5fe660c28ea681fda260de24b4b1b861483c64",
+    "trustmem_runtime/suite.py": "19cbef855332a1560fd4fb1b77f5190e9f157486979cbf32c4bba09f9442c8c3",
+    "trustmem_runtime/__init__.py": "f1bdc3d2790606327f6a21f8c4339fa39375b237a8166cd7c574812c3151ee80"
+  }
+}

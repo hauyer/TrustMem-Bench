@@ -1,0 +1,42 @@
+{
+  "status": "COMPLETED",
+  "case_id": "native-wiki",
+  "history_group": "wiki",
+  "split": "previously-seen-native-development",
+  "mechanism": "cross",
+  "policy": "external",
+  "sessions": 8,
+  "correct": 8,
+  "supported_correct": 8,
+  "submitted": 8,
+  "incorrect_submissions": 0,
+  "unsupported_correct": 0,
+  "step_limits": 0,
+  "unsupported_submissions": 0,
+  "abstentions": 0,
+  "agent_failures": 0,
+  "source_read_bytes_after_history": 259650282,
+  "shared_history_scan": {
+    "source_read_bytes": 42977573,
+    "scan_seconds": 14.280457100001513
+  },
+  "memory_written_payload_bytes": 0,
+  "sqlite_file_bytes": 12288,
+  "scoring_seconds": 68.31922140000097,
+  "policy_phase_wall_seconds": 195.74624229999608,
+  "controller_total_wall_seconds": 264.06546649999655,
+  "identity_check_seconds": 0.08671809999941615,
+  "identity_check_bytes": 86550094,
+  "memory_read_payload_bytes": 0,
+  "policy_invocations": 29,
+  "policy_observation_bytes": 597698,
+  "external_model_accounting": "External adapters must supply their own usage ledger; process invocations are not model calls.",
+  "attempted_model_calls": 29,
+  "received_model_responses": 29,
+  "estimated_peak_usd": 0.008603844,
+  "actual_invoice": false,
+  "served_model_fields": [
+    "deepseek-flash"
+  ],
+  "raw_ledger_sha256": "1d75c796a4dee617ef16960ab5cf7da58d13db71d06177a8349471a6abe1b5e0"
+}

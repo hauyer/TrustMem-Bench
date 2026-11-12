@@ -29,7 +29,7 @@ def validate(catalog):
         if group in groups and groups[group] != family:
             raise ValueError("archive group has multiple families")
         groups[group] = family
-    return {"records": len(records), "source_families": len(set(groups.values())), "archive_groups": len(groups), "records_by_family": dict(Counter(r["history_family"] for r in records)), "independent_trajectory_count": None, "agent_runtime_available": False}
+    return {"records": len(records), "source_families": len(set(groups.values())), "archive_groups": len(groups), "records_by_family": dict(Counter(r["history_family"] for r in records)), "independent_trajectory_count": None, "legacy_catalog_execution_available": False, "development_runtime_available": True}
 
 def main():
     parser = argparse.ArgumentParser(description=__doc__)

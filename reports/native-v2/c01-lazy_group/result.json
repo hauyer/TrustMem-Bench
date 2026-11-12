@@ -1,0 +1,570 @@
+{
+  "status": "COMPLETED",
+  "case_id": "native-wiki",
+  "history_group": "wiki",
+  "split": "previously-seen-native-development",
+  "mechanism": "cross",
+  "policy": "lazy_group",
+  "sessions": 8,
+  "correct": 8,
+  "supported_correct": 8,
+  "submitted": 8,
+  "incorrect_submissions": 0,
+  "unsupported_correct": 0,
+  "step_limits": 0,
+  "unsupported_submissions": 0,
+  "abstentions": 0,
+  "agent_failures": 0,
+  "source_read_bytes_after_history": 55967774,
+  "shared_history_scan": {
+    "source_read_bytes": 42977573,
+    "scan_seconds": 10.978395400001318
+  },
+  "memory_written_payload_bytes": 491,
+  "sqlite_file_bytes": 12288,
+  "scoring_seconds": 40.47786730000371,
+  "policy_phase_wall_seconds": 27.16625909999857,
+  "controller_total_wall_seconds": 67.6441274999961,
+  "identity_check_seconds": 0.09040039999672445,
+  "identity_check_bytes": 86550094,
+  "memory_read_payload_bytes": 1481,
+  "policy_invocations": 23,
+  "policy_observation_bytes": 480712,
+  "external_model_accounting": "External adapters must supply their own usage ledger; process invocations are not model calls.",
+  "bootstrap_process": {
+    "command": [
+      "D:\\flask\\miniconda\\python.exe",
+      "-B",
+      "-m",
+      "trustmem_runtime.agent",
+      "lazy_group"
+    ],
+    "returncode": 0,
+    "seconds": 0.08024700000532903,
+    "input_bytes": 20420
+  },
+  "events": [
+    {
+      "session": 0,
+      "source_id": "d6538621cae195c5e0674a0972d709e2086e6a3398abf24c749b29ed1e160028",
+      "request": {
+        "kind": "marginal",
+        "a": "en.m"
+      },
+      "status": "SUBMITTED",
+      "submitted_value": 6424227,
+      "declared_evidence": [
+        "history"
+      ],
+      "declared_evidence_value": 6424227,
+      "source_read_bytes": 0,
+      "source_scan_seconds": 0.0,
+      "policy_invocations": 2,
+      "policy_observation_bytes": 41019,
+      "memory_written_payload_bytes": 0,
+      "cited_saved_evidence": false,
+      "trace": [
+        {
+          "action": {
+            "action": "calculate",
+            "evidence": [
+              "history"
+            ]
+          },
+          "result": {
+            "value": 6424227,
+            "evidence": [
+              "history"
+            ]
+          }
+        },
+        {
+          "action": {
+            "action": "submit",
+            "value": 6424227,
+            "evidence": [
+              "history"
+            ]
+          },
+          "result": {
+            "status": "COMMITTED"
+          }
+        }
+      ],
+      "correct": true,
+      "declared_evidence_sufficient": true,
+      "unsupported_submission": false,
+      "supported_correct": true
+    },
+    {
+      "session": 1,
+      "source_id": "d6538621cae195c5e0674a0972d709e2086e6a3398abf24c749b29ed1e160028",
+      "request": {
+        "kind": "joint",
+        "a": "en.m",
+        "b": "__trustmem_absent_group__"
+      },
+      "status": "SUBMITTED",
+      "submitted_value": 0,
+      "declared_evidence": [
+        "history"
+      ],
+      "declared_evidence_value": 0,
+      "source_read_bytes": 0,
+      "source_scan_seconds": 0.0,
+      "policy_invocations": 2,
+      "policy_observation_bytes": 41071,
+      "memory_written_payload_bytes": 0,
+      "cited_saved_evidence": false,
+      "trace": [
+        {
+          "action": {
+            "action": "calculate",
+            "evidence": [
+              "history"
+            ]
+          },
+          "result": {
+            "value": 0,
+            "evidence": [
+              "history"
+            ]
+          }
+        },
+        {
+          "action": {
+            "action": "submit",
+            "value": 0,
+            "evidence": [
+              "history"
+            ]
+          },
+          "result": {
+            "status": "COMMITTED"
+          }
+        }
+      ],
+      "correct": true,
+      "declared_evidence_sufficient": true,
+      "unsupported_submission": false,
+      "supported_correct": true
+    },
+    {
+      "session": 2,
+      "source_id": "d6538621cae195c5e0674a0972d709e2086e6a3398abf24c749b29ed1e160028",
+      "request": {
+        "kind": "joint",
+        "a": "en.m",
+        "b": "no-colon"
+      },
+      "status": "SUBMITTED",
+      "submitted_value": 6261621,
+      "declared_evidence": [
+        "observation-2-1"
+      ],
+      "declared_evidence_value": 6261621,
+      "source_read_bytes": 21889034,
+      "source_scan_seconds": 5.458581099999719,
+      "policy_invocations": 4,
+      "policy_observation_bytes": 82847,
+      "memory_written_payload_bytes": 165,
+      "cited_saved_evidence": false,
+      "trace": [
+        {
+          "action": {
+            "action": "calculate",
+            "evidence": [
+              "history"
+            ]
+          },
+          "result": {
+            "value": null,
+            "evidence": [
+              "history"
+            ]
+          }
+        },
+        {
+          "action": {
+            "action": "query",
+            "scope": "group"
+          },
+          "result": {
+            "receipt_id": "observation-2-1",
+            "value": 6261621,
+            "evidence": [
+              "observation-2-1"
+            ],
+            "source_read_bytes": 21889034
+          }
+        },
+        {
+          "action": {
+            "action": "save",
+            "receipt_id": "observation-2-1"
+          },
+          "result": {
+            "saved_id": "r-8a530008f38e0ff887fe333f2d2970777509760f186ca10abcf204410e389f86"
+          }
+        },
+        {
+          "action": {
+            "action": "submit",
+            "value": 6261621,
+            "evidence": [
+              "observation-2-1"
+            ]
+          },
+          "result": {
+            "status": "COMMITTED"
+          }
+        }
+      ],
+      "correct": true,
+      "declared_evidence_sufficient": true,
+      "unsupported_submission": false,
+      "supported_correct": true
+    },
+    {
+      "session": 3,
+      "source_id": "d6538621cae195c5e0674a0972d709e2086e6a3398abf24c749b29ed1e160028",
+      "request": {
+        "kind": "joint",
+        "a": "en.m",
+        "b": "no-colon"
+      },
+      "status": "SUBMITTED",
+      "submitted_value": 6261621,
+      "declared_evidence": [
+        "history",
+        "r-8a530008f38e0ff887fe333f2d2970777509760f186ca10abcf204410e389f86"
+      ],
+      "declared_evidence_value": 6261621,
+      "source_read_bytes": 0,
+      "source_scan_seconds": 0.0,
+      "policy_invocations": 2,
+      "policy_observation_bytes": 41553,
+      "memory_written_payload_bytes": 0,
+      "cited_saved_evidence": true,
+      "trace": [
+        {
+          "action": {
+            "action": "calculate",
+            "evidence": [
+              "history",
+              "r-8a530008f38e0ff887fe333f2d2970777509760f186ca10abcf204410e389f86"
+            ]
+          },
+          "result": {
+            "value": 6261621,
+            "evidence": [
+              "history",
+              "r-8a530008f38e0ff887fe333f2d2970777509760f186ca10abcf204410e389f86"
+            ]
+          }
+        },
+        {
+          "action": {
+            "action": "submit",
+            "value": 6261621,
+            "evidence": [
+              "history",
+              "r-8a530008f38e0ff887fe333f2d2970777509760f186ca10abcf204410e389f86"
+            ]
+          },
+          "result": {
+            "status": "COMMITTED"
+          }
+        }
+      ],
+      "correct": true,
+      "declared_evidence_sufficient": true,
+      "unsupported_submission": false,
+      "supported_correct": true
+    },
+    {
+      "session": 4,
+      "source_id": "5e807740da5a25c85ea8f0d4f6471e819370401da2232f8272ef8a4b03b2f9f5",
+      "request": {
+        "kind": "joint",
+        "a": "en.m",
+        "b": "no-colon"
+      },
+      "status": "SUBMITTED",
+      "submitted_value": 7142891,
+      "declared_evidence": [
+        "observation-4-1"
+      ],
+      "declared_evidence_value": 7142891,
+      "source_read_bytes": 22020106,
+      "source_scan_seconds": 5.64025330000004,
+      "policy_invocations": 4,
+      "policy_observation_bytes": 84006,
+      "memory_written_payload_bytes": 165,
+      "cited_saved_evidence": false,
+      "trace": [
+        {
+          "action": {
+            "action": "calculate",
+            "evidence": [
+              "history",
+              "r-8a530008f38e0ff887fe333f2d2970777509760f186ca10abcf204410e389f86"
+            ]
+          },
+          "result": {
+            "value": null,
+            "evidence": [
+              "history",
+              "r-8a530008f38e0ff887fe333f2d2970777509760f186ca10abcf204410e389f86"
+            ]
+          }
+        },
+        {
+          "action": {
+            "action": "query",
+            "scope": "group"
+          },
+          "result": {
+            "receipt_id": "observation-4-1",
+            "value": 7142891,
+            "evidence": [
+              "observation-4-1"
+            ],
+            "source_read_bytes": 22020106
+          }
+        },
+        {
+          "action": {
+            "action": "save",
+            "receipt_id": "observation-4-1"
+          },
+          "result": {
+            "saved_id": "r-00ab2fb611daa37900782bbdf7c3ee04f70a14fae3bb588c2d8b4c50798534ac"
+          }
+        },
+        {
+          "action": {
+            "action": "submit",
+            "value": 7142891,
+            "evidence": [
+              "observation-4-1"
+            ]
+          },
+          "result": {
+            "status": "COMMITTED"
+          }
+        }
+      ],
+      "correct": true,
+      "declared_evidence_sufficient": true,
+      "unsupported_submission": false,
+      "supported_correct": true
+    },
+    {
+      "session": 5,
+      "source_id": "5e807740da5a25c85ea8f0d4f6471e819370401da2232f8272ef8a4b03b2f9f5",
+      "request": {
+        "kind": "joint",
+        "a": "en.m",
+        "b": "no-colon"
+      },
+      "status": "SUBMITTED",
+      "submitted_value": 7142891,
+      "declared_evidence": [
+        "history",
+        "r-00ab2fb611daa37900782bbdf7c3ee04f70a14fae3bb588c2d8b4c50798534ac",
+        "r-8a530008f38e0ff887fe333f2d2970777509760f186ca10abcf204410e389f86"
+      ],
+      "declared_evidence_value": 7142891,
+      "source_read_bytes": 0,
+      "source_scan_seconds": 0.0,
+      "policy_invocations": 2,
+      "policy_observation_bytes": 42065,
+      "memory_written_payload_bytes": 0,
+      "cited_saved_evidence": true,
+      "trace": [
+        {
+          "action": {
+            "action": "calculate",
+            "evidence": [
+              "history",
+              "r-00ab2fb611daa37900782bbdf7c3ee04f70a14fae3bb588c2d8b4c50798534ac",
+              "r-8a530008f38e0ff887fe333f2d2970777509760f186ca10abcf204410e389f86"
+            ]
+          },
+          "result": {
+            "value": 7142891,
+            "evidence": [
+              "history",
+              "r-00ab2fb611daa37900782bbdf7c3ee04f70a14fae3bb588c2d8b4c50798534ac",
+              "r-8a530008f38e0ff887fe333f2d2970777509760f186ca10abcf204410e389f86"
+            ]
+          }
+        },
+        {
+          "action": {
+            "action": "submit",
+            "value": 7142891,
+            "evidence": [
+              "history",
+              "r-00ab2fb611daa37900782bbdf7c3ee04f70a14fae3bb588c2d8b4c50798534ac",
+              "r-8a530008f38e0ff887fe333f2d2970777509760f186ca10abcf204410e389f86"
+            ]
+          },
+          "result": {
+            "status": "COMMITTED"
+          }
+        }
+      ],
+      "correct": true,
+      "declared_evidence_sufficient": true,
+      "unsupported_submission": false,
+      "supported_correct": true
+    },
+    {
+      "session": 6,
+      "source_id": "5e807740da5a25c85ea8f0d4f6471e819370401da2232f8272ef8a4b03b2f9f5",
+      "request": {
+        "kind": "joint",
+        "a": "en",
+        "b": "no-colon"
+      },
+      "status": "SUBMITTED",
+      "submitted_value": 2567423,
+      "declared_evidence": [
+        "observation-6-1"
+      ],
+      "declared_evidence_value": 2567423,
+      "source_read_bytes": 12058634,
+      "source_scan_seconds": 2.933558600001561,
+      "policy_invocations": 4,
+      "policy_observation_bytes": 85158,
+      "memory_written_payload_bytes": 161,
+      "cited_saved_evidence": false,
+      "trace": [
+        {
+          "action": {
+            "action": "calculate",
+            "evidence": [
+              "history",
+              "r-00ab2fb611daa37900782bbdf7c3ee04f70a14fae3bb588c2d8b4c50798534ac",
+              "r-8a530008f38e0ff887fe333f2d2970777509760f186ca10abcf204410e389f86"
+            ]
+          },
+          "result": {
+            "value": null,
+            "evidence": [
+              "history",
+              "r-00ab2fb611daa37900782bbdf7c3ee04f70a14fae3bb588c2d8b4c50798534ac",
+              "r-8a530008f38e0ff887fe333f2d2970777509760f186ca10abcf204410e389f86"
+            ]
+          }
+        },
+        {
+          "action": {
+            "action": "query",
+            "scope": "group"
+          },
+          "result": {
+            "receipt_id": "observation-6-1",
+            "value": 2567423,
+            "evidence": [
+              "observation-6-1"
+            ],
+            "source_read_bytes": 12058634
+          }
+        },
+        {
+          "action": {
+            "action": "save",
+            "receipt_id": "observation-6-1"
+          },
+          "result": {
+            "saved_id": "r-7f9ac79009e8bda2feae333b058ba45a298ed764a160d95812fe7e2d9425c483"
+          }
+        },
+        {
+          "action": {
+            "action": "submit",
+            "value": 2567423,
+            "evidence": [
+              "observation-6-1"
+            ]
+          },
+          "result": {
+            "status": "COMMITTED"
+          }
+        }
+      ],
+      "correct": true,
+      "declared_evidence_sufficient": true,
+      "unsupported_submission": false,
+      "supported_correct": true
+    },
+    {
+      "session": 7,
+      "source_id": "d6538621cae195c5e0674a0972d709e2086e6a3398abf24c749b29ed1e160028",
+      "request": {
+        "kind": "joint",
+        "a": "en.m",
+        "b": "no-colon"
+      },
+      "status": "SUBMITTED",
+      "submitted_value": 6261621,
+      "declared_evidence": [
+        "history",
+        "r-00ab2fb611daa37900782bbdf7c3ee04f70a14fae3bb588c2d8b4c50798534ac",
+        "r-7f9ac79009e8bda2feae333b058ba45a298ed764a160d95812fe7e2d9425c483",
+        "r-8a530008f38e0ff887fe333f2d2970777509760f186ca10abcf204410e389f86"
+      ],
+      "declared_evidence_value": 6261621,
+      "source_read_bytes": 0,
+      "source_scan_seconds": 0.0,
+      "policy_invocations": 2,
+      "policy_observation_bytes": 42573,
+      "memory_written_payload_bytes": 0,
+      "cited_saved_evidence": true,
+      "trace": [
+        {
+          "action": {
+            "action": "calculate",
+            "evidence": [
+              "history",
+              "r-00ab2fb611daa37900782bbdf7c3ee04f70a14fae3bb588c2d8b4c50798534ac",
+              "r-7f9ac79009e8bda2feae333b058ba45a298ed764a160d95812fe7e2d9425c483",
+              "r-8a530008f38e0ff887fe333f2d2970777509760f186ca10abcf204410e389f86"
+            ]
+          },
+          "result": {
+            "value": 6261621,
+            "evidence": [
+              "history",
+              "r-00ab2fb611daa37900782bbdf7c3ee04f70a14fae3bb588c2d8b4c50798534ac",
+              "r-7f9ac79009e8bda2feae333b058ba45a298ed764a160d95812fe7e2d9425c483",
+              "r-8a530008f38e0ff887fe333f2d2970777509760f186ca10abcf204410e389f86"
+            ]
+          }
+        },
+        {
+          "action": {
+            "action": "submit",
+            "value": 6261621,
+            "evidence": [
+              "history",
+              "r-00ab2fb611daa37900782bbdf7c3ee04f70a14fae3bb588c2d8b4c50798534ac",
+              "r-7f9ac79009e8bda2feae333b058ba45a298ed764a160d95812fe7e2d9425c483",
+              "r-8a530008f38e0ff887fe333f2d2970777509760f186ca10abcf204410e389f86"
+            ]
+          },
+          "result": {
+            "status": "COMMITTED"
+          }
+        }
+      ],
+      "correct": true,
+      "declared_evidence_sufficient": true,
+      "unsupported_submission": false,
+      "supported_correct": true
+    }
+  ]
+}
