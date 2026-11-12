@@ -1,0 +1,56 @@
+{
+  "scope": "Fixed-action development replay; not a new model trajectory, method or population effect",
+  "arms": {
+    "off": {
+      "sessions": 8,
+      "supported_correct": 8,
+      "source_read_bytes_after_history": 259650282,
+      "tool_cache_hits": 0,
+      "tool_cache_misses": 0,
+      "tool_cache_read_payload_bytes": 0,
+      "tool_cache_written_payload_bytes": 0,
+      "tool_cache_sqlite_bytes": 0,
+      "memory_written_payload_bytes": 0,
+      "tool_errors": 9,
+      "policy_phase_wall_seconds": 150.15271189999476,
+      "controller_total_wall_seconds": 201.11653139999544,
+      "policy_invocations": 29,
+      "policy_observation_bytes": 597698,
+      "shared_history_scan": {
+        "source_read_bytes": 42977573,
+        "scan_seconds": 15.543425500000012
+      },
+      "identity_check_bytes": 86550094
+    },
+    "on": {
+      "sessions": 8,
+      "supported_correct": 8,
+      "source_read_bytes_after_history": 86550094,
+      "tool_cache_hits": 4,
+      "tool_cache_misses": 2,
+      "tool_cache_read_payload_bytes": 225742,
+      "tool_cache_written_payload_bytes": 112871,
+      "tool_cache_sqlite_bytes": 131072,
+      "memory_written_payload_bytes": 0,
+      "tool_errors": 9,
+      "policy_phase_wall_seconds": 68.64242000000377,
+      "controller_total_wall_seconds": 144.37335529999837,
+      "policy_invocations": 29,
+      "policy_observation_bytes": 607334,
+      "shared_history_scan": {
+        "source_read_bytes": 42977573,
+        "scan_seconds": 19.773729900000035
+      },
+      "identity_check_bytes": 86550094
+    }
+  },
+  "actions_identical": true,
+  "values_identical_to_original": true,
+  "source_read_bytes_saved_after_history": 173100188,
+  "source_read_reduction_after_history": 0.6666666666666666,
+  "new_model_api_calls": 0,
+  "new_api_usd": 0,
+  "cache_initially_empty_and_no_s0_capture": true,
+  "timing_inference": "Arms overlapped; wall times are diagnostic and do not support causal speed estimates.",
+  "scientific_judgment": "Ordinary backend caching explains much of this fixed trace source-read cost without agent-save actions; no new memory mechanism necessity established."
+}

@@ -1,0 +1,37 @@
+{
+  "case_sha256": "a433461bd64b3f994218c8a4d35a01ff6feebe5a9cf18e29a86729ab514e621a",
+  "sources": {
+    "d6538621cae195c5e0674a0972d709e2086e6a3398abf24c749b29ed1e160028": {
+      "sha256": "d6538621cae195c5e0674a0972d709e2086e6a3398abf24c749b29ed1e160028",
+      "bytes": 42977573
+    },
+    "5e807740da5a25c85ea8f0d4f6471e819370401da2232f8272ef8a4b03b2f9f5": {
+      "sha256": "5e807740da5a25c85ea8f0d4f6471e819370401da2232f8272ef8a4b03b2f9f5",
+      "bytes": 43572521
+    }
+  },
+  "steps_per_task": 10,
+  "command": [
+    "D:\\flask\\miniconda\\python.exe",
+    "-B",
+    "-m",
+    "trustmem_runtime.replay_agent",
+    "D:\\study homework\\trusted computing\\github-release\\TrustMem-Bench\\local-runs\\tool-cache-replay-v1\\plan.json"
+  ],
+  "policy": "external",
+  "code": {
+    "agent.py": "dfa2122c044bfea2260859d6fdab4342444ba5a8f46c530bf331cd415f8daaa9",
+    "data.py": "16c7ffcd9764fabd1f73abc0cb290a870a4cb10e137e42af11b58604aed8a8e2",
+    "evidence.py": "4c64ac956cf0360fb34baddc418860b389440c9ccb268bbb9c79db4507093281",
+    "fixtures.py": "48c5ccaf94ffe4441ee8581cf6b08e2bbe90275f8bc9239f32429cf3b360e1b1",
+    "grading.py": "643b96dd8f6fc28c82b34cfbcc8c30605982123d4b1f180d782c0f1ef9e31f92",
+    "prepare_public.py": "d3c106eba15b2dcd85ae137226822ba959e33fa736c83643d2bd1bf361138794",
+    "replay_agent.py": "0af9520242e44e7c9e5482cba6d2d94e423a31be8c064a5fde13938dad151f18",
+    "run.py": "49eb8f9ef28389a7f86ca1274fa1d3c0fb7cc0f41ae3ce7a33be56ebf532e2d7",
+    "suite.py": "19cbef855332a1560fd4fb1b77f5190e9f157486979cbf32c4bba09f9442c8c3",
+    "tool_cache.py": "6e63c52e762bba31130f7a65b0918f888e95b6e6db6719e8661340cf088587f1",
+    "__init__.py": "f1bdc3d2790606327f6a21f8c4339fa39375b237a8166cd7c574812c3151ee80"
+  },
+  "model_budget_authorized_by_this_runner": false,
+  "tool_cache_enabled": true
+}

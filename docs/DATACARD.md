@@ -27,3 +27,5 @@ Current sources, task mechanisms and implementations have been inspected during 
 Use this version for interface development, reproducibility and ordinary-baseline calibration. Scientific publication still needs a demonstrated evaluation gap, more independent native task mechanisms, frozen held-out histories, systematic model/system comparisons, independent semantic calibration, qualified cost workloads, and a finalized code/data licensing decision. No new memory method is established by this runtime.
 
 The current memory API retains exact structured observations. Arbitrary natural-language memory compression, third-party graph stores and note rewriting are not yet evaluated. Integrating those systems requires additional audited adapters and semantic references; this prototype must not be ranked as if it already measured them.
+
+The subsequent tool-cache control fixes one previously generated model plan; its two conditions are not new autonomous model runs or new histories. Automatic backend state is included in the persistent-memory cost vector and is distinct from agent save actions. See [the control report](TOOL_CACHE_CONTROL.md).

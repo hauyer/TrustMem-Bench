@@ -1,0 +1,12 @@
+{
+  "status": "PASS_SAVED_TRACE_CACHE_BOUNDARY_AND_COST_CHECK",
+  "code_and_inputs_unchanged": true,
+  "all_actions_checked": 58,
+  "cache_objects_checked": 2,
+  "sources_changed_correctly": true,
+  "no_new_model_calls": true,
+  "scope": "Mechanical consistency only; semantic result-to-claim review separate.",
+  "bootstrap_actions_checked": 2,
+  "independent_semantic_review": "REVIEW_UNAVAILABLE_USAGE_LIMIT",
+  "cache_objects_payload_total": 112871
+}

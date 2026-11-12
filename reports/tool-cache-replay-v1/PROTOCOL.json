@@ -1,0 +1,48 @@
+{
+  "scope": "Development fixed-action replay, not autonomous counterfactual model behavior",
+  "comparison": [
+    "tool_cache_off",
+    "tool_cache_on"
+  ],
+  "case": "existing Wikimedia eight-request native development stream",
+  "new_model_calls_cap": 0,
+  "new_api_usd_cap": 0,
+  "raw_source_integrity": "Existing SHA256-bound case; both conditions actual read, no gold supplied to decisions",
+  "predictions": {
+    "ordinary_cache_explanation": "Repeated full queries can reuse source-matched observed tables without agent save; shifted source must miss; deliveries remain equal.",
+    "residual_trigger": "Incorrect source/scope reuse, failure of persistence or an important remaining cost that this cache cannot explain would require diagnosis."
+  },
+  "stopping": "One predefined stream and both conditions; no expansion based on outcomes",
+  "metrics": [
+    "supported_correct",
+    "source_read_bytes_after_history",
+    "all_query_actions",
+    "backend_cache_hits",
+    "backend_cache_payload_IO",
+    "agent_memory_payload_IO",
+    "policy_phase_wall_seconds"
+  ],
+  "interpretation_limits": [
+    "Controller replay fixes every action; model would see different feedback in an autonomous run.",
+    "No claim of novel cache algorithm or population effect.",
+    "Timing single technical execution, no causal latency claim."
+  ],
+  "inputs": {
+    "reports\\model-native-v1\\result.json": "4817e4880890e588f909f7d7ff74257a190f682db0f02b4ed1b9eb705c86da02",
+    "reports\\model-native-v1\\model_calls.jsonl": "1d75c796a4dee617ef16960ab5cf7da58d13db71d06177a8349471a6abe1b5e0",
+    "local-runs\\tool-cache-replay-v1\\plan.json": "7d0d54c83d00cc3bb0db4be759288569a1b15d6aa418aa015e48c231c46e4c59",
+    "local-runs\\tool-cache-replay-v1\\agent-config.json": "aecdfdbd055eb740afafa88c9a21c2b5d447ec90a00dc8348f5b04f985f4930c",
+    "local-runs\\native-inputs-v1\\wiki.case.json": "a433461bd64b3f994218c8a4d35a01ff6feebe5a9cf18e29a86729ab514e621a",
+    "trustmem_runtime\\agent.py": "dfa2122c044bfea2260859d6fdab4342444ba5a8f46c530bf331cd415f8daaa9",
+    "trustmem_runtime\\data.py": "16c7ffcd9764fabd1f73abc0cb290a870a4cb10e137e42af11b58604aed8a8e2",
+    "trustmem_runtime\\evidence.py": "4c64ac956cf0360fb34baddc418860b389440c9ccb268bbb9c79db4507093281",
+    "trustmem_runtime\\fixtures.py": "48c5ccaf94ffe4441ee8581cf6b08e2bbe90275f8bc9239f32429cf3b360e1b1",
+    "trustmem_runtime\\grading.py": "643b96dd8f6fc28c82b34cfbcc8c30605982123d4b1f180d782c0f1ef9e31f92",
+    "trustmem_runtime\\prepare_public.py": "d3c106eba15b2dcd85ae137226822ba959e33fa736c83643d2bd1bf361138794",
+    "trustmem_runtime\\replay_agent.py": "0af9520242e44e7c9e5482cba6d2d94e423a31be8c064a5fde13938dad151f18",
+    "trustmem_runtime\\run.py": "49eb8f9ef28389a7f86ca1274fa1d3c0fb7cc0f41ae3ce7a33be56ebf532e2d7",
+    "trustmem_runtime\\suite.py": "19cbef855332a1560fd4fb1b77f5190e9f157486979cbf32c4bba09f9442c8c3",
+    "trustmem_runtime\\tool_cache.py": "6e63c52e762bba31130f7a65b0918f888e95b6e6db6719e8661340cf088587f1",
+    "trustmem_runtime\\__init__.py": "f1bdc3d2790606327f6a21f8c4339fa39375b237a8166cd7c574812c3151ee80"
+  }
+}

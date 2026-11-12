@@ -22,6 +22,12 @@ python -B -m trustmem_runtime.run --case local-runs/cases/cross.case.json --outp
 
 `agent-config.json` contains a command list such as `{"command":["python","/absolute/path/to/my_agent.py"]}`. The process receives one JSON observation on stdin and returns one JSON action on stdout. Queries are actually executed; observations persist only after a save operation in the cooperative interface. See the [agent protocol](docs/AGENT_PROTOCOL.md). The local process is not OS-sandboxed; trusted adapters must follow the documented file/state restrictions.
 
+## Common tool caching
+
+The query backend can retain complete source/scope-bound observations independently of explicit agent saves. Enable it with `--tool-cache` on `trustmem_runtime.run` or `trustmem_runtime.suite`; suite applies the same backend to every compared policy. Backend read/write payload and SQLite footprint are counted separately. The original v0.2 runs used cache-off; comparable methods must use the same declared backend settings.
+
+A zero-API [fixed-action control](docs/TOOL_CACHE_CONTROL.md) reduced one saved Wikimedia trace's post-history source reads from 259,650,282 B to 86,550,094 B while preserving all actions and 8/8 supported deliveries. It demonstrates an ordinary-backend explanation, not a new autonomous model trajectory or method advantage.
+
 ## Native public archives
 
 Four already studied GH Archive and Wikimedia snapshots can be imported from local files. Exact URLs, names, SHA256 bindings and grouping rules are documented in the [data card](docs/DATACARD.md). This command does not download data:

@@ -10,6 +10,7 @@ from time import perf_counter
 from .data import canonical, digest, history, scan
 from .evidence import calculate
 from .grading import reference
+from .tool_cache import ToolCache
 
 
 RULES = """All sources are immutable; current source identity is authoritative. Weights are integers (nonnegative for cross/threshold). A source is a complete weighted table over keys a,b. A marginal sums weights for a. A joint selects a,b. A threshold sums weights for a and integer b<=limit. A range sums weights for a and lo<=integer b<=hi. History is either complete marginals or the recorded interval sums. Observations can be combined only when they justify this request on this exact source. Tools: calculate(evidence:[IDs]) evaluates the request from cited observations, returning null if unsupported; query(scope:group|full) actually scans current source; save(receipt_id) retains an acquired observation for later sessions. submit(value:integer,evidence:[IDs]) commits a deliverable; abstain ends without delivery. Submit does not automatically correct or block errors. Each policy invocation is a new process. Only saved observations survive to the next task. At bootstrap, start retains the ordinary history; capture_full additionally stores the full table available from the shared historical source scan. The task stream is hidden until each task begins."""
@@ -58,7 +59,7 @@ def invoke(command, observation, output, name):
         return None, process
 
 
-def run(case_path, output, policy="lazy_group", agent_command=None, steps=10):
+def run(case_path, output, policy="lazy_group", agent_command=None, steps=10, tool_cache=False):
     run_started = perf_counter()
     case = read_case(case_path)
     identity_seconds = perf_counter()-run_started
@@ -68,7 +69,8 @@ def run(case_path, output, policy="lazy_group", agent_command=None, steps=10):
     # Before running a policy: bind inputs, case, commands and code; leave gold out.
     protocol = {"case_sha256":digest(case_path),"sources":{k:{"sha256":v["sha256"],"bytes":Path(v["path"]).stat().st_size} for k,v in case["sources"].items()},
         "steps_per_task":steps,"command":command,"policy":policy if agent_command is None else "external",
-        "code":{p.name:digest(p) for p in Path(__file__).parent.glob("*.py")},"model_budget_authorized_by_this_runner":False}
+        "code":{p.name:digest(p) for p in Path(__file__).parent.glob("*.py")},"model_budget_authorized_by_this_runner":False,
+        "tool_cache_enabled":tool_cache}
     (output/"freeze.json").write_text(json.dumps(protocol,indent=2),encoding="utf-8")
     initial = case["initial_source"]
     table, bootstrap_cost = scan(case["sources"][initial])
@@ -79,6 +81,11 @@ def run(case_path, output, policy="lazy_group", agent_command=None, steps=10):
         db.execute("CREATE TABLE memory(id TEXT PRIMARY KEY, body TEXT NOT NULL)")
         db.commit()
     storage_written = 0
+    cache = ToolCache(output/"tool-cache.sqlite") if tool_cache else None
+    rules = RULES
+    if tool_cache:
+        rules = RULES.replace("query(scope:group|full) actually scans current source", "query(scope:group|full) obtains current-source observations, using an ordinary persistent tool cache when a previous complete scan covers the request, otherwise scanning the source")
+        rules += " The backend cache is persistent state accounted separately from explicitly saved agent observations. It is initially empty and is populated only by query-tool scans, not by the shared historical scan."
     def retain(receipt):
         nonlocal storage_written
         blob = canonical(receipt)
@@ -90,7 +97,7 @@ def run(case_path, output, policy="lazy_group", agent_command=None, steps=10):
                 db.commit()
                 storage_written += len(blob.encode())
         return key
-    first = {"protocol":RULES,"phase":"bootstrap","history":old,"source_id":initial,
+    first = {"protocol":rules,"phase":"bootstrap","history":old,"source_id":initial,
         "initial_full_capture_available":True,"trace":[],"memory":[]}
     action, bootstrap_process = invoke(command,first,output,"bootstrap")
     if action is None or action.get("action") not in ("start","capture_full"):
@@ -122,7 +129,7 @@ def run(case_path, output, policy="lazy_group", agent_command=None, steps=10):
         submitted, declared, status, support_value = None, [], "STEP_LIMIT", None
         before_written = storage_written
         for turn in range(steps):
-            visible = {"protocol":RULES,"phase":"task","session_index":index,
+            visible = {"protocol":rules,"phase":"task","session_index":index,
                 "source_id":source_id,"request":task,"history":old,
                 "memory":[{"id":key,"source_id":v["source_id"],"kind":v["kind"],"scope_a":v.get("scope_a")} for key,v in memory.items()],
                 "trace":trace,"steps_remaining":steps-turn}
@@ -143,16 +150,24 @@ def run(case_path, output, policy="lazy_group", agent_command=None, steps=10):
                     scope = action.get("scope")
                     if scope not in ("group","full"):
                         raise ValueError("scope must be group or full")
-                    cells, cost = scan(case["sources"][source_id], task["a"] if scope=="group" else None)
+                    receipt = cache.get(source_id,scope,task["a"]) if cache else None
+                    cache_hit = receipt is not None
+                    cost = {"source_read_bytes":0,"scan_seconds":0.0}
+                    if receipt is None:
+                        cells, cost = scan(case["sources"][source_id], task["a"] if scope=="group" else None)
+                        receipt = {"kind":scope,"source_id":source_id,"table":cells}
+                        if scope == "group":
+                            receipt["scope_a"] = task["a"]
+                        if cache:
+                            cache.put(receipt)
                     source_bytes += cost["source_read_bytes"]
                     source_seconds += cost["scan_seconds"]
-                    receipt = {"kind":scope,"source_id":source_id,"table":cells}
-                    if scope == "group":
-                        receipt["scope_a"] = task["a"]
                     key = f"observation-{index}-{turn}"
                     transient[key] = receipt
                     value = calculate([receipt],task,source_id)
                     result = {"receipt_id":key,"value":value,"evidence":[key],"source_read_bytes":cost["source_read_bytes"]}
+                    if cache:
+                        result["backend_cache_hit"] = cache_hit
                 elif name == "calculate":
                     ids = action.get("evidence",[])
                     value = calculate(resolve(ids),task,source_id)
@@ -215,6 +230,12 @@ def run(case_path, output, policy="lazy_group", agent_command=None, steps=10):
         "memory_read_payload_bytes":memory_read_payload_bytes,
         "policy_invocations":1+sum(e["policy_invocations"] for e in events),
         "policy_observation_bytes":bootstrap_process["input_bytes"]+sum(e["policy_observation_bytes"] for e in events),
+        "tool_errors":sum("error" in step["result"] for e in events for step in e["trace"]),
+        "tool_cache_enabled":tool_cache,
+        "tool_cache_hits":cache.hits if cache else 0,"tool_cache_misses":cache.misses if cache else 0,
+        "tool_cache_read_payload_bytes":cache.read_payload_bytes if cache else 0,
+        "tool_cache_written_payload_bytes":cache.written_payload_bytes if cache else 0,
+        "tool_cache_sqlite_bytes":cache.path.stat().st_size if cache else 0,
         "external_model_accounting":"External adapters must supply their own usage ledger; process invocations are not model calls.",
         "bootstrap_process":bootstrap_process,"events":events}
     assert result["submitted"]+result["abstentions"]+result["agent_failures"]+result["step_limits"] == result["sessions"]
@@ -230,9 +251,10 @@ if __name__ == "__main__":
     parser.add_argument("--policy",choices=["always_verify","lazy_group","lazy_full","eager_full"],default="lazy_group")
     parser.add_argument("--agent-config",help="JSON file with command: [executable, argument, ...]")
     parser.add_argument("--steps",type=int,default=10)
+    parser.add_argument("--tool-cache",action="store_true",help="Enable an ordinary persistent source/scope-bound query cache")
     args = parser.parse_args()
     command = json.loads(Path(args.agent_config).read_text(encoding="utf-8"))["command"] if args.agent_config else None
     if command is not None and (not isinstance(command,list) or not command or not all(isinstance(x,str) for x in command)):
         parser.error("command must be a nonempty list of strings")
-    result = run(args.case,args.output,args.policy,command,args.steps)
+    result = run(args.case,args.output,args.policy,command,args.steps,args.tool_cache)
     print(json.dumps({k:v for k,v in result.items() if k not in ("events","bootstrap_process")},indent=2))

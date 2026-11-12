@@ -1,0 +1,160 @@
+{
+  "bootstrap": {
+    "action": "start"
+  },
+  "tasks": [
+    [
+      {
+        "action": "calculate",
+        "evidence": [
+          "history"
+        ]
+      },
+      {
+        "action": "submit",
+        "value": 6424227,
+        "evidence": [
+          "history"
+        ]
+      }
+    ],
+    [
+      {
+        "action": "calculate",
+        "evidence": [
+          "history"
+        ]
+      },
+      {
+        "action": "submit",
+        "value": 0,
+        "evidence": [
+          "history"
+        ]
+      }
+    ],
+    [
+      {
+        "action": "calculate",
+        "evidence": [
+          "history"
+        ]
+      },
+      {
+        "action": "query",
+        "scope": "full"
+      },
+      {
+        "action": "submit",
+        "value": 6261621,
+        "evidence": [
+          "observation-2-1"
+        ]
+      }
+    ],
+    [
+      {
+        "action": "calculate",
+        "evidence": [
+          "history"
+        ]
+      },
+      {
+        "action": "query",
+        "scope": "full"
+      },
+      {
+        "action": "submit",
+        "value": 6261621,
+        "evidence": [
+          "observation-3-1"
+        ]
+      }
+    ],
+    [
+      {
+        "action": "start"
+      },
+      {
+        "action": "start"
+      },
+      {
+        "action": "start"
+      },
+      {
+        "action": "start"
+      },
+      {
+        "action": "start"
+      },
+      {
+        "action": "start"
+      },
+      {
+        "action": "query",
+        "scope": "full"
+      },
+      {
+        "action": "submit",
+        "value": 7142891,
+        "evidence": [
+          "observation-4-6"
+        ]
+      }
+    ],
+    [
+      {
+        "action": "query",
+        "scope": "full"
+      },
+      {
+        "action": "submit",
+        "value": 7142891,
+        "evidence": [
+          "observation-5-0"
+        ]
+      }
+    ],
+    [
+      {
+        "action": "start"
+      },
+      {
+        "action": "start"
+      },
+      {
+        "action": "start"
+      },
+      {
+        "action": "query",
+        "scope": "full"
+      },
+      {
+        "action": "submit",
+        "value": 2567423,
+        "evidence": [
+          "observation-6-3"
+        ]
+      }
+    ],
+    [
+      {
+        "action": "calculate",
+        "evidence": [
+          "history"
+        ]
+      },
+      {
+        "action": "query",
+        "scope": "full"
+      },
+      {
+        "action": "submit",
+        "value": 6261621,
+        "evidence": [
+          "observation-7-1"
+        ]
+      }
+    ]
+  ]
+}

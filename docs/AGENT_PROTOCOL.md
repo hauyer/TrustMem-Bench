@@ -35,3 +35,9 @@ Read cost is actual logical source bytes returned to the reader (including gzip 
 This is a cooperative JSON interface, not an OS sandbox. External programs have ordinary local filesystem permissions and must not open controller manifests, source files outside tools, grading outputs, or keep out-of-band state. A remote language-model adapter that only forwards the observation and returns an action naturally satisfies this narrower interface; arbitrary local programs require auditing or a separately isolated environment. The present release does not claim protection from a malicious local solver.
 
 Paid API adapters must independently enforce model/call/token/USD limits and preserve usage plus raw replies. The environment's process-call count is not an API-call meter. No credentials are bundled in this repository.
+
+## Optional ordinary backend cache
+
+With `--tool-cache`, `query` may reuse a previous complete scan of the same immutable source and sufficient scope. The tool transcript declares cache hits; the cache is initially empty and is not prefilled by S0. This state is separate from agent `save` and is fully costed. Default cache-off preserves the original release's conditions. New comparisons must declare a common backend for all methods; cache-off is an ablation rather than a sufficient claim about the best ordinary system.
+
+`trustmem_runtime.replay_agent` is a deterministic saved-action runner for tool-layer controls. Its outcomes must not be labeled as new model inference or adaptive model behavior.

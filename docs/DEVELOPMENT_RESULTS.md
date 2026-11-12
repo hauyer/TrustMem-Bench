@@ -46,3 +46,9 @@ The initial engineering tests exposed unclosed SQLite connections during Windows
 Independent same-family review identified and checked corrections for bootstrap failures losing their planned denominator, executable launch errors, incomplete terminal summaries, and under-reported non-scan costs. Sixteen offline tests now include enumerated small tables, signed intervals, threshold boundaries, source mismatch, persistence, lucky unsupported answers, wrong-value commits, step limits, bootstrap failure, and metered-client mocks. Mock provider responses are unit-test fixtures and are not included in the 60 real API calls.
 
 The review also confirmed the important limitation: this is a cooperating subprocess interface, not an OS sandbox. Evidence support follows the public structured contract; only numerical truth uses an independent SQL implementation. Current results do not certify top-venue novelty or an unrestricted semantic memory evaluator.
+
+## Subsequent ordinary-cache control
+
+The above original runs disabled automatic tool-backend caching. A separately frozen zero-API, fixed-action replay has now added that ordinary control. Both arms preserve the exact original actions and 8/8 deliveries; post-history source reads become 259,650,282 B versus 86,550,094 B, with 4 cache hits and 2 misses. Backend persistent state is included in the cost vector. This limits the earlier no-save observation: missing agent saves do not by themselves imply missing whole-system memory or a novel mechanism need. The native pilot also contains nine recoverable invalid phase actions, despite zero terminal interface failures. [Protocol, costs and limitations](TOOL_CACHE_CONTROL.md)
+
+The updated suite has 19 offline tests. The new result-to-claim review could not complete due to reviewer usage limits and remains REVIEW_UNAVAILABLE; prior v0.2 review should not be treated as a review of this new control.

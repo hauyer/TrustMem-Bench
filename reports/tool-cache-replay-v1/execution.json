@@ -1,0 +1,5 @@
+{
+  "arms_may_overlap": true,
+  "timing_use": "Technical diagnostic only, not a causal speed estimate",
+  "model_calls": 0
+}
