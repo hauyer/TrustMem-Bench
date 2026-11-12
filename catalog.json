@@ -1,0 +1,400 @@
+{
+  "scope": "Task catalog only. No unified solver tool environment is implemented.",
+  "split": "previously_seen_development",
+  "tasks": [
+    {
+      "archive_group": "tlc/2025-01",
+      "followup_request": null,
+      "history_family": "tlc",
+      "id": "legacy/dev-001",
+      "request": {
+        "kind": "grouped-threshold",
+        "output": "valid and within-threshold counts per pickup zone",
+        "threshold_minutes": 25
+      },
+      "sequence_position": null
+    },
+    {
+      "archive_group": "tlc/2025-02",
+      "followup_request": null,
+      "history_family": "tlc",
+      "id": "legacy/dev-002",
+      "request": {
+        "kind": "grouped-threshold",
+        "output": "valid and within-threshold counts per pickup zone",
+        "threshold_minutes": 25
+      },
+      "sequence_position": null
+    },
+    {
+      "archive_group": "gtfs-calgary",
+      "followup_request": null,
+      "history_family": "gtfs-calgary",
+      "id": "legacy/dev-003",
+      "request": {
+        "kind": "histogram",
+        "notice": "equal_shape_distance_same_coordinates"
+      },
+      "sequence_position": null
+    },
+    {
+      "archive_group": "gtfs-calgary",
+      "followup_request": null,
+      "history_family": "gtfs-calgary",
+      "id": "legacy/dev-004",
+      "request": {
+        "kind": "count",
+        "notice": "equal_shape_distance_same_coordinates"
+      },
+      "sequence_position": null
+    },
+    {
+      "archive_group": "tlc/2025-01",
+      "followup_request": {
+        "output": "exact fraction of eligible rows within the same threshold",
+        "zone": 4
+      },
+      "history_family": "tlc",
+      "id": "legacy/dev-005",
+      "request": {
+        "scope": "all physical rows; paired nonnegative durations; exact integer microseconds",
+        "threshold_us": 1200000000,
+        "zone_key": "PULocationID",
+        "zones": [
+          4,
+          7
+        ]
+      },
+      "sequence_position": null
+    },
+    {
+      "archive_group": "tlc/2025-02",
+      "followup_request": {
+        "output": "exact fraction of eligible rows within the same threshold",
+        "zone": 4
+      },
+      "history_family": "tlc",
+      "id": "legacy/dev-006",
+      "request": {
+        "scope": "all physical rows; paired nonnegative durations; exact integer microseconds",
+        "threshold_us": 1200000000,
+        "zone_key": "PULocationID",
+        "zones": [
+          4,
+          7
+        ]
+      },
+      "sequence_position": null
+    },
+    {
+      "archive_group": "dask-flights",
+      "followup_request": null,
+      "history_family": "dask-flights",
+      "id": "legacy/dev-007",
+      "request": {
+        "groups": [
+          "EWR",
+          "JFK",
+          "LGA"
+        ],
+        "output": "exact delay sum and nonnull count per group",
+        "years": [
+          "1990",
+          "1991",
+          "1992",
+          "1993",
+          "1994",
+          "1995",
+          "1996",
+          "1997"
+        ]
+      },
+      "sequence_position": null
+    },
+    {
+      "archive_group": "gh-0601",
+      "followup_request": null,
+      "history_family": "gh-archive",
+      "id": "public/gh-0601-s0",
+      "request": {
+        "a": "PushEvent",
+        "kind": "marginal"
+      },
+      "sequence_position": 0
+    },
+    {
+      "archive_group": "gh-0601",
+      "followup_request": null,
+      "history_family": "gh-archive",
+      "id": "public/gh-0601-s1",
+      "request": {
+        "a": "PushEvent",
+        "b": "__trustmem_unlisted_test_group__",
+        "kind": "joint"
+      },
+      "sequence_position": 1
+    },
+    {
+      "archive_group": "gh-0601",
+      "followup_request": null,
+      "history_family": "gh-archive",
+      "id": "public/gh-0601-s2",
+      "request": {
+        "a": "PushEvent",
+        "b": "basilisk0315",
+        "kind": "joint"
+      },
+      "sequence_position": 2
+    },
+    {
+      "archive_group": "gh-0601",
+      "followup_request": null,
+      "history_family": "gh-archive",
+      "id": "public/gh-0601-s3",
+      "request": {
+        "a": "PushEvent",
+        "b": "sskoike",
+        "kind": "joint"
+      },
+      "sequence_position": 3
+    },
+    {
+      "archive_group": "gh-0601",
+      "followup_request": null,
+      "history_family": "gh-archive",
+      "id": "public/gh-0601-s4",
+      "request": {
+        "a": "CreateEvent",
+        "b": "basilisk0315",
+        "kind": "joint"
+      },
+      "sequence_position": 4
+    },
+    {
+      "archive_group": "gh-0601",
+      "followup_request": null,
+      "history_family": "gh-archive",
+      "id": "public/gh-0601-s5",
+      "request": {
+        "a": "PushEvent",
+        "b": "basilisk0315",
+        "kind": "joint"
+      },
+      "sequence_position": 5
+    },
+    {
+      "archive_group": "gh-0602",
+      "followup_request": null,
+      "history_family": "gh-archive",
+      "id": "public/gh-0602-s0",
+      "request": {
+        "a": "PushEvent",
+        "kind": "marginal"
+      },
+      "sequence_position": 0
+    },
+    {
+      "archive_group": "gh-0602",
+      "followup_request": null,
+      "history_family": "gh-archive",
+      "id": "public/gh-0602-s1",
+      "request": {
+        "a": "PushEvent",
+        "b": "__trustmem_unlisted_test_group__",
+        "kind": "joint"
+      },
+      "sequence_position": 1
+    },
+    {
+      "archive_group": "gh-0602",
+      "followup_request": null,
+      "history_family": "gh-archive",
+      "id": "public/gh-0602-s2",
+      "request": {
+        "a": "PushEvent",
+        "b": "static-web-apps-testing-org",
+        "kind": "joint"
+      },
+      "sequence_position": 2
+    },
+    {
+      "archive_group": "gh-0602",
+      "followup_request": null,
+      "history_family": "gh-archive",
+      "id": "public/gh-0602-s3",
+      "request": {
+        "a": "PushEvent",
+        "b": "retrophisch",
+        "kind": "joint"
+      },
+      "sequence_position": 3
+    },
+    {
+      "archive_group": "gh-0602",
+      "followup_request": null,
+      "history_family": "gh-archive",
+      "id": "public/gh-0602-s4",
+      "request": {
+        "a": "CreateEvent",
+        "b": "static-web-apps-testing-org",
+        "kind": "joint"
+      },
+      "sequence_position": 4
+    },
+    {
+      "archive_group": "gh-0602",
+      "followup_request": null,
+      "history_family": "gh-archive",
+      "id": "public/gh-0602-s5",
+      "request": {
+        "a": "PushEvent",
+        "b": "static-web-apps-testing-org",
+        "kind": "joint"
+      },
+      "sequence_position": 5
+    },
+    {
+      "archive_group": "wiki-0601",
+      "followup_request": null,
+      "history_family": "wikimedia-pageviews",
+      "id": "public/wiki-0601-s0",
+      "request": {
+        "a": "en.m",
+        "kind": "marginal"
+      },
+      "sequence_position": 0
+    },
+    {
+      "archive_group": "wiki-0601",
+      "followup_request": null,
+      "history_family": "wikimedia-pageviews",
+      "id": "public/wiki-0601-s1",
+      "request": {
+        "a": "en.m",
+        "b": "__trustmem_unlisted_test_group__",
+        "kind": "joint"
+      },
+      "sequence_position": 1
+    },
+    {
+      "archive_group": "wiki-0601",
+      "followup_request": null,
+      "history_family": "wikimedia-pageviews",
+      "id": "public/wiki-0601-s2",
+      "request": {
+        "a": "en.m",
+        "b": "no-colon",
+        "kind": "joint"
+      },
+      "sequence_position": 2
+    },
+    {
+      "archive_group": "wiki-0601",
+      "followup_request": null,
+      "history_family": "wikimedia-pageviews",
+      "id": "public/wiki-0601-s3",
+      "request": {
+        "a": "en.m",
+        "b": "colon",
+        "kind": "joint"
+      },
+      "sequence_position": 3
+    },
+    {
+      "archive_group": "wiki-0601",
+      "followup_request": null,
+      "history_family": "wikimedia-pageviews",
+      "id": "public/wiki-0601-s4",
+      "request": {
+        "a": "en",
+        "b": "no-colon",
+        "kind": "joint"
+      },
+      "sequence_position": 4
+    },
+    {
+      "archive_group": "wiki-0601",
+      "followup_request": null,
+      "history_family": "wikimedia-pageviews",
+      "id": "public/wiki-0601-s5",
+      "request": {
+        "a": "en.m",
+        "b": "no-colon",
+        "kind": "joint"
+      },
+      "sequence_position": 5
+    },
+    {
+      "archive_group": "wiki-0602",
+      "followup_request": null,
+      "history_family": "wikimedia-pageviews",
+      "id": "public/wiki-0602-s0",
+      "request": {
+        "a": "en.m",
+        "kind": "marginal"
+      },
+      "sequence_position": 0
+    },
+    {
+      "archive_group": "wiki-0602",
+      "followup_request": null,
+      "history_family": "wikimedia-pageviews",
+      "id": "public/wiki-0602-s1",
+      "request": {
+        "a": "en.m",
+        "b": "__trustmem_unlisted_test_group__",
+        "kind": "joint"
+      },
+      "sequence_position": 1
+    },
+    {
+      "archive_group": "wiki-0602",
+      "followup_request": null,
+      "history_family": "wikimedia-pageviews",
+      "id": "public/wiki-0602-s2",
+      "request": {
+        "a": "en.m",
+        "b": "no-colon",
+        "kind": "joint"
+      },
+      "sequence_position": 2
+    },
+    {
+      "archive_group": "wiki-0602",
+      "followup_request": null,
+      "history_family": "wikimedia-pageviews",
+      "id": "public/wiki-0602-s3",
+      "request": {
+        "a": "en.m",
+        "b": "colon",
+        "kind": "joint"
+      },
+      "sequence_position": 3
+    },
+    {
+      "archive_group": "wiki-0602",
+      "followup_request": null,
+      "history_family": "wikimedia-pageviews",
+      "id": "public/wiki-0602-s4",
+      "request": {
+        "a": "en",
+        "b": "no-colon",
+        "kind": "joint"
+      },
+      "sequence_position": 4
+    },
+    {
+      "archive_group": "wiki-0602",
+      "followup_request": null,
+      "history_family": "wikimedia-pageviews",
+      "id": "public/wiki-0602-s5",
+      "request": {
+        "a": "en.m",
+        "b": "no-colon",
+        "kind": "joint"
+      },
+      "sequence_position": 5
+    }
+  ],
+  "version": "0"
+}
