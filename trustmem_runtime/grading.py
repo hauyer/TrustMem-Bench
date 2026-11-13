@@ -17,6 +17,24 @@ def reference(case):
                     for line in handle:
                         item = json.loads(line)
                         yield item["a"], str(item["b"]), item["weight"]
+            elif source["format"] == "openml-arff-confidence":
+                import csv
+                in_data = False
+                with path.open(encoding="utf-8") as handle:
+                    for line in handle:
+                        if not in_data:
+                            in_data = line.strip().lower() == "@data"
+                            continue
+                        if not line.strip() or line.lstrip().startswith("%"):
+                            continue
+                        row = next(csv.reader([line]))
+                        if len(row) != 13:
+                            raise ValueError("Wrong prediction width")
+                        p = [float(x) for x in row[4:11]]
+                        score = max(p) * 100
+                        if abs(score - round(score)) > 1e-8:
+                            raise ValueError("Noninteger confidence percentage")
+                        yield ("correct" if int(row[-2]) == int(row[-1]) else "incorrect"), str(round(score)), 1
             elif source["format"] == "gharchive":
                 with gzip.open(path, "rt", encoding="utf-8") as handle:
                     for line in handle:
@@ -34,6 +52,12 @@ def reference(case):
             if entry["source_id"] != source_id:
                 continue
             task = entry["request"]
+            if task["kind"] == "quality":
+                numerator, denominator = connection.execute(
+                    "SELECT COALESCE(SUM(CASE WHEN a=? THEN w ELSE 0 END),0),COALESCE(SUM(w),0) FROM observations WHERE CAST(b AS INTEGER)>=?",
+                    (task["a"], task["cutoff"])).fetchone()
+                answers[index] = int(denominator > 0 and numerator * task["denominator"] >= denominator * task["numerator"])
+                continue
             sql, params = "SELECT COALESCE(SUM(w),0) FROM observations WHERE a=?", [task["a"]]
             if task["kind"] == "joint":
                 sql += " AND b=?"

@@ -1,0 +1,104 @@
+{
+  "version": "0.3-dev",
+  "id": "openml-confidence-gates",
+  "mechanism": "quality",
+  "split": "exposed-native-development",
+  "history_group": "openml-run10160807",
+  "initial_source": "8d7d4637968d2ac309531fcbc3ed49414e5d748327cfcdb4ce80b50c90e9fce7",
+  "sources": {
+    "8d7d4637968d2ac309531fcbc3ed49414e5d748327cfcdb4ce80b50c90e9fce7": {
+      "path": "D:\\study homework\\trusted computing\\artifacts\\research_decisions\\20261112-openml-admission-v1\\predictions.arff",
+      "format": "openml-arff-confidence",
+      "sha256": "8d7d4637968d2ac309531fcbc3ed49414e5d748327cfcdb4ce80b50c90e9fce7"
+    }
+  },
+  "tasks": [
+    {
+      "source_id": "8d7d4637968d2ac309531fcbc3ed49414e5d748327cfcdb4ce80b50c90e9fce7",
+      "request": {
+        "kind": "quality",
+        "a": "correct",
+        "cutoff": 80,
+        "numerator": 9,
+        "denominator": 10
+      }
+    },
+    {
+      "source_id": "8d7d4637968d2ac309531fcbc3ed49414e5d748327cfcdb4ce80b50c90e9fce7",
+      "request": {
+        "kind": "quality",
+        "a": "correct",
+        "cutoff": 80,
+        "numerator": 99,
+        "denominator": 100
+      }
+    },
+    {
+      "source_id": "8d7d4637968d2ac309531fcbc3ed49414e5d748327cfcdb4ce80b50c90e9fce7",
+      "request": {
+        "kind": "quality",
+        "a": "correct",
+        "cutoff": 80,
+        "numerator": 99,
+        "denominator": 100
+      }
+    },
+    {
+      "source_id": "8d7d4637968d2ac309531fcbc3ed49414e5d748327cfcdb4ce80b50c90e9fce7",
+      "request": {
+        "kind": "quality",
+        "a": "correct",
+        "cutoff": 90,
+        "numerator": 99,
+        "denominator": 100
+      }
+    },
+    {
+      "source_id": "8d7d4637968d2ac309531fcbc3ed49414e5d748327cfcdb4ce80b50c90e9fce7",
+      "request": {
+        "kind": "quality",
+        "a": "correct",
+        "cutoff": 0,
+        "numerator": 9,
+        "denominator": 10
+      }
+    },
+    {
+      "source_id": "8d7d4637968d2ac309531fcbc3ed49414e5d748327cfcdb4ce80b50c90e9fce7",
+      "request": {
+        "kind": "quality",
+        "a": "correct",
+        "cutoff": 0,
+        "numerator": 99,
+        "denominator": 100
+      }
+    },
+    {
+      "source_id": "8d7d4637968d2ac309531fcbc3ed49414e5d748327cfcdb4ce80b50c90e9fce7",
+      "request": {
+        "kind": "quality",
+        "a": "correct",
+        "cutoff": 101,
+        "numerator": 1,
+        "denominator": 1
+      }
+    },
+    {
+      "source_id": "8d7d4637968d2ac309531fcbc3ed49414e5d748327cfcdb4ce80b50c90e9fce7",
+      "request": {
+        "kind": "quality",
+        "a": "correct",
+        "cutoff": 80,
+        "numerator": 99,
+        "denominator": 100
+      }
+    }
+  ],
+  "provenance": {
+    "dataset": "Covertype 1596",
+    "task": 75193,
+    "run": 10160807,
+    "request_stream": "authored; same exposed prediction source, no held-out family",
+    "full_observation": "complete correctness/confidence contingency table, not raw ARFF retention"
+  }
+}

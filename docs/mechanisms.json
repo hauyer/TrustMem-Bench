@@ -2,13 +2,187 @@
   "schema_version": 1,
   "program": "trustworthy-memory-maintenance",
   "entrypoint": "idea.md in the parent research workspace",
-  "levels": {"B0":"grounded hypothesis","B1":"observed loss","B2":"localized intervention or tradeoff","B3":"feasible gain beyond named baselines","B4":"independent confirmation"},
+  "levels": {
+    "B0": "grounded hypothesis",
+    "B1": "observed loss",
+    "B2": "localized intervention or tradeoff",
+    "B3": "feasible gain beyond named baselines",
+    "B4": "independent confirmation"
+  },
   "cards": [
-    {"id":"C-EXACT","role":"ordinary_baseline","status":"BASELINE_IMPLEMENTED","changed_computation":"lookup by exact source/version/context","rival":"generalization may complete additional genuinely covered tasks","cost_regime":"two new quotes per 24-order stream","failure_rule":"do not require extra quotes for cache hits","evidence":"SAP1 program reference, 14 correct/0 wrong/10 deferred per stream"},
-    {"id":"C-BIND","role":"ordinary_baseline","status":"EXPLAINED_BY_BASELINE","changed_computation":"apply an available exact authoritative quote at commit","rival":"unquoted inference errors remain","cost_regime":"fixed model output and fixed observed quotes; no new API","failure_rule":"any claim must report unquoted errors and completion","evidence":"EAD1 ordinary_quote_overlay, retarget 40/3/21 to 42/1/21; fixed-response replay"},
-    {"id":"H-ALLOC","role":"hypothesis","status":"B2_TRADEOFF_NO_NET_DOMINANCE","changed_computation":"allocate the same quote to a planned unquoted commit","ordinary_competitors":["coverage-priority scheduler","active uncertainty","exact cache","authoritative binding"],"prediction":"whole-batch loss improves after displaced-evidence costs","rival":"target gains merely move deferral/error to other orders","cost_regime":"one quote and one model response per paired state; token/USD also reported","update_rule":"retain as a tradeoff until whole-batch improvement appears","evidence":"EAD1 all 8 input-selected pairs, 16 fresh first responses"},
-    {"id":"H-ACTION","role":"hypothesis","status":"B0_REDESIGN_AFTER_PROXY_NULL","changed_computation":"rank verification by actual precommit changes caused by procedural memory","ordinary_competitors":["same-note repeated proposals","query by committee","coverage-priority scheduler","ordinary uncertainty"],"prediction":"memory-specific actionable disagreements identify more downstream value than ordinary disagreement","rival":"the proxy is noise or no different from active learning","cost_regime":"identical factual histories and call/query budgets","update_rule":"reject the computation if equal-note controls explain it; keep the research direction","evidence":"SAP1 note_frontier arm: forward intention frontier 0 at quota-eligible steps; actual-precommit draft not run"},
-    {"id":"H-JOINT","role":"environment_hypothesis","status":"B0_ENVIRONMENT_CALIBRATED_ONLY","changed_computation":"challenge joint applicability with truthful but incomplete historical coverage","ordinary_competitors":["joint coverage summary","full history","relational learner","exact cache"],"prediction":"a scope-of-support boundary can be distinguished from a false historical memory","rival":"ordinary coverage or conservative abstention suffices","cost_regime":"no artificial source latency; authored quote budgets separated from real costs","update_rule":"no method claim from generator certificate","evidence":"existing 28/4 joint-coverage mathematical certificate only"},
-    {"id":"H-INHERIT","role":"hypothesis","status":"B0_CAUSAL_EFFECT_UNESTABLISHED","changed_computation":"persist scoped revision from acquired feedback and use it next session","ordinary_competitors":["append exact facts","full reconstruction","scoped ordinary update","lazy cache"],"prediction":"matched feedback plus revision changes later actual choices","rival":"new factual observations alone explain the gain","cost_regime":"full write/retrieval/model and verification costs","update_rule":"readback/citation alone never counts as causal benefit","evidence":"M7 ordinary durable repairs; SAP1 readback 60/60, no matched causal confirmation"}
+    {
+      "id": "C-EXACT",
+      "role": "ordinary_baseline",
+      "status": "BASELINE_IMPLEMENTED",
+      "changed_computation": "lookup by exact source/version/context",
+      "rival": "generalization may complete additional genuinely covered tasks",
+      "cost_regime": "two new quotes per 24-order stream",
+      "failure_rule": "do not require extra quotes for cache hits",
+      "evidence": "SAP1 program reference, 14 correct/0 wrong/10 deferred per stream"
+    },
+    {
+      "id": "C-BIND",
+      "role": "ordinary_baseline",
+      "status": "EXPLAINED_BY_BASELINE",
+      "changed_computation": "apply an available exact authoritative quote at commit",
+      "rival": "unquoted inference errors remain",
+      "cost_regime": "fixed model output and fixed observed quotes; no new API",
+      "failure_rule": "any claim must report unquoted errors and completion",
+      "evidence": "EAD1 ordinary_quote_overlay, retarget 40/3/21 to 42/1/21; fixed-response replay"
+    },
+    {
+      "id": "H-ALLOC",
+      "role": "hypothesis",
+      "status": "B2_TRADEOFF_NO_NET_DOMINANCE",
+      "changed_computation": "allocate the same quote to a planned unquoted commit",
+      "ordinary_competitors": [
+        "coverage-priority scheduler",
+        "active uncertainty",
+        "exact cache",
+        "authoritative binding"
+      ],
+      "prediction": "whole-batch loss improves after displaced-evidence costs",
+      "rival": "target gains merely move deferral/error to other orders",
+      "cost_regime": "one quote and one model response per paired state; token/USD also reported",
+      "update_rule": "retain as a tradeoff until whole-batch improvement appears",
+      "evidence": "EAD1 all 8 input-selected pairs, 16 fresh first responses"
+    },
+    {
+      "id": "H-ACTION",
+      "role": "hypothesis",
+      "status": "PRECOMMIT_DIFFERENCE_OBSERVED_NO_QUERY_SEPARATION",
+      "changed_computation": "rank verification by actual precommit changes caused by procedural memory",
+      "ordinary_competitors": [
+        "same-note repeated proposals",
+        "query by committee",
+        "coverage-priority scheduler",
+        "ordinary uncertainty"
+      ],
+      "prediction": "memory-specific actionable disagreements identify more downstream value than ordinary disagreement",
+      "rival": "the proxy is noise or no different from active learning",
+      "cost_regime": "identical factual histories and call/query budgets",
+      "update_rule": "Qualify native workloads with prospectively different verification payoffs before a new model batch.",
+      "evidence": "SAP2 ordinary note A/R 4/4 and A/B 0/4; scope note A/R 0/4 and A/B 3/4. All policies chose the same quote in all four related blocks."
+    },
+    {
+      "id": "H-JOINT",
+      "role": "environment_hypothesis",
+      "status": "B0_ENVIRONMENT_CALIBRATED_ONLY",
+      "changed_computation": "challenge joint applicability with truthful but incomplete historical coverage",
+      "ordinary_competitors": [
+        "joint coverage summary",
+        "full history",
+        "relational learner",
+        "exact cache"
+      ],
+      "prediction": "a scope-of-support boundary can be distinguished from a false historical memory",
+      "rival": "ordinary coverage or conservative abstention suffices",
+      "cost_regime": "no artificial source latency; authored quote budgets separated from real costs",
+      "update_rule": "no method claim from generator certificate",
+      "evidence": "existing 28/4 joint-coverage mathematical certificate only"
+    },
+    {
+      "id": "H-INHERIT",
+      "role": "hypothesis",
+      "status": "MIXED_REVISION_EFFECTS_IN_DEVELOPMENT",
+      "changed_computation": "persist scoped revision from acquired feedback and use it next session",
+      "ordinary_competitors": [
+        "append exact facts",
+        "full reconstruction",
+        "scoped ordinary update",
+        "lazy cache"
+      ],
+      "prediction": "matched feedback plus revision changes later actual choices",
+      "rival": "new factual observations alone explain the gain",
+      "cost_regime": "full write/retrieval/model and verification costs",
+      "update_rule": "readback/citation alone never counts as causal benefit",
+      "evidence": "SAP2 fixed vs revised note with matched evidence: 15/3/6 vs 17/2/5 correct/wrong/deferred. Full revised path matched structural consensus completion but had five wrong submissions."
+    },
+    {
+      "id": "C-NATIVE-SCOPE",
+      "role": "ordinary_baseline",
+      "status": "NATIVE_SCOPE_TRADEOFF_OBSERVED",
+      "changed_computation": "read several groups in one physical scan and retain their source-bound receipts",
+      "ordinary_competitors": [
+        "current-group lazy cache",
+        "eager full materialization",
+        "expected-cost scope planning"
+      ],
+      "prediction": "one scan may cover several later requests depending on physical group placement and actual demand",
+      "cost_regime": "native compressed archive read, retained payload and file identity separately",
+      "update_rule": "report predeclared shifted-demand controls and preserve full-scan fallback",
+      "evidence": "Native GH/Wikimedia development streams: 4/4 vs 3/4 at equal initial scan bytes; rank-3 stress drops two-group to 3/4. No new method gain."
+    },
+    {
+      "id": "C-VERSIONED-USE",
+      "role": "ordinary_baseline",
+      "status": "TRACE_REPLAY_TRADEOFF_OBSERVED",
+      "changed_computation": "count later uses before evidence invalidation, instead of all later requests",
+      "ordinary_competitors": [
+        "recent frequency",
+        "same read-scope frequency",
+        "same fingerprint frequency",
+        "lazy acquisition"
+      ],
+      "prediction": "a demand label that ignores validity can cause excess anticipatory evidence acquisition",
+      "cost_regime": "unit table-version acquisition with disclosed conditional cost ratio; not measured physical costs",
+      "update_rule": "keep observable scope and version as ordinary input; validate semantic recovery and actual delivery separately",
+      "evidence": "Redset four development shards, 5391 windows. Same-scope first-use invalidation 374 to 28, 257 fewer hits, conditional cost 90 lower at ratio 1/2."
+    },
+    {
+      "id": "H-MISSING-DISTINCTION",
+      "role": "hypothesis",
+      "status": "SUPPORTED_WRITER_RECOVERY_ORDINARY_BASELINE",
+      "changed_computation": "compile supported executable action predicates into constraints on stored statistical views, then test decision determinacy",
+      "ordinary_competitors": [
+        "static dependencies",
+        "ordinary scope summary",
+        "endpoint projection",
+        "incremental update",
+        "targeted verification"
+      ],
+      "prediction": "a mechanically checkable ambiguity witness identifies the same necessary acquisition in held-out workflow histories",
+      "cost_regime": "retain formation, actual source reads, update and fallback costs separately",
+      "update_rule": "keep existing successful projections as controls and verify the witness against a real action",
+      "evidence": "Ordinary restricted AST recovery obtains 13 constraints from the prior authored executed writer; renaming invariant; filtered count scope retained; 18 deliveries and 6 fresh-process answers correct. No algorithm advantage.",
+      "next_qualification": "Register real quality/cost headroom on existing benchmark units; do not treat unsupported matrix formatting or saturated scan-count objectives as method gaps.",
+      "method_advantage_established": false,
+      "latest_report": "docs/mainline/NATIVE_VIEW_RECOVERY_20261113.md"
+    },
+    {
+      "id": "C-VIEW-COMPILER",
+      "role": "ordinary_baseline",
+      "status": "SUPPORTED_WRITER_PATTERN_QUALIFIED",
+      "changed_computation": "recover persisted LEN/SUM/Counter observations and generator filters from a trusted simple writer and normalizer pattern",
+      "ordinary_competitors": [
+        "full matrix count recovery",
+        "ordinary source analysis",
+        "full source cache",
+        "lazy acquisition"
+      ],
+      "prediction": "renaming is invariant and altered generator scope changes the recovered observation instead of silently reusing its key meaning",
+      "cost_regime": "formation, acquisition, parse/check, storage and partial timing separated; not total physical I/O",
+      "update_rule": "unknown is not insufficiency; check all stored statistical views before accepting a reused witness",
+      "evidence": "One original authored executed writer plus three engineered controls on exposed OpenML predictions; 39 equations and 18 deliveries verified; dynamic source unsupported.",
+      "latest_report": "docs/mainline/NATIVE_VIEW_RECOVERY_20261113.md",
+      "method_advantage_established": false
+    },
+    {
+      "id": "C-QUALITY-GATE",
+      "role": "ordinary_baseline",
+      "status": "UNIFIED_RUNTIME_CALIBRATED",
+      "changed_computation": "permit a binary nonempty-population quality gate from count bounds without requiring exact joint accuracy",
+      "ordinary_competitors": [
+        "complete materialization at history",
+        "group/full lazy cache",
+        "always verify",
+        "common backend cache"
+      ],
+      "prediction": "an incomplete statistic may still determine a current decision; exact accuracy and decision sufficiency are different tasks",
+      "cost_regime": "shared initial scan and post-history acquisition, memory, identity/scoring and transport separated",
+      "update_rule": "retain deterministic successes as calibration; native systems and algorithm claims require their own runs",
+      "evidence": "0.3: 20 cache-off streams 160/160, four cache-on streams32/32; zero external model calls; exposed/native vs synthetic distinct.",
+      "latest_report": "docs/mainline/BENCHMARK_V03_20261113.md"
+    }
   ]
 }

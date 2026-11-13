@@ -15,6 +15,8 @@ def build(output):
                       {"red":{"10":1,"20":2,"30":4},"blue":{"10":3,"20":2,"30":2}}],
         "range": [{"red":{"1":10,"2":-3,"3":5,"4":7},"blue":{"1":2,"2":9,"3":-1,"4":4}},
                   {"red":{"1":9,"2":-1,"3":3,"4":2},"blue":{"1":5,"2":4,"3":-2,"4":8}}],
+        "quality": [{"correct":{"90":76,"50":19},"incorrect":{"90":4,"50":1}},
+                    {"correct":{"90":80,"50":15},"incorrect":{"90":0,"50":5}}],
     }
     manifests = []
     for mechanism, tables in definitions.items():
@@ -34,11 +36,15 @@ def build(output):
             queries = [{"kind":"marginal","a":"red"}, {"kind":"threshold","a":"red","limit":-1}]
             queries += [{"kind":"threshold","a":"red","limit":n} for n in (20,25,20,20)]
             queries += [{"kind":"threshold","a":"blue","limit":10}, {"kind":"threshold","a":"red","limit":25}]
-        else:
+        elif mechanism == "range":
             queries = [{"kind":"range","a":"red","lo":1,"hi":n} for n in (2,3,4,4,4,4)]
             queries += [{"kind":"range","a":"blue","lo":1,"hi":2}, {"kind":"range","a":"red","lo":1,"hi":4}]
+        else:
+            queries = [dict(kind="quality",a="correct",cutoff=cutoff,numerator=num,denominator=den)
+                for cutoff,num,den in ((80,9,10),(80,99,100),(80,99,100),(90,9,10),
+                                       (80,99,100),(80,99,100),(100,1,1),(80,99,100))]
         tasks = [{"source_id":identities[version],"request":query} for query,version in zip(queries,(0,0,0,0,1,1,1,0))]
-        case = {"version":"0.2-dev","id":f"engineering-{mechanism}","mechanism":mechanism,
+        case = {"version":"0.3-dev","id":f"engineering-{mechanism}","mechanism":mechanism,
             "split":"engineering-smoke","history_group":f"synthetic-{mechanism}",
             "initial_source":identities[0],"sources":sources,"tasks":tasks}
         path = output / f"{mechanism}.case.json"

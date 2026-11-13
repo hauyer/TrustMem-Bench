@@ -41,3 +41,8 @@ Paid API adapters must independently enforce model/call/token/USD limits and pre
 With `--tool-cache`, `query` may reuse a previous complete scan of the same immutable source and sufficient scope. The tool transcript declares cache hits; the cache is initially empty and is not prefilled by S0. This state is separate from agent `save` and is fully costed. Default cache-off preserves the original release's conditions. New comparisons must declare a common backend for all methods; cache-off is an ablation rather than a sufficient claim about the best ordinary system.
 
 `trustmem_runtime.replay_agent` is a deterministic saved-action runner for tool-layer controls. Its outcomes must not be labeled as new model inference or adaptive model behavior.
+# Quality-gate extension (0.3)
+
+The existing integer submission and acquire/save/calculate actions also support `kind: quality`. A request supplies `a`, an integer `cutoff`, and rational `numerator`/`denominator`. Return 1 iff the population with `b >= cutoff` is nonempty and its share in group a reaches the ratio; return 0 otherwise. A source-matching margin can certify this decision without certifying an exact joint count. The shared calculator is available equally to all adapters. Group acquisition may require combining the new receipt with current-source margins; the tool returns the evidence IDs used. Full acquisition supplies the complete contracted contingency table. Only saved receipts survive in explicit agent memory.
+
+Suites distinguish an insufficient declared evidence set from a submitted value that contradicts a sufficient declared set. Neither is silently repaired. Current contracts are exact structured observations; a free-text memory adapter requires additional semantics and calibration.

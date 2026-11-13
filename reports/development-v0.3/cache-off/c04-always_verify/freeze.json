@@ -1,0 +1,36 @@
+{
+  "case_sha256": "b5c7bddd656225cb478475605279d67cf07de9081c3825be2bee352ca68cf6f3",
+  "sources": {
+    "8d7d4637968d2ac309531fcbc3ed49414e5d748327cfcdb4ce80b50c90e9fce7": {
+      "sha256": "8d7d4637968d2ac309531fcbc3ed49414e5d748327cfcdb4ce80b50c90e9fce7",
+      "bytes": 8591823
+    }
+  },
+  "steps_per_task": 10,
+  "command": [
+    "D:\\flask\\miniconda\\python.exe",
+    "-B",
+    "-m",
+    "trustmem_runtime.agent",
+    "always_verify"
+  ],
+  "policy": "always_verify",
+  "code": {
+    "agent.py": "fc10b4f74408a589bde0aef43020f11acba828dc5c51dbdc0ecacde475bad807",
+    "data.py": "cf4433b2c3ab6211ca17ed836873e73bad48eaf2bcb5305cf0d2249e497bc161",
+    "evidence.py": "409602ffc057d2e11488768ab41b593b396460c2e1788ea243586e5d40d3378b",
+    "fixtures.py": "9fb4426fabe4616cec3bda639525228f862cd4858f45c7b9c22ee894434aa29f",
+    "grading.py": "aa81cdc6e5523535d76b17c3fa9c2b2e0cd521a87fd7ec7e2419c6d0cfa09b8b",
+    "prepare_confidence.py": "a2747b692333dbf0a9f0497c01884b8a10c29a3d8889ee58544259972c8cbfe3",
+    "prepare_public.py": "d3c106eba15b2dcd85ae137226822ba959e33fa736c83643d2bd1bf361138794",
+    "replay_agent.py": "0af9520242e44e7c9e5482cba6d2d94e423a31be8c064a5fde13938dad151f18",
+    "reporting.py": "8dcc964976c4522691efe02e9c52d297656e48fe8ecad382cca2460b568e8038",
+    "run.py": "3f6c3adb986fdf71a7279b7cacb7db6670b54a57ffb58a10fc04ad03864526c2",
+    "suite.py": "68f40a07c6584a226406e62c123faebfb4345897cd06d2b220a3f60ecb09aa07",
+    "tool_cache.py": "6e63c52e762bba31130f7a65b0918f888e95b6e6db6719e8661340cf088587f1",
+    "__init__.py": "4983f6ae4697810367a83dfadb533237d49234b4ef61cc199f8ba77ad654fdfe"
+  },
+  "model_budget_authorized_by_this_runner": false,
+  "tool_cache_enabled": false,
+  "quality_protocol_sha256": "96151d7e7675b2e10b972b368b1a6c2d6ae1be94666711235d28fdb7d607b997"
+}

@@ -1,0 +1,102 @@
+{
+  "version": "0.3-dev",
+  "id": "engineering-quality",
+  "mechanism": "quality",
+  "split": "engineering-smoke",
+  "history_group": "synthetic-quality",
+  "initial_source": "7dc1c9f18069e2927d6293ef3771ec42e39f0cc5cc9be3be1a01add091fce79e",
+  "sources": {
+    "7dc1c9f18069e2927d6293ef3771ec42e39f0cc5cc9be3be1a01add091fce79e": {
+      "path": "quality-0.jsonl",
+      "format": "weighted-jsonl",
+      "sha256": "7dc1c9f18069e2927d6293ef3771ec42e39f0cc5cc9be3be1a01add091fce79e"
+    },
+    "f98ca77cfa478f0118ccbf43dead6a9a53f09758483d36a6daf9eb89b1cc84f4": {
+      "path": "quality-1.jsonl",
+      "format": "weighted-jsonl",
+      "sha256": "f98ca77cfa478f0118ccbf43dead6a9a53f09758483d36a6daf9eb89b1cc84f4"
+    }
+  },
+  "tasks": [
+    {
+      "source_id": "7dc1c9f18069e2927d6293ef3771ec42e39f0cc5cc9be3be1a01add091fce79e",
+      "request": {
+        "kind": "quality",
+        "a": "correct",
+        "cutoff": 80,
+        "numerator": 9,
+        "denominator": 10
+      }
+    },
+    {
+      "source_id": "7dc1c9f18069e2927d6293ef3771ec42e39f0cc5cc9be3be1a01add091fce79e",
+      "request": {
+        "kind": "quality",
+        "a": "correct",
+        "cutoff": 80,
+        "numerator": 99,
+        "denominator": 100
+      }
+    },
+    {
+      "source_id": "7dc1c9f18069e2927d6293ef3771ec42e39f0cc5cc9be3be1a01add091fce79e",
+      "request": {
+        "kind": "quality",
+        "a": "correct",
+        "cutoff": 80,
+        "numerator": 99,
+        "denominator": 100
+      }
+    },
+    {
+      "source_id": "7dc1c9f18069e2927d6293ef3771ec42e39f0cc5cc9be3be1a01add091fce79e",
+      "request": {
+        "kind": "quality",
+        "a": "correct",
+        "cutoff": 90,
+        "numerator": 9,
+        "denominator": 10
+      }
+    },
+    {
+      "source_id": "f98ca77cfa478f0118ccbf43dead6a9a53f09758483d36a6daf9eb89b1cc84f4",
+      "request": {
+        "kind": "quality",
+        "a": "correct",
+        "cutoff": 80,
+        "numerator": 99,
+        "denominator": 100
+      }
+    },
+    {
+      "source_id": "f98ca77cfa478f0118ccbf43dead6a9a53f09758483d36a6daf9eb89b1cc84f4",
+      "request": {
+        "kind": "quality",
+        "a": "correct",
+        "cutoff": 80,
+        "numerator": 99,
+        "denominator": 100
+      }
+    },
+    {
+      "source_id": "f98ca77cfa478f0118ccbf43dead6a9a53f09758483d36a6daf9eb89b1cc84f4",
+      "request": {
+        "kind": "quality",
+        "a": "correct",
+        "cutoff": 100,
+        "numerator": 1,
+        "denominator": 1
+      }
+    },
+    {
+      "source_id": "7dc1c9f18069e2927d6293ef3771ec42e39f0cc5cc9be3be1a01add091fce79e",
+      "request": {
+        "kind": "quality",
+        "a": "correct",
+        "cutoff": 80,
+        "numerator": 99,
+        "denominator": 100
+      }
+    }
+  ]
+}

@@ -19,12 +19,21 @@ RULES = """All sources are immutable; current source identity is authoritative. 
 def read_case(path):
     path = Path(path).resolve()
     case = json.loads(path.read_text(encoding="utf-8"))
-    if case["mechanism"] not in ("cross","threshold","range"):
+    if case["mechanism"] not in ("cross","threshold","range","quality"):
         raise ValueError("Unknown mechanism")
     for entry in case["tasks"]:
         task = entry["request"]
+        allowed = {"cross":{"marginal","joint"}, "threshold":{"marginal","threshold"},
+                   "range":{"range"}, "quality":{"quality"}}
+        if task["kind"] not in allowed[case["mechanism"]]:
+            raise ValueError("Task kind is outside the declared mechanism")
         if task["kind"] == "range" and not (1 <= task["lo"] <= task["hi"] <= 4):
             raise ValueError("Range requests must stay within the declared domain 1..4")
+        if task["kind"] == "quality" and not (
+            type(task.get("cutoff")) is int and type(task.get("numerator")) is int
+            and type(task.get("denominator")) is int
+            and 0 <= task["numerator"] <= task["denominator"] and task["denominator"] > 0):
+            raise ValueError("Quality gates require an integer cutoff and a rational threshold in [0,1]")
     for identity, source in case["sources"].items():
         source["nonnegative"] = case["mechanism"] != "range"
         source["path"] = str((path.parent / source["path"]).resolve())
@@ -71,6 +80,8 @@ def run(case_path, output, policy="lazy_group", agent_command=None, steps=10, to
         "steps_per_task":steps,"command":command,"policy":policy if agent_command is None else "external",
         "code":{p.name:digest(p) for p in Path(__file__).parent.glob("*.py")},"model_budget_authorized_by_this_runner":False,
         "tool_cache_enabled":tool_cache}
+    if case["mechanism"] == "quality":
+        protocol["quality_protocol_sha256"] = digest(Path(__file__).resolve().parents[1]/"docs/QUALITY_GATE_PROTOCOL.md")
     (output/"freeze.json").write_text(json.dumps(protocol,indent=2),encoding="utf-8")
     initial = case["initial_source"]
     table, bootstrap_cost = scan(case["sources"][initial])
@@ -83,8 +94,10 @@ def run(case_path, output, policy="lazy_group", agent_command=None, steps=10, to
     storage_written = 0
     cache = ToolCache(output/"tool-cache.sqlite") if tool_cache else None
     rules = RULES
+    if case["mechanism"] == "quality":
+        rules += " Quality gates return integer 1 exactly when the population with integer b>=cutoff is nonempty and the share belonging to a is at least numerator/denominator; otherwise return 0. This is a release decision, not the exact accuracy. All weights are nonnegative. Source-matching marginals may determine this gate using count bounds even when exact joint counts remain unknown. A group receipt plus complete current-source margins can also determine it."
     if tool_cache:
-        rules = RULES.replace("query(scope:group|full) actually scans current source", "query(scope:group|full) obtains current-source observations, using an ordinary persistent tool cache when a previous complete scan covers the request, otherwise scanning the source")
+        rules = rules.replace("query(scope:group|full) actually scans current source", "query(scope:group|full) obtains current-source observations, using an ordinary persistent tool cache when a previous complete scan covers the request, otherwise scanning the source")
         rules += " The backend cache is persistent state accounted separately from explicitly saved agent observations. It is initially empty and is populated only by query-tool scans, not by the shared historical scan."
     def retain(receipt):
         nonlocal storage_written
@@ -164,8 +177,9 @@ def run(case_path, output, policy="lazy_group", agent_command=None, steps=10, to
                     source_seconds += cost["scan_seconds"]
                     key = f"observation-{index}-{turn}"
                     transient[key] = receipt
-                    value = calculate([receipt],task,source_id)
-                    result = {"receipt_id":key,"value":value,"evidence":[key],"source_read_bytes":cost["source_read_bytes"]}
+                    evidence_ids = ["history",*memory,*transient] if task["kind"] == "quality" else [key]
+                    value = calculate(resolve(evidence_ids),task,source_id)
+                    result = {"receipt_id":key,"value":value,"evidence":evidence_ids,"source_read_bytes":cost["source_read_bytes"]}
                     if cache:
                         result["backend_cache_hit"] = cache_hit
                 elif name == "calculate":
@@ -212,6 +226,9 @@ def run(case_path, output, policy="lazy_group", agent_command=None, steps=10, to
         event["declared_evidence_sufficient"] = event["status"]=="SUBMITTED" and event["declared_evidence_value"] is not None
         event["unsupported_submission"] = event["status"]=="SUBMITTED" and not event["declared_evidence_sufficient"]
         event["supported_correct"] = event["correct"] and event["declared_evidence_sufficient"]
+        event["contradicts_declared_evidence"] = (event["status"]=="SUBMITTED"
+            and event["declared_evidence_value"] is not None
+            and event["submitted_value"] != event["declared_evidence_value"])
     result = {"status":"COMPLETED","case_id":case["id"],"history_group":case["history_group"],"split":case["split"],
         "mechanism":case["mechanism"],"policy":policy if agent_command is None else "external","sessions":len(events),
         "correct":sum(e["correct"] for e in events),"supported_correct":sum(e["supported_correct"] for e in events),
@@ -220,6 +237,7 @@ def run(case_path, output, policy="lazy_group", agent_command=None, steps=10, to
         "unsupported_correct":sum(e["correct"] and e["unsupported_submission"] for e in events),
         "step_limits":sum(e["status"]=="STEP_LIMIT" for e in events),
         "unsupported_submissions":sum(e["unsupported_submission"] for e in events),
+        "contradictory_submissions":sum(e["contradicts_declared_evidence"] for e in events),
         "abstentions":sum(e["status"]=="ABSTAINED" for e in events),
         "agent_failures":sum(e["status"]=="AGENT_FAILURE" for e in events),
         "source_read_bytes_after_history":sum(e["source_read_bytes"] for e in events),

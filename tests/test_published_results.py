@@ -9,6 +9,30 @@ ROOT = Path(__file__).resolve().parents[1]
 
 
 class PublishedResultTests(unittest.TestCase):
+    def test_v03_exports_preserve_complete_streams_and_original_bytes(self):
+        folder=ROOT/"reports/development-v0.3"
+        manifest=json.loads((folder/"manifest.json").read_text(encoding="utf-8"))
+        for name,info in manifest["files"].items():
+            self.assertEqual(hashlib.sha256((folder/name).read_bytes()).hexdigest(),info["sha256"])
+        published=json.loads((ROOT/"reports/development-v0.3.json").read_text(encoding="utf-8"))
+        self.assertEqual(published["new_external_model_calls"],0)
+        for mode,summary in published["conditions"].items():
+            runs=[]
+            for path in (folder/mode).glob("c*/result.json"):
+                result=json.loads(path.read_text(encoding="utf-8"))
+                self.assertEqual(sum(event["correct"] for event in result["events"]),result["correct"])
+                self.assertEqual(sum(event["source_read_bytes"] for event in result["events"]),result["source_read_bytes_after_history"])
+                runs.append(result)
+            self.assertEqual(len(runs),summary["run_count"])
+            self.assertEqual(sum(r["sessions"] for r in runs),summary["planned_deliveries"])
+            self.assertEqual(sum(r["supported_correct"] for r in runs),summary["supported_correct"])
+            freeze=json.loads((folder/mode/"freeze.json").read_text(encoding="utf-8"))
+            for name,identity in freeze["code"].items():
+                self.assertEqual(hashlib.sha256((folder/mode/"code_snapshot"/name).read_bytes()).hexdigest(),identity)
+            for name,identity in freeze["cases"].items():
+                prefix,filename=name.split(":",1)
+                self.assertEqual(hashlib.sha256((folder/mode/"case_snapshot"/f"{prefix}-{filename}").read_bytes()).hexdigest(),identity)
+
     def test_all_ordinary_results_match_their_original_bytes(self):
         report = json.loads((ROOT/"reports/development-v0.2.json").read_text(encoding="utf-8"))
         for section,folder in (("engineering_runs","engineering-v1"),("native_runs","native-v2")):

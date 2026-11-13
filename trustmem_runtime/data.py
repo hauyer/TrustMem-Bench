@@ -25,8 +25,11 @@ class Meter:
         return data
 
 
-def scan(source, group=None):
+def scan(source, group=None, *, groups=None):
     """Actually scan a bound source, without a hidden reference answer."""
+    if groups is not None and (group is not None or not groups):
+        raise ValueError("Supply a single group or a nonempty group set")
+    selected = frozenset(groups) if groups is not None else None if group is None else frozenset((group,))
     started = perf_counter()
     table = defaultdict(lambda: defaultdict(int))
     path = Path(source["path"])
@@ -39,10 +42,37 @@ def scan(source, group=None):
                 a, b, weight = row["a"], str(row["b"]), row["weight"]
                 if type(weight) is not int or (source.get("nonnegative") and weight < 0):
                     raise ValueError("Weights must be integers")
-                if group is None or a == group:
+                if selected is None or a in selected:
                     table[a][b] += weight
+        elif source["format"] == "openml-arff-confidence":
+            import csv
+            from decimal import Decimal
+            started_data = False
+            for line in iter(lambda: meter.stream.readline(), b""):
+                meter.bytes += len(line)
+                if not started_data:
+                    started_data = line.strip().lower() == b"@data"
+                    continue
+                if not line.strip() or line.lstrip().startswith(b"%"):
+                    continue
+                row = next(csv.reader([line.decode("utf-8")]))
+                if len(row) != 13:
+                    raise ValueError("Expected pinned seven-class OpenML prediction schema")
+                probabilities = [Decimal(x) for x in row[4:11]]
+                prediction, truth = int(row[11]), int(row[12])
+                score = max(probabilities) * 100
+                if (not all(Decimal(0) <= x <= Decimal(1) for x in probabilities)
+                    or abs(sum(probabilities) - 1) > Decimal("1e-12")
+                    or not 1 <= prediction <= 7 or not 1 <= truth <= 7
+                    or probabilities[prediction - 1] != max(probabilities) or score != int(score)):
+                    raise ValueError("Unsupported prediction probabilities or labels")
+                a, b = "correct" if prediction == truth else "incorrect", str(int(score))
+                if selected is None or a in selected:
+                    table[a][b] += 1
+            if not started_data:
+                raise ValueError("Missing ARFF data section")
         else:
-            seen_target = False
+            seen = set()
             with gzip.GzipFile(fileobj=meter, mode="rb") as data:
                 for line in data:
                     if source["format"] == "gharchive":
@@ -57,11 +87,12 @@ def scan(source, group=None):
                         a, b, weight = domain.decode("ascii"), "colon" if b":" in title else "no-colon", int(views)
                     else:
                         raise ValueError("Unknown native format")
-                    if group is not None and source.get("group_contiguous") and seen_target and a != group:
+                    if selected is not None and source.get("group_contiguous") and seen == selected and a not in selected:
                         break
-                    if group is None or a == group:
+                    if selected is None or a in selected:
                         table[a][b] += weight
-                        seen_target = True
+                        if selected is not None:
+                            seen.add(a)
     return {a: dict(values) for a, values in table.items()}, {"source_read_bytes": meter.bytes, "scan_seconds": perf_counter() - started}
 
 

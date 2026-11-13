@@ -13,4 +13,4 @@ jobs:
           python-version: '3.11'
       - run: python -B -m unittest discover -s tests
       - run: python -B -m trustmem_runtime.fixtures --output smoke-cases
-      - run: python -B -m trustmem_runtime.suite --cases smoke-cases/cross.case.json smoke-cases/threshold.case.json smoke-cases/range.case.json --output smoke-results
+      - run: python -B -m trustmem_runtime.suite --cases smoke-cases/cross.case.json smoke-cases/threshold.case.json smoke-cases/range.case.json smoke-cases/quality.case.json --output smoke-results

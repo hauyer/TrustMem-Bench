@@ -1,6 +1,6 @@
 # TrustMem-Bench
 
-**Executable development release 0.2.** A research environment for evidence-grounded memory reuse across sessions. Agents can acquire observations, persist them, submit actual outputs and reuse saved observations after a source or task change. This remains a development benchmark: top-venue novelty, held-out generalization and a new memory method have not been established.
+**Executable development release 0.3.** A research environment for evidence-grounded memory reuse across sessions. Agents acquire observations, persist them, submit actual outputs and reuse saved evidence after a source or task change. Version 0.3 adds decision-level quality gates, a pinned native prediction importer, evidence-conflict diagnostics, and automatic Markdown/CSV suite reports.
 
 ## Run without API keys or dependencies
 
@@ -9,10 +9,25 @@ Python 3.10+ and its standard library are sufficient. From the repository root:
 ```bash
 python -B -m unittest discover -s tests
 python -B -m trustmem_runtime.fixtures --output local-runs/cases
-python -B -m trustmem_runtime.suite --cases local-runs/cases/cross.case.json local-runs/cases/threshold.case.json local-runs/cases/range.case.json --output local-runs/results
+python -B -m trustmem_runtime.suite --cases local-runs/cases/cross.case.json local-runs/cases/threshold.case.json local-runs/cases/range.case.json local-runs/cases/quality.case.json --output local-runs/results
 ```
 
 Outputs are created once; choose a new directory for each run. No existing run is overwritten. Every stream runs four ordinary policies: full verification, group lazy cache, full lazy cache and early full materialization. Each policy may retain the full table from the common historical scan before seeing future tasks. No artificial latency or tight memory restriction makes the baselines fail.
+
+Each suite produces `SUMMARY.md`, per-task `tasks.csv`, full result JSON, code/case snapshots, independent scoring files and raw process traces. Source bytes, history construction, memory, backend caching and external-model accounting remain separate.
+
+## Decision-level evidence: the new quality family
+
+A historical summary can leave exact accuracy unknown yet already justify a 90% release gate. A 99% gate may need another observation. The new family tests this distinction, empty populations, source changes, persistent reuse and return to an older source. The shared calculator uses ordinary count bounds; it is available to every compared agent.
+
+The importer below binds the previously studied seven-class OpenML run10160807 prediction file. It does not download or redistribute data:
+
+```bash
+python -B -m trustmem_runtime.prepare_confidence --predictions /path/to/predictions.arff --output local-runs/confidence
+python -B -m trustmem_runtime.suite --cases local-runs/confidence/quality.case.json --output local-runs/confidence-results
+```
+
+See the [quality-gate protocol](docs/QUALITY_GATE_PROTOCOL.md) for the exact contract. Native predictions and authored request streams are distinguished; the full observation is the contracted contingency table, not the full raw ARFF.
 
 ## Evaluate an external agent
 
@@ -50,7 +65,7 @@ The new [diagnostic charter](docs/DIAGNOSTIC_CHARTER.md) fixes the research chai
 - Actual source reads, common history scanning, identity checking, memory payload reads/writes, SQLite size, agent invocations, observation transport and wall time. These units are not collapsed into one cost.
 - Actual SQLite persistence and later declared reuse. A citation is not proof of causal use.
 
-The three small fixture streams instantiate joint counts, numeric thresholds and signed interval sums. They are engineering controls, not three independent native task families. Ordinary success is a required reference, not evidence of author-method superiority. See [development protocol](docs/DEVELOPMENT_PROTOCOL.md), [data card](docs/DATACARD.md), and [research positioning](docs/POSITIONING.md).
+The four small fixture streams instantiate joint counts, numeric thresholds, signed interval sums and decision-level quality gates. They are engineering controls, not four independent native task mechanisms. Ordinary success is a required reference. See [development protocol](docs/DEVELOPMENT_PROTOCOL.md), [data card](docs/DATACARD.md), and [research positioning](docs/POSITIONING.md).
 
 ## Retained legacy catalog
 
@@ -64,3 +79,9 @@ python trustmem.py inspect legacy/dev-007
 ## Release status
 
 [Development results](docs/DEVELOPMENT_RESULTS.md) record executed calibrations and their limitations. Raw local runs, credentials and source datasets are excluded from Git. The repository remains private. Code/data licensing is pending; native datasets retain their providers' terms.
+
+[Version 0.3 results](docs/DEVELOPMENT_V03_RESULTS.md) add 20 cache-off and four matched cache-on ordinary streams, all 192 planned requests completed with sufficient evidence. These are engineering/development denominators, not independent histories or a model comparison.
+
+The benchmark-first program builds a useful reproducible instrument and diagnostic study independently of a new author algorithm. Untouched confirmation histories, native memory-system comparisons and a verified evaluation contribution remain publication work; current sources are development assets.
+
+[Known limits](docs/KNOWN_LIMITS.md) include the supported SQLite integer range and an upfront custom-source admission check still to implement; supplied calibration inputs stay within that range.

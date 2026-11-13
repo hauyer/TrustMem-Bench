@@ -5,6 +5,35 @@ This is an ordinary calculator shared by all policies, not a proposed method.
 from fractions import Fraction
 
 
+def quality_value(receipts, task):
+    """A nonempty selected population must satisfy the rational quality gate."""
+    selected = None
+    numerator = None
+    bounds = None
+    for receipt in receipts:
+        if receipt["kind"] == "full":
+            selected = sum(w for cells in receipt["table"].values() for b, w in cells.items() if int(b) >= task["cutoff"])
+            numerator = sum(w for b, w in receipt["table"].get(task["a"], {}).items() if int(b) >= task["cutoff"])
+        elif receipt["kind"] == "group" and receipt["scope_a"] == task["a"]:
+            numerator = sum(w for b, w in receipt["table"].get(task["a"], {}).items() if int(b) >= task["cutoff"])
+        elif receipt["kind"] == "margins":
+            selected = sum(w for b, w in receipt["right"].items() if int(b) >= task["cutoff"])
+            correct = receipt["left"].get(task["a"], 0)
+            bounds = max(0, correct + selected - receipt["total"]), min(correct, selected)
+    if selected is None:
+        return None
+    if selected == 0:
+        return 0
+    low, high = (numerator, numerator) if numerator is not None else bounds or (None, None)
+    if low is None:
+        return None
+    if low * task["denominator"] >= selected * task["numerator"]:
+        return 1
+    if high * task["denominator"] < selected * task["numerator"]:
+        return 0
+    return None
+
+
 def target(cells, task):
     if task["kind"] == "marginal":
         return sum(cells.values())
@@ -44,6 +73,8 @@ def range_value(records, task, domain):
 
 def calculate(receipts, task, source_id):
     """Return a value only when cited, source-matching observations justify it."""
+    if task["kind"] == "quality":
+        return quality_value([r for r in receipts if r["source_id"] == source_id], task)
     for receipt in receipts:
         if receipt["source_id"] != source_id:
             continue

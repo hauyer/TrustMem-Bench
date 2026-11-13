@@ -57,6 +57,7 @@ These interventions are diagnostic controls; several cannot be implemented in an
 | Retrieval | Native query, candidate IDs, delivered payload | Availability versus delivery, retrieval bytes/tokens | Delivered SAP payload; native ranked retrieval not yet run |
 | Applicability | Task, source/version, quote context | Exact-match coverage; explicit binding mismatch if declared | SAP and EAD trace diagnostics |
 | Verification | Proposed actions, chosen tool/object, cache before call | Repeated exact checks, missed proposal coverage, quote counts | SAP 40 quota opportunities; EAD1 controlled replacement |
+| Native acquisition scope | Same first request, single-group or multi-group or full-source observation, retained state | Future supported deliveries, compressed input bytes, fallback reads, retained payload | GH Archive and Wikimedia development replay, including a rank-shift control |
 | Action | Unaltered model response and actual tool effect | Correct/wrong/deferred/unfinished; known-evidence errors | SQL-backed SAP/EAD; ordinary binding replay |
 | Repair | Revision input, submitted revision, fresh read | Repair precision, valid-content retention, edit/read cost | Earlier lifecycle assets; not a unified semantic scorer |
 | Inheritance | New process/session, delivered revision, actual action | Benefit and persistence after repair | Existing runtime/M7 assets; not established by EAD1 |
@@ -88,9 +89,11 @@ The most useful current working hypothesis is that **a memory-dependent verifica
 
 [AMV-Guard](https://arxiv.org/html/2610.31446v1) already studies action-conditioned, cost-aware verification and stopping. [ReScopeBench](https://arxiv.org/html/2611.05450v1) already measures experience lifecycles and tool allocation. We do not claim novelty for these broad concepts or their joint reporting. The proposed benchmark contribution must come from validated cause-discriminating tasks, reproducible diagnostic interventions and findings not already explained by ordinary controls. Current code is research infrastructure, not proof that this contribution has been achieved.
 
-## Immediate run order
+## Benchmark-first run order
 
-1. Complete EAD1 and the frozen ordinary binding controls; retain their adverse whole-batch result.
-2. Validate the diagnostic instrument with known injected faults and no-fault controls; report this as engineering calibration.
-3. Freeze one small full-session study of **actual precommit differences**, ordinary coverage-priority allocation and ordinary quote binding. Keep full history, exact cache and the same number of model calls. The design must distinguish memory-specific signal from ordinary uncertainty and output noise; do not start another paid batch until that protocol is concrete.
-4. Only expand native systems and independent histories after a diagnostic prediction survives its ordinary controls. Capability integration and research evidence proceed in separate ledgers.
+The user adopted a benchmark-first program on 2026-11-13. Build a useful reproducible instrument and system-evaluation contribution independently of an author-method win. Ordinary success validates controls and creates stronger reference implementations; it is not a reason to stop benchmark development. Method superiority requires its own same-access comparison.
+
+1. Version0.3 adds action-level quality gates, native prediction import, evidence-conflict diagnostics, and common Markdown/CSV reporting. Preserve prior EAD/SAP results as development evidence and separate new calibration denominators.
+2. Complete one native memory framework's actual writer/retriever/update/fresh-session loop. Declare observed/unobserved operations, retain native behavior and costs, and calibrate free-text support labels before ranking them.
+3. Freeze model/system studies around two grounded hypotheses: high correctness can hide substantial avoidable verification, and a locally successful revision can harm other later uses. Include complete ordinary caches and all affected tasks.
+4. Let repeated, cause-discriminating findings motivate one new computation. Keep failed predictions and successful ordinary solutions as reusable benchmark assets. Capability integration, empirical findings and method claims have separate evidence ledgers.

@@ -21,6 +21,9 @@ def decide(observation, policy):
     # All policies share the same public calculator; no policy sees SQL gold.
     if not trace:
         return {"action":"calculate","evidence":["history"]+[m["id"] for m in observation["memory"]]}
+    if observation["request"]["kind"] == "quality" and observation["history"]["source_id"] != observation["source_id"]:
+        # A group result alone does not supply the selected population denominator.
+        return {"action":"query","scope":"full"}
     return {"action":"query","scope":"full" if policy in ("lazy_full","eager_full") else "group"}
 
 
