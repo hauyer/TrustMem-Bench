@@ -1,4 +1,4 @@
 *.py text eol=lf
 *.md text eol=lf
 *.yml text eol=lf
-reports/** -text
+reports/** -text whitespace=cr-at-eol
