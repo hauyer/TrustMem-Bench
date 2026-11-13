@@ -1,0 +1,62 @@
+{
+  "current_source_id": "7dc1c9f18069e2927d6293ef3771ec42e39f0cc5cc9be3be1a01add091fce79e",
+  "task": {
+    "kind": "quality",
+    "a": "correct",
+    "cutoff": 80,
+    "numerator": 99,
+    "denominator": 100
+  },
+  "retrieved_notes": [
+    {
+      "id": "da3680ed-ae36-4f7d-b9da-d72f99d6a9ef",
+      "memory": "Provided a verified historical summary with source_id 7dc1c9f18069e2927d6293ef3771ec42e39f0cc5cc9be3be1a01add091fce79e: margins left correct 95/incorrect 5, right 50:20 and 90:80, total 100",
+      "hash": "15e60f57c1ef5827a0aa0b24bb55b3aa",
+      "metadata": {
+        "bench_stage": "mem0-s00"
+      },
+      "score": 0.780910012946805,
+      "created_at": "2026-11-13T06:29:38.635423+00:00",
+      "updated_at": "2026-11-13T06:29:51.772707+00:00",
+      "user_id": "trustmem-user"
+    },
+    {
+      "id": "31230e7c-d3eb-4c22-99bf-95b403c085b0",
+      "memory": "Manages a quality-review workflow",
+      "hash": "f0d9ccb7ffdbbe4012ec418437efcb74",
+      "metadata": {
+        "bench_stage": "mem0-initial"
+      },
+      "score": 0.7718355374770757,
+      "created_at": "2026-11-13T06:29:38.609630+00:00",
+      "updated_at": "2026-11-13T06:29:38.609630+00:00",
+      "user_id": "trustmem-user"
+    }
+  ],
+  "tool_trace": [
+    {
+      "action": {
+        "action": "query"
+      },
+      "result": {
+        "receipt": {
+          "kind": "full",
+          "source_id": "7dc1c9f18069e2927d6293ef3771ec42e39f0cc5cc9be3be1a01add091fce79e",
+          "table": {
+            "correct": {
+              "50": 19,
+              "90": 76
+            },
+            "incorrect": {
+              "50": 1,
+              "90": 4
+            }
+          }
+        },
+        "value": 0,
+        "backend_cache_hit": true
+      }
+    }
+  ],
+  "remaining_actions": 1
+}

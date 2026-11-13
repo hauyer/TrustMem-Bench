@@ -9,6 +9,25 @@ ROOT = Path(__file__).resolve().parents[1]
 
 
 class PublishedResultTests(unittest.TestCase):
+    def test_calculator_controls_retain_calls_denominators_and_noncompletion(self):
+        root=ROOT/"reports/calculator-control-v1"
+        manifest=json.loads((root/"manifest.json").read_text(encoding="utf-8"))
+        for name,info in manifest["files"].items():
+            self.assertEqual(hashlib.sha256((root/name).read_bytes()).hexdigest(),info["sha256"])
+        calls=0
+        for folder,expected in (("primary",34),("required",24)):
+            ledger=[json.loads(line) for line in (root/folder/"models/api/model_calls.jsonl").read_text(encoding="utf-8").splitlines()]
+            self.assertEqual(len(ledger),expected)
+            self.assertTrue(all(row["status"]=="received" for row in ledger))
+            costs=json.loads((root/folder/"models/metrics.json").read_text(encoding="utf-8"))
+            self.assertAlmostEqual(sum(r["estimated_peak_usd"] for r in ledger),costs["external_model_cost"])
+            calls+=len(ledger)
+        self.assertEqual(calls,58)
+        diagnostic=json.loads((root/"diagnostics.json").read_text(encoding="utf-8"))
+        self.assertEqual([(diagnostic["reports"][arm]["correct"],diagnostic["reports"][arm]["wrong"],diagnostic["reports"][arm]["unfinished"]) for arm in ("control","calculator","required")],[(8,4,0),(9,3,0),(9,0,3)])
+        self.assertEqual(diagnostic["reports"]["calculator"]["calculator_calls"],0)
+        self.assertEqual(diagnostic["reports"]["required"]["correct_last_tool_value_without_submit"],2)
+
     def test_native_mem0_pilot_preserves_first_responses_and_costs(self):
         root=ROOT/"reports/native-mem0-v1"
         manifest=json.loads((root/"manifest.json").read_text(encoding="utf-8"))

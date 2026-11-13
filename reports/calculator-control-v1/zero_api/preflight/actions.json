@@ -1,0 +1,194 @@
+[
+  {
+    "state": "verbatim-s04",
+    "arm": "control",
+    "value": 1,
+    "source_read_bytes": 0,
+    "index": 4,
+    "new_process_read": true
+  },
+  {
+    "state": "verbatim-s04",
+    "arm": "calculator",
+    "value": 1,
+    "source_read_bytes": 0,
+    "index": 4,
+    "new_process_read": true
+  },
+  {
+    "state": "verbatim-s03",
+    "arm": "calculator",
+    "value": 1,
+    "source_read_bytes": 154,
+    "index": 3,
+    "new_process_read": true
+  },
+  {
+    "state": "verbatim-s03",
+    "arm": "control",
+    "value": 1,
+    "source_read_bytes": 154,
+    "index": 3,
+    "new_process_read": true
+  },
+  {
+    "state": "mem0-s03",
+    "arm": "calculator",
+    "value": 1,
+    "source_read_bytes": 154,
+    "index": 3,
+    "new_process_read": true
+  },
+  {
+    "state": "mem0-s03",
+    "arm": "control",
+    "value": 1,
+    "source_read_bytes": 154,
+    "index": 3,
+    "new_process_read": true
+  },
+  {
+    "state": "mem0-s02",
+    "arm": "control",
+    "value": 0,
+    "source_read_bytes": 0,
+    "index": 2,
+    "new_process_read": true
+  },
+  {
+    "state": "mem0-s02",
+    "arm": "calculator",
+    "value": 0,
+    "source_read_bytes": 0,
+    "index": 2,
+    "new_process_read": true
+  },
+  {
+    "state": "mem0-s04",
+    "arm": "calculator",
+    "value": 1,
+    "source_read_bytes": 0,
+    "index": 4,
+    "new_process_read": true
+  },
+  {
+    "state": "mem0-s04",
+    "arm": "control",
+    "value": 1,
+    "source_read_bytes": 0,
+    "index": 4,
+    "new_process_read": true
+  },
+  {
+    "state": "mem0-s01",
+    "arm": "control",
+    "value": 0,
+    "source_read_bytes": 0,
+    "index": 1,
+    "new_process_read": true
+  },
+  {
+    "state": "mem0-s01",
+    "arm": "calculator",
+    "value": 0,
+    "source_read_bytes": 0,
+    "index": 1,
+    "new_process_read": true
+  },
+  {
+    "state": "verbatim-s02",
+    "arm": "calculator",
+    "value": 0,
+    "source_read_bytes": 0,
+    "index": 2,
+    "new_process_read": true
+  },
+  {
+    "state": "verbatim-s02",
+    "arm": "control",
+    "value": 0,
+    "source_read_bytes": 0,
+    "index": 2,
+    "new_process_read": true
+  },
+  {
+    "state": "verbatim-s05",
+    "arm": "control",
+    "value": 0,
+    "source_read_bytes": 0,
+    "index": 5,
+    "new_process_read": true
+  },
+  {
+    "state": "verbatim-s05",
+    "arm": "calculator",
+    "value": 0,
+    "source_read_bytes": 0,
+    "index": 5,
+    "new_process_read": true
+  },
+  {
+    "state": "mem0-s00",
+    "arm": "calculator",
+    "value": 1,
+    "source_read_bytes": 154,
+    "index": 0,
+    "new_process_read": true
+  },
+  {
+    "state": "mem0-s00",
+    "arm": "control",
+    "value": 1,
+    "source_read_bytes": 154,
+    "index": 0,
+    "new_process_read": true
+  },
+  {
+    "state": "verbatim-s01",
+    "arm": "calculator",
+    "value": 0,
+    "source_read_bytes": 154,
+    "index": 1,
+    "new_process_read": true
+  },
+  {
+    "state": "verbatim-s01",
+    "arm": "control",
+    "value": 0,
+    "source_read_bytes": 154,
+    "index": 1,
+    "new_process_read": true
+  },
+  {
+    "state": "verbatim-s00",
+    "arm": "control",
+    "value": 1,
+    "source_read_bytes": 154,
+    "index": 0,
+    "new_process_read": true
+  },
+  {
+    "state": "verbatim-s00",
+    "arm": "calculator",
+    "value": 1,
+    "source_read_bytes": 154,
+    "index": 0,
+    "new_process_read": true
+  },
+  {
+    "state": "mem0-s05",
+    "arm": "calculator",
+    "value": 0,
+    "source_read_bytes": 0,
+    "index": 5,
+    "new_process_read": true
+  },
+  {
+    "state": "mem0-s05",
+    "arm": "control",
+    "value": 0,
+    "source_read_bytes": 0,
+    "index": 5,
+    "new_process_read": true
+  }
+]

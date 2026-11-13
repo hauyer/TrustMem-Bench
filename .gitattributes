@@ -2,4 +2,4 @@
 *.md text eol=lf
 *.yml text eol=lf
 reports/** -text whitespace=cr-at-eol
-reports/native-mem0-v1/snapshot/metered_deepseek.py -text whitespace=-blank-at-eof,cr-at-eol
+reports/**/metered_deepseek.py -text whitespace=-blank-at-eof,cr-at-eol

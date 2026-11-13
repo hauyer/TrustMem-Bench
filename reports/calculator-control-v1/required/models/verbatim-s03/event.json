@@ -1,0 +1,54 @@
+{
+  "state": "verbatim-s03",
+  "backend": "verbatim",
+  "index": 3,
+  "status": "unfinished",
+  "trace": [
+    {
+      "action": {
+        "action": "query"
+      },
+      "result": {
+        "receipt": {
+          "kind": "full",
+          "source_id": "f98ca77cfa478f0118ccbf43dead6a9a53f09758483d36a6daf9eb89b1cc84f4",
+          "table": {
+            "correct": {
+              "90": 80,
+              "50": 15
+            },
+            "incorrect": {
+              "90": 0,
+              "50": 5
+            }
+          }
+        },
+        "value": 1,
+        "backend_cache_hit": false
+      }
+    },
+    {
+      "action": {
+        "action": "quality_check",
+        "selected_correct": 80,
+        "selected_total": 100,
+        "threshold_numerator": 99,
+        "threshold_denominator": 100
+      },
+      "result": {
+        "value": 0,
+        "ratio": "4/5",
+        "threshold": "99/100",
+        "source_access": false,
+        "input_binding": "unverified_model_supplied_numbers"
+      }
+    }
+  ],
+  "query_calls": 1,
+  "calculator_calls": 1,
+  "calculator_errors": 0,
+  "source_read_bytes": 154,
+  "first_action": "query",
+  "complies_with_first_tool_policy": true,
+  "native_text_support": "unassessed"
+}

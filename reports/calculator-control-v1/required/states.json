@@ -1,0 +1,388 @@
+[
+  {
+    "id": "mem0-s00",
+    "backend": "mem0",
+    "index": 0,
+    "payload": "inputs/mem0-s00.json",
+    "source_id": "7dc1c9f18069e2927d6293ef3771ec42e39f0cc5cc9be3be1a01add091fce79e",
+    "cache_receipts": [],
+    "cache_provenance": []
+  },
+  {
+    "id": "mem0-s01",
+    "backend": "mem0",
+    "index": 1,
+    "payload": "inputs/mem0-s01.json",
+    "source_id": "7dc1c9f18069e2927d6293ef3771ec42e39f0cc5cc9be3be1a01add091fce79e",
+    "cache_receipts": [
+      {
+        "kind": "full",
+        "source_id": "7dc1c9f18069e2927d6293ef3771ec42e39f0cc5cc9be3be1a01add091fce79e",
+        "table": {
+          "correct": {
+            "90": 76,
+            "50": 19
+          },
+          "incorrect": {
+            "90": 4,
+            "50": 1
+          }
+        }
+      }
+    ],
+    "cache_provenance": [
+      {
+        "backend": "mem0",
+        "earlier_session": 0,
+        "turn": 0,
+        "event_file": "artifacts/research_decisions/20261113-native-mem0-reader-v1/models/mem0/events.json"
+      }
+    ]
+  },
+  {
+    "id": "mem0-s02",
+    "backend": "mem0",
+    "index": 2,
+    "payload": "inputs/mem0-s02.json",
+    "source_id": "7dc1c9f18069e2927d6293ef3771ec42e39f0cc5cc9be3be1a01add091fce79e",
+    "cache_receipts": [
+      {
+        "kind": "full",
+        "source_id": "7dc1c9f18069e2927d6293ef3771ec42e39f0cc5cc9be3be1a01add091fce79e",
+        "table": {
+          "correct": {
+            "50": 19,
+            "90": 76
+          },
+          "incorrect": {
+            "50": 1,
+            "90": 4
+          }
+        }
+      }
+    ],
+    "cache_provenance": [
+      {
+        "backend": "mem0",
+        "earlier_session": 1,
+        "turn": 0,
+        "event_file": "artifacts/research_decisions/20261113-native-mem0-reader-v1/models/mem0/events.json"
+      }
+    ]
+  },
+  {
+    "id": "mem0-s03",
+    "backend": "mem0",
+    "index": 3,
+    "payload": "inputs/mem0-s03.json",
+    "source_id": "f98ca77cfa478f0118ccbf43dead6a9a53f09758483d36a6daf9eb89b1cc84f4",
+    "cache_receipts": [
+      {
+        "kind": "full",
+        "source_id": "7dc1c9f18069e2927d6293ef3771ec42e39f0cc5cc9be3be1a01add091fce79e",
+        "table": {
+          "correct": {
+            "50": 19,
+            "90": 76
+          },
+          "incorrect": {
+            "50": 1,
+            "90": 4
+          }
+        }
+      }
+    ],
+    "cache_provenance": [
+      {
+        "backend": "mem0",
+        "earlier_session": 1,
+        "turn": 0,
+        "event_file": "artifacts/research_decisions/20261113-native-mem0-reader-v1/models/mem0/events.json"
+      }
+    ]
+  },
+  {
+    "id": "mem0-s04",
+    "backend": "mem0",
+    "index": 4,
+    "payload": "inputs/mem0-s04.json",
+    "source_id": "f98ca77cfa478f0118ccbf43dead6a9a53f09758483d36a6daf9eb89b1cc84f4",
+    "cache_receipts": [
+      {
+        "kind": "full",
+        "source_id": "7dc1c9f18069e2927d6293ef3771ec42e39f0cc5cc9be3be1a01add091fce79e",
+        "table": {
+          "correct": {
+            "50": 19,
+            "90": 76
+          },
+          "incorrect": {
+            "50": 1,
+            "90": 4
+          }
+        }
+      },
+      {
+        "kind": "full",
+        "source_id": "f98ca77cfa478f0118ccbf43dead6a9a53f09758483d36a6daf9eb89b1cc84f4",
+        "table": {
+          "correct": {
+            "90": 80,
+            "50": 15
+          },
+          "incorrect": {
+            "90": 0,
+            "50": 5
+          }
+        }
+      }
+    ],
+    "cache_provenance": [
+      {
+        "backend": "mem0",
+        "earlier_session": 1,
+        "turn": 0,
+        "event_file": "artifacts/research_decisions/20261113-native-mem0-reader-v1/models/mem0/events.json"
+      },
+      {
+        "backend": "mem0",
+        "earlier_session": 3,
+        "turn": 0,
+        "event_file": "artifacts/research_decisions/20261113-native-mem0-reader-v1/models/mem0/events.json"
+      }
+    ]
+  },
+  {
+    "id": "mem0-s05",
+    "backend": "mem0",
+    "index": 5,
+    "payload": "inputs/mem0-s05.json",
+    "source_id": "7dc1c9f18069e2927d6293ef3771ec42e39f0cc5cc9be3be1a01add091fce79e",
+    "cache_receipts": [
+      {
+        "kind": "full",
+        "source_id": "7dc1c9f18069e2927d6293ef3771ec42e39f0cc5cc9be3be1a01add091fce79e",
+        "table": {
+          "correct": {
+            "50": 19,
+            "90": 76
+          },
+          "incorrect": {
+            "50": 1,
+            "90": 4
+          }
+        }
+      },
+      {
+        "kind": "full",
+        "source_id": "f98ca77cfa478f0118ccbf43dead6a9a53f09758483d36a6daf9eb89b1cc84f4",
+        "table": {
+          "correct": {
+            "90": 80,
+            "50": 15
+          },
+          "incorrect": {
+            "90": 0,
+            "50": 5
+          }
+        }
+      }
+    ],
+    "cache_provenance": [
+      {
+        "backend": "mem0",
+        "earlier_session": 1,
+        "turn": 0,
+        "event_file": "artifacts/research_decisions/20261113-native-mem0-reader-v1/models/mem0/events.json"
+      },
+      {
+        "backend": "mem0",
+        "earlier_session": 3,
+        "turn": 0,
+        "event_file": "artifacts/research_decisions/20261113-native-mem0-reader-v1/models/mem0/events.json"
+      }
+    ]
+  },
+  {
+    "id": "verbatim-s00",
+    "backend": "verbatim",
+    "index": 0,
+    "payload": "inputs/verbatim-s00.json",
+    "source_id": "7dc1c9f18069e2927d6293ef3771ec42e39f0cc5cc9be3be1a01add091fce79e",
+    "cache_receipts": [],
+    "cache_provenance": []
+  },
+  {
+    "id": "verbatim-s01",
+    "backend": "verbatim",
+    "index": 1,
+    "payload": "inputs/verbatim-s01.json",
+    "source_id": "7dc1c9f18069e2927d6293ef3771ec42e39f0cc5cc9be3be1a01add091fce79e",
+    "cache_receipts": [],
+    "cache_provenance": []
+  },
+  {
+    "id": "verbatim-s02",
+    "backend": "verbatim",
+    "index": 2,
+    "payload": "inputs/verbatim-s02.json",
+    "source_id": "7dc1c9f18069e2927d6293ef3771ec42e39f0cc5cc9be3be1a01add091fce79e",
+    "cache_receipts": [
+      {
+        "kind": "full",
+        "source_id": "7dc1c9f18069e2927d6293ef3771ec42e39f0cc5cc9be3be1a01add091fce79e",
+        "table": {
+          "correct": {
+            "90": 76,
+            "50": 19
+          },
+          "incorrect": {
+            "90": 4,
+            "50": 1
+          }
+        }
+      }
+    ],
+    "cache_provenance": [
+      {
+        "backend": "verbatim",
+        "earlier_session": 1,
+        "turn": 0,
+        "event_file": "artifacts/research_decisions/20261113-native-mem0-reader-v1/models/verbatim/events.json"
+      }
+    ]
+  },
+  {
+    "id": "verbatim-s03",
+    "backend": "verbatim",
+    "index": 3,
+    "payload": "inputs/verbatim-s03.json",
+    "source_id": "f98ca77cfa478f0118ccbf43dead6a9a53f09758483d36a6daf9eb89b1cc84f4",
+    "cache_receipts": [
+      {
+        "kind": "full",
+        "source_id": "7dc1c9f18069e2927d6293ef3771ec42e39f0cc5cc9be3be1a01add091fce79e",
+        "table": {
+          "correct": {
+            "90": 76,
+            "50": 19
+          },
+          "incorrect": {
+            "90": 4,
+            "50": 1
+          }
+        }
+      }
+    ],
+    "cache_provenance": [
+      {
+        "backend": "verbatim",
+        "earlier_session": 1,
+        "turn": 0,
+        "event_file": "artifacts/research_decisions/20261113-native-mem0-reader-v1/models/verbatim/events.json"
+      }
+    ]
+  },
+  {
+    "id": "verbatim-s04",
+    "backend": "verbatim",
+    "index": 4,
+    "payload": "inputs/verbatim-s04.json",
+    "source_id": "f98ca77cfa478f0118ccbf43dead6a9a53f09758483d36a6daf9eb89b1cc84f4",
+    "cache_receipts": [
+      {
+        "kind": "full",
+        "source_id": "7dc1c9f18069e2927d6293ef3771ec42e39f0cc5cc9be3be1a01add091fce79e",
+        "table": {
+          "correct": {
+            "90": 76,
+            "50": 19
+          },
+          "incorrect": {
+            "90": 4,
+            "50": 1
+          }
+        }
+      },
+      {
+        "kind": "full",
+        "source_id": "f98ca77cfa478f0118ccbf43dead6a9a53f09758483d36a6daf9eb89b1cc84f4",
+        "table": {
+          "correct": {
+            "90": 80,
+            "50": 15
+          },
+          "incorrect": {
+            "90": 0,
+            "50": 5
+          }
+        }
+      }
+    ],
+    "cache_provenance": [
+      {
+        "backend": "verbatim",
+        "earlier_session": 1,
+        "turn": 0,
+        "event_file": "artifacts/research_decisions/20261113-native-mem0-reader-v1/models/verbatim/events.json"
+      },
+      {
+        "backend": "verbatim",
+        "earlier_session": 3,
+        "turn": 0,
+        "event_file": "artifacts/research_decisions/20261113-native-mem0-reader-v1/models/verbatim/events.json"
+      }
+    ]
+  },
+  {
+    "id": "verbatim-s05",
+    "backend": "verbatim",
+    "index": 5,
+    "payload": "inputs/verbatim-s05.json",
+    "source_id": "7dc1c9f18069e2927d6293ef3771ec42e39f0cc5cc9be3be1a01add091fce79e",
+    "cache_receipts": [
+      {
+        "kind": "full",
+        "source_id": "7dc1c9f18069e2927d6293ef3771ec42e39f0cc5cc9be3be1a01add091fce79e",
+        "table": {
+          "correct": {
+            "90": 76,
+            "50": 19
+          },
+          "incorrect": {
+            "90": 4,
+            "50": 1
+          }
+        }
+      },
+      {
+        "kind": "full",
+        "source_id": "f98ca77cfa478f0118ccbf43dead6a9a53f09758483d36a6daf9eb89b1cc84f4",
+        "table": {
+          "correct": {
+            "90": 80,
+            "50": 15
+          },
+          "incorrect": {
+            "90": 0,
+            "50": 5
+          }
+        }
+      }
+    ],
+    "cache_provenance": [
+      {
+        "backend": "verbatim",
+        "earlier_session": 1,
+        "turn": 0,
+        "event_file": "artifacts/research_decisions/20261113-native-mem0-reader-v1/models/verbatim/events.json"
+      },
+      {
+        "backend": "verbatim",
+        "earlier_session": 3,
+        "turn": 0,
+        "event_file": "artifacts/research_decisions/20261113-native-mem0-reader-v1/models/verbatim/events.json"
+      }
+    ]
+  }
+]

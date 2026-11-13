@@ -1,0 +1,534 @@
+[
+  {
+    "state": "mem0-s04",
+    "backend": "mem0",
+    "index": 4,
+    "status": "submitted",
+    "trace": [
+      {
+        "action": {
+          "action": "quality_check",
+          "selected_correct": 80,
+          "selected_total": 80,
+          "threshold_numerator": 9,
+          "threshold_denominator": 10
+        },
+        "result": {
+          "value": 1,
+          "ratio": "1",
+          "threshold": "9/10",
+          "source_access": false,
+          "input_binding": "unverified_model_supplied_numbers"
+        }
+      }
+    ],
+    "query_calls": 0,
+    "calculator_calls": 1,
+    "calculator_errors": 0,
+    "source_read_bytes": 0,
+    "first_action": "quality_check",
+    "complies_with_first_tool_policy": true,
+    "native_text_support": "unassessed",
+    "value": 1,
+    "citations": [
+      "bb5901f5-8816-4736-b503-48088416c05f"
+    ],
+    "correct": true,
+    "wrong": false,
+    "submission_agrees_with_calculator": true
+  },
+  {
+    "state": "mem0-s05",
+    "backend": "mem0",
+    "index": 5,
+    "status": "submitted",
+    "trace": [
+      {
+        "action": {
+          "action": "quality_check",
+          "selected_correct": 76,
+          "selected_total": 80,
+          "threshold_numerator": 99,
+          "threshold_denominator": 100
+        },
+        "result": {
+          "value": 0,
+          "ratio": "19/20",
+          "threshold": "99/100",
+          "source_access": false,
+          "input_binding": "unverified_model_supplied_numbers"
+        }
+      }
+    ],
+    "query_calls": 0,
+    "calculator_calls": 1,
+    "calculator_errors": 0,
+    "source_read_bytes": 0,
+    "first_action": "quality_check",
+    "complies_with_first_tool_policy": true,
+    "native_text_support": "unassessed",
+    "value": 0,
+    "citations": [
+      "da3680ed-ae36-4f7d-b9da-d72f99d6a9ef"
+    ],
+    "correct": true,
+    "wrong": false,
+    "submission_agrees_with_calculator": true
+  },
+  {
+    "state": "verbatim-s03",
+    "backend": "verbatim",
+    "index": 3,
+    "status": "unfinished",
+    "trace": [
+      {
+        "action": {
+          "action": "query"
+        },
+        "result": {
+          "receipt": {
+            "kind": "full",
+            "source_id": "f98ca77cfa478f0118ccbf43dead6a9a53f09758483d36a6daf9eb89b1cc84f4",
+            "table": {
+              "correct": {
+                "90": 80,
+                "50": 15
+              },
+              "incorrect": {
+                "90": 0,
+                "50": 5
+              }
+            }
+          },
+          "value": 1,
+          "backend_cache_hit": false
+        }
+      },
+      {
+        "action": {
+          "action": "quality_check",
+          "selected_correct": 80,
+          "selected_total": 100,
+          "threshold_numerator": 99,
+          "threshold_denominator": 100
+        },
+        "result": {
+          "value": 0,
+          "ratio": "4/5",
+          "threshold": "99/100",
+          "source_access": false,
+          "input_binding": "unverified_model_supplied_numbers"
+        }
+      }
+    ],
+    "query_calls": 1,
+    "calculator_calls": 1,
+    "calculator_errors": 0,
+    "source_read_bytes": 154,
+    "first_action": "query",
+    "complies_with_first_tool_policy": true,
+    "native_text_support": "unassessed",
+    "correct": false,
+    "wrong": false,
+    "submission_agrees_with_calculator": null
+  },
+  {
+    "state": "mem0-s02",
+    "backend": "mem0",
+    "index": 2,
+    "status": "submitted",
+    "trace": [
+      {
+        "action": {
+          "action": "quality_check",
+          "selected_correct": 76,
+          "selected_total": 80,
+          "threshold_numerator": 99,
+          "threshold_denominator": 100
+        },
+        "result": {
+          "value": 0,
+          "ratio": "19/20",
+          "threshold": "99/100",
+          "source_access": false,
+          "input_binding": "unverified_model_supplied_numbers"
+        }
+      }
+    ],
+    "query_calls": 0,
+    "calculator_calls": 1,
+    "calculator_errors": 0,
+    "source_read_bytes": 0,
+    "first_action": "quality_check",
+    "complies_with_first_tool_policy": true,
+    "native_text_support": "unassessed",
+    "value": 0,
+    "citations": [
+      "da3680ed-ae36-4f7d-b9da-d72f99d6a9ef"
+    ],
+    "correct": true,
+    "wrong": false,
+    "submission_agrees_with_calculator": true
+  },
+  {
+    "state": "verbatim-s04",
+    "backend": "verbatim",
+    "index": 4,
+    "status": "submitted",
+    "trace": [
+      {
+        "action": {
+          "action": "quality_check",
+          "selected_correct": 80,
+          "selected_total": 80,
+          "threshold_numerator": 9,
+          "threshold_denominator": 10
+        },
+        "result": {
+          "value": 1,
+          "ratio": "1",
+          "threshold": "9/10",
+          "source_access": false,
+          "input_binding": "unverified_model_supplied_numbers"
+        }
+      }
+    ],
+    "query_calls": 0,
+    "calculator_calls": 1,
+    "calculator_errors": 0,
+    "source_read_bytes": 0,
+    "first_action": "quality_check",
+    "complies_with_first_tool_policy": true,
+    "native_text_support": "unassessed",
+    "value": 1,
+    "citations": [
+      "note-2"
+    ],
+    "correct": true,
+    "wrong": false,
+    "submission_agrees_with_calculator": true
+  },
+  {
+    "state": "verbatim-s00",
+    "backend": "verbatim",
+    "index": 0,
+    "status": "unfinished",
+    "trace": [
+      {
+        "action": {
+          "action": "query"
+        },
+        "result": {
+          "receipt": {
+            "kind": "full",
+            "source_id": "7dc1c9f18069e2927d6293ef3771ec42e39f0cc5cc9be3be1a01add091fce79e",
+            "table": {
+              "correct": {
+                "90": 76,
+                "50": 19
+              },
+              "incorrect": {
+                "90": 4,
+                "50": 1
+              }
+            }
+          },
+          "value": 1,
+          "backend_cache_hit": false
+        }
+      },
+      {
+        "action": {
+          "action": "quality_check",
+          "selected_correct": 76,
+          "selected_total": 80,
+          "threshold_numerator": 9,
+          "threshold_denominator": 10
+        },
+        "result": {
+          "value": 1,
+          "ratio": "19/20",
+          "threshold": "9/10",
+          "source_access": false,
+          "input_binding": "unverified_model_supplied_numbers"
+        }
+      }
+    ],
+    "query_calls": 1,
+    "calculator_calls": 1,
+    "calculator_errors": 0,
+    "source_read_bytes": 154,
+    "first_action": "query",
+    "complies_with_first_tool_policy": true,
+    "native_text_support": "unassessed",
+    "correct": false,
+    "wrong": false,
+    "submission_agrees_with_calculator": null
+  },
+  {
+    "state": "verbatim-s02",
+    "backend": "verbatim",
+    "index": 2,
+    "status": "submitted",
+    "trace": [
+      {
+        "action": {
+          "action": "quality_check",
+          "selected_correct": 76,
+          "selected_total": 80,
+          "threshold_numerator": 99,
+          "threshold_denominator": 100
+        },
+        "result": {
+          "value": 0,
+          "ratio": "19/20",
+          "threshold": "99/100",
+          "source_access": false,
+          "input_binding": "unverified_model_supplied_numbers"
+        }
+      }
+    ],
+    "query_calls": 0,
+    "calculator_calls": 1,
+    "calculator_errors": 0,
+    "source_read_bytes": 0,
+    "first_action": "quality_check",
+    "complies_with_first_tool_policy": true,
+    "native_text_support": "unassessed",
+    "value": 0,
+    "citations": [
+      "note-1"
+    ],
+    "correct": true,
+    "wrong": false,
+    "submission_agrees_with_calculator": true
+  },
+  {
+    "state": "mem0-s03",
+    "backend": "mem0",
+    "index": 3,
+    "status": "submitted",
+    "trace": [
+      {
+        "action": {
+          "action": "query"
+        },
+        "result": {
+          "receipt": {
+            "kind": "full",
+            "source_id": "f98ca77cfa478f0118ccbf43dead6a9a53f09758483d36a6daf9eb89b1cc84f4",
+            "table": {
+              "correct": {
+                "90": 80,
+                "50": 15
+              },
+              "incorrect": {
+                "90": 0,
+                "50": 5
+              }
+            }
+          },
+          "value": 1,
+          "backend_cache_hit": false
+        }
+      }
+    ],
+    "query_calls": 1,
+    "calculator_calls": 0,
+    "calculator_errors": 0,
+    "source_read_bytes": 154,
+    "first_action": "query",
+    "complies_with_first_tool_policy": true,
+    "native_text_support": "unassessed",
+    "value": 1,
+    "citations": [],
+    "correct": true,
+    "wrong": false,
+    "submission_agrees_with_calculator": null
+  },
+  {
+    "state": "mem0-s00",
+    "backend": "mem0",
+    "index": 0,
+    "status": "unfinished",
+    "trace": [
+      {
+        "action": {
+          "action": "query"
+        },
+        "result": {
+          "receipt": {
+            "kind": "full",
+            "source_id": "7dc1c9f18069e2927d6293ef3771ec42e39f0cc5cc9be3be1a01add091fce79e",
+            "table": {
+              "correct": {
+                "90": 76,
+                "50": 19
+              },
+              "incorrect": {
+                "90": 4,
+                "50": 1
+              }
+            }
+          },
+          "value": 1,
+          "backend_cache_hit": false
+        }
+      },
+      {
+        "action": {
+          "action": "quality_check",
+          "selected_correct": 76,
+          "selected_total": 80,
+          "threshold_numerator": 9,
+          "threshold_denominator": 10
+        },
+        "result": {
+          "value": 1,
+          "ratio": "19/20",
+          "threshold": "9/10",
+          "source_access": false,
+          "input_binding": "unverified_model_supplied_numbers"
+        }
+      }
+    ],
+    "query_calls": 1,
+    "calculator_calls": 1,
+    "calculator_errors": 0,
+    "source_read_bytes": 154,
+    "first_action": "query",
+    "complies_with_first_tool_policy": true,
+    "native_text_support": "unassessed",
+    "correct": false,
+    "wrong": false,
+    "submission_agrees_with_calculator": null
+  },
+  {
+    "state": "mem0-s01",
+    "backend": "mem0",
+    "index": 1,
+    "status": "submitted",
+    "trace": [
+      {
+        "action": {
+          "action": "query"
+        },
+        "result": {
+          "receipt": {
+            "kind": "full",
+            "source_id": "7dc1c9f18069e2927d6293ef3771ec42e39f0cc5cc9be3be1a01add091fce79e",
+            "table": {
+              "correct": {
+                "50": 19,
+                "90": 76
+              },
+              "incorrect": {
+                "50": 1,
+                "90": 4
+              }
+            }
+          },
+          "value": 0,
+          "backend_cache_hit": true
+        }
+      }
+    ],
+    "query_calls": 1,
+    "calculator_calls": 0,
+    "calculator_errors": 0,
+    "source_read_bytes": 0,
+    "first_action": "query",
+    "complies_with_first_tool_policy": true,
+    "native_text_support": "unassessed",
+    "value": 0,
+    "citations": [
+      "da3680ed-ae36-4f7d-b9da-d72f99d6a9ef"
+    ],
+    "correct": true,
+    "wrong": false,
+    "submission_agrees_with_calculator": null
+  },
+  {
+    "state": "verbatim-s05",
+    "backend": "verbatim",
+    "index": 5,
+    "status": "submitted",
+    "trace": [
+      {
+        "action": {
+          "action": "quality_check",
+          "selected_correct": 76,
+          "selected_total": 80,
+          "threshold_numerator": 99,
+          "threshold_denominator": 100
+        },
+        "result": {
+          "value": 0,
+          "ratio": "19/20",
+          "threshold": "99/100",
+          "source_access": false,
+          "input_binding": "unverified_model_supplied_numbers"
+        }
+      }
+    ],
+    "query_calls": 0,
+    "calculator_calls": 1,
+    "calculator_errors": 0,
+    "source_read_bytes": 0,
+    "first_action": "quality_check",
+    "complies_with_first_tool_policy": true,
+    "native_text_support": "unassessed",
+    "value": 0,
+    "citations": [
+      "note-1"
+    ],
+    "correct": true,
+    "wrong": false,
+    "submission_agrees_with_calculator": true
+  },
+  {
+    "state": "verbatim-s01",
+    "backend": "verbatim",
+    "index": 1,
+    "status": "submitted",
+    "trace": [
+      {
+        "action": {
+          "action": "query"
+        },
+        "result": {
+          "receipt": {
+            "kind": "full",
+            "source_id": "7dc1c9f18069e2927d6293ef3771ec42e39f0cc5cc9be3be1a01add091fce79e",
+            "table": {
+              "correct": {
+                "90": 76,
+                "50": 19
+              },
+              "incorrect": {
+                "90": 4,
+                "50": 1
+              }
+            }
+          },
+          "value": 0,
+          "backend_cache_hit": false
+        }
+      }
+    ],
+    "query_calls": 1,
+    "calculator_calls": 0,
+    "calculator_errors": 0,
+    "source_read_bytes": 154,
+    "first_action": "query",
+    "complies_with_first_tool_policy": true,
+    "native_text_support": "unassessed",
+    "value": 0,
+    "citations": [
+      "note-0"
+    ],
+    "correct": true,
+    "wrong": false,
+    "submission_agrees_with_calculator": null
+  }
+]

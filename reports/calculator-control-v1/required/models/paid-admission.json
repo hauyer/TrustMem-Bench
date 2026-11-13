@@ -1,0 +1,7 @@
+{
+  "preflight_sha256": "3de683a22825184dda1b0c8ccfcc6cc1b305b2720603422e6d5da4d5c7d43a4e",
+  "freeze_sha256": "47904f2554a8b90c23f1562d1f9118d4acc574c375fd4f2fa29e45c1af01939b",
+  "at": "2026-11-13T06:58:51.689422+00:00",
+  "model_calls_cap": 24,
+  "usd_cap": 0.025
+}

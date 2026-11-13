@@ -1,0 +1,15 @@
+{
+  "status": "complete",
+  "planned": 12,
+  "executed": 12,
+  "not_run": 0,
+  "calls": 24,
+  "correct": 9,
+  "wrong": 0,
+  "query_calls": 6,
+  "calculator_calls": 9,
+  "calculator_errors": 0,
+  "source_read_bytes": 770,
+  "first_tool_compliance": 12,
+  "scope": "Adaptive ordinary policy qualification on all original12 states; not a randomized cross-round causal estimate."
+}

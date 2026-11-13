@@ -1,0 +1,12 @@
+{
+  "status": "complete",
+  "calculator_exhaustion": 8190,
+  "invalid_inputs_rejected": 4,
+  "large_integer_boundaries": 2,
+  "scripted_deliveries": 24,
+  "new_process_cache_reads": 24,
+  "source_read_bytes": 1540,
+  "external_model_calls": 0,
+  "usd": 0,
+  "scope": "All planned snapshot branches, scripted query/delivery and real SQLite readback; not model outcomes."
+}

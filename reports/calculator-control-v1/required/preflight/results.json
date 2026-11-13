@@ -1,0 +1,129 @@
+{
+  "status": "complete",
+  "scripted_deliveries": 12,
+  "new_process_reads": 12,
+  "zero_api": true,
+  "source_read_bytes": 770,
+  "actions": [
+    {
+      "state": "mem0-s04",
+      "index": 4,
+      "value": 1,
+      "cost": {
+        "source_read_bytes": 0,
+        "scan_seconds": 0.0
+      },
+      "new_process_read": true
+    },
+    {
+      "state": "mem0-s05",
+      "index": 5,
+      "value": 0,
+      "cost": {
+        "source_read_bytes": 0,
+        "scan_seconds": 0.0
+      },
+      "new_process_read": true
+    },
+    {
+      "state": "verbatim-s03",
+      "index": 3,
+      "value": 1,
+      "cost": {
+        "source_read_bytes": 154,
+        "scan_seconds": 0.00040360000275541097
+      },
+      "new_process_read": true
+    },
+    {
+      "state": "mem0-s02",
+      "index": 2,
+      "value": 0,
+      "cost": {
+        "source_read_bytes": 0,
+        "scan_seconds": 0.0
+      },
+      "new_process_read": true
+    },
+    {
+      "state": "verbatim-s04",
+      "index": 4,
+      "value": 1,
+      "cost": {
+        "source_read_bytes": 0,
+        "scan_seconds": 0.0
+      },
+      "new_process_read": true
+    },
+    {
+      "state": "verbatim-s00",
+      "index": 0,
+      "value": 1,
+      "cost": {
+        "source_read_bytes": 154,
+        "scan_seconds": 0.00024950000806711614
+      },
+      "new_process_read": true
+    },
+    {
+      "state": "verbatim-s02",
+      "index": 2,
+      "value": 0,
+      "cost": {
+        "source_read_bytes": 0,
+        "scan_seconds": 0.0
+      },
+      "new_process_read": true
+    },
+    {
+      "state": "mem0-s03",
+      "index": 3,
+      "value": 1,
+      "cost": {
+        "source_read_bytes": 154,
+        "scan_seconds": 0.00036979999276809394
+      },
+      "new_process_read": true
+    },
+    {
+      "state": "mem0-s00",
+      "index": 0,
+      "value": 1,
+      "cost": {
+        "source_read_bytes": 154,
+        "scan_seconds": 0.00024649999977555126
+      },
+      "new_process_read": true
+    },
+    {
+      "state": "mem0-s01",
+      "index": 1,
+      "value": 0,
+      "cost": {
+        "source_read_bytes": 0,
+        "scan_seconds": 0.0
+      },
+      "new_process_read": true
+    },
+    {
+      "state": "verbatim-s05",
+      "index": 5,
+      "value": 0,
+      "cost": {
+        "source_read_bytes": 0,
+        "scan_seconds": 0.0
+      },
+      "new_process_read": true
+    },
+    {
+      "state": "verbatim-s01",
+      "index": 1,
+      "value": 0,
+      "cost": {
+        "source_read_bytes": 154,
+        "scan_seconds": 0.0007327000057557598
+      },
+      "new_process_read": true
+    }
+  ]
+}

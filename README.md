@@ -62,6 +62,8 @@ The new [diagnostic charter](docs/DIAGNOSTIC_CHARTER.md) fixes the research chai
 
 An optional [native Mem0 OSS adapter and pilot](docs/NATIVE_MEM0_PILOT.md) now qualifies actual infer=True writing, native search/update and independent-process disk reopen. The default core install remains dependency-free; this optional path pins its own SDK and existing local embedding model. Its first small reader trial is an authored development workload, not a system ranking.
 
+The [same-evidence calculator controls](docs/CALCULATOR_CONTROL.md) keep all12 real delivered-note inputs: tool availability did not cause tool use; instructed use separated arithmetic, parameter selection and unfinished delivery. Both the pure arithmetic helper and all-state completion diagnostics are reusable ordinary baseline components.
+
 - Correct submissions and correct submissions with sufficient declared evidence.
 - Lucky unsupported answers, wrong answers, unsupported declarations, abstention, launch/format failure and step limits.
 - Actual source reads, common history scanning, identity checking, memory payload reads/writes, SQLite size, agent invocations, observation transport and wall time. These units are not collapsed into one cost.

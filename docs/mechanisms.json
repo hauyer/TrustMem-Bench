@@ -199,6 +199,23 @@
       "update_rule": "do not call sufficient-note decision errors retrieval failures; control ordinary arithmetic before mechanism claims",
       "evidence": "One authored two-version stream, 12 submitted sessions: Mem0 4/6, verbatim3/6, source reads equal308B. 25calls and all first outputs preserved.",
       "latest_report": "docs/mainline/NATIVE_MEM0_BENCH_20261113.md"
+    },
+    {
+      "id": "C-CALCULATOR-COMMIT",
+      "role": "ordinary_baseline",
+      "status": "AVAILABILITY_EXECUTION_DELIVERY_SEPARATED",
+      "changed_computation": "offer source-free exact arithmetic, separately test ordinary compute-before-submit policy and retain terminal outcomes",
+      "ordinary_competitors": [
+        "original query interface",
+        "ordinary backend cache",
+        "calculator availability",
+        "instructed tool-first policy"
+      ],
+      "prediction": "tool availability, task-to-number binding, arithmetic output and actual committed action are distinct stages",
+      "cost_regime": "paired restored-state branch source reads and API costs; no longitudinal or total physical-I/O claim",
+      "update_rule": "never infer arithmetic execution gain from nonselection or safety superiority without legal completion; wrong intermediate is not committed wrong action",
+      "evidence": "Primary8/12 vs9/12, optional calculator0calls; adaptive ordinary policy9correct/0wrong/3unfinished,9calc. 58calls and all12 states retained.",
+      "latest_report": "docs/mainline/SAME_EVIDENCE_CALCULATOR_20261113.md"
     }
   ]
 }

@@ -1,0 +1,119 @@
+{
+  "status": "complete",
+  "calls": 34,
+  "arms": {
+    "control": {
+      "planned": 12,
+      "executed": 12,
+      "correct": 8,
+      "wrong": 4,
+      "abstained": 0,
+      "unfinished": 0,
+      "not_run": 0,
+      "query_calls": 4,
+      "calculator_calls": 0,
+      "calculator_errors": 0,
+      "source_read_bytes": 616
+    },
+    "calculator": {
+      "planned": 12,
+      "executed": 12,
+      "correct": 9,
+      "wrong": 3,
+      "abstained": 0,
+      "unfinished": 0,
+      "not_run": 0,
+      "query_calls": 6,
+      "calculator_calls": 0,
+      "calculator_errors": 0,
+      "source_read_bytes": 770
+    }
+  },
+  "paired": [
+    {
+      "state": "mem0-s00",
+      "control_correct": true,
+      "calculator_correct": true,
+      "delta_correct": 0,
+      "delta_query": 0
+    },
+    {
+      "state": "mem0-s01",
+      "control_correct": false,
+      "calculator_correct": true,
+      "delta_correct": 1,
+      "delta_query": 1
+    },
+    {
+      "state": "mem0-s02",
+      "control_correct": false,
+      "calculator_correct": false,
+      "delta_correct": 0,
+      "delta_query": 0
+    },
+    {
+      "state": "mem0-s03",
+      "control_correct": true,
+      "calculator_correct": true,
+      "delta_correct": 0,
+      "delta_query": 0
+    },
+    {
+      "state": "mem0-s04",
+      "control_correct": true,
+      "calculator_correct": true,
+      "delta_correct": 0,
+      "delta_query": 0
+    },
+    {
+      "state": "mem0-s05",
+      "control_correct": false,
+      "calculator_correct": false,
+      "delta_correct": 0,
+      "delta_query": 0
+    },
+    {
+      "state": "verbatim-s00",
+      "control_correct": true,
+      "calculator_correct": true,
+      "delta_correct": 0,
+      "delta_query": 1
+    },
+    {
+      "state": "verbatim-s01",
+      "control_correct": true,
+      "calculator_correct": true,
+      "delta_correct": 0,
+      "delta_query": 0
+    },
+    {
+      "state": "verbatim-s02",
+      "control_correct": true,
+      "calculator_correct": true,
+      "delta_correct": 0,
+      "delta_query": 0
+    },
+    {
+      "state": "verbatim-s03",
+      "control_correct": true,
+      "calculator_correct": true,
+      "delta_correct": 0,
+      "delta_query": 0
+    },
+    {
+      "state": "verbatim-s04",
+      "control_correct": true,
+      "calculator_correct": true,
+      "delta_correct": 0,
+      "delta_query": 0
+    },
+    {
+      "state": "verbatim-s05",
+      "control_correct": false,
+      "calculator_correct": false,
+      "delta_correct": 0,
+      "delta_query": 0
+    }
+  ],
+  "primary_unit": "Paired fixed states from one authored two-version history; not independent histories or a longitudinal policy rerun."
+}

@@ -1,0 +1,98 @@
+[
+  {
+    "state": "verbatim-s04",
+    "arm": "control"
+  },
+  {
+    "state": "verbatim-s04",
+    "arm": "calculator"
+  },
+  {
+    "state": "verbatim-s03",
+    "arm": "calculator"
+  },
+  {
+    "state": "verbatim-s03",
+    "arm": "control"
+  },
+  {
+    "state": "mem0-s03",
+    "arm": "calculator"
+  },
+  {
+    "state": "mem0-s03",
+    "arm": "control"
+  },
+  {
+    "state": "mem0-s02",
+    "arm": "control"
+  },
+  {
+    "state": "mem0-s02",
+    "arm": "calculator"
+  },
+  {
+    "state": "mem0-s04",
+    "arm": "calculator"
+  },
+  {
+    "state": "mem0-s04",
+    "arm": "control"
+  },
+  {
+    "state": "mem0-s01",
+    "arm": "control"
+  },
+  {
+    "state": "mem0-s01",
+    "arm": "calculator"
+  },
+  {
+    "state": "verbatim-s02",
+    "arm": "calculator"
+  },
+  {
+    "state": "verbatim-s02",
+    "arm": "control"
+  },
+  {
+    "state": "verbatim-s05",
+    "arm": "control"
+  },
+  {
+    "state": "verbatim-s05",
+    "arm": "calculator"
+  },
+  {
+    "state": "mem0-s00",
+    "arm": "calculator"
+  },
+  {
+    "state": "mem0-s00",
+    "arm": "control"
+  },
+  {
+    "state": "verbatim-s01",
+    "arm": "calculator"
+  },
+  {
+    "state": "verbatim-s01",
+    "arm": "control"
+  },
+  {
+    "state": "verbatim-s00",
+    "arm": "control"
+  },
+  {
+    "state": "verbatim-s00",
+    "arm": "calculator"
+  },
+  {
+    "state": "mem0-s05",
+    "arm": "calculator"
+  },
+  {
+    "state": "mem0-s05",
+    "arm": "control"
+  }
+]

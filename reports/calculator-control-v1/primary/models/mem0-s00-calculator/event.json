@@ -1,0 +1,43 @@
+{
+  "state": "mem0-s00",
+  "backend": "mem0",
+  "index": 0,
+  "arm": "calculator",
+  "source_id": "7dc1c9f18069e2927d6293ef3771ec42e39f0cc5cc9be3be1a01add091fce79e",
+  "status": "submitted",
+  "query_calls": 1,
+  "calculator_calls": 0,
+  "calculator_errors": 0,
+  "source_read_bytes": 154,
+  "trace": [
+    {
+      "action": {
+        "action": "query"
+      },
+      "result": {
+        "receipt": {
+          "kind": "full",
+          "source_id": "7dc1c9f18069e2927d6293ef3771ec42e39f0cc5cc9be3be1a01add091fce79e",
+          "table": {
+            "correct": {
+              "90": 76,
+              "50": 19
+            },
+            "incorrect": {
+              "90": 4,
+              "50": 1
+            }
+          }
+        },
+        "value": 1,
+        "backend_cache_hit": false
+      }
+    }
+  ],
+  "initial_cache_receipts": 0,
+  "native_text_support": "unassessed",
+  "value": 1,
+  "citations": [
+    "da3680ed-ae36-4f7d-b9da-d72f99d6a9ef"
+  ]
+}

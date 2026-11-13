@@ -1,0 +1,7 @@
+{
+  "external_model_calls": 24,
+  "external_model_cost": 0.003296256,
+  "external_model_cost_currency": "USD",
+  "external_model_cost_kind": "estimated_peak_upper_bound",
+  "usage_unknown_reserved_usd": 0.0
+}

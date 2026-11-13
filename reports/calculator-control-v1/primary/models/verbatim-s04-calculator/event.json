@@ -1,0 +1,19 @@
+{
+  "state": "verbatim-s04",
+  "backend": "verbatim",
+  "index": 4,
+  "arm": "calculator",
+  "source_id": "f98ca77cfa478f0118ccbf43dead6a9a53f09758483d36a6daf9eb89b1cc84f4",
+  "status": "submitted",
+  "query_calls": 0,
+  "calculator_calls": 0,
+  "calculator_errors": 0,
+  "source_read_bytes": 0,
+  "trace": [],
+  "initial_cache_receipts": 2,
+  "native_text_support": "unassessed",
+  "value": 1,
+  "citations": [
+    "note-2"
+  ]
+}

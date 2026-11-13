@@ -1,0 +1,7 @@
+{
+  "action": "quality_check",
+  "selected_correct": 76,
+  "selected_total": 80,
+  "threshold_numerator": 9,
+  "threshold_denominator": 10
+}

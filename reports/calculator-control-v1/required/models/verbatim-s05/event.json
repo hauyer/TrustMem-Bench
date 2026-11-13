@@ -1,0 +1,35 @@
+{
+  "state": "verbatim-s05",
+  "backend": "verbatim",
+  "index": 5,
+  "status": "submitted",
+  "trace": [
+    {
+      "action": {
+        "action": "quality_check",
+        "selected_correct": 76,
+        "selected_total": 80,
+        "threshold_numerator": 99,
+        "threshold_denominator": 100
+      },
+      "result": {
+        "value": 0,
+        "ratio": "19/20",
+        "threshold": "99/100",
+        "source_access": false,
+        "input_binding": "unverified_model_supplied_numbers"
+      }
+    }
+  ],
+  "query_calls": 0,
+  "calculator_calls": 1,
+  "calculator_errors": 0,
+  "source_read_bytes": 0,
+  "first_action": "quality_check",
+  "complies_with_first_tool_policy": true,
+  "native_text_support": "unassessed",
+  "value": 0,
+  "citations": [
+    "note-1"
+  ]
+}

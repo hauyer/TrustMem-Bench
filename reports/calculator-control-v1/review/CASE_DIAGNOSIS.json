@@ -1,0 +1,1102 @@
+{
+  "kind": "posthoc_fresh_model_review_calibration",
+  "status": "WARN",
+  "scope": "All12 fixed states and all9 required-arm calculator calls",
+  "independent_human_annotation": false,
+  "reviewer": {
+    "requested_model": "gpt-6.1-sol",
+    "requested_reasoning_effort": "ultra",
+    "reported_reviewer": "Codex fresh independent reviewer task; runtime backend identity not independently attested",
+    "independently_attested_model": null,
+    "assurance": "same-family/provisional",
+    "human_annotation": false,
+    "network_calls": 0,
+    "api_calls": 0,
+    "extra_agents": 0
+  },
+  "preserves_original_labels": true,
+  "original_labels": "All native_text_support and semantic_input_binding labels remain unassessed in original outputs.",
+  "summary": {
+    "states": 12,
+    "calculator_calls": 9,
+    "kernel_correct": 9,
+    "threshold_bound": 9,
+    "exact_selected_count_binding_supported": 8,
+    "wrong_selected_denominator": 1,
+    "tool_values_matching_reference": 8,
+    "correct_calculator_values_delivered": 6,
+    "correct_calculator_values_without_submit": 2,
+    "wrong_calculator_values_without_submit": 1,
+    "first_action_is_tool": 12,
+    "conditional_first_tool_choice_supported": 10,
+    "second_action_submits": 9,
+    "correct_submissions": 9,
+    "wrong_submissions": 0,
+    "unfinished": 3
+  },
+  "rows": [
+    {
+      "state": "mem0-s00",
+      "backend": "mem0",
+      "index": 0,
+      "current_source_id": "7dc1c9f18069e2927d6293ef3771ec42e39f0cc5cc9be3be1a01add091fce79e",
+      "task": {
+        "kind": "quality",
+        "a": "correct",
+        "cutoff": 80,
+        "numerator": 9,
+        "denominator": 10
+      },
+      "reference": 1,
+      "initial_visible_evidence": {
+        "kind": "current_source_margins",
+        "selected_total": 80,
+        "selected_correct_lower": 75,
+        "selected_correct_upper": 80,
+        "gate_determined": true,
+        "reason": "Lower bound75/80 exceeds90%."
+      },
+      "required_calculator_argument_reviews": [
+        {
+          "turn": 1,
+          "action": {
+            "action": "quality_check",
+            "selected_correct": 76,
+            "selected_total": 80,
+            "threshold_numerator": 9,
+            "threshold_denominator": 10
+          },
+          "result": {
+            "value": 1,
+            "ratio": "19/20",
+            "threshold": "9/10",
+            "source_access": false,
+            "input_binding": "unverified_model_supplied_numbers"
+          },
+          "kernel_correct": true,
+          "threshold_matches_current_task": true,
+          "current_source_binding_supported": true,
+          "selected_count_binding": "exact_counts_supported",
+          "expected_selected_correct": 76,
+          "expected_selected_total": 80,
+          "value_matches_task_reference": true,
+          "visible_basis": "Current query receipt in t1-input",
+          "explanation": "Supplied selected numerator, selected denominator and threshold match the visible current-source full observation and current task."
+        }
+      ],
+      "branches": {
+        "control": {
+          "status": "submitted",
+          "submitted_value": 1,
+          "correct": true,
+          "wrong": false,
+          "actions": [
+            "query",
+            "submit"
+          ],
+          "query_calls": 1,
+          "calculator_calls": 0
+        },
+        "calculator": {
+          "status": "submitted",
+          "submitted_value": 1,
+          "correct": true,
+          "wrong": false,
+          "actions": [
+            "query",
+            "submit"
+          ],
+          "query_calls": 1,
+          "calculator_calls": 0
+        },
+        "required": {
+          "status": "unfinished",
+          "submitted_value": null,
+          "correct": false,
+          "wrong": false,
+          "actions": [
+            "query",
+            "quality_check"
+          ],
+          "query_calls": 1,
+          "calculator_calls": 1
+        }
+      },
+      "first_action_type_complies": true,
+      "conditional_first_choice_complies": false,
+      "second_action_submits": false,
+      "diagnosis": "Initial margins already suffice via75/80 lower bound; redundant query, then final-slot calculator instead of submit; correct intermediate1 but no delivery.",
+      "original_native_text_support_label": "unassessed (unchanged)",
+      "evidence_paths": [
+        "artifacts/research_decisions/20261113-same-evidence-required-v1/models/mem0-s00/t0-input.json",
+        "artifacts/research_decisions/20261113-same-evidence-required-v1/models/mem0-s00/t1-input.json",
+        "artifacts/research_decisions/20261113-same-evidence-required-v1/models/mem0-s00/event.json"
+      ]
+    },
+    {
+      "state": "mem0-s01",
+      "backend": "mem0",
+      "index": 1,
+      "current_source_id": "7dc1c9f18069e2927d6293ef3771ec42e39f0cc5cc9be3be1a01add091fce79e",
+      "task": {
+        "kind": "quality",
+        "a": "correct",
+        "cutoff": 80,
+        "numerator": 99,
+        "denominator": 100
+      },
+      "reference": 0,
+      "initial_visible_evidence": {
+        "kind": "current_source_margins",
+        "selected_total": 80,
+        "selected_correct_lower": 75,
+        "selected_correct_upper": 80,
+        "gate_determined": false,
+        "reason": "Feasible share75/80 through80/80 straddles99%."
+      },
+      "required_calculator_argument_reviews": [],
+      "branches": {
+        "control": {
+          "status": "submitted",
+          "submitted_value": 1,
+          "correct": false,
+          "wrong": true,
+          "actions": [
+            "submit"
+          ],
+          "query_calls": 0,
+          "calculator_calls": 0
+        },
+        "calculator": {
+          "status": "submitted",
+          "submitted_value": 0,
+          "correct": true,
+          "wrong": false,
+          "actions": [
+            "query",
+            "submit"
+          ],
+          "query_calls": 1,
+          "calculator_calls": 0
+        },
+        "required": {
+          "status": "submitted",
+          "submitted_value": 0,
+          "correct": true,
+          "wrong": false,
+          "actions": [
+            "query",
+            "submit"
+          ],
+          "query_calls": 1,
+          "calculator_calls": 0
+        }
+      },
+      "first_action_type_complies": true,
+      "conditional_first_choice_complies": true,
+      "second_action_submits": true,
+      "diagnosis": "Necessary query then correct submitted gate; no calculator execution.",
+      "original_native_text_support_label": "unassessed (unchanged)",
+      "evidence_paths": [
+        "artifacts/research_decisions/20261113-same-evidence-required-v1/models/mem0-s01/t0-input.json",
+        "artifacts/research_decisions/20261113-same-evidence-required-v1/models/mem0-s01/t1-input.json",
+        "artifacts/research_decisions/20261113-same-evidence-required-v1/models/mem0-s01/event.json"
+      ]
+    },
+    {
+      "state": "mem0-s02",
+      "backend": "mem0",
+      "index": 2,
+      "current_source_id": "7dc1c9f18069e2927d6293ef3771ec42e39f0cc5cc9be3be1a01add091fce79e",
+      "task": {
+        "kind": "quality",
+        "a": "correct",
+        "cutoff": 80,
+        "numerator": 99,
+        "denominator": 100
+      },
+      "reference": 0,
+      "initial_visible_evidence": {
+        "kind": "current_source_full",
+        "gate_determined": true,
+        "selected_correct": 76,
+        "selected_total": 80
+      },
+      "required_calculator_argument_reviews": [
+        {
+          "turn": 0,
+          "action": {
+            "action": "quality_check",
+            "selected_correct": 76,
+            "selected_total": 80,
+            "threshold_numerator": 99,
+            "threshold_denominator": 100
+          },
+          "result": {
+            "value": 0,
+            "ratio": "19/20",
+            "threshold": "99/100",
+            "source_access": false,
+            "input_binding": "unverified_model_supplied_numbers"
+          },
+          "kernel_correct": true,
+          "threshold_matches_current_task": true,
+          "current_source_binding_supported": true,
+          "selected_count_binding": "exact_counts_supported",
+          "expected_selected_correct": 76,
+          "expected_selected_total": 80,
+          "value_matches_task_reference": true,
+          "visible_basis": "Current-source full observation in retrieved notes",
+          "explanation": "Supplied selected numerator, selected denominator and threshold match the visible current-source full observation and current task."
+        }
+      ],
+      "branches": {
+        "control": {
+          "status": "submitted",
+          "submitted_value": 1,
+          "correct": false,
+          "wrong": true,
+          "actions": [
+            "submit"
+          ],
+          "query_calls": 0,
+          "calculator_calls": 0
+        },
+        "calculator": {
+          "status": "submitted",
+          "submitted_value": 1,
+          "correct": false,
+          "wrong": true,
+          "actions": [
+            "submit"
+          ],
+          "query_calls": 0,
+          "calculator_calls": 0
+        },
+        "required": {
+          "status": "submitted",
+          "submitted_value": 0,
+          "correct": true,
+          "wrong": false,
+          "actions": [
+            "quality_check",
+            "submit"
+          ],
+          "query_calls": 0,
+          "calculator_calls": 1
+        }
+      },
+      "first_action_type_complies": true,
+      "conditional_first_choice_complies": true,
+      "second_action_submits": true,
+      "diagnosis": "Evidence-bound exact calculation then correct submitted gate.",
+      "original_native_text_support_label": "unassessed (unchanged)",
+      "evidence_paths": [
+        "artifacts/research_decisions/20261113-same-evidence-required-v1/models/mem0-s02/t0-input.json",
+        "artifacts/research_decisions/20261113-same-evidence-required-v1/models/mem0-s02/t1-input.json",
+        "artifacts/research_decisions/20261113-same-evidence-required-v1/models/mem0-s02/event.json"
+      ]
+    },
+    {
+      "state": "mem0-s03",
+      "backend": "mem0",
+      "index": 3,
+      "current_source_id": "f98ca77cfa478f0118ccbf43dead6a9a53f09758483d36a6daf9eb89b1cc84f4",
+      "task": {
+        "kind": "quality",
+        "a": "correct",
+        "cutoff": 80,
+        "numerator": 99,
+        "denominator": 100
+      },
+      "reference": 1,
+      "initial_visible_evidence": {
+        "kind": "other_source_only",
+        "gate_determined": false,
+        "reason": "Only old-source notes are shown initially; current source differs."
+      },
+      "required_calculator_argument_reviews": [],
+      "branches": {
+        "control": {
+          "status": "submitted",
+          "submitted_value": 1,
+          "correct": true,
+          "wrong": false,
+          "actions": [
+            "query",
+            "submit"
+          ],
+          "query_calls": 1,
+          "calculator_calls": 0
+        },
+        "calculator": {
+          "status": "submitted",
+          "submitted_value": 1,
+          "correct": true,
+          "wrong": false,
+          "actions": [
+            "query",
+            "submit"
+          ],
+          "query_calls": 1,
+          "calculator_calls": 0
+        },
+        "required": {
+          "status": "submitted",
+          "submitted_value": 1,
+          "correct": true,
+          "wrong": false,
+          "actions": [
+            "query",
+            "submit"
+          ],
+          "query_calls": 1,
+          "calculator_calls": 0
+        }
+      },
+      "first_action_type_complies": true,
+      "conditional_first_choice_complies": true,
+      "second_action_submits": true,
+      "diagnosis": "Necessary query then correct submitted gate; no calculator execution.",
+      "original_native_text_support_label": "unassessed (unchanged)",
+      "evidence_paths": [
+        "artifacts/research_decisions/20261113-same-evidence-required-v1/models/mem0-s03/t0-input.json",
+        "artifacts/research_decisions/20261113-same-evidence-required-v1/models/mem0-s03/t1-input.json",
+        "artifacts/research_decisions/20261113-same-evidence-required-v1/models/mem0-s03/event.json"
+      ]
+    },
+    {
+      "state": "mem0-s04",
+      "backend": "mem0",
+      "index": 4,
+      "current_source_id": "f98ca77cfa478f0118ccbf43dead6a9a53f09758483d36a6daf9eb89b1cc84f4",
+      "task": {
+        "kind": "quality",
+        "a": "correct",
+        "cutoff": 80,
+        "numerator": 9,
+        "denominator": 10
+      },
+      "reference": 1,
+      "initial_visible_evidence": {
+        "kind": "current_source_full",
+        "gate_determined": true,
+        "selected_correct": 80,
+        "selected_total": 80
+      },
+      "required_calculator_argument_reviews": [
+        {
+          "turn": 0,
+          "action": {
+            "action": "quality_check",
+            "selected_correct": 80,
+            "selected_total": 80,
+            "threshold_numerator": 9,
+            "threshold_denominator": 10
+          },
+          "result": {
+            "value": 1,
+            "ratio": "1",
+            "threshold": "9/10",
+            "source_access": false,
+            "input_binding": "unverified_model_supplied_numbers"
+          },
+          "kernel_correct": true,
+          "threshold_matches_current_task": true,
+          "current_source_binding_supported": true,
+          "selected_count_binding": "exact_counts_supported",
+          "expected_selected_correct": 80,
+          "expected_selected_total": 80,
+          "value_matches_task_reference": true,
+          "visible_basis": "Current-source full observation in retrieved notes",
+          "explanation": "Supplied selected numerator, selected denominator and threshold match the visible current-source full observation and current task."
+        }
+      ],
+      "branches": {
+        "control": {
+          "status": "submitted",
+          "submitted_value": 1,
+          "correct": true,
+          "wrong": false,
+          "actions": [
+            "submit"
+          ],
+          "query_calls": 0,
+          "calculator_calls": 0
+        },
+        "calculator": {
+          "status": "submitted",
+          "submitted_value": 1,
+          "correct": true,
+          "wrong": false,
+          "actions": [
+            "submit"
+          ],
+          "query_calls": 0,
+          "calculator_calls": 0
+        },
+        "required": {
+          "status": "submitted",
+          "submitted_value": 1,
+          "correct": true,
+          "wrong": false,
+          "actions": [
+            "quality_check",
+            "submit"
+          ],
+          "query_calls": 0,
+          "calculator_calls": 1
+        }
+      },
+      "first_action_type_complies": true,
+      "conditional_first_choice_complies": true,
+      "second_action_submits": true,
+      "diagnosis": "Evidence-bound exact calculation then correct submitted gate.",
+      "original_native_text_support_label": "unassessed (unchanged)",
+      "evidence_paths": [
+        "artifacts/research_decisions/20261113-same-evidence-required-v1/models/mem0-s04/t0-input.json",
+        "artifacts/research_decisions/20261113-same-evidence-required-v1/models/mem0-s04/t1-input.json",
+        "artifacts/research_decisions/20261113-same-evidence-required-v1/models/mem0-s04/event.json"
+      ]
+    },
+    {
+      "state": "mem0-s05",
+      "backend": "mem0",
+      "index": 5,
+      "current_source_id": "7dc1c9f18069e2927d6293ef3771ec42e39f0cc5cc9be3be1a01add091fce79e",
+      "task": {
+        "kind": "quality",
+        "a": "correct",
+        "cutoff": 80,
+        "numerator": 99,
+        "denominator": 100
+      },
+      "reference": 0,
+      "initial_visible_evidence": {
+        "kind": "current_source_full",
+        "gate_determined": true,
+        "selected_correct": 76,
+        "selected_total": 80
+      },
+      "required_calculator_argument_reviews": [
+        {
+          "turn": 0,
+          "action": {
+            "action": "quality_check",
+            "selected_correct": 76,
+            "selected_total": 80,
+            "threshold_numerator": 99,
+            "threshold_denominator": 100
+          },
+          "result": {
+            "value": 0,
+            "ratio": "19/20",
+            "threshold": "99/100",
+            "source_access": false,
+            "input_binding": "unverified_model_supplied_numbers"
+          },
+          "kernel_correct": true,
+          "threshold_matches_current_task": true,
+          "current_source_binding_supported": true,
+          "selected_count_binding": "exact_counts_supported",
+          "expected_selected_correct": 76,
+          "expected_selected_total": 80,
+          "value_matches_task_reference": true,
+          "visible_basis": "Current-source full observation in retrieved notes",
+          "explanation": "Supplied selected numerator, selected denominator and threshold match the visible current-source full observation and current task."
+        }
+      ],
+      "branches": {
+        "control": {
+          "status": "submitted",
+          "submitted_value": 1,
+          "correct": false,
+          "wrong": true,
+          "actions": [
+            "submit"
+          ],
+          "query_calls": 0,
+          "calculator_calls": 0
+        },
+        "calculator": {
+          "status": "submitted",
+          "submitted_value": 1,
+          "correct": false,
+          "wrong": true,
+          "actions": [
+            "submit"
+          ],
+          "query_calls": 0,
+          "calculator_calls": 0
+        },
+        "required": {
+          "status": "submitted",
+          "submitted_value": 0,
+          "correct": true,
+          "wrong": false,
+          "actions": [
+            "quality_check",
+            "submit"
+          ],
+          "query_calls": 0,
+          "calculator_calls": 1
+        }
+      },
+      "first_action_type_complies": true,
+      "conditional_first_choice_complies": true,
+      "second_action_submits": true,
+      "diagnosis": "Evidence-bound exact calculation then correct submitted gate.",
+      "original_native_text_support_label": "unassessed (unchanged)",
+      "evidence_paths": [
+        "artifacts/research_decisions/20261113-same-evidence-required-v1/models/mem0-s05/t0-input.json",
+        "artifacts/research_decisions/20261113-same-evidence-required-v1/models/mem0-s05/t1-input.json",
+        "artifacts/research_decisions/20261113-same-evidence-required-v1/models/mem0-s05/event.json"
+      ]
+    },
+    {
+      "state": "verbatim-s00",
+      "backend": "verbatim",
+      "index": 0,
+      "current_source_id": "7dc1c9f18069e2927d6293ef3771ec42e39f0cc5cc9be3be1a01add091fce79e",
+      "task": {
+        "kind": "quality",
+        "a": "correct",
+        "cutoff": 80,
+        "numerator": 9,
+        "denominator": 10
+      },
+      "reference": 1,
+      "initial_visible_evidence": {
+        "kind": "current_source_margins",
+        "selected_total": 80,
+        "selected_correct_lower": 75,
+        "selected_correct_upper": 80,
+        "gate_determined": true,
+        "reason": "Lower bound75/80 exceeds90%."
+      },
+      "required_calculator_argument_reviews": [
+        {
+          "turn": 1,
+          "action": {
+            "action": "quality_check",
+            "selected_correct": 76,
+            "selected_total": 80,
+            "threshold_numerator": 9,
+            "threshold_denominator": 10
+          },
+          "result": {
+            "value": 1,
+            "ratio": "19/20",
+            "threshold": "9/10",
+            "source_access": false,
+            "input_binding": "unverified_model_supplied_numbers"
+          },
+          "kernel_correct": true,
+          "threshold_matches_current_task": true,
+          "current_source_binding_supported": true,
+          "selected_count_binding": "exact_counts_supported",
+          "expected_selected_correct": 76,
+          "expected_selected_total": 80,
+          "value_matches_task_reference": true,
+          "visible_basis": "Current query receipt in t1-input",
+          "explanation": "Supplied selected numerator, selected denominator and threshold match the visible current-source full observation and current task."
+        }
+      ],
+      "branches": {
+        "control": {
+          "status": "submitted",
+          "submitted_value": 1,
+          "correct": true,
+          "wrong": false,
+          "actions": [
+            "submit"
+          ],
+          "query_calls": 0,
+          "calculator_calls": 0
+        },
+        "calculator": {
+          "status": "submitted",
+          "submitted_value": 1,
+          "correct": true,
+          "wrong": false,
+          "actions": [
+            "query",
+            "submit"
+          ],
+          "query_calls": 1,
+          "calculator_calls": 0
+        },
+        "required": {
+          "status": "unfinished",
+          "submitted_value": null,
+          "correct": false,
+          "wrong": false,
+          "actions": [
+            "query",
+            "quality_check"
+          ],
+          "query_calls": 1,
+          "calculator_calls": 1
+        }
+      },
+      "first_action_type_complies": true,
+      "conditional_first_choice_complies": false,
+      "second_action_submits": false,
+      "diagnosis": "Initial margins already suffice via75/80 lower bound; redundant query, then final-slot calculator instead of submit; correct intermediate1 but no delivery.",
+      "original_native_text_support_label": "unassessed (unchanged)",
+      "evidence_paths": [
+        "artifacts/research_decisions/20261113-same-evidence-required-v1/models/verbatim-s00/t0-input.json",
+        "artifacts/research_decisions/20261113-same-evidence-required-v1/models/verbatim-s00/t1-input.json",
+        "artifacts/research_decisions/20261113-same-evidence-required-v1/models/verbatim-s00/event.json"
+      ]
+    },
+    {
+      "state": "verbatim-s01",
+      "backend": "verbatim",
+      "index": 1,
+      "current_source_id": "7dc1c9f18069e2927d6293ef3771ec42e39f0cc5cc9be3be1a01add091fce79e",
+      "task": {
+        "kind": "quality",
+        "a": "correct",
+        "cutoff": 80,
+        "numerator": 99,
+        "denominator": 100
+      },
+      "reference": 0,
+      "initial_visible_evidence": {
+        "kind": "current_source_margins",
+        "selected_total": 80,
+        "selected_correct_lower": 75,
+        "selected_correct_upper": 80,
+        "gate_determined": false,
+        "reason": "Feasible share75/80 through80/80 straddles99%."
+      },
+      "required_calculator_argument_reviews": [],
+      "branches": {
+        "control": {
+          "status": "submitted",
+          "submitted_value": 0,
+          "correct": true,
+          "wrong": false,
+          "actions": [
+            "query",
+            "submit"
+          ],
+          "query_calls": 1,
+          "calculator_calls": 0
+        },
+        "calculator": {
+          "status": "submitted",
+          "submitted_value": 0,
+          "correct": true,
+          "wrong": false,
+          "actions": [
+            "query",
+            "submit"
+          ],
+          "query_calls": 1,
+          "calculator_calls": 0
+        },
+        "required": {
+          "status": "submitted",
+          "submitted_value": 0,
+          "correct": true,
+          "wrong": false,
+          "actions": [
+            "query",
+            "submit"
+          ],
+          "query_calls": 1,
+          "calculator_calls": 0
+        }
+      },
+      "first_action_type_complies": true,
+      "conditional_first_choice_complies": true,
+      "second_action_submits": true,
+      "diagnosis": "Necessary query then correct submitted gate; no calculator execution.",
+      "original_native_text_support_label": "unassessed (unchanged)",
+      "evidence_paths": [
+        "artifacts/research_decisions/20261113-same-evidence-required-v1/models/verbatim-s01/t0-input.json",
+        "artifacts/research_decisions/20261113-same-evidence-required-v1/models/verbatim-s01/t1-input.json",
+        "artifacts/research_decisions/20261113-same-evidence-required-v1/models/verbatim-s01/event.json"
+      ]
+    },
+    {
+      "state": "verbatim-s02",
+      "backend": "verbatim",
+      "index": 2,
+      "current_source_id": "7dc1c9f18069e2927d6293ef3771ec42e39f0cc5cc9be3be1a01add091fce79e",
+      "task": {
+        "kind": "quality",
+        "a": "correct",
+        "cutoff": 80,
+        "numerator": 99,
+        "denominator": 100
+      },
+      "reference": 0,
+      "initial_visible_evidence": {
+        "kind": "current_source_full",
+        "gate_determined": true,
+        "selected_correct": 76,
+        "selected_total": 80
+      },
+      "required_calculator_argument_reviews": [
+        {
+          "turn": 0,
+          "action": {
+            "action": "quality_check",
+            "selected_correct": 76,
+            "selected_total": 80,
+            "threshold_numerator": 99,
+            "threshold_denominator": 100
+          },
+          "result": {
+            "value": 0,
+            "ratio": "19/20",
+            "threshold": "99/100",
+            "source_access": false,
+            "input_binding": "unverified_model_supplied_numbers"
+          },
+          "kernel_correct": true,
+          "threshold_matches_current_task": true,
+          "current_source_binding_supported": true,
+          "selected_count_binding": "exact_counts_supported",
+          "expected_selected_correct": 76,
+          "expected_selected_total": 80,
+          "value_matches_task_reference": true,
+          "visible_basis": "Current-source full observation in retrieved notes",
+          "explanation": "Supplied selected numerator, selected denominator and threshold match the visible current-source full observation and current task."
+        }
+      ],
+      "branches": {
+        "control": {
+          "status": "submitted",
+          "submitted_value": 0,
+          "correct": true,
+          "wrong": false,
+          "actions": [
+            "submit"
+          ],
+          "query_calls": 0,
+          "calculator_calls": 0
+        },
+        "calculator": {
+          "status": "submitted",
+          "submitted_value": 0,
+          "correct": true,
+          "wrong": false,
+          "actions": [
+            "submit"
+          ],
+          "query_calls": 0,
+          "calculator_calls": 0
+        },
+        "required": {
+          "status": "submitted",
+          "submitted_value": 0,
+          "correct": true,
+          "wrong": false,
+          "actions": [
+            "quality_check",
+            "submit"
+          ],
+          "query_calls": 0,
+          "calculator_calls": 1
+        }
+      },
+      "first_action_type_complies": true,
+      "conditional_first_choice_complies": true,
+      "second_action_submits": true,
+      "diagnosis": "Evidence-bound exact calculation then correct submitted gate.",
+      "original_native_text_support_label": "unassessed (unchanged)",
+      "evidence_paths": [
+        "artifacts/research_decisions/20261113-same-evidence-required-v1/models/verbatim-s02/t0-input.json",
+        "artifacts/research_decisions/20261113-same-evidence-required-v1/models/verbatim-s02/t1-input.json",
+        "artifacts/research_decisions/20261113-same-evidence-required-v1/models/verbatim-s02/event.json"
+      ]
+    },
+    {
+      "state": "verbatim-s03",
+      "backend": "verbatim",
+      "index": 3,
+      "current_source_id": "f98ca77cfa478f0118ccbf43dead6a9a53f09758483d36a6daf9eb89b1cc84f4",
+      "task": {
+        "kind": "quality",
+        "a": "correct",
+        "cutoff": 80,
+        "numerator": 99,
+        "denominator": 100
+      },
+      "reference": 1,
+      "initial_visible_evidence": {
+        "kind": "other_source_only",
+        "gate_determined": false,
+        "reason": "Only old-source notes are shown initially; current source differs."
+      },
+      "required_calculator_argument_reviews": [
+        {
+          "turn": 1,
+          "action": {
+            "action": "quality_check",
+            "selected_correct": 80,
+            "selected_total": 100,
+            "threshold_numerator": 99,
+            "threshold_denominator": 100
+          },
+          "result": {
+            "value": 0,
+            "ratio": "4/5",
+            "threshold": "99/100",
+            "source_access": false,
+            "input_binding": "unverified_model_supplied_numbers"
+          },
+          "kernel_correct": true,
+          "threshold_matches_current_task": true,
+          "current_source_binding_supported": false,
+          "selected_count_binding": "wrong_selected_population_denominator",
+          "expected_selected_correct": 80,
+          "expected_selected_total": 80,
+          "value_matches_task_reference": false,
+          "visible_basis": "Current query receipt in t1-input",
+          "explanation": "Selected rows have b>=80. Correct and incorrect selected weights sum to80; denominator100 is the whole-source total.80/100 is neither the exact selected share nor a sound decision-sufficient bound for this99% task."
+        }
+      ],
+      "branches": {
+        "control": {
+          "status": "submitted",
+          "submitted_value": 1,
+          "correct": true,
+          "wrong": false,
+          "actions": [
+            "query",
+            "submit"
+          ],
+          "query_calls": 1,
+          "calculator_calls": 0
+        },
+        "calculator": {
+          "status": "submitted",
+          "submitted_value": 1,
+          "correct": true,
+          "wrong": false,
+          "actions": [
+            "query",
+            "submit"
+          ],
+          "query_calls": 1,
+          "calculator_calls": 0
+        },
+        "required": {
+          "status": "unfinished",
+          "submitted_value": null,
+          "correct": false,
+          "wrong": false,
+          "actions": [
+            "query",
+            "quality_check"
+          ],
+          "query_calls": 1,
+          "calculator_calls": 1
+        }
+      },
+      "first_action_type_complies": true,
+      "conditional_first_choice_complies": true,
+      "second_action_submits": false,
+      "diagnosis": "Necessary current-source query, then final-slot calculator instead of submit; wrong selected denominator80/100 produces wrong intermediate0; no committed wrong action.",
+      "original_native_text_support_label": "unassessed (unchanged)",
+      "evidence_paths": [
+        "artifacts/research_decisions/20261113-same-evidence-required-v1/models/verbatim-s03/t0-input.json",
+        "artifacts/research_decisions/20261113-same-evidence-required-v1/models/verbatim-s03/t1-input.json",
+        "artifacts/research_decisions/20261113-same-evidence-required-v1/models/verbatim-s03/event.json"
+      ]
+    },
+    {
+      "state": "verbatim-s04",
+      "backend": "verbatim",
+      "index": 4,
+      "current_source_id": "f98ca77cfa478f0118ccbf43dead6a9a53f09758483d36a6daf9eb89b1cc84f4",
+      "task": {
+        "kind": "quality",
+        "a": "correct",
+        "cutoff": 80,
+        "numerator": 9,
+        "denominator": 10
+      },
+      "reference": 1,
+      "initial_visible_evidence": {
+        "kind": "current_source_full",
+        "gate_determined": true,
+        "selected_correct": 80,
+        "selected_total": 80
+      },
+      "required_calculator_argument_reviews": [
+        {
+          "turn": 0,
+          "action": {
+            "action": "quality_check",
+            "selected_correct": 80,
+            "selected_total": 80,
+            "threshold_numerator": 9,
+            "threshold_denominator": 10
+          },
+          "result": {
+            "value": 1,
+            "ratio": "1",
+            "threshold": "9/10",
+            "source_access": false,
+            "input_binding": "unverified_model_supplied_numbers"
+          },
+          "kernel_correct": true,
+          "threshold_matches_current_task": true,
+          "current_source_binding_supported": true,
+          "selected_count_binding": "exact_counts_supported",
+          "expected_selected_correct": 80,
+          "expected_selected_total": 80,
+          "value_matches_task_reference": true,
+          "visible_basis": "Current-source full observation in retrieved notes",
+          "explanation": "Supplied selected numerator, selected denominator and threshold match the visible current-source full observation and current task."
+        }
+      ],
+      "branches": {
+        "control": {
+          "status": "submitted",
+          "submitted_value": 1,
+          "correct": true,
+          "wrong": false,
+          "actions": [
+            "submit"
+          ],
+          "query_calls": 0,
+          "calculator_calls": 0
+        },
+        "calculator": {
+          "status": "submitted",
+          "submitted_value": 1,
+          "correct": true,
+          "wrong": false,
+          "actions": [
+            "submit"
+          ],
+          "query_calls": 0,
+          "calculator_calls": 0
+        },
+        "required": {
+          "status": "submitted",
+          "submitted_value": 1,
+          "correct": true,
+          "wrong": false,
+          "actions": [
+            "quality_check",
+            "submit"
+          ],
+          "query_calls": 0,
+          "calculator_calls": 1
+        }
+      },
+      "first_action_type_complies": true,
+      "conditional_first_choice_complies": true,
+      "second_action_submits": true,
+      "diagnosis": "Evidence-bound exact calculation then correct submitted gate.",
+      "original_native_text_support_label": "unassessed (unchanged)",
+      "evidence_paths": [
+        "artifacts/research_decisions/20261113-same-evidence-required-v1/models/verbatim-s04/t0-input.json",
+        "artifacts/research_decisions/20261113-same-evidence-required-v1/models/verbatim-s04/t1-input.json",
+        "artifacts/research_decisions/20261113-same-evidence-required-v1/models/verbatim-s04/event.json"
+      ]
+    },
+    {
+      "state": "verbatim-s05",
+      "backend": "verbatim",
+      "index": 5,
+      "current_source_id": "7dc1c9f18069e2927d6293ef3771ec42e39f0cc5cc9be3be1a01add091fce79e",
+      "task": {
+        "kind": "quality",
+        "a": "correct",
+        "cutoff": 80,
+        "numerator": 99,
+        "denominator": 100
+      },
+      "reference": 0,
+      "initial_visible_evidence": {
+        "kind": "current_source_full",
+        "gate_determined": true,
+        "selected_correct": 76,
+        "selected_total": 80
+      },
+      "required_calculator_argument_reviews": [
+        {
+          "turn": 0,
+          "action": {
+            "action": "quality_check",
+            "selected_correct": 76,
+            "selected_total": 80,
+            "threshold_numerator": 99,
+            "threshold_denominator": 100
+          },
+          "result": {
+            "value": 0,
+            "ratio": "19/20",
+            "threshold": "99/100",
+            "source_access": false,
+            "input_binding": "unverified_model_supplied_numbers"
+          },
+          "kernel_correct": true,
+          "threshold_matches_current_task": true,
+          "current_source_binding_supported": true,
+          "selected_count_binding": "exact_counts_supported",
+          "expected_selected_correct": 76,
+          "expected_selected_total": 80,
+          "value_matches_task_reference": true,
+          "visible_basis": "Current-source full observation in retrieved notes",
+          "explanation": "Supplied selected numerator, selected denominator and threshold match the visible current-source full observation and current task."
+        }
+      ],
+      "branches": {
+        "control": {
+          "status": "submitted",
+          "submitted_value": 1,
+          "correct": false,
+          "wrong": true,
+          "actions": [
+            "submit"
+          ],
+          "query_calls": 0,
+          "calculator_calls": 0
+        },
+        "calculator": {
+          "status": "submitted",
+          "submitted_value": 1,
+          "correct": false,
+          "wrong": true,
+          "actions": [
+            "submit"
+          ],
+          "query_calls": 0,
+          "calculator_calls": 0
+        },
+        "required": {
+          "status": "submitted",
+          "submitted_value": 0,
+          "correct": true,
+          "wrong": false,
+          "actions": [
+            "quality_check",
+            "submit"
+          ],
+          "query_calls": 0,
+          "calculator_calls": 1
+        }
+      },
+      "first_action_type_complies": true,
+      "conditional_first_choice_complies": true,
+      "second_action_submits": true,
+      "diagnosis": "Evidence-bound exact calculation then correct submitted gate.",
+      "original_native_text_support_label": "unassessed (unchanged)",
+      "evidence_paths": [
+        "artifacts/research_decisions/20261113-same-evidence-required-v1/models/verbatim-s05/t0-input.json",
+        "artifacts/research_decisions/20261113-same-evidence-required-v1/models/verbatim-s05/t1-input.json",
+        "artifacts/research_decisions/20261113-same-evidence-required-v1/models/verbatim-s05/event.json"
+      ]
+    }
+  ]
+}

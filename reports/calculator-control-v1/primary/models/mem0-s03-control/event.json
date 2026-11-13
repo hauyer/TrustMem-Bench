@@ -1,0 +1,43 @@
+{
+  "state": "mem0-s03",
+  "backend": "mem0",
+  "index": 3,
+  "arm": "control",
+  "source_id": "f98ca77cfa478f0118ccbf43dead6a9a53f09758483d36a6daf9eb89b1cc84f4",
+  "status": "submitted",
+  "query_calls": 1,
+  "calculator_calls": 0,
+  "calculator_errors": 0,
+  "source_read_bytes": 154,
+  "trace": [
+    {
+      "action": {
+        "action": "query"
+      },
+      "result": {
+        "receipt": {
+          "kind": "full",
+          "source_id": "f98ca77cfa478f0118ccbf43dead6a9a53f09758483d36a6daf9eb89b1cc84f4",
+          "table": {
+            "correct": {
+              "90": 80,
+              "50": 15
+            },
+            "incorrect": {
+              "90": 0,
+              "50": 5
+            }
+          }
+        },
+        "value": 1,
+        "backend_cache_hit": false
+      }
+    }
+  ],
+  "initial_cache_receipts": 1,
+  "native_text_support": "unassessed",
+  "value": 1,
+  "citations": [
+    "da3680ed-ae36-4f7d-b9da-d72f99d6a9ef"
+  ]
+}
