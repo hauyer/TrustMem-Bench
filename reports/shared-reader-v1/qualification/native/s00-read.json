@@ -1,0 +1,18 @@
+{
+  "command": [
+    "D:\\study homework\\trusted computing\\memory-revocation-research\\.venv-mem0-probe\\Scripts\\python.exe",
+    "-B",
+    "-X",
+    "utf8",
+    "D:\\study homework\\trusted computing\\artifacts\\research_decisions\\20261113-shared-reader-v1\\snapshot\\run.py",
+    "read",
+    "--output",
+    "D:\\study homework\\trusted computing\\artifacts\\research_decisions\\20261113-shared-reader-v1\\native\\store",
+    "--native",
+    "--query",
+    "quality workflow source 7dc1c9f18069e2927d6293ef3771ec42e39f0cc5cc9be3be1a01add091fce79e"
+  ],
+  "returncode": 0,
+  "stdout": "[{\"id\": \"23313902-9b45-4d80-b0d1-ceb28036ed1d\", \"memory\": \"{\\\"kind\\\":\\\"margins\\\",\\\"left\\\":{\\\"correct\\\":95,\\\"incorrect\\\":5},\\\"right\\\":{\\\"50\\\":20,\\\"90\\\":80},\\\"source_id\\\":\\\"7dc1c9f18069e2927d6293ef3771ec42e39f0cc5cc9be3be1a01add091fce79e\\\",\\\"total\\\":100}\", \"hash\": \"2dc5af9081483b34d8c9525903c2cb20\", \"metadata\": {\"stage\": \"shared-reader-scripted-preflight\"}, \"score\": 0.7474410970818834, \"created_at\": \"2026-11-13T08:23:25.927483+00:00\", \"updated_at\": \"2026-11-13T08:23:25.927483+00:00\", \"user_id\": \"trustmem-user\"}]\n",
+  "stderr": ""
+}

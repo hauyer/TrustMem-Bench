@@ -1,0 +1,83 @@
+{
+  "contract_version": "native-reader-1",
+  "current_source_id": "e9a2461065832f3b577bd02ef7137611a1ba1056d5c65e5f659a22b023624522",
+  "task": {
+    "kind": "threshold",
+    "a": "red",
+    "limit": 20
+  },
+  "retrieved_notes": [
+    {
+      "id": "d48789e4377343c9b27f650f56d24e4e",
+      "memory": "{\"kind\":\"full\",\"source_id\":\"2aee61996fef0962bb12283383fbd50655cb23e92ee5a2e58dca7e4e721c0da6\",\"table\":{\"blue\":{\"10\":2,\"20\":1,\"30\":4},\"red\":{\"10\":3,\"20\":2,\"30\":1}}}",
+      "revision": 1
+    }
+  ],
+  "tool_trace": [
+    {
+      "action": {
+        "action": "calculate",
+        "evidence": [
+          "d48789e4377343c9b27f650f56d24e4e"
+        ]
+      },
+      "result": {
+        "value": null,
+        "evidence": [
+          "d48789e4377343c9b27f650f56d24e4e"
+        ],
+        "task_binding": "host_current_task",
+        "source_access": false,
+        "parser_scope": "complete JSON receipt literals only"
+      }
+    },
+    {
+      "action": {
+        "action": "query",
+        "scope": "full"
+      },
+      "result": {
+        "receipt_id": "observation:s04:1",
+        "receipt": {
+          "kind": "full",
+          "source_id": "e9a2461065832f3b577bd02ef7137611a1ba1056d5c65e5f659a22b023624522",
+          "table": {
+            "red": {
+              "10": 1,
+              "20": 2,
+              "30": 4
+            },
+            "blue": {
+              "10": 3,
+              "20": 2,
+              "30": 2
+            }
+          }
+        },
+        "value": 3,
+        "evidence": [
+          "d48789e4377343c9b27f650f56d24e4e",
+          "observation:s04:1"
+        ],
+        "task_binding": "host_current_task",
+        "source_read_bytes": 201,
+        "scan_seconds": 0.0004735999973490834,
+        "backend_cache_hit": false
+      }
+    }
+  ],
+  "remaining_actions": 2,
+  "terminal_action_required": true,
+  "terminal_actions": [
+    "submit",
+    "abstain"
+  ],
+  "allowed_actions": [
+    "query",
+    "calculate",
+    "quality_check",
+    "save",
+    "submit",
+    "abstain"
+  ]
+}

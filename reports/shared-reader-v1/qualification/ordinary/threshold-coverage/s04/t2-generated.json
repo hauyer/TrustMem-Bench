@@ -1,0 +1,13 @@
+{
+  "action": {
+    "action": "save",
+    "receipt_id": "observation:s04:1"
+  },
+  "result": {
+    "saved": {
+      "id": "7b6c2f76c53b4f0083115ddf398fcf32",
+      "revision": 1
+    },
+    "receipt_id": "observation:s04:1"
+  }
+}

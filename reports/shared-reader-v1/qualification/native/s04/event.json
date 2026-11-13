@@ -1,0 +1,90 @@
+{
+  "session_id": "s04",
+  "contract_version": "native-reader-1",
+  "status": "submitted",
+  "value": 1,
+  "source_read_bytes": 154,
+  "source_scan_seconds": 0.00036920000275131315,
+  "query_calls": 1,
+  "calculate_calls": 1,
+  "quality_check_calls": 0,
+  "save_calls": 1,
+  "tool_errors": 0,
+  "actual_invocations": 4,
+  "observation_payload_bytes": 8065,
+  "trace": [
+    {
+      "action": {
+        "action": "calculate",
+        "evidence": [
+          "23313902-9b45-4d80-b0d1-ceb28036ed1d",
+          "a9da3dc6-f8e6-4a27-85e5-8e109e8dda6f"
+        ]
+      },
+      "result": {
+        "value": null,
+        "evidence": [
+          "23313902-9b45-4d80-b0d1-ceb28036ed1d",
+          "a9da3dc6-f8e6-4a27-85e5-8e109e8dda6f"
+        ],
+        "task_binding": "host_current_task",
+        "source_access": false,
+        "parser_scope": "complete JSON receipt literals only"
+      }
+    },
+    {
+      "action": {
+        "action": "query",
+        "scope": "full"
+      },
+      "result": {
+        "receipt_id": "observation:s04:1",
+        "receipt": {
+          "kind": "full",
+          "source_id": "f98ca77cfa478f0118ccbf43dead6a9a53f09758483d36a6daf9eb89b1cc84f4",
+          "table": {
+            "correct": {
+              "90": 80,
+              "50": 15
+            },
+            "incorrect": {
+              "90": 0,
+              "50": 5
+            }
+          }
+        },
+        "value": 1,
+        "evidence": [
+          "23313902-9b45-4d80-b0d1-ceb28036ed1d",
+          "a9da3dc6-f8e6-4a27-85e5-8e109e8dda6f",
+          "observation:s04:1"
+        ],
+        "task_binding": "host_current_task",
+        "source_read_bytes": 154,
+        "scan_seconds": 0.00036920000275131315,
+        "backend_cache_hit": false
+      }
+    },
+    {
+      "action": {
+        "action": "save",
+        "receipt_id": "observation:s04:1"
+      },
+      "result": {
+        "saved": {
+          "results": [
+            {
+              "id": "760d774e-2f5d-4ad3-9776-6de0bafc75cf",
+              "memory": "{\"kind\":\"full\",\"source_id\":\"f98ca77cfa478f0118ccbf43dead6a9a53f09758483d36a6daf9eb89b1cc84f4\",\"table\":{\"correct\":{\"50\":15,\"90\":80},\"incorrect\":{\"50\":5,\"90\":0}}}",
+              "event": "ADD"
+            }
+          ]
+        },
+        "receipt_id": "observation:s04:1"
+      }
+    }
+  ],
+  "citations": [],
+  "generated_results": 3,
+  "generated_not_delivered": 0
+}

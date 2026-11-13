@@ -1,0 +1,86 @@
+{
+  "contract_version": "native-reader-1",
+  "current_source_id": "6f342afd740c181cd6c58e78fc805814a06ff83d075935c4d8aa07c1197fc07c",
+  "task": {
+    "kind": "range",
+    "a": "red",
+    "lo": 1,
+    "hi": 4
+  },
+  "retrieved_notes": [
+    {
+      "id": "7fc65208df3345f3b696cf96d0af1090",
+      "memory": "{\"kind\":\"full\",\"source_id\":\"b5e852d5e1b0c77ef4cf455ca9e6d58d3f89637afd4bc7936de9a15a28fadd98\",\"table\":{\"blue\":{\"1\":2,\"2\":9,\"3\":-1,\"4\":4},\"red\":{\"1\":10,\"2\":-3,\"3\":5,\"4\":7}}}",
+      "revision": 1
+    }
+  ],
+  "tool_trace": [
+    {
+      "action": {
+        "action": "calculate",
+        "evidence": [
+          "7fc65208df3345f3b696cf96d0af1090"
+        ]
+      },
+      "result": {
+        "value": null,
+        "evidence": [
+          "7fc65208df3345f3b696cf96d0af1090"
+        ],
+        "task_binding": "host_current_task",
+        "source_access": false,
+        "parser_scope": "complete JSON receipt literals only"
+      }
+    },
+    {
+      "action": {
+        "action": "query",
+        "scope": "full"
+      },
+      "result": {
+        "receipt_id": "observation:s04:1",
+        "receipt": {
+          "kind": "full",
+          "source_id": "6f342afd740c181cd6c58e78fc805814a06ff83d075935c4d8aa07c1197fc07c",
+          "table": {
+            "red": {
+              "1": 9,
+              "2": -1,
+              "3": 3,
+              "4": 2
+            },
+            "blue": {
+              "1": 5,
+              "2": 4,
+              "3": -2,
+              "4": 8
+            }
+          }
+        },
+        "value": 13,
+        "evidence": [
+          "7fc65208df3345f3b696cf96d0af1090",
+          "observation:s04:1"
+        ],
+        "task_binding": "host_current_task",
+        "source_read_bytes": 262,
+        "scan_seconds": 0.0006131000118330121,
+        "backend_cache_hit": false
+      }
+    }
+  ],
+  "remaining_actions": 2,
+  "terminal_action_required": true,
+  "terminal_actions": [
+    "submit",
+    "abstain"
+  ],
+  "allowed_actions": [
+    "query",
+    "calculate",
+    "quality_check",
+    "save",
+    "submit",
+    "abstain"
+  ]
+}

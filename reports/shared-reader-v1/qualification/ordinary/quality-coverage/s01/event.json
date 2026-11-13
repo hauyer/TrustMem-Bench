@@ -1,0 +1,82 @@
+{
+  "session_id": "s01",
+  "contract_version": "native-reader-1",
+  "status": "submitted",
+  "value": 0,
+  "source_read_bytes": 154,
+  "source_scan_seconds": 0.00040020000596996397,
+  "query_calls": 1,
+  "calculate_calls": 1,
+  "quality_check_calls": 0,
+  "save_calls": 1,
+  "tool_errors": 0,
+  "actual_invocations": 4,
+  "observation_payload_bytes": 4608,
+  "trace": [
+    {
+      "action": {
+        "action": "calculate",
+        "evidence": [
+          "a35efdf8579b4231830c974c2fac14ad"
+        ]
+      },
+      "result": {
+        "value": null,
+        "evidence": [
+          "a35efdf8579b4231830c974c2fac14ad"
+        ],
+        "task_binding": "host_current_task",
+        "source_access": false,
+        "parser_scope": "complete JSON receipt literals only"
+      }
+    },
+    {
+      "action": {
+        "action": "query",
+        "scope": "full"
+      },
+      "result": {
+        "receipt_id": "observation:s01:1",
+        "receipt": {
+          "kind": "full",
+          "source_id": "7dc1c9f18069e2927d6293ef3771ec42e39f0cc5cc9be3be1a01add091fce79e",
+          "table": {
+            "correct": {
+              "90": 76,
+              "50": 19
+            },
+            "incorrect": {
+              "90": 4,
+              "50": 1
+            }
+          }
+        },
+        "value": 0,
+        "evidence": [
+          "a35efdf8579b4231830c974c2fac14ad",
+          "observation:s01:1"
+        ],
+        "task_binding": "host_current_task",
+        "source_read_bytes": 154,
+        "scan_seconds": 0.00040020000596996397,
+        "backend_cache_hit": false
+      }
+    },
+    {
+      "action": {
+        "action": "save",
+        "receipt_id": "observation:s01:1"
+      },
+      "result": {
+        "saved": {
+          "id": "f30331e0c23941f59554d49298495ad9",
+          "revision": 1
+        },
+        "receipt_id": "observation:s01:1"
+      }
+    }
+  ],
+  "citations": [],
+  "generated_results": 3,
+  "generated_not_delivered": 0
+}

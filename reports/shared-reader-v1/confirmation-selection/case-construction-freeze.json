@@ -1,0 +1,31 @@
+{
+  "at": "2026-11-13T08:30:18.009168+00:00",
+  "model_calls_cap": 0,
+  "usd_cap": 0,
+  "operation": "Prepare cases only; do not run policies, references or adapt to answers",
+  "hashes": {
+    "experiments/memory_lifecycle/shared_reader_v1/admit_confirmation.py": "0ac0f4b8d39279ab32a56d5ef4e97489e272551eadd48b093ebdd2569337b53b",
+    "artifacts/research_decisions/20261113-confirmation-selection-v1/selection-freeze.json": "86e459f50c6c823a0ad3ca0eb338857c284d353ed7c1250e8f97a62c36cb9010",
+    "artifacts/research_decisions/20261113-confirmation-selection-v1/raw-acquisition.json": "8f1a18e6a2157fe89956e4909c596b2a80813579cc14b296b048e8cc40e279ca",
+    "artifacts/research_decisions/20261113-confirmation-selection-v1/source-receipts.json": "9a841d2a27659cb680700d241a42f7f4b85ef58f79a463c8d41361014e121c4a",
+    "github-release/TrustMem-Bench/trustmem_runtime/agent.py": "fc10b4f74408a589bde0aef43020f11acba828dc5c51dbdc0ecacde475bad807",
+    "github-release/TrustMem-Bench/trustmem_runtime/calculator.py": "738545e52ede8d440dcc1b816da009d1bde078c3facd527aff1bc2bfcc813d88",
+    "github-release/TrustMem-Bench/trustmem_runtime/data.py": "cf4433b2c3ab6211ca17ed836873e73bad48eaf2bcb5305cf0d2249e497bc161",
+    "github-release/TrustMem-Bench/trustmem_runtime/evidence.py": "409602ffc057d2e11488768ab41b593b396460c2e1788ea243586e5d40d3378b",
+    "github-release/TrustMem-Bench/trustmem_runtime/fixtures.py": "9fb4426fabe4616cec3bda639525228f862cd4858f45c7b9c22ee894434aa29f",
+    "github-release/TrustMem-Bench/trustmem_runtime/grading.py": "aa81cdc6e5523535d76b17c3fa9c2b2e0cd521a87fd7ec7e2419c6d0cfa09b8b",
+    "github-release/TrustMem-Bench/trustmem_runtime/prepare_confidence.py": "a2747b692333dbf0a9f0497c01884b8a10c29a3d8889ee58544259972c8cbfe3",
+    "github-release/TrustMem-Bench/trustmem_runtime/prepare_public.py": "a014e62dd48e67a84288732904b72b5db37356e4d34966d46af74fbabcae8da7",
+    "github-release/TrustMem-Bench/trustmem_runtime/reader.py": "a19bf4b8173a375da9d5b8483b2e8fbcd3c418a2b0706468624412daa3bebcf6",
+    "github-release/TrustMem-Bench/trustmem_runtime/replay_agent.py": "0af9520242e44e7c9e5482cba6d2d94e423a31be8c064a5fde13938dad151f18",
+    "github-release/TrustMem-Bench/trustmem_runtime/reporting.py": "8dcc964976c4522691efe02e9c52d297656e48fe8ecad382cca2460b568e8038",
+    "github-release/TrustMem-Bench/trustmem_runtime/run.py": "3f6c3adb986fdf71a7279b7cacb7db6670b54a57ffb58a10fc04ad03864526c2",
+    "github-release/TrustMem-Bench/trustmem_runtime/suite.py": "68f40a07c6584a226406e62c123faebfb4345897cd06d2b220a3f60ecb09aa07",
+    "github-release/TrustMem-Bench/trustmem_runtime/tool_cache.py": "6e63c52e762bba31130f7a65b0918f888e95b6e6db6719e8661340cf088587f1",
+    "github-release/TrustMem-Bench/trustmem_runtime/__init__.py": "4983f6ae4697810367a83dfadb533237d49234b4ef61cc199f8ba77ad654fdfe",
+    "artifacts/research_decisions/20261113-confirmation-selection-v1/sources/gh-0603.gz": "7a20f1b015eee681ebad7eeb5c08ad09060abdd81a46dec85cd385cf3847cfd4",
+    "artifacts/research_decisions/20261113-confirmation-selection-v1/sources/wiki-0603.gz": "288f058f25b6aa1c7df04981335e1b64f70ff4f1b0f534b55f117e1e323a7216",
+    "artifacts/research_decisions/20261113-confirmation-selection-v1/sources/gh-0604.gz": "b1619b4da032017eb379144d99fed52852e33227eb36301e988d18ecfbadbaf9",
+    "artifacts/research_decisions/20261113-confirmation-selection-v1/sources/wiki-0604.gz": "4375b54d20ec48e4086f4a4215a33b90e76513e801dd1d8cc918cf0640827f72"
+  }
+}

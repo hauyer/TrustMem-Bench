@@ -64,6 +64,8 @@ An optional [native Mem0 OSS adapter and pilot](docs/NATIVE_MEM0_PILOT.md) now q
 
 The [same-evidence calculator controls](docs/CALCULATOR_CONTROL.md) keep all12 real delivered-note inputs: tool availability did not cause tool use; instructed use separated arithmetic, parameter selection and unfinished delivery. Both the pure arithmetic helper and all-state completion diagnostics are reusable ordinary baseline components.
 
+The [delivered-support diagnostic](docs/DELIVERED_SUPPORT.md) distinguishes actual reader inputs from generated tool results. The [shared native-note reader](docs/SHARED_READER.md) now gives note backends the same query/calculation/save/terminal contract; its70 scripted qualification deliveries are engineering checks, not additional model results. New confirmation candidates have been selected and constructed separately; no confirmation model results are claimed.
+
 - Correct submissions and correct submissions with sufficient declared evidence.
 - Lucky unsupported answers, wrong answers, unsupported declarations, abstention, launch/format failure and step limits.
 - Actual source reads, common history scanning, identity checking, memory payload reads/writes, SQLite size, agent invocations, observation transport and wall time. These units are not collapsed into one cost.

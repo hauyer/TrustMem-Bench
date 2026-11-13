@@ -1,0 +1,17 @@
+{
+  "action": {
+    "action": "calculate",
+    "evidence": [
+      "a35efdf8579b4231830c974c2fac14ad"
+    ]
+  },
+  "result": {
+    "value": null,
+    "evidence": [
+      "a35efdf8579b4231830c974c2fac14ad"
+    ],
+    "task_binding": "host_current_task",
+    "source_access": false,
+    "parser_scope": "complete JSON receipt literals only"
+  }
+}

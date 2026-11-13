@@ -1,0 +1,21 @@
+{
+  "action": {
+    "action": "calculate",
+    "evidence": [
+      "96102a71c454462eaff7ba31859a8d45",
+      "993f1335cce448f3a0a40b43107efb74",
+      "adc9a825d0264047a216f10f75fabe45"
+    ]
+  },
+  "result": {
+    "value": 1,
+    "evidence": [
+      "96102a71c454462eaff7ba31859a8d45",
+      "993f1335cce448f3a0a40b43107efb74",
+      "adc9a825d0264047a216f10f75fabe45"
+    ],
+    "task_binding": "host_current_task",
+    "source_access": false,
+    "parser_scope": "complete JSON receipt literals only"
+  }
+}

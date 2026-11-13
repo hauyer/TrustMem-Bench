@@ -1,0 +1,30 @@
+{
+  "contract_version": "native-reader-1",
+  "current_source_id": "03b6e7c6432bac225cf41cb81dd25d0ff867b7cee881b7c95d1438aed6e7fb64",
+  "task": {
+    "kind": "marginal",
+    "a": "red"
+  },
+  "retrieved_notes": [
+    {
+      "id": "96102a71c454462eaff7ba31859a8d45",
+      "memory": "{\"kind\":\"margins\",\"left\":{\"blue\":5,\"red\":5},\"right\":{\"north\":4,\"south\":6},\"source_id\":\"03b6e7c6432bac225cf41cb81dd25d0ff867b7cee881b7c95d1438aed6e7fb64\",\"total\":10}",
+      "revision": 1
+    }
+  ],
+  "tool_trace": [],
+  "remaining_actions": 4,
+  "terminal_action_required": true,
+  "terminal_actions": [
+    "submit",
+    "abstain"
+  ],
+  "allowed_actions": [
+    "query",
+    "calculate",
+    "quality_check",
+    "save",
+    "submit",
+    "abstain"
+  ]
+}

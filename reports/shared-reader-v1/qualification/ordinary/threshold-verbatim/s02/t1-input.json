@@ -1,0 +1,49 @@
+{
+  "contract_version": "native-reader-1",
+  "current_source_id": "2aee61996fef0962bb12283383fbd50655cb23e92ee5a2e58dca7e4e721c0da6",
+  "task": {
+    "kind": "threshold",
+    "a": "red",
+    "limit": 20
+  },
+  "retrieved_notes": [
+    {
+      "id": "88c25b6435234ef9ab49e129a14d1dea",
+      "memory": "{\"kind\":\"margins\",\"left\":{\"blue\":7,\"red\":6},\"right\":{\"10\":5,\"20\":3,\"30\":5},\"source_id\":\"2aee61996fef0962bb12283383fbd50655cb23e92ee5a2e58dca7e4e721c0da6\",\"total\":13}",
+      "revision": 1
+    }
+  ],
+  "tool_trace": [
+    {
+      "action": {
+        "action": "calculate",
+        "evidence": [
+          "88c25b6435234ef9ab49e129a14d1dea"
+        ]
+      },
+      "result": {
+        "value": null,
+        "evidence": [
+          "88c25b6435234ef9ab49e129a14d1dea"
+        ],
+        "task_binding": "host_current_task",
+        "source_access": false,
+        "parser_scope": "complete JSON receipt literals only"
+      }
+    }
+  ],
+  "remaining_actions": 3,
+  "terminal_action_required": true,
+  "terminal_actions": [
+    "submit",
+    "abstain"
+  ],
+  "allowed_actions": [
+    "query",
+    "calculate",
+    "quality_check",
+    "save",
+    "submit",
+    "abstain"
+  ]
+}

@@ -1,0 +1,18 @@
+{
+  "action": {
+    "action": "save",
+    "receipt_id": "observation:s01:1"
+  },
+  "result": {
+    "saved": {
+      "results": [
+        {
+          "id": "a9da3dc6-f8e6-4a27-85e5-8e109e8dda6f",
+          "memory": "{\"kind\":\"full\",\"source_id\":\"7dc1c9f18069e2927d6293ef3771ec42e39f0cc5cc9be3be1a01add091fce79e\",\"table\":{\"correct\":{\"50\":19,\"90\":76},\"incorrect\":{\"50\":1,\"90\":4}}}",
+          "event": "ADD"
+        }
+      ]
+    },
+    "receipt_id": "observation:s01:1"
+  }
+}

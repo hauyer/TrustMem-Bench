@@ -1,0 +1,17 @@
+{
+  "version": "native-reader-1",
+  "mode": "tool_first",
+  "max_actions": 4,
+  "task": {
+    "kind": "joint",
+    "a": "red",
+    "b": "north"
+  },
+  "current_source_id": "03b6e7c6432bac225cf41cb81dd25d0ff867b7cee881b7c95d1438aed6e7fb64",
+  "note_ids": [
+    "971294fbf4d24232a78721bbb30e6e62"
+  ],
+  "host_masks_actions": false,
+  "host_repairs": false,
+  "model_calls_by_runtime": 0
+}

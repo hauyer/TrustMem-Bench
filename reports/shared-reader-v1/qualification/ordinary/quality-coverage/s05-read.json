@@ -1,0 +1,15 @@
+{
+  "command": [
+    "D:\\flask\\miniconda\\python.exe",
+    "-B",
+    "-X",
+    "utf8",
+    "D:\\study homework\\trusted computing\\artifacts\\research_decisions\\20261113-shared-reader-v1\\snapshot\\run.py",
+    "read",
+    "--output",
+    "D:\\study homework\\trusted computing\\artifacts\\research_decisions\\20261113-shared-reader-v1\\ordinary\\quality-coverage\\memory.sqlite"
+  ],
+  "returncode": 0,
+  "stdout": "[{\"id\": \"742404fcac0943cb86819a38a7d2aa6f\", \"memory\": \"{\\\"kind\\\":\\\"full\\\",\\\"source_id\\\":\\\"f98ca77cfa478f0118ccbf43dead6a9a53f09758483d36a6daf9eb89b1cc84f4\\\",\\\"table\\\":{\\\"correct\\\":{\\\"50\\\":15,\\\"90\\\":80},\\\"incorrect\\\":{\\\"50\\\":5,\\\"90\\\":0}}}\", \"revision\": 1}, {\"id\": \"f30331e0c23941f59554d49298495ad9\", \"memory\": \"{\\\"kind\\\":\\\"full\\\",\\\"source_id\\\":\\\"7dc1c9f18069e2927d6293ef3771ec42e39f0cc5cc9be3be1a01add091fce79e\\\",\\\"table\\\":{\\\"correct\\\":{\\\"50\\\":19,\\\"90\\\":76},\\\"incorrect\\\":{\\\"50\\\":1,\\\"90\\\":4}}}\", \"revision\": 1}]\n",
+  "stderr": ""
+}

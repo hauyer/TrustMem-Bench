@@ -1,0 +1,85 @@
+{
+  "version": "0.3-dev",
+  "id": "engineering-cross",
+  "mechanism": "cross",
+  "split": "engineering-smoke",
+  "history_group": "synthetic-cross",
+  "initial_source": "03b6e7c6432bac225cf41cb81dd25d0ff867b7cee881b7c95d1438aed6e7fb64",
+  "sources": {
+    "03b6e7c6432bac225cf41cb81dd25d0ff867b7cee881b7c95d1438aed6e7fb64": {
+      "path": "cross-0.jsonl",
+      "format": "weighted-jsonl",
+      "sha256": "03b6e7c6432bac225cf41cb81dd25d0ff867b7cee881b7c95d1438aed6e7fb64"
+    },
+    "45bfe2c6343d0ce0bead517a5b7a65e8a63c7b80321876ec5fc0e267c237fe86": {
+      "path": "cross-1.jsonl",
+      "format": "weighted-jsonl",
+      "sha256": "45bfe2c6343d0ce0bead517a5b7a65e8a63c7b80321876ec5fc0e267c237fe86"
+    }
+  },
+  "tasks": [
+    {
+      "source_id": "03b6e7c6432bac225cf41cb81dd25d0ff867b7cee881b7c95d1438aed6e7fb64",
+      "request": {
+        "kind": "marginal",
+        "a": "red"
+      }
+    },
+    {
+      "source_id": "03b6e7c6432bac225cf41cb81dd25d0ff867b7cee881b7c95d1438aed6e7fb64",
+      "request": {
+        "kind": "joint",
+        "a": "red",
+        "b": "absent"
+      }
+    },
+    {
+      "source_id": "03b6e7c6432bac225cf41cb81dd25d0ff867b7cee881b7c95d1438aed6e7fb64",
+      "request": {
+        "kind": "joint",
+        "a": "red",
+        "b": "north"
+      }
+    },
+    {
+      "source_id": "03b6e7c6432bac225cf41cb81dd25d0ff867b7cee881b7c95d1438aed6e7fb64",
+      "request": {
+        "kind": "joint",
+        "a": "red",
+        "b": "north"
+      }
+    },
+    {
+      "source_id": "45bfe2c6343d0ce0bead517a5b7a65e8a63c7b80321876ec5fc0e267c237fe86",
+      "request": {
+        "kind": "joint",
+        "a": "red",
+        "b": "north"
+      }
+    },
+    {
+      "source_id": "45bfe2c6343d0ce0bead517a5b7a65e8a63c7b80321876ec5fc0e267c237fe86",
+      "request": {
+        "kind": "joint",
+        "a": "red",
+        "b": "north"
+      }
+    },
+    {
+      "source_id": "45bfe2c6343d0ce0bead517a5b7a65e8a63c7b80321876ec5fc0e267c237fe86",
+      "request": {
+        "kind": "joint",
+        "a": "blue",
+        "b": "north"
+      }
+    },
+    {
+      "source_id": "03b6e7c6432bac225cf41cb81dd25d0ff867b7cee881b7c95d1438aed6e7fb64",
+      "request": {
+        "kind": "joint",
+        "a": "red",
+        "b": "north"
+      }
+    }
+  ]
+}

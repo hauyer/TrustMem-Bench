@@ -1,0 +1,30 @@
+{
+  "verdict": "WARN",
+  "integrity_verdict": "PASS",
+  "blocking_current_claim_errors": false,
+  "requested_reviewer_model": "gpt-6.1-sol",
+  "requested_reasoning_effort": "ultra",
+  "reported_reviewer_model": null,
+  "review_independence": "same-family",
+  "acceptance_status": "provisional",
+  "reviewer_task": "/root/shared_reader_audit",
+  "completed_at": "2026-11-13T16:37:37.164045+08:00",
+  "scope": "70 scripted engineering tasks and candidate construction only; no model comparison readiness",
+  "checks": {
+    "ordinary_tasks": 64,
+    "native_tasks": 6,
+    "actual_inputs": 176,
+    "notes_verified_against_raw": 121,
+    "qualification_hashes": 47,
+    "selection_hashes": 7,
+    "construction_hashes": 23,
+    "candidate_cases": 10,
+    "generated_sources": 16
+  },
+  "warnings": [
+    "Content authentication and conflicting receipts need explicit handling",
+    "Bootstrap/full materialization and legal archive recovery remain pending",
+    "Native prose unknown",
+    "No exhaustive source-exposure certification or model batch yet"
+  ]
+}

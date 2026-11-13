@@ -1,0 +1,33 @@
+{
+  "contract_version": "native-reader-1",
+  "current_source_id": "7dc1c9f18069e2927d6293ef3771ec42e39f0cc5cc9be3be1a01add091fce79e",
+  "task": {
+    "kind": "quality",
+    "a": "correct",
+    "cutoff": 80,
+    "numerator": 9,
+    "denominator": 10
+  },
+  "retrieved_notes": [
+    {
+      "id": "256331e7d3734e32baeb24ab0e79e9c6",
+      "memory": "{\"kind\":\"margins\",\"left\":{\"correct\":95,\"incorrect\":5},\"right\":{\"50\":20,\"90\":80},\"source_id\":\"7dc1c9f18069e2927d6293ef3771ec42e39f0cc5cc9be3be1a01add091fce79e\",\"total\":100}",
+      "revision": 1
+    }
+  ],
+  "tool_trace": [],
+  "remaining_actions": 4,
+  "terminal_action_required": true,
+  "terminal_actions": [
+    "submit",
+    "abstain"
+  ],
+  "allowed_actions": [
+    "query",
+    "calculate",
+    "quality_check",
+    "save",
+    "submit",
+    "abstain"
+  ]
+}

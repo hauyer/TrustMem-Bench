@@ -1,0 +1,49 @@
+{
+  "at": "2026-11-13T08:31:10.370415+00:00",
+  "stage": "CANDIDATE_CASES_BOUND_NO_POLICY_RUNS",
+  "public_histories": 2,
+  "synthetic_histories": 8,
+  "task_positions": 80,
+  "model_calls": 0,
+  "usd": 0,
+  "ordinary_runs": 0,
+  "reference_scoring_runs": 0,
+  "native_model_runs": 0,
+  "cases": {
+    "artifacts/research_decisions/20261113-confirmation-selection-v1/public-cases/gh.case.json": "ae6fc3b73a53fc4064e7c82057b9b2476ae1d61d332d05f1654e2a336321c716",
+    "artifacts/research_decisions/20261113-confirmation-selection-v1/public-cases/wiki.case.json": "47c07c1c034fe140458e92402a51502843b714ccee12db75441547ce5504a4af",
+    "artifacts/research_decisions/20261113-confirmation-selection-v1/quality-cases/q00.case.json": "ab497b8aa73d89e58a4dcd4f334f5979557b4096bce5fcbf1ce68442ad43cc46",
+    "artifacts/research_decisions/20261113-confirmation-selection-v1/quality-cases/q01.case.json": "11d2101628fdf832e78d03569d3c141630546dd3ae7d90b9bd4453daddd32e6c",
+    "artifacts/research_decisions/20261113-confirmation-selection-v1/quality-cases/q02.case.json": "ca44fe7a78b9268a78a94996c89bb346dd5c386307f9dbd9e897df759fee1059",
+    "artifacts/research_decisions/20261113-confirmation-selection-v1/quality-cases/q03.case.json": "383f2ab70b1370d6d46907494e36510dc2f6ffc1caf101ca229799d815f0bda1",
+    "artifacts/research_decisions/20261113-confirmation-selection-v1/quality-cases/q04.case.json": "195d67c1f6536909d83f9c07dd2bffa9fc12c4d54921d4c6d55999fe650b7a95",
+    "artifacts/research_decisions/20261113-confirmation-selection-v1/quality-cases/q05.case.json": "2fb00fdff0e335c9a0df02cca7c843b1d447a49e1e8ed4ce620381a6d5907ff4",
+    "artifacts/research_decisions/20261113-confirmation-selection-v1/quality-cases/q06.case.json": "fc9dc9d63011691fbdfa1cfea8063f9ce052fe63228c78edd5db1f6aeee56ac6",
+    "artifacts/research_decisions/20261113-confirmation-selection-v1/quality-cases/q07.case.json": "267ceed18a0b634a390182020b865b9683ac3f88570f96b93d34b212df0e936b"
+  },
+  "generated_sources": {
+    "artifacts/research_decisions/20261113-confirmation-selection-v1/quality-cases/q00-v0.jsonl": "b4649644fbe56861e3f4e6dc590051d74de1a194e075c95250386279d3bfb2dc",
+    "artifacts/research_decisions/20261113-confirmation-selection-v1/quality-cases/q00-v1.jsonl": "8bbffcff9ff73fb012f19c4afac23a8b18b190ab3e8952dcc3195a172be99cd9",
+    "artifacts/research_decisions/20261113-confirmation-selection-v1/quality-cases/q01-v0.jsonl": "3935cae2fdeb2b4b00ad929a7d1f78b721978008b6c5b06ed2126e412553535b",
+    "artifacts/research_decisions/20261113-confirmation-selection-v1/quality-cases/q01-v1.jsonl": "07a1b0017ba49035392df9742179ce908349349409ee58fb395e4e427f0cce9a",
+    "artifacts/research_decisions/20261113-confirmation-selection-v1/quality-cases/q02-v0.jsonl": "a83cc810d219b0d5650f07fbe6847264852a1cf3d8486b54d3465be1abaebe8d",
+    "artifacts/research_decisions/20261113-confirmation-selection-v1/quality-cases/q02-v1.jsonl": "edb7270a3d6fa0262aee0c446f6af4933e7ddece0a8940425d361a6c3c9a37e7",
+    "artifacts/research_decisions/20261113-confirmation-selection-v1/quality-cases/q03-v0.jsonl": "ac08a61ecd047625928c328f2604c31608b6f02aa33c88abb8522f7aa74c1f5d",
+    "artifacts/research_decisions/20261113-confirmation-selection-v1/quality-cases/q03-v1.jsonl": "5afe7d22a8146b36f81327f72adf20fa3f4aa54d3bcec0a51b48599e955ac969",
+    "artifacts/research_decisions/20261113-confirmation-selection-v1/quality-cases/q04-v0.jsonl": "4054395b9ed3f54838172cbc59ac6f7a891b0c7de10fbb6b61698f95ce18522b",
+    "artifacts/research_decisions/20261113-confirmation-selection-v1/quality-cases/q04-v1.jsonl": "d66990cd6392e611d36b63d4b0cd8cde23449f53acd77bfcb5448018e017ee2d",
+    "artifacts/research_decisions/20261113-confirmation-selection-v1/quality-cases/q05-v0.jsonl": "2fe91715424168d14db8cb834f352bbe490ada45f8fa978e1a14a7ba9ec11bf1",
+    "artifacts/research_decisions/20261113-confirmation-selection-v1/quality-cases/q05-v1.jsonl": "5c8b63e947c41eed40f14272813ccb63ab3e742337d535b917eea73f34a51bdf",
+    "artifacts/research_decisions/20261113-confirmation-selection-v1/quality-cases/q06-v0.jsonl": "1f04641e6856b899c81218dc2b5753e8f750f8372e9262879cae4dce7a611aba",
+    "artifacts/research_decisions/20261113-confirmation-selection-v1/quality-cases/q06-v1.jsonl": "d2a6c54bcd2b5bfb09944c2732bcd8cfa900527709c18ae41972c9928e3f4f1d",
+    "artifacts/research_decisions/20261113-confirmation-selection-v1/quality-cases/q07-v0.jsonl": "6f33481c093f5f8034c959a4f34a831b42057891769afdb85ab7437db164e618",
+    "artifacts/research_decisions/20261113-confirmation-selection-v1/quality-cases/q07-v1.jsonl": "3c9f04f0a6c43eb9167c45def0c3c85e9416370a7b7bb0cfbd2de6f44d9a5037"
+  },
+  "limits": [
+    "two public producers share joint-count mechanism",
+    "eight synthetic draws do not establish external validity",
+    "source-date exposure not exhaustively certified",
+    "bootstrap/recovery and conflict handling still needed before model admission"
+  ],
+  "original_frozen_inputs_unchanged": true
+}

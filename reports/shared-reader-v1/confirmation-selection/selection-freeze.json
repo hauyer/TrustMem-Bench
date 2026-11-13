@@ -1,0 +1,54 @@
+{
+  "at": "2026-11-13T08:27:43.539418+00:00",
+  "stage": "SELECTION_FROZEN_RAW_INPUTS_NOT_ADMITTED",
+  "current_model_calls_cap": 0,
+  "current_usd_cap": 0,
+  "running": false,
+  "queued": false,
+  "sources": [
+    {
+      "id": "gh-0603",
+      "format": "gharchive",
+      "url": "https://data.gharchive.org/2024-06-03-0.json.gz"
+    },
+    {
+      "id": "wiki-0603",
+      "format": "wikimedia",
+      "url": "https://dumps.wikimedia.org/other/pageviews/2024/2024-06/pageviews-20240603-000000.gz"
+    },
+    {
+      "id": "gh-0604",
+      "format": "gharchive",
+      "url": "https://data.gharchive.org/2024-06-04-0.json.gz"
+    },
+    {
+      "id": "wiki-0604",
+      "format": "wikimedia",
+      "url": "https://dumps.wikimedia.org/other/pageviews/2024/2024-06/pageviews-20240604-000000.gz"
+    }
+  ],
+  "source_sha256": null,
+  "source_content_read": false,
+  "public_history_pairs": 2,
+  "download_cap_per_file": 104857600,
+  "download_cap_total": 335544320,
+  "quality_generator": {
+    "seed": 202611131623,
+    "history_draws": 8,
+    "versions": 2,
+    "cell_distribution": "independent randint(0,100) for four cells, no rejection or resampling",
+    "tasks_per_history": 8
+  },
+  "reader_order_seed": 202611131624,
+  "normal_actions": 4,
+  "provenance_scope": "New selection only; no availability/exposure certification, data admission, ordinary run or model result claimed",
+  "hashes": {
+    "docs/mainline/CONFIRMATION_DESIGN_20261113.md": "a77e58ab6cb935ef632a0d2f36aa3a57ee33e8f3a537a8f3812ce86ec35b9736",
+    "experiments/memory_lifecycle/shared_reader_v1/prepare_confirmation.py": "c561b641e4949126c492b82348a9c57ce3756eec38e1bff7c40633624b6d6a2c",
+    "github-release/TrustMem-Bench/trustmem_runtime/reader.py": "a19bf4b8173a375da9d5b8483b2e8fbcd3c418a2b0706468624412daa3bebcf6",
+    "experiments/memory_lifecycle/shared_reader_v1/acquire_confirmation.py": "c25db715e1c4b7c5abf7766042288719630bbe9e2b2322a18ffa040e81b6fb88",
+    "artifacts/research_decisions/20261112-dsmm-public-holdout-v1/acquire.py": "c178c7fa24e91249dfbd31fcb7f8cf16646fd4cde1b491e155d718ff798f58d5",
+    "artifacts/research_decisions/20261113-confirmation-selection-v1/PROTOCOL.md": "a77e58ab6cb935ef632a0d2f36aa3a57ee33e8f3a537a8f3812ce86ec35b9736",
+    "artifacts/research_decisions/20261113-confirmation-selection-v1/acquire.py": "c25db715e1c4b7c5abf7766042288719630bbe9e2b2322a18ffa040e81b6fb88"
+  }
+}

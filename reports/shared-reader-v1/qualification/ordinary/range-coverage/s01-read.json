@@ -1,0 +1,15 @@
+{
+  "command": [
+    "D:\\flask\\miniconda\\python.exe",
+    "-B",
+    "-X",
+    "utf8",
+    "D:\\study homework\\trusted computing\\artifacts\\research_decisions\\20261113-shared-reader-v1\\snapshot\\run.py",
+    "read",
+    "--output",
+    "D:\\study homework\\trusted computing\\artifacts\\research_decisions\\20261113-shared-reader-v1\\ordinary\\range-coverage\\memory.sqlite"
+  ],
+  "returncode": 0,
+  "stdout": "[{\"id\": \"82c336cabf4542b28ea5ef4b2fc3d0dd\", \"memory\": \"{\\\"domain\\\":[1,2,3,4],\\\"kind\\\":\\\"range-history\\\",\\\"observations\\\":[{\\\"a\\\":\\\"red\\\",\\\"hi\\\":3,\\\"lo\\\":1,\\\"value\\\":12},{\\\"a\\\":\\\"red\\\",\\\"hi\\\":3,\\\"lo\\\":3,\\\"value\\\":5},{\\\"a\\\":\\\"blue\\\",\\\"hi\\\":3,\\\"lo\\\":1,\\\"value\\\":10},{\\\"a\\\":\\\"blue\\\",\\\"hi\\\":3,\\\"lo\\\":3,\\\"value\\\":-1}],\\\"source_id\\\":\\\"b5e852d5e1b0c77ef4cf455ca9e6d58d3f89637afd4bc7936de9a15a28fadd98\\\"}\", \"revision\": 1}]\n",
+  "stderr": ""
+}

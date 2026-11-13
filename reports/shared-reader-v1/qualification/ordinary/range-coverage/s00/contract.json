@@ -1,0 +1,18 @@
+{
+  "version": "native-reader-1",
+  "mode": "tool_first",
+  "max_actions": 4,
+  "task": {
+    "kind": "range",
+    "a": "red",
+    "lo": 1,
+    "hi": 2
+  },
+  "current_source_id": "b5e852d5e1b0c77ef4cf455ca9e6d58d3f89637afd4bc7936de9a15a28fadd98",
+  "note_ids": [
+    "82c336cabf4542b28ea5ef4b2fc3d0dd"
+  ],
+  "host_masks_actions": false,
+  "host_repairs": false,
+  "model_calls_by_runtime": 0
+}

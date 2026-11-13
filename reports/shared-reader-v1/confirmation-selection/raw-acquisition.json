@@ -1,0 +1,19 @@
+{
+  "at": "2026-11-13T08:28:23.803040+00:00",
+  "stage": "RAW_FILES_ACQUIRED_NOT_PARSED",
+  "acquired": 4,
+  "failed": 0,
+  "compressed_bytes_received": 257082273,
+  "model_calls": 0,
+  "usd": 0,
+  "source_sha256": {
+    "gh-0603": "7a20f1b015eee681ebad7eeb5c08ad09060abdd81a46dec85cd385cf3847cfd4",
+    "gh-0604": "b1619b4da032017eb379144d99fed52852e33227eb36301e988d18ecfbadbaf9",
+    "wiki-0603": "288f058f25b6aa1c7df04981335e1b64f70ff4f1b0f534b55f117e1e323a7216",
+    "wiki-0604": "4375b54d20ec48e4086f4a4215a33b90e76513e801dd1d8cc918cf0640827f72"
+  },
+  "source_content_decompressed": false,
+  "task_cases_built": false,
+  "reference_computed": false,
+  "note": "Selection frozen before acquisition. Reused prior downloader unchanged via frozen URL mapping; no replacement dates, retries or model runs. Raw availability is not parser/semantic admission."
+}

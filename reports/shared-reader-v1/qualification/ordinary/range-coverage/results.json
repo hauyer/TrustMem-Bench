@@ -1,0 +1,426 @@
+{
+  "mechanism": "range",
+  "backend": "coverage",
+  "tasks": 8,
+  "correct": 8,
+  "fresh_process_reads": 8,
+  "query_calls": 2,
+  "actual_saves": 2,
+  "source_read_bytes": 525,
+  "common_history_scan": {
+    "source_read_bytes": 263,
+    "scan_seconds": 0.0004383000050438568
+  },
+  "cache_hits": 0,
+  "cache_misses": 2,
+  "events": [
+    {
+      "session_id": "s00",
+      "contract_version": "native-reader-1",
+      "status": "submitted",
+      "value": 7,
+      "source_read_bytes": 0,
+      "source_scan_seconds": 0.0,
+      "query_calls": 0,
+      "calculate_calls": 1,
+      "quality_check_calls": 0,
+      "save_calls": 0,
+      "tool_errors": 0,
+      "actual_invocations": 2,
+      "observation_payload_bytes": 1844,
+      "trace": [
+        {
+          "action": {
+            "action": "calculate",
+            "evidence": [
+              "82c336cabf4542b28ea5ef4b2fc3d0dd"
+            ]
+          },
+          "result": {
+            "value": 7,
+            "evidence": [
+              "82c336cabf4542b28ea5ef4b2fc3d0dd"
+            ],
+            "task_binding": "host_current_task",
+            "source_access": false,
+            "parser_scope": "complete JSON receipt literals only"
+          }
+        }
+      ],
+      "citations": [],
+      "generated_results": 1,
+      "generated_not_delivered": 0,
+      "correct": true
+    },
+    {
+      "session_id": "s01",
+      "contract_version": "native-reader-1",
+      "status": "submitted",
+      "value": 12,
+      "source_read_bytes": 0,
+      "source_scan_seconds": 0.0,
+      "query_calls": 0,
+      "calculate_calls": 1,
+      "quality_check_calls": 0,
+      "save_calls": 0,
+      "tool_errors": 0,
+      "actual_invocations": 2,
+      "observation_payload_bytes": 1845,
+      "trace": [
+        {
+          "action": {
+            "action": "calculate",
+            "evidence": [
+              "82c336cabf4542b28ea5ef4b2fc3d0dd"
+            ]
+          },
+          "result": {
+            "value": 12,
+            "evidence": [
+              "82c336cabf4542b28ea5ef4b2fc3d0dd"
+            ],
+            "task_binding": "host_current_task",
+            "source_access": false,
+            "parser_scope": "complete JSON receipt literals only"
+          }
+        }
+      ],
+      "citations": [],
+      "generated_results": 1,
+      "generated_not_delivered": 0,
+      "correct": true
+    },
+    {
+      "session_id": "s02",
+      "contract_version": "native-reader-1",
+      "status": "submitted",
+      "value": 19,
+      "source_read_bytes": 263,
+      "source_scan_seconds": 0.0002517000102670863,
+      "query_calls": 1,
+      "calculate_calls": 1,
+      "quality_check_calls": 0,
+      "save_calls": 1,
+      "tool_errors": 0,
+      "actual_invocations": 4,
+      "observation_payload_bytes": 5072,
+      "trace": [
+        {
+          "action": {
+            "action": "calculate",
+            "evidence": [
+              "82c336cabf4542b28ea5ef4b2fc3d0dd"
+            ]
+          },
+          "result": {
+            "value": null,
+            "evidence": [
+              "82c336cabf4542b28ea5ef4b2fc3d0dd"
+            ],
+            "task_binding": "host_current_task",
+            "source_access": false,
+            "parser_scope": "complete JSON receipt literals only"
+          }
+        },
+        {
+          "action": {
+            "action": "query",
+            "scope": "full"
+          },
+          "result": {
+            "receipt_id": "observation:s02:1",
+            "receipt": {
+              "kind": "full",
+              "source_id": "b5e852d5e1b0c77ef4cf455ca9e6d58d3f89637afd4bc7936de9a15a28fadd98",
+              "table": {
+                "red": {
+                  "1": 10,
+                  "2": -3,
+                  "3": 5,
+                  "4": 7
+                },
+                "blue": {
+                  "1": 2,
+                  "2": 9,
+                  "3": -1,
+                  "4": 4
+                }
+              }
+            },
+            "value": 19,
+            "evidence": [
+              "82c336cabf4542b28ea5ef4b2fc3d0dd",
+              "observation:s02:1"
+            ],
+            "task_binding": "host_current_task",
+            "source_read_bytes": 263,
+            "scan_seconds": 0.0002517000102670863,
+            "backend_cache_hit": false
+          }
+        },
+        {
+          "action": {
+            "action": "save",
+            "receipt_id": "observation:s02:1"
+          },
+          "result": {
+            "saved": {
+              "id": "7fc65208df3345f3b696cf96d0af1090",
+              "revision": 1
+            },
+            "receipt_id": "observation:s02:1"
+          }
+        }
+      ],
+      "citations": [],
+      "generated_results": 3,
+      "generated_not_delivered": 0,
+      "correct": true
+    },
+    {
+      "session_id": "s03",
+      "contract_version": "native-reader-1",
+      "status": "submitted",
+      "value": 19,
+      "source_read_bytes": 0,
+      "source_scan_seconds": 0.0,
+      "query_calls": 0,
+      "calculate_calls": 1,
+      "quality_check_calls": 0,
+      "save_calls": 0,
+      "tool_errors": 0,
+      "actual_invocations": 2,
+      "observation_payload_bytes": 1569,
+      "trace": [
+        {
+          "action": {
+            "action": "calculate",
+            "evidence": [
+              "7fc65208df3345f3b696cf96d0af1090"
+            ]
+          },
+          "result": {
+            "value": 19,
+            "evidence": [
+              "7fc65208df3345f3b696cf96d0af1090"
+            ],
+            "task_binding": "host_current_task",
+            "source_access": false,
+            "parser_scope": "complete JSON receipt literals only"
+          }
+        }
+      ],
+      "citations": [],
+      "generated_results": 1,
+      "generated_not_delivered": 0,
+      "correct": true
+    },
+    {
+      "session_id": "s04",
+      "contract_version": "native-reader-1",
+      "status": "submitted",
+      "value": 13,
+      "source_read_bytes": 262,
+      "source_scan_seconds": 0.0006131000118330121,
+      "query_calls": 1,
+      "calculate_calls": 1,
+      "quality_check_calls": 0,
+      "save_calls": 1,
+      "tool_errors": 0,
+      "actual_invocations": 4,
+      "observation_payload_bytes": 4518,
+      "trace": [
+        {
+          "action": {
+            "action": "calculate",
+            "evidence": [
+              "7fc65208df3345f3b696cf96d0af1090"
+            ]
+          },
+          "result": {
+            "value": null,
+            "evidence": [
+              "7fc65208df3345f3b696cf96d0af1090"
+            ],
+            "task_binding": "host_current_task",
+            "source_access": false,
+            "parser_scope": "complete JSON receipt literals only"
+          }
+        },
+        {
+          "action": {
+            "action": "query",
+            "scope": "full"
+          },
+          "result": {
+            "receipt_id": "observation:s04:1",
+            "receipt": {
+              "kind": "full",
+              "source_id": "6f342afd740c181cd6c58e78fc805814a06ff83d075935c4d8aa07c1197fc07c",
+              "table": {
+                "red": {
+                  "1": 9,
+                  "2": -1,
+                  "3": 3,
+                  "4": 2
+                },
+                "blue": {
+                  "1": 5,
+                  "2": 4,
+                  "3": -2,
+                  "4": 8
+                }
+              }
+            },
+            "value": 13,
+            "evidence": [
+              "7fc65208df3345f3b696cf96d0af1090",
+              "observation:s04:1"
+            ],
+            "task_binding": "host_current_task",
+            "source_read_bytes": 262,
+            "scan_seconds": 0.0006131000118330121,
+            "backend_cache_hit": false
+          }
+        },
+        {
+          "action": {
+            "action": "save",
+            "receipt_id": "observation:s04:1"
+          },
+          "result": {
+            "saved": {
+              "id": "7b4fca8961c447028bde73ef6d4e096a",
+              "revision": 1
+            },
+            "receipt_id": "observation:s04:1"
+          }
+        }
+      ],
+      "citations": [],
+      "generated_results": 3,
+      "generated_not_delivered": 0,
+      "correct": true
+    },
+    {
+      "session_id": "s05",
+      "contract_version": "native-reader-1",
+      "status": "submitted",
+      "value": 13,
+      "source_read_bytes": 0,
+      "source_scan_seconds": 0.0,
+      "query_calls": 0,
+      "calculate_calls": 1,
+      "quality_check_calls": 0,
+      "save_calls": 0,
+      "tool_errors": 0,
+      "actual_invocations": 2,
+      "observation_payload_bytes": 2175,
+      "trace": [
+        {
+          "action": {
+            "action": "calculate",
+            "evidence": [
+              "7b4fca8961c447028bde73ef6d4e096a",
+              "7fc65208df3345f3b696cf96d0af1090"
+            ]
+          },
+          "result": {
+            "value": 13,
+            "evidence": [
+              "7b4fca8961c447028bde73ef6d4e096a",
+              "7fc65208df3345f3b696cf96d0af1090"
+            ],
+            "task_binding": "host_current_task",
+            "source_access": false,
+            "parser_scope": "complete JSON receipt literals only"
+          }
+        }
+      ],
+      "citations": [],
+      "generated_results": 1,
+      "generated_not_delivered": 0,
+      "correct": true
+    },
+    {
+      "session_id": "s06",
+      "contract_version": "native-reader-1",
+      "status": "submitted",
+      "value": 9,
+      "source_read_bytes": 0,
+      "source_scan_seconds": 0.0,
+      "query_calls": 0,
+      "calculate_calls": 1,
+      "quality_check_calls": 0,
+      "save_calls": 0,
+      "tool_errors": 0,
+      "actual_invocations": 2,
+      "observation_payload_bytes": 2176,
+      "trace": [
+        {
+          "action": {
+            "action": "calculate",
+            "evidence": [
+              "7b4fca8961c447028bde73ef6d4e096a",
+              "7fc65208df3345f3b696cf96d0af1090"
+            ]
+          },
+          "result": {
+            "value": 9,
+            "evidence": [
+              "7b4fca8961c447028bde73ef6d4e096a",
+              "7fc65208df3345f3b696cf96d0af1090"
+            ],
+            "task_binding": "host_current_task",
+            "source_access": false,
+            "parser_scope": "complete JSON receipt literals only"
+          }
+        }
+      ],
+      "citations": [],
+      "generated_results": 1,
+      "generated_not_delivered": 0,
+      "correct": true
+    },
+    {
+      "session_id": "s07",
+      "contract_version": "native-reader-1",
+      "status": "submitted",
+      "value": 19,
+      "source_read_bytes": 0,
+      "source_scan_seconds": 0.0,
+      "query_calls": 0,
+      "calculate_calls": 1,
+      "quality_check_calls": 0,
+      "save_calls": 0,
+      "tool_errors": 0,
+      "actual_invocations": 2,
+      "observation_payload_bytes": 2175,
+      "trace": [
+        {
+          "action": {
+            "action": "calculate",
+            "evidence": [
+              "7b4fca8961c447028bde73ef6d4e096a",
+              "7fc65208df3345f3b696cf96d0af1090"
+            ]
+          },
+          "result": {
+            "value": 19,
+            "evidence": [
+              "7b4fca8961c447028bde73ef6d4e096a",
+              "7fc65208df3345f3b696cf96d0af1090"
+            ],
+            "task_binding": "host_current_task",
+            "source_access": false,
+            "parser_scope": "complete JSON receipt literals only"
+          }
+        }
+      ],
+      "citations": [],
+      "generated_results": 1,
+      "generated_not_delivered": 0,
+      "correct": true
+    }
+  ]
+}

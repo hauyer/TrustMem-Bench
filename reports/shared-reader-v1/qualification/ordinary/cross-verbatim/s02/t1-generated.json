@@ -1,0 +1,32 @@
+{
+  "action": {
+    "action": "query",
+    "scope": "full"
+  },
+  "result": {
+    "receipt_id": "observation:s02:1",
+    "receipt": {
+      "kind": "full",
+      "source_id": "03b6e7c6432bac225cf41cb81dd25d0ff867b7cee881b7c95d1438aed6e7fb64",
+      "table": {
+        "red": {
+          "north": 3,
+          "south": 2
+        },
+        "blue": {
+          "north": 1,
+          "south": 4
+        }
+      }
+    },
+    "value": 3,
+    "evidence": [
+      "96102a71c454462eaff7ba31859a8d45",
+      "observation:s02:1"
+    ],
+    "task_binding": "host_current_task",
+    "source_read_bytes": 146,
+    "scan_seconds": 0.00036109999928157777,
+    "backend_cache_hit": false
+  }
+}

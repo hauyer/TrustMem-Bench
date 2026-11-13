@@ -1,0 +1,33 @@
+{
+  "action": {
+    "action": "query",
+    "scope": "full"
+  },
+  "result": {
+    "receipt_id": "observation:s04:1",
+    "receipt": {
+      "kind": "full",
+      "source_id": "f98ca77cfa478f0118ccbf43dead6a9a53f09758483d36a6daf9eb89b1cc84f4",
+      "table": {
+        "correct": {
+          "90": 80,
+          "50": 15
+        },
+        "incorrect": {
+          "90": 0,
+          "50": 5
+        }
+      }
+    },
+    "value": 1,
+    "evidence": [
+      "256331e7d3734e32baeb24ab0e79e9c6",
+      "b3b2d01106914d1ca13d72c5174b8520",
+      "observation:s04:1"
+    ],
+    "task_binding": "host_current_task",
+    "source_read_bytes": 154,
+    "scan_seconds": 0.00037150000571273267,
+    "backend_cache_hit": false
+  }
+}

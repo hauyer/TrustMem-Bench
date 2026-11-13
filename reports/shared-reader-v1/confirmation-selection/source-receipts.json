@@ -1,0 +1,42 @@
+{
+  "bytes_received": 257082273,
+  "freeze_sha256": "93ac93d81e91073614f889d81b523024ce5ed105d84431864c19d2f3816cf257",
+  "sources": {
+    "gh-0603": {
+      "actual_url": "https://data.gharchive.org/2024-06-03-0.json.gz",
+      "bytes": 82010008,
+      "family": "gharchive",
+      "seconds": 7.152555199994822,
+      "sha256": "7a20f1b015eee681ebad7eeb5c08ad09060abdd81a46dec85cd385cf3847cfd4",
+      "status": "ACQUIRED",
+      "url": "https://data.gharchive.org/2024-06-03-0.json.gz"
+    },
+    "gh-0604": {
+      "actual_url": "https://data.gharchive.org/2024-06-04-0.json.gz",
+      "bytes": 85425442,
+      "family": "gharchive",
+      "seconds": 5.55828240000119,
+      "sha256": "b1619b4da032017eb379144d99fed52852e33227eb36301e988d18ecfbadbaf9",
+      "status": "ACQUIRED",
+      "url": "https://data.gharchive.org/2024-06-04-0.json.gz"
+    },
+    "wiki-0603": {
+      "actual_url": "https://dumps.wikimedia.org/other/pageviews/2024/2024-06/pageviews-20240603-000000.gz",
+      "bytes": 45359446,
+      "family": "wikimedia",
+      "seconds": 12.287222800005111,
+      "sha256": "288f058f25b6aa1c7df04981335e1b64f70ff4f1b0f534b55f117e1e323a7216",
+      "status": "ACQUIRED",
+      "url": "https://dumps.wikimedia.org/other/pageviews/2024/2024-06/pageviews-20240603-000000.gz"
+    },
+    "wiki-0604": {
+      "actual_url": "https://dumps.wikimedia.org/other/pageviews/2024/2024-06/pageviews-20240604-000000.gz",
+      "bytes": 44287377,
+      "family": "wikimedia",
+      "seconds": 14.141272599998047,
+      "sha256": "4375b54d20ec48e4086f4a4215a33b90e76513e801dd1d8cc918cf0640827f72",
+      "status": "ACQUIRED",
+      "url": "https://dumps.wikimedia.org/other/pageviews/2024/2024-06/pageviews-20240604-000000.gz"
+    }
+  }
+}

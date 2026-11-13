@@ -1,0 +1,16 @@
+{
+  "at": "2026-11-13T08:32:47.100137+00:00",
+  "ordinary_tasks": 64,
+  "ordinary_correct": 64,
+  "ordinary_fresh_reads": 64,
+  "native_tasks": 6,
+  "native_correct": 6,
+  "native_fresh_reads": 6,
+  "scripted_native_writer_callbacks": 6,
+  "api_calls": 0,
+  "usd": 0,
+  "scope": "70 scripted engineering deliveries, old fixtures; actual persistence and native SDK, no natural model effect",
+  "unit_tests": 60,
+  "qualification_freeze_files": 47,
+  "confirmation_case_manifest": "artifacts/research_decisions/20261113-confirmation-selection-v1/case-admission.json"
+}

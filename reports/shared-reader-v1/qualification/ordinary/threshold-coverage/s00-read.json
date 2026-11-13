@@ -1,0 +1,15 @@
+{
+  "command": [
+    "D:\\flask\\miniconda\\python.exe",
+    "-B",
+    "-X",
+    "utf8",
+    "D:\\study homework\\trusted computing\\artifacts\\research_decisions\\20261113-shared-reader-v1\\snapshot\\run.py",
+    "read",
+    "--output",
+    "D:\\study homework\\trusted computing\\artifacts\\research_decisions\\20261113-shared-reader-v1\\ordinary\\threshold-coverage\\memory.sqlite"
+  ],
+  "returncode": 0,
+  "stdout": "[{\"id\": \"efb8f5c3a57f46c0818ae4b04396c0d7\", \"memory\": \"{\\\"kind\\\":\\\"margins\\\",\\\"left\\\":{\\\"blue\\\":7,\\\"red\\\":6},\\\"right\\\":{\\\"10\\\":5,\\\"20\\\":3,\\\"30\\\":5},\\\"source_id\\\":\\\"2aee61996fef0962bb12283383fbd50655cb23e92ee5a2e58dca7e4e721c0da6\\\",\\\"total\\\":13}\", \"revision\": 1}]\n",
+  "stderr": ""
+}

@@ -1,0 +1,35 @@
+{
+  "at": "2026-11-13T08:27:44.620537+00:00",
+  "cap_per_file": 104857600,
+  "cap_total": 335544320,
+  "files": {
+    "PROTOCOL.md": {
+      "bytes": 6764,
+      "sha256": "a77e58ab6cb935ef632a0d2f36aa3a57ee33e8f3a537a8f3812ce86ec35b9736"
+    },
+    "acquire.py": {
+      "bytes": 1844,
+      "sha256": "c25db715e1c4b7c5abf7766042288719630bbe9e2b2322a18ffa040e81b6fb88"
+    }
+  },
+  "model_api_calls_cap": 0,
+  "sources": {
+    "gh-0603": [
+      "gharchive",
+      "https://data.gharchive.org/2024-06-03-0.json.gz"
+    ],
+    "gh-0604": [
+      "gharchive",
+      "https://data.gharchive.org/2024-06-04-0.json.gz"
+    ],
+    "wiki-0603": [
+      "wikimedia",
+      "https://dumps.wikimedia.org/other/pageviews/2024/2024-06/pageviews-20240603-000000.gz"
+    ],
+    "wiki-0604": [
+      "wikimedia",
+      "https://dumps.wikimedia.org/other/pageviews/2024/2024-06/pageviews-20240604-000000.gz"
+    ]
+  },
+  "usd_cap": 0
+}

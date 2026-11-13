@@ -1,0 +1,370 @@
+{
+  "tasks": 6,
+  "correct": 6,
+  "new_process_native_searches": 6,
+  "scripted_writer_callbacks": 6,
+  "infer_true": true,
+  "api_calls": 0,
+  "usd": 0,
+  "common_history_scan": {
+    "source_read_bytes": 154,
+    "scan_seconds": 0.00047480000648647547
+  },
+  "source_read_bytes": 308,
+  "events": [
+    {
+      "session_id": "s00",
+      "contract_version": "native-reader-1",
+      "status": "submitted",
+      "value": 1,
+      "source_read_bytes": 0,
+      "source_scan_seconds": 0.0,
+      "query_calls": 0,
+      "calculate_calls": 1,
+      "quality_check_calls": 0,
+      "save_calls": 0,
+      "tool_errors": 0,
+      "actual_invocations": 2,
+      "observation_payload_bytes": 2104,
+      "trace": [
+        {
+          "action": {
+            "action": "calculate",
+            "evidence": [
+              "23313902-9b45-4d80-b0d1-ceb28036ed1d"
+            ]
+          },
+          "result": {
+            "value": 1,
+            "evidence": [
+              "23313902-9b45-4d80-b0d1-ceb28036ed1d"
+            ],
+            "task_binding": "host_current_task",
+            "source_access": false,
+            "parser_scope": "complete JSON receipt literals only"
+          }
+        }
+      ],
+      "citations": [],
+      "generated_results": 1,
+      "generated_not_delivered": 0,
+      "case_index": 0,
+      "correct": true
+    },
+    {
+      "session_id": "s01",
+      "contract_version": "native-reader-1",
+      "status": "submitted",
+      "value": 0,
+      "source_read_bytes": 154,
+      "source_scan_seconds": 0.00042940001003444195,
+      "query_calls": 1,
+      "calculate_calls": 1,
+      "quality_check_calls": 0,
+      "save_calls": 1,
+      "tool_errors": 0,
+      "actual_invocations": 4,
+      "observation_payload_bytes": 5805,
+      "trace": [
+        {
+          "action": {
+            "action": "calculate",
+            "evidence": [
+              "23313902-9b45-4d80-b0d1-ceb28036ed1d"
+            ]
+          },
+          "result": {
+            "value": null,
+            "evidence": [
+              "23313902-9b45-4d80-b0d1-ceb28036ed1d"
+            ],
+            "task_binding": "host_current_task",
+            "source_access": false,
+            "parser_scope": "complete JSON receipt literals only"
+          }
+        },
+        {
+          "action": {
+            "action": "query",
+            "scope": "full"
+          },
+          "result": {
+            "receipt_id": "observation:s01:1",
+            "receipt": {
+              "kind": "full",
+              "source_id": "7dc1c9f18069e2927d6293ef3771ec42e39f0cc5cc9be3be1a01add091fce79e",
+              "table": {
+                "correct": {
+                  "90": 76,
+                  "50": 19
+                },
+                "incorrect": {
+                  "90": 4,
+                  "50": 1
+                }
+              }
+            },
+            "value": 0,
+            "evidence": [
+              "23313902-9b45-4d80-b0d1-ceb28036ed1d",
+              "observation:s01:1"
+            ],
+            "task_binding": "host_current_task",
+            "source_read_bytes": 154,
+            "scan_seconds": 0.00042940001003444195,
+            "backend_cache_hit": false
+          }
+        },
+        {
+          "action": {
+            "action": "save",
+            "receipt_id": "observation:s01:1"
+          },
+          "result": {
+            "saved": {
+              "results": [
+                {
+                  "id": "a9da3dc6-f8e6-4a27-85e5-8e109e8dda6f",
+                  "memory": "{\"kind\":\"full\",\"source_id\":\"7dc1c9f18069e2927d6293ef3771ec42e39f0cc5cc9be3be1a01add091fce79e\",\"table\":{\"correct\":{\"50\":19,\"90\":76},\"incorrect\":{\"50\":1,\"90\":4}}}",
+                  "event": "ADD"
+                }
+              ]
+            },
+            "receipt_id": "observation:s01:1"
+          }
+        }
+      ],
+      "citations": [],
+      "generated_results": 3,
+      "generated_not_delivered": 0,
+      "case_index": 1,
+      "correct": true
+    },
+    {
+      "session_id": "s02",
+      "contract_version": "native-reader-1",
+      "status": "submitted",
+      "value": 0,
+      "source_read_bytes": 0,
+      "source_scan_seconds": 0.0,
+      "query_calls": 0,
+      "calculate_calls": 1,
+      "quality_check_calls": 0,
+      "save_calls": 0,
+      "tool_errors": 0,
+      "actual_invocations": 2,
+      "observation_payload_bytes": 3160,
+      "trace": [
+        {
+          "action": {
+            "action": "calculate",
+            "evidence": [
+              "23313902-9b45-4d80-b0d1-ceb28036ed1d",
+              "a9da3dc6-f8e6-4a27-85e5-8e109e8dda6f"
+            ]
+          },
+          "result": {
+            "value": 0,
+            "evidence": [
+              "23313902-9b45-4d80-b0d1-ceb28036ed1d",
+              "a9da3dc6-f8e6-4a27-85e5-8e109e8dda6f"
+            ],
+            "task_binding": "host_current_task",
+            "source_access": false,
+            "parser_scope": "complete JSON receipt literals only"
+          }
+        }
+      ],
+      "citations": [],
+      "generated_results": 1,
+      "generated_not_delivered": 0,
+      "case_index": 2,
+      "correct": true
+    },
+    {
+      "session_id": "s04",
+      "contract_version": "native-reader-1",
+      "status": "submitted",
+      "value": 1,
+      "source_read_bytes": 154,
+      "source_scan_seconds": 0.00036920000275131315,
+      "query_calls": 1,
+      "calculate_calls": 1,
+      "quality_check_calls": 0,
+      "save_calls": 1,
+      "tool_errors": 0,
+      "actual_invocations": 4,
+      "observation_payload_bytes": 8065,
+      "trace": [
+        {
+          "action": {
+            "action": "calculate",
+            "evidence": [
+              "23313902-9b45-4d80-b0d1-ceb28036ed1d",
+              "a9da3dc6-f8e6-4a27-85e5-8e109e8dda6f"
+            ]
+          },
+          "result": {
+            "value": null,
+            "evidence": [
+              "23313902-9b45-4d80-b0d1-ceb28036ed1d",
+              "a9da3dc6-f8e6-4a27-85e5-8e109e8dda6f"
+            ],
+            "task_binding": "host_current_task",
+            "source_access": false,
+            "parser_scope": "complete JSON receipt literals only"
+          }
+        },
+        {
+          "action": {
+            "action": "query",
+            "scope": "full"
+          },
+          "result": {
+            "receipt_id": "observation:s04:1",
+            "receipt": {
+              "kind": "full",
+              "source_id": "f98ca77cfa478f0118ccbf43dead6a9a53f09758483d36a6daf9eb89b1cc84f4",
+              "table": {
+                "correct": {
+                  "90": 80,
+                  "50": 15
+                },
+                "incorrect": {
+                  "90": 0,
+                  "50": 5
+                }
+              }
+            },
+            "value": 1,
+            "evidence": [
+              "23313902-9b45-4d80-b0d1-ceb28036ed1d",
+              "a9da3dc6-f8e6-4a27-85e5-8e109e8dda6f",
+              "observation:s04:1"
+            ],
+            "task_binding": "host_current_task",
+            "source_read_bytes": 154,
+            "scan_seconds": 0.00036920000275131315,
+            "backend_cache_hit": false
+          }
+        },
+        {
+          "action": {
+            "action": "save",
+            "receipt_id": "observation:s04:1"
+          },
+          "result": {
+            "saved": {
+              "results": [
+                {
+                  "id": "760d774e-2f5d-4ad3-9776-6de0bafc75cf",
+                  "memory": "{\"kind\":\"full\",\"source_id\":\"f98ca77cfa478f0118ccbf43dead6a9a53f09758483d36a6daf9eb89b1cc84f4\",\"table\":{\"correct\":{\"50\":15,\"90\":80},\"incorrect\":{\"50\":5,\"90\":0}}}",
+                  "event": "ADD"
+                }
+              ]
+            },
+            "receipt_id": "observation:s04:1"
+          }
+        }
+      ],
+      "citations": [],
+      "generated_results": 3,
+      "generated_not_delivered": 0,
+      "case_index": 4,
+      "correct": true
+    },
+    {
+      "session_id": "s05",
+      "contract_version": "native-reader-1",
+      "status": "submitted",
+      "value": 1,
+      "source_read_bytes": 0,
+      "source_scan_seconds": 0.0,
+      "query_calls": 0,
+      "calculate_calls": 1,
+      "quality_check_calls": 0,
+      "save_calls": 0,
+      "tool_errors": 0,
+      "actual_invocations": 2,
+      "observation_payload_bytes": 4212,
+      "trace": [
+        {
+          "action": {
+            "action": "calculate",
+            "evidence": [
+              "23313902-9b45-4d80-b0d1-ceb28036ed1d",
+              "760d774e-2f5d-4ad3-9776-6de0bafc75cf",
+              "a9da3dc6-f8e6-4a27-85e5-8e109e8dda6f"
+            ]
+          },
+          "result": {
+            "value": 1,
+            "evidence": [
+              "23313902-9b45-4d80-b0d1-ceb28036ed1d",
+              "760d774e-2f5d-4ad3-9776-6de0bafc75cf",
+              "a9da3dc6-f8e6-4a27-85e5-8e109e8dda6f"
+            ],
+            "task_binding": "host_current_task",
+            "source_access": false,
+            "parser_scope": "complete JSON receipt literals only"
+          }
+        }
+      ],
+      "citations": [],
+      "generated_results": 1,
+      "generated_not_delivered": 0,
+      "case_index": 5,
+      "correct": true
+    },
+    {
+      "session_id": "s07",
+      "contract_version": "native-reader-1",
+      "status": "submitted",
+      "value": 0,
+      "source_read_bytes": 0,
+      "source_scan_seconds": 0.0,
+      "query_calls": 0,
+      "calculate_calls": 1,
+      "quality_check_calls": 0,
+      "save_calls": 0,
+      "tool_errors": 0,
+      "actual_invocations": 2,
+      "observation_payload_bytes": 4212,
+      "trace": [
+        {
+          "action": {
+            "action": "calculate",
+            "evidence": [
+              "23313902-9b45-4d80-b0d1-ceb28036ed1d",
+              "a9da3dc6-f8e6-4a27-85e5-8e109e8dda6f",
+              "760d774e-2f5d-4ad3-9776-6de0bafc75cf"
+            ]
+          },
+          "result": {
+            "value": 0,
+            "evidence": [
+              "23313902-9b45-4d80-b0d1-ceb28036ed1d",
+              "a9da3dc6-f8e6-4a27-85e5-8e109e8dda6f",
+              "760d774e-2f5d-4ad3-9776-6de0bafc75cf"
+            ],
+            "task_binding": "host_current_task",
+            "source_access": false,
+            "parser_scope": "complete JSON receipt literals only"
+          }
+        }
+      ],
+      "citations": [],
+      "generated_results": 1,
+      "generated_not_delivered": 0,
+      "case_index": 7,
+      "correct": true
+    }
+  ],
+  "versions": {
+    "mem0ai": "1.0.11",
+    "qdrant-client": "1.20.0",
+    "fastembed": "0.8.0",
+    "pydantic": "2.13.5"
+  },
+  "scope": "actual native SDK with scripted writer/reader responses, not natural model behavior"
+}

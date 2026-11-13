@@ -1,0 +1,429 @@
+{
+  "mechanism": "cross",
+  "backend": "verbatim",
+  "tasks": 8,
+  "correct": 8,
+  "fresh_process_reads": 8,
+  "query_calls": 2,
+  "actual_saves": 2,
+  "source_read_bytes": 292,
+  "common_history_scan": {
+    "source_read_bytes": 146,
+    "scan_seconds": 0.0002545999886933714
+  },
+  "cache_hits": 0,
+  "cache_misses": 2,
+  "events": [
+    {
+      "session_id": "s00",
+      "contract_version": "native-reader-1",
+      "status": "submitted",
+      "value": 5,
+      "source_read_bytes": 0,
+      "source_scan_seconds": 0.0,
+      "query_calls": 0,
+      "calculate_calls": 1,
+      "quality_check_calls": 0,
+      "save_calls": 0,
+      "tool_errors": 0,
+      "actual_invocations": 2,
+      "observation_payload_bytes": 1514,
+      "trace": [
+        {
+          "action": {
+            "action": "calculate",
+            "evidence": [
+              "96102a71c454462eaff7ba31859a8d45"
+            ]
+          },
+          "result": {
+            "value": 5,
+            "evidence": [
+              "96102a71c454462eaff7ba31859a8d45"
+            ],
+            "task_binding": "host_current_task",
+            "source_access": false,
+            "parser_scope": "complete JSON receipt literals only"
+          }
+        }
+      ],
+      "citations": [],
+      "generated_results": 1,
+      "generated_not_delivered": 0,
+      "correct": true
+    },
+    {
+      "session_id": "s01",
+      "contract_version": "native-reader-1",
+      "status": "submitted",
+      "value": 0,
+      "source_read_bytes": 0,
+      "source_scan_seconds": 0.0,
+      "query_calls": 0,
+      "calculate_calls": 1,
+      "quality_check_calls": 0,
+      "save_calls": 0,
+      "tool_errors": 0,
+      "actual_invocations": 2,
+      "observation_payload_bytes": 1534,
+      "trace": [
+        {
+          "action": {
+            "action": "calculate",
+            "evidence": [
+              "96102a71c454462eaff7ba31859a8d45"
+            ]
+          },
+          "result": {
+            "value": 0,
+            "evidence": [
+              "96102a71c454462eaff7ba31859a8d45"
+            ],
+            "task_binding": "host_current_task",
+            "source_access": false,
+            "parser_scope": "complete JSON receipt literals only"
+          }
+        }
+      ],
+      "citations": [],
+      "generated_results": 1,
+      "generated_not_delivered": 0,
+      "correct": true
+    },
+    {
+      "session_id": "s02",
+      "contract_version": "native-reader-1",
+      "status": "submitted",
+      "value": 3,
+      "source_read_bytes": 146,
+      "source_scan_seconds": 0.00036109999928157777,
+      "query_calls": 1,
+      "calculate_calls": 1,
+      "quality_check_calls": 0,
+      "save_calls": 1,
+      "tool_errors": 0,
+      "actual_invocations": 4,
+      "observation_payload_bytes": 4426,
+      "trace": [
+        {
+          "action": {
+            "action": "calculate",
+            "evidence": [
+              "96102a71c454462eaff7ba31859a8d45"
+            ]
+          },
+          "result": {
+            "value": null,
+            "evidence": [
+              "96102a71c454462eaff7ba31859a8d45"
+            ],
+            "task_binding": "host_current_task",
+            "source_access": false,
+            "parser_scope": "complete JSON receipt literals only"
+          }
+        },
+        {
+          "action": {
+            "action": "query",
+            "scope": "full"
+          },
+          "result": {
+            "receipt_id": "observation:s02:1",
+            "receipt": {
+              "kind": "full",
+              "source_id": "03b6e7c6432bac225cf41cb81dd25d0ff867b7cee881b7c95d1438aed6e7fb64",
+              "table": {
+                "red": {
+                  "north": 3,
+                  "south": 2
+                },
+                "blue": {
+                  "north": 1,
+                  "south": 4
+                }
+              }
+            },
+            "value": 3,
+            "evidence": [
+              "96102a71c454462eaff7ba31859a8d45",
+              "observation:s02:1"
+            ],
+            "task_binding": "host_current_task",
+            "source_read_bytes": 146,
+            "scan_seconds": 0.00036109999928157777,
+            "backend_cache_hit": false
+          }
+        },
+        {
+          "action": {
+            "action": "save",
+            "receipt_id": "observation:s02:1"
+          },
+          "result": {
+            "saved": {
+              "id": "993f1335cce448f3a0a40b43107efb74",
+              "revision": 1
+            },
+            "receipt_id": "observation:s02:1"
+          }
+        }
+      ],
+      "citations": [],
+      "generated_results": 3,
+      "generated_not_delivered": 0,
+      "correct": true
+    },
+    {
+      "session_id": "s03",
+      "contract_version": "native-reader-1",
+      "status": "submitted",
+      "value": 3,
+      "source_read_bytes": 0,
+      "source_scan_seconds": 0.0,
+      "query_calls": 0,
+      "calculate_calls": 1,
+      "quality_check_calls": 0,
+      "save_calls": 0,
+      "tool_errors": 0,
+      "actual_invocations": 2,
+      "observation_payload_bytes": 2102,
+      "trace": [
+        {
+          "action": {
+            "action": "calculate",
+            "evidence": [
+              "96102a71c454462eaff7ba31859a8d45",
+              "993f1335cce448f3a0a40b43107efb74"
+            ]
+          },
+          "result": {
+            "value": 3,
+            "evidence": [
+              "96102a71c454462eaff7ba31859a8d45",
+              "993f1335cce448f3a0a40b43107efb74"
+            ],
+            "task_binding": "host_current_task",
+            "source_access": false,
+            "parser_scope": "complete JSON receipt literals only"
+          }
+        }
+      ],
+      "citations": [],
+      "generated_results": 1,
+      "generated_not_delivered": 0,
+      "correct": true
+    },
+    {
+      "session_id": "s04",
+      "contract_version": "native-reader-1",
+      "status": "submitted",
+      "value": 1,
+      "source_read_bytes": 146,
+      "source_scan_seconds": 0.00023020000662654638,
+      "query_calls": 1,
+      "calculate_calls": 1,
+      "quality_check_calls": 0,
+      "save_calls": 1,
+      "tool_errors": 0,
+      "actual_invocations": 4,
+      "observation_payload_bytes": 5706,
+      "trace": [
+        {
+          "action": {
+            "action": "calculate",
+            "evidence": [
+              "96102a71c454462eaff7ba31859a8d45",
+              "993f1335cce448f3a0a40b43107efb74"
+            ]
+          },
+          "result": {
+            "value": null,
+            "evidence": [
+              "96102a71c454462eaff7ba31859a8d45",
+              "993f1335cce448f3a0a40b43107efb74"
+            ],
+            "task_binding": "host_current_task",
+            "source_access": false,
+            "parser_scope": "complete JSON receipt literals only"
+          }
+        },
+        {
+          "action": {
+            "action": "query",
+            "scope": "full"
+          },
+          "result": {
+            "receipt_id": "observation:s04:1",
+            "receipt": {
+              "kind": "full",
+              "source_id": "45bfe2c6343d0ce0bead517a5b7a65e8a63c7b80321876ec5fc0e267c237fe86",
+              "table": {
+                "red": {
+                  "north": 1,
+                  "south": 5
+                },
+                "blue": {
+                  "north": 4,
+                  "south": 2
+                }
+              }
+            },
+            "value": 1,
+            "evidence": [
+              "96102a71c454462eaff7ba31859a8d45",
+              "993f1335cce448f3a0a40b43107efb74",
+              "observation:s04:1"
+            ],
+            "task_binding": "host_current_task",
+            "source_read_bytes": 146,
+            "scan_seconds": 0.00023020000662654638,
+            "backend_cache_hit": false
+          }
+        },
+        {
+          "action": {
+            "action": "save",
+            "receipt_id": "observation:s04:1"
+          },
+          "result": {
+            "saved": {
+              "id": "adc9a825d0264047a216f10f75fabe45",
+              "revision": 1
+            },
+            "receipt_id": "observation:s04:1"
+          }
+        }
+      ],
+      "citations": [],
+      "generated_results": 3,
+      "generated_not_delivered": 0,
+      "correct": true
+    },
+    {
+      "session_id": "s05",
+      "contract_version": "native-reader-1",
+      "status": "submitted",
+      "value": 1,
+      "source_read_bytes": 0,
+      "source_scan_seconds": 0.0,
+      "query_calls": 0,
+      "calculate_calls": 1,
+      "quality_check_calls": 0,
+      "save_calls": 0,
+      "tool_errors": 0,
+      "actual_invocations": 2,
+      "observation_payload_bytes": 2672,
+      "trace": [
+        {
+          "action": {
+            "action": "calculate",
+            "evidence": [
+              "96102a71c454462eaff7ba31859a8d45",
+              "993f1335cce448f3a0a40b43107efb74",
+              "adc9a825d0264047a216f10f75fabe45"
+            ]
+          },
+          "result": {
+            "value": 1,
+            "evidence": [
+              "96102a71c454462eaff7ba31859a8d45",
+              "993f1335cce448f3a0a40b43107efb74",
+              "adc9a825d0264047a216f10f75fabe45"
+            ],
+            "task_binding": "host_current_task",
+            "source_access": false,
+            "parser_scope": "complete JSON receipt literals only"
+          }
+        }
+      ],
+      "citations": [],
+      "generated_results": 1,
+      "generated_not_delivered": 0,
+      "correct": true
+    },
+    {
+      "session_id": "s06",
+      "contract_version": "native-reader-1",
+      "status": "submitted",
+      "value": 4,
+      "source_read_bytes": 0,
+      "source_scan_seconds": 0.0,
+      "query_calls": 0,
+      "calculate_calls": 1,
+      "quality_check_calls": 0,
+      "save_calls": 0,
+      "tool_errors": 0,
+      "actual_invocations": 2,
+      "observation_payload_bytes": 2674,
+      "trace": [
+        {
+          "action": {
+            "action": "calculate",
+            "evidence": [
+              "96102a71c454462eaff7ba31859a8d45",
+              "993f1335cce448f3a0a40b43107efb74",
+              "adc9a825d0264047a216f10f75fabe45"
+            ]
+          },
+          "result": {
+            "value": 4,
+            "evidence": [
+              "96102a71c454462eaff7ba31859a8d45",
+              "993f1335cce448f3a0a40b43107efb74",
+              "adc9a825d0264047a216f10f75fabe45"
+            ],
+            "task_binding": "host_current_task",
+            "source_access": false,
+            "parser_scope": "complete JSON receipt literals only"
+          }
+        }
+      ],
+      "citations": [],
+      "generated_results": 1,
+      "generated_not_delivered": 0,
+      "correct": true
+    },
+    {
+      "session_id": "s07",
+      "contract_version": "native-reader-1",
+      "status": "submitted",
+      "value": 3,
+      "source_read_bytes": 0,
+      "source_scan_seconds": 0.0,
+      "query_calls": 0,
+      "calculate_calls": 1,
+      "quality_check_calls": 0,
+      "save_calls": 0,
+      "tool_errors": 0,
+      "actual_invocations": 2,
+      "observation_payload_bytes": 2672,
+      "trace": [
+        {
+          "action": {
+            "action": "calculate",
+            "evidence": [
+              "96102a71c454462eaff7ba31859a8d45",
+              "993f1335cce448f3a0a40b43107efb74",
+              "adc9a825d0264047a216f10f75fabe45"
+            ]
+          },
+          "result": {
+            "value": 3,
+            "evidence": [
+              "96102a71c454462eaff7ba31859a8d45",
+              "993f1335cce448f3a0a40b43107efb74",
+              "adc9a825d0264047a216f10f75fabe45"
+            ],
+            "task_binding": "host_current_task",
+            "source_access": false,
+            "parser_scope": "complete JSON receipt literals only"
+          }
+        }
+      ],
+      "citations": [],
+      "generated_results": 1,
+      "generated_not_delivered": 0,
+      "correct": true
+    }
+  ]
+}

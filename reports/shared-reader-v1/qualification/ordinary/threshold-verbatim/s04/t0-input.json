@@ -1,0 +1,36 @@
+{
+  "contract_version": "native-reader-1",
+  "current_source_id": "e9a2461065832f3b577bd02ef7137611a1ba1056d5c65e5f659a22b023624522",
+  "task": {
+    "kind": "threshold",
+    "a": "red",
+    "limit": 20
+  },
+  "retrieved_notes": [
+    {
+      "id": "18844a21faea4ea98ecb5a2bca5339b9",
+      "memory": "{\"kind\":\"full\",\"source_id\":\"2aee61996fef0962bb12283383fbd50655cb23e92ee5a2e58dca7e4e721c0da6\",\"table\":{\"blue\":{\"10\":2,\"20\":1,\"30\":4},\"red\":{\"10\":3,\"20\":2,\"30\":1}}}",
+      "revision": 1
+    },
+    {
+      "id": "88c25b6435234ef9ab49e129a14d1dea",
+      "memory": "{\"kind\":\"margins\",\"left\":{\"blue\":7,\"red\":6},\"right\":{\"10\":5,\"20\":3,\"30\":5},\"source_id\":\"2aee61996fef0962bb12283383fbd50655cb23e92ee5a2e58dca7e4e721c0da6\",\"total\":13}",
+      "revision": 1
+    }
+  ],
+  "tool_trace": [],
+  "remaining_actions": 4,
+  "terminal_action_required": true,
+  "terminal_actions": [
+    "submit",
+    "abstain"
+  ],
+  "allowed_actions": [
+    "query",
+    "calculate",
+    "quality_check",
+    "save",
+    "submit",
+    "abstain"
+  ]
+}

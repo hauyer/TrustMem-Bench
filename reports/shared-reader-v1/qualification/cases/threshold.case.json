@@ -1,0 +1,85 @@
+{
+  "version": "0.3-dev",
+  "id": "engineering-threshold",
+  "mechanism": "threshold",
+  "split": "engineering-smoke",
+  "history_group": "synthetic-threshold",
+  "initial_source": "2aee61996fef0962bb12283383fbd50655cb23e92ee5a2e58dca7e4e721c0da6",
+  "sources": {
+    "2aee61996fef0962bb12283383fbd50655cb23e92ee5a2e58dca7e4e721c0da6": {
+      "path": "threshold-0.jsonl",
+      "format": "weighted-jsonl",
+      "sha256": "2aee61996fef0962bb12283383fbd50655cb23e92ee5a2e58dca7e4e721c0da6"
+    },
+    "e9a2461065832f3b577bd02ef7137611a1ba1056d5c65e5f659a22b023624522": {
+      "path": "threshold-1.jsonl",
+      "format": "weighted-jsonl",
+      "sha256": "e9a2461065832f3b577bd02ef7137611a1ba1056d5c65e5f659a22b023624522"
+    }
+  },
+  "tasks": [
+    {
+      "source_id": "2aee61996fef0962bb12283383fbd50655cb23e92ee5a2e58dca7e4e721c0da6",
+      "request": {
+        "kind": "marginal",
+        "a": "red"
+      }
+    },
+    {
+      "source_id": "2aee61996fef0962bb12283383fbd50655cb23e92ee5a2e58dca7e4e721c0da6",
+      "request": {
+        "kind": "threshold",
+        "a": "red",
+        "limit": -1
+      }
+    },
+    {
+      "source_id": "2aee61996fef0962bb12283383fbd50655cb23e92ee5a2e58dca7e4e721c0da6",
+      "request": {
+        "kind": "threshold",
+        "a": "red",
+        "limit": 20
+      }
+    },
+    {
+      "source_id": "2aee61996fef0962bb12283383fbd50655cb23e92ee5a2e58dca7e4e721c0da6",
+      "request": {
+        "kind": "threshold",
+        "a": "red",
+        "limit": 25
+      }
+    },
+    {
+      "source_id": "e9a2461065832f3b577bd02ef7137611a1ba1056d5c65e5f659a22b023624522",
+      "request": {
+        "kind": "threshold",
+        "a": "red",
+        "limit": 20
+      }
+    },
+    {
+      "source_id": "e9a2461065832f3b577bd02ef7137611a1ba1056d5c65e5f659a22b023624522",
+      "request": {
+        "kind": "threshold",
+        "a": "red",
+        "limit": 20
+      }
+    },
+    {
+      "source_id": "e9a2461065832f3b577bd02ef7137611a1ba1056d5c65e5f659a22b023624522",
+      "request": {
+        "kind": "threshold",
+        "a": "blue",
+        "limit": 10
+      }
+    },
+    {
+      "source_id": "2aee61996fef0962bb12283383fbd50655cb23e92ee5a2e58dca7e4e721c0da6",
+      "request": {
+        "kind": "threshold",
+        "a": "red",
+        "limit": 25
+      }
+    }
+  ]
+}

@@ -13,11 +13,14 @@ SOURCES = {
 }
 
 
-def prepare(data_dir, output):
+def prepare(data_dir, output, *, source_spec=None, history_pairs=None,
+            split="previously-seen-native-development"):
     data_dir, output = Path(data_dir).resolve(), Path(output).resolve()
     output.mkdir(parents=True,exist_ok=False)
+    specification = SOURCES if source_spec is None else source_spec
+    pairs = {family:(f"{family}-0601",f"{family}-0602") for family in ("gh","wiki")} if history_pairs is None else history_pairs
     sources, margins = {}, {}
-    for label,(fmt,identity,url) in SOURCES.items():
+    for label,(fmt,identity,url) in specification.items():
         path = data_dir/f"{label}.gz"
         if digest(path) != identity:
             raise ValueError(f"Wrong source: {label}")
@@ -44,8 +47,7 @@ def prepare(data_dir, output):
         margins[label] = (left,right)
         sources[label] = source
         print(json.dumps({"admitted":label,"bytes":path.stat().st_size,"group_contiguous":source.get("group_contiguous",False)}),flush=True)
-    for family in ("gh","wiki"):
-        first, second = f"{family}-0601",f"{family}-0602"
+    for family,(first,second) in pairs.items():
         left,right = margins[first]
         ranked_a = sorted(left,key=lambda k:(-left[k],k))
         ranked_b = sorted(right,key=lambda k:(-right[k],k))
@@ -57,7 +59,7 @@ def prepare(data_dir, output):
         queries += [{"kind":"joint","a":a1,"b":b} for _ in range(4)]
         queries += [{"kind":"joint","a":a2,"b":b},{"kind":"joint","a":a1,"b":b}]
         identities = [sources[first]["sha256"],sources[second]["sha256"]]
-        case = {"version":"0.2-dev","id":f"native-{family}","mechanism":"cross","split":"previously-seen-native-development",
+        case = {"version":"0.2-dev","id":f"native-{family}","mechanism":"cross","split":split,
             "history_group":family,"initial_source":identities[0],"sources":{sources[k]["sha256"]:sources[k] for k in (first,second)},
             "tasks":[{"source_id":identities[v],"request":q} for q,v in zip(queries,(0,0,0,0,1,1,1,0))]}
         (output/f"{family}.case.json").write_text(json.dumps(case,indent=2)+"\n",encoding="utf-8")

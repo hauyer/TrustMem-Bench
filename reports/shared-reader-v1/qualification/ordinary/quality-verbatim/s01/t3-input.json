@@ -1,0 +1,96 @@
+{
+  "contract_version": "native-reader-1",
+  "current_source_id": "7dc1c9f18069e2927d6293ef3771ec42e39f0cc5cc9be3be1a01add091fce79e",
+  "task": {
+    "kind": "quality",
+    "a": "correct",
+    "cutoff": 80,
+    "numerator": 99,
+    "denominator": 100
+  },
+  "retrieved_notes": [
+    {
+      "id": "256331e7d3734e32baeb24ab0e79e9c6",
+      "memory": "{\"kind\":\"margins\",\"left\":{\"correct\":95,\"incorrect\":5},\"right\":{\"50\":20,\"90\":80},\"source_id\":\"7dc1c9f18069e2927d6293ef3771ec42e39f0cc5cc9be3be1a01add091fce79e\",\"total\":100}",
+      "revision": 1
+    }
+  ],
+  "tool_trace": [
+    {
+      "action": {
+        "action": "calculate",
+        "evidence": [
+          "256331e7d3734e32baeb24ab0e79e9c6"
+        ]
+      },
+      "result": {
+        "value": null,
+        "evidence": [
+          "256331e7d3734e32baeb24ab0e79e9c6"
+        ],
+        "task_binding": "host_current_task",
+        "source_access": false,
+        "parser_scope": "complete JSON receipt literals only"
+      }
+    },
+    {
+      "action": {
+        "action": "query",
+        "scope": "full"
+      },
+      "result": {
+        "receipt_id": "observation:s01:1",
+        "receipt": {
+          "kind": "full",
+          "source_id": "7dc1c9f18069e2927d6293ef3771ec42e39f0cc5cc9be3be1a01add091fce79e",
+          "table": {
+            "correct": {
+              "90": 76,
+              "50": 19
+            },
+            "incorrect": {
+              "90": 4,
+              "50": 1
+            }
+          }
+        },
+        "value": 0,
+        "evidence": [
+          "256331e7d3734e32baeb24ab0e79e9c6",
+          "observation:s01:1"
+        ],
+        "task_binding": "host_current_task",
+        "source_read_bytes": 154,
+        "scan_seconds": 0.0003414000093471259,
+        "backend_cache_hit": false
+      }
+    },
+    {
+      "action": {
+        "action": "save",
+        "receipt_id": "observation:s01:1"
+      },
+      "result": {
+        "saved": {
+          "id": "b3b2d01106914d1ca13d72c5174b8520",
+          "revision": 1
+        },
+        "receipt_id": "observation:s01:1"
+      }
+    }
+  ],
+  "remaining_actions": 1,
+  "terminal_action_required": true,
+  "terminal_actions": [
+    "submit",
+    "abstain"
+  ],
+  "allowed_actions": [
+    "query",
+    "calculate",
+    "quality_check",
+    "save",
+    "submit",
+    "abstain"
+  ]
+}

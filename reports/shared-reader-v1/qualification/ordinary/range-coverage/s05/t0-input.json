@@ -1,0 +1,37 @@
+{
+  "contract_version": "native-reader-1",
+  "current_source_id": "6f342afd740c181cd6c58e78fc805814a06ff83d075935c4d8aa07c1197fc07c",
+  "task": {
+    "kind": "range",
+    "a": "red",
+    "lo": 1,
+    "hi": 4
+  },
+  "retrieved_notes": [
+    {
+      "id": "7b4fca8961c447028bde73ef6d4e096a",
+      "memory": "{\"kind\":\"full\",\"source_id\":\"6f342afd740c181cd6c58e78fc805814a06ff83d075935c4d8aa07c1197fc07c\",\"table\":{\"blue\":{\"1\":5,\"2\":4,\"3\":-2,\"4\":8},\"red\":{\"1\":9,\"2\":-1,\"3\":3,\"4\":2}}}",
+      "revision": 1
+    },
+    {
+      "id": "7fc65208df3345f3b696cf96d0af1090",
+      "memory": "{\"kind\":\"full\",\"source_id\":\"b5e852d5e1b0c77ef4cf455ca9e6d58d3f89637afd4bc7936de9a15a28fadd98\",\"table\":{\"blue\":{\"1\":2,\"2\":9,\"3\":-1,\"4\":4},\"red\":{\"1\":10,\"2\":-3,\"3\":5,\"4\":7}}}",
+      "revision": 1
+    }
+  ],
+  "tool_trace": [],
+  "remaining_actions": 4,
+  "terminal_action_required": true,
+  "terminal_actions": [
+    "submit",
+    "abstain"
+  ],
+  "allowed_actions": [
+    "query",
+    "calculate",
+    "quality_check",
+    "save",
+    "submit",
+    "abstain"
+  ]
+}

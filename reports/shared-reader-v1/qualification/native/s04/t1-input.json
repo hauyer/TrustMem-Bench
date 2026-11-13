@@ -1,0 +1,72 @@
+{
+  "contract_version": "native-reader-1",
+  "current_source_id": "f98ca77cfa478f0118ccbf43dead6a9a53f09758483d36a6daf9eb89b1cc84f4",
+  "task": {
+    "kind": "quality",
+    "a": "correct",
+    "cutoff": 80,
+    "numerator": 99,
+    "denominator": 100
+  },
+  "retrieved_notes": [
+    {
+      "id": "23313902-9b45-4d80-b0d1-ceb28036ed1d",
+      "memory": "{\"kind\":\"margins\",\"left\":{\"correct\":95,\"incorrect\":5},\"right\":{\"50\":20,\"90\":80},\"source_id\":\"7dc1c9f18069e2927d6293ef3771ec42e39f0cc5cc9be3be1a01add091fce79e\",\"total\":100}",
+      "hash": "2dc5af9081483b34d8c9525903c2cb20",
+      "metadata": {
+        "stage": "shared-reader-scripted-preflight"
+      },
+      "score": 0.7530273968091478,
+      "created_at": "2026-11-13T08:23:25.927483+00:00",
+      "updated_at": "2026-11-13T08:23:25.927483+00:00",
+      "user_id": "trustmem-user"
+    },
+    {
+      "id": "a9da3dc6-f8e6-4a27-85e5-8e109e8dda6f",
+      "memory": "{\"kind\":\"full\",\"source_id\":\"7dc1c9f18069e2927d6293ef3771ec42e39f0cc5cc9be3be1a01add091fce79e\",\"table\":{\"correct\":{\"50\":19,\"90\":76},\"incorrect\":{\"50\":1,\"90\":4}}}",
+      "hash": "159fc5c269e80996db9bce3aac7aeab6",
+      "metadata": {
+        "stage": "shared-reader-scripted-preflight"
+      },
+      "score": 0.7433304390334026,
+      "created_at": "2026-11-13T08:23:36.361351+00:00",
+      "updated_at": "2026-11-13T08:23:36.361351+00:00",
+      "user_id": "trustmem-user"
+    }
+  ],
+  "tool_trace": [
+    {
+      "action": {
+        "action": "calculate",
+        "evidence": [
+          "23313902-9b45-4d80-b0d1-ceb28036ed1d",
+          "a9da3dc6-f8e6-4a27-85e5-8e109e8dda6f"
+        ]
+      },
+      "result": {
+        "value": null,
+        "evidence": [
+          "23313902-9b45-4d80-b0d1-ceb28036ed1d",
+          "a9da3dc6-f8e6-4a27-85e5-8e109e8dda6f"
+        ],
+        "task_binding": "host_current_task",
+        "source_access": false,
+        "parser_scope": "complete JSON receipt literals only"
+      }
+    }
+  ],
+  "remaining_actions": 3,
+  "terminal_action_required": true,
+  "terminal_actions": [
+    "submit",
+    "abstain"
+  ],
+  "allowed_actions": [
+    "query",
+    "calculate",
+    "quality_check",
+    "save",
+    "submit",
+    "abstain"
+  ]
+}
