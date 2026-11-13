@@ -1,0 +1,23 @@
+{
+  "schema_version": 1,
+  "status": "DEVELOPMENT_COVERAGE_LEDGER_NOT_COMPREHENSIVE_BENCHMARK",
+  "dimensions": [
+    {"id":"exact_reuse","motivation":"Avoid paying again for unchanged supported facts","positive_control":"same context and version","negative_control":"different context or version","status":"EXECUTED_STRUCTURED_RUNTIME_AND_SAP","semantic_system_coverage":"NOT_RUN"},
+    {"id":"scope_transfer","motivation":"A later task may need a different combination or range","positive_control":"fully covered current requirement","negative_control":"same-looking but uncovered requirement","status":"EXECUTED_TLC_GTFS_DASK_DEVELOPMENT","semantic_system_coverage":"NOT_UNIFIED"},
+    {"id":"query_allocation","motivation":"Limited verification displaces evidence for other imminent actions","positive_control":"fresh identical-input response","negative_control":"whole-batch degradation despite target gain","status":"EAD1_EIGHT_RELATED_PAIRS_EXECUTED","semantic_system_coverage":"SINGLE_READER_CONFIGURATION"},
+    {"id":"evidence_to_action","motivation":"An acquired fact may fail to affect committed values","positive_control":"ordinary exact quote binding","negative_control":"correct unquoted prediction must not be marked business error","status":"EAD1_AND_ORDINARY_FIXED_RESPONSE_CONTROLS_EXECUTED","semantic_system_coverage":"STRUCTURED_QUOTES_ONLY"},
+    {"id":"joint_support","motivation":"Low-order historical coverage may omit a joint interaction","positive_control":"seen or certified covered combination","negative_control":"indistinguishable worlds require new evidence","status":"AUTHORED_28_4_DESIGN_CERTIFICATE_ONLY","semantic_system_coverage":"NOT_RUN"},
+    {"id":"repair_inheritance","motivation":"A correction must persist and improve later decisions","positive_control":"fresh session receives committed revision","negative_control":"readback alone is not causal benefit","status":"EARLIER_M7_ORDINARY_REPAIR_EXECUTED; NEW_SAP_CAUSAL_CONTROL_NOT_RUN","semantic_system_coverage":"NOT_UNIFIED"},
+    {"id":"compression","motivation":"Mixed factual and procedural summaries may lose applicability","positive_control":"verbatim history and ordinary coverage summary","negative_control":"do not hand-write erroneous model memories","status":"SAVED_HISTORY_ASSETS; UNIFIED_INDEPENDENT_SEMANTIC_SCORER_NOT_IMPLEMENTED","semantic_system_coverage":"NOT_UNIFIED"},
+    {"id":"async_visibility","motivation":"Background consolidation and delayed writes can expose stale revisions","positive_control":"versioned committed fresh read","negative_control":"unsupported transaction is not scored as model error","status":"DESIGN_ONLY; LOCAL_ADAPTER_CONTRACT_TESTS_ONLY","semantic_system_coverage":"NOT_RUN"},
+    {"id":"multiagent_handoff","motivation":"Shared and private memory can deliver different support to different actors","positive_control":"same delivered evidence under same access","negative_control":"do not give one method privileged state","status":"DESIGN_ONLY","semantic_system_coverage":"NOT_RUN"}
+  ],
+  "construction_rules": [
+    "Register motivated challenge and no-fault controls before actor outputs.",
+    "Separate exact reuse, recoverable relational support and information-theoretically ambiguous states; do not demand unobservable truth.",
+    "Register all seeds and include all eligible trajectories; no failure-only filtering.",
+    "For every claimed avoidable loss, show a legal competing route and its full cost.",
+    "Split confirmation by independent history family or producer, never paraphrases of one template.",
+    "Authored controls test instrument sensitivity, not natural error prevalence."
+  ]
+}

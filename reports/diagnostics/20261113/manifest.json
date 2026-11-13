@@ -1,0 +1,21 @@
+{
+  "kind": "DEVELOPMENT_AGGREGATES_NOT_STANDALONE_MODEL_REPRODUCTION",
+  "sources": {
+    "sap-summary.json": {
+      "workspace_path": "artifacts/research_decisions/20261113-benchmark-diagnostic-v1/summary.json",
+      "sha256": "5f1693abd4d463dd7e521a7b1cf51a0397e4495b93145abff31a9b8aa5a337bc"
+    },
+    "ead1-analysis.json": {
+      "workspace_path": "artifacts/research_decisions/20261113-evidence-binding-controls-v1/analysis.json",
+      "sha256": "234cf62e0e435709819fb1f03833adbb62e63b5a215096ce97dcc24b359cbfdb"
+    },
+    "calibration.json": {
+      "workspace_path": "artifacts/research_decisions/20261113-benchmark-diagnostic-v1/calibration.json",
+      "sha256": "30362b2554a0e772dead95884d996041092753f90085e2fb65bf122166d523b5"
+    },
+    "integrity-review.json": {
+      "workspace_path": "artifacts/research_decisions/20261113-evidence-binding-controls-v1/INTEGRITY_REVIEW.json",
+      "sha256": "267be27173956160ef7b1d3139b672153557e235a1d2dd0d8b29c107f6ac2470"
+    }
+  }
+}

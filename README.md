@@ -4,7 +4,7 @@
 
 ## Run without API keys or dependencies
 
-Python 3.9+ and its standard library are sufficient. From the repository root:
+Python 3.10+ and its standard library are sufficient. From the repository root:
 
 ```bash
 python -B -m unittest discover -s tests
@@ -40,6 +40,10 @@ python -B -m trustmem_runtime.suite --cases local-runs/native-cases/gh.case.json
 The raw data are real, while the request streams are constructed. Both producers share the joint-count mechanism and are previously seen development sources. Numeric reference answers use separate raw-data parsers and SQLite after the stream. The shared public calculator checks the explicit evidence contract; this is not independent natural-language annotation.
 
 ## What is measured
+
+The new [diagnostic charter](docs/DIAGNOSTIC_CHARTER.md) fixes the research chain, evidence levels, component controls and scenario coverage. [Adapter capabilities](docs/ADAPTER_CAPABILITIES.md) distinguish implemented local stores from external systems that have only been reviewed. The [mechanism registry](docs/MECHANISM_REGISTRY.md) preserves cumulative hypotheses and ordinary explanations. These are development instruments; they do not establish comprehensive coverage or a novel method.
+
+`trustmem_diagnostics` (Python 3.10+) adds explicit denominators/observability, read-only SAP trace analysis, native-operation hooks and sensitivity controls. Run `python -B -m trustmem_diagnostics.calibration --output local-runs/diagnostic-calibration.json` for authored instrument checks without API use. These controls are not estimates of model error rates.
 
 - Correct submissions and correct submissions with sufficient declared evidence.
 - Lucky unsupported answers, wrong answers, unsupported declarations, abstention, launch/format failure and step limits.

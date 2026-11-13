@@ -1,0 +1,99 @@
+{
+  "kind": "ENGINEERING_SENSITIVITY_CONTROLS_NOT_MODEL_FINDINGS",
+  "controls": [
+    {
+      "control": "clean_exact_reuse",
+      "metric": "correct",
+      "expected": true,
+      "observed": true,
+      "passed": true
+    },
+    {
+      "control": "wrong_despite_exact_evidence",
+      "metric": "incorrect_given_exact_quote",
+      "expected": true,
+      "observed": true,
+      "passed": true
+    },
+    {
+      "control": "defer_despite_exact_evidence",
+      "metric": "deferred_given_exact_quote",
+      "expected": true,
+      "observed": true,
+      "passed": true
+    },
+    {
+      "control": "correct_unquoted_is_not_an_error",
+      "metric": "wrong",
+      "expected": false,
+      "observed": false,
+      "passed": true
+    },
+    {
+      "control": "wrong_unquoted",
+      "metric": "unquoted_wrong",
+      "expected": true,
+      "observed": true,
+      "passed": true
+    },
+    {
+      "control": "scope_mismatch",
+      "metric": "exact_quote_present",
+      "expected": false,
+      "observed": false,
+      "passed": true
+    },
+    {
+      "control": "stale_version",
+      "metric": "stale_quote_present",
+      "expected": true,
+      "observed": true,
+      "passed": true
+    },
+    {
+      "control": "declared_wrong_binding",
+      "metric": "explicit_binding_mismatch",
+      "expected": true,
+      "observed": true,
+      "passed": true
+    },
+    {
+      "control": "unknown_binding_is_not_inferred",
+      "metric": "explicit_binding_mismatch",
+      "expected": null,
+      "observed": null,
+      "passed": true
+    },
+    {
+      "control": "readback_old_revision",
+      "metric": "memory_revision_mismatch",
+      "expected": true,
+      "observed": true,
+      "passed": true
+    },
+    {
+      "control": "retrieval_is_not_causal_use",
+      "metric": "causal_memory_effect",
+      "expected": null,
+      "observed": null,
+      "passed": true
+    },
+    {
+      "control": "unsupported_is_not_business_failure",
+      "metric": "wrong",
+      "expected": null,
+      "observed": null,
+      "passed": true
+    },
+    {
+      "control": "zero_denominator",
+      "metric": "value",
+      "expected": null,
+      "observed": null,
+      "passed": true
+    }
+  ],
+  "passed": 13,
+  "total": 13,
+  "model_calls": 0
+}

@@ -1,0 +1,92 @@
+{
+  "kind": "READ_ONLY_PIPELINE_DIAGNOSTICS",
+  "metrics": {
+    "correct_completion": {
+      "numerator": 286,
+      "denominator": 480,
+      "value": 0.5958333333333333,
+      "unit": "planned_order",
+      "status": "measured"
+    },
+    "wrong_submission": {
+      "numerator": 3,
+      "denominator": 480,
+      "value": 0.00625,
+      "unit": "planned_order",
+      "status": "measured"
+    },
+    "deferral": {
+      "numerator": 191,
+      "denominator": 480,
+      "value": 0.39791666666666664,
+      "unit": "planned_order",
+      "status": "measured"
+    },
+    "correct_given_exact_quote": {
+      "numerator": 280,
+      "denominator": 280,
+      "value": 1.0,
+      "unit": "exact_quote_order",
+      "status": "measured"
+    },
+    "wrong_given_no_exact_quote": {
+      "numerator": 3,
+      "denominator": 200,
+      "value": 0.015,
+      "unit": "no_exact_quote_order",
+      "status": "measured"
+    },
+    "correct_given_no_exact_quote": {
+      "numerator": 6,
+      "denominator": 200,
+      "value": 0.03,
+      "unit": "no_exact_quote_order",
+      "status": "measured"
+    },
+    "deferred_given_no_exact_quote": {
+      "numerator": 191,
+      "denominator": 200,
+      "value": 0.955,
+      "unit": "no_exact_quote_order",
+      "status": "measured"
+    },
+    "fresh_read_after_write_matches": {
+      "numerator": 60,
+      "denominator": 60,
+      "value": 1.0,
+      "unit": "session",
+      "status": "measured"
+    },
+    "redundant_exact_quote": {
+      "numerator": 0,
+      "denominator": 40,
+      "value": 0.0,
+      "unit": "new_quote",
+      "status": "measured"
+    },
+    "causal_memory_writeback_benefit": {
+      "numerator": null,
+      "denominator": null,
+      "value": null,
+      "unit": "matched_intervention",
+      "status": "unobservable_without_fixed_note_or_equal_feedback_control"
+    },
+    "semantic_source_attribution": {
+      "numerator": null,
+      "denominator": null,
+      "value": null,
+      "unit": "memory_object",
+      "status": "unobservable_native_citations_not_recorded"
+    }
+  },
+  "planned_orders": 480,
+  "sessions": 60,
+  "authored_families": 2,
+  "independent_orders": false,
+  "query_allocation_candidate_sessions": 8,
+  "incorrect_given_exact_quote": 0,
+  "scope": "Exact context coverage is a measurement, not a universal proof requirement or causal source attribution.",
+  "model_calls": 0,
+  "usd": 0,
+  "adapter": "sap_readonly_trace_v1"
+}
