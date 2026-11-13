@@ -1,0 +1,11 @@
+{
+  "command": "python -B -X utf8 -m unittest discover -s tests -v",
+  "cwd": "github-release/TrustMem-Bench",
+  "actual_process_session": 17083,
+  "exit_code": 0,
+  "tests_run": 54,
+  "duration_seconds": 16.331,
+  "result": "OK",
+  "record_source": "Actual command output in this turn; this record is not a replay of the test log",
+  "model_calls": 0
+}

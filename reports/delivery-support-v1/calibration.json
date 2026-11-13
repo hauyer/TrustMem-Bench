@@ -1,0 +1,102 @@
+{
+  "passed": true,
+  "cases": [
+    {
+      "name": "initial_history_sufficient_without_tool",
+      "actual": "sufficient",
+      "expected": "sufficient",
+      "passed": true
+    },
+    {
+      "name": "wrong_source_equal_numeric",
+      "actual": "not_certified",
+      "expected": "not_certified",
+      "passed": true
+    },
+    {
+      "name": "sufficient_and_stale_coexist",
+      "actual": [
+        "sufficient",
+        1
+      ],
+      "expected": [
+        "sufficient",
+        1
+      ],
+      "passed": true
+    },
+    {
+      "name": "stored_but_not_delivered",
+      "actual": [
+        "sufficient",
+        "not_certified"
+      ],
+      "expected": [
+        "sufficient",
+        "not_certified"
+      ],
+      "passed": true
+    },
+    {
+      "name": "lucky_arithmetic_not_certificate",
+      "actual": "not_certified",
+      "expected": "not_certified",
+      "passed": true
+    },
+    {
+      "name": "last_slot_generated_not_delivered",
+      "actual": 1,
+      "expected": 1,
+      "passed": true
+    },
+    {
+      "name": "next_input_actually_delivered",
+      "actual": 0,
+      "expected": 0,
+      "passed": true
+    },
+    {
+      "name": "free_text_unknown",
+      "actual": "unknown",
+      "expected": "unknown",
+      "passed": true
+    },
+    {
+      "name": "conflicting_certificates",
+      "actual": "conflicting",
+      "expected": "conflicting",
+      "passed": true
+    },
+    {
+      "name": "tool_error_not_evidence",
+      "actual": null,
+      "expected": null,
+      "passed": true
+    },
+    {
+      "name": "joint_receipts_required",
+      "actual": [
+        "not_certified",
+        "sufficient"
+      ],
+      "expected": [
+        "not_certified",
+        "sufficient"
+      ],
+      "passed": true
+    },
+    {
+      "name": "sufficient_does_not_imply_submitted",
+      "actual": [
+        "sufficient",
+        "unfinished"
+      ],
+      "expected": [
+        "sufficient",
+        "unfinished"
+      ],
+      "passed": true
+    }
+  ],
+  "model_calls": 0
+}

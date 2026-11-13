@@ -1,0 +1,28 @@
+{
+  "verdict": "WARN",
+  "integrity_verdict": "PASS",
+  "blocking_errors": false,
+  "scope": "Retrospective development replay only; no method effect or independent confirmation",
+  "requested_reviewer_model": "gpt-6.1-sol",
+  "requested_reasoning_effort": "ultra",
+  "reported_reviewer_model": null,
+  "review_independence": "same-family",
+  "acceptance_status": "provisional",
+  "reviewer_task": "/root/loss_attribution_audit",
+  "model_calls": 0,
+  "deterministic_checks": {
+    "frozen_hashes": 2290,
+    "sensitivity_controls": 12,
+    "replayed_rows": 240,
+    "scripted_inputs": 444,
+    "model_inputs": 75,
+    "structured_receipts_checked_to_raw_source": 70,
+    "earlier_cache_provenance": 39
+  },
+  "warnings": [
+    "conflict detection is not complete over arbitrary receipt combinations",
+    "48 model branches share one exposed authored history",
+    "native prose support remains unassessed"
+  ],
+  "completed_at": "2026-11-13T16:04:31.688118+08:00"
+}

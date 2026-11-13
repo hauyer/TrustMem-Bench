@@ -1,0 +1,43 @@
+{
+  "files": [
+    {
+      "file": "PROTOCOL.md",
+      "origin": "artifacts/research_decisions/20261113-loss-attribution-v1/PROTOCOL.md",
+      "sha256": "67fd039cfdca9acdfedcc07d1a9565417fdf43fd187b9bbecc1a003c5116c7e4"
+    },
+    {
+      "file": "freeze.json",
+      "origin": "artifacts/research_decisions/20261113-loss-attribution-v1/freeze.json",
+      "sha256": "bb4dc2a390a05cd55973da63bafbae2e40a388f287f593c75d81016692f7ce70"
+    },
+    {
+      "file": "calibration.json",
+      "origin": "artifacts/research_decisions/20261113-loss-attribution-v1/calibration.json",
+      "sha256": "3a7fc714b14357ff470df684fdb90ed9fff1592301e496e4bac6ab1ef346af6b"
+    },
+    {
+      "file": "results.json",
+      "origin": "artifacts/research_decisions/20261113-loss-attribution-v1/results.json",
+      "sha256": "a638a5092d29b450499868ae91b6c46475ab090e07ec55a11783fde835a96c93"
+    },
+    {
+      "file": "INTEGRITY_REVIEW.md",
+      "origin": "artifacts/research_decisions/20261113-loss-attribution-v1/INTEGRITY_REVIEW.md",
+      "sha256": "2eb294629be54be10e00d796adc5164d286b57630eabb0c138fda54282e38146"
+    },
+    {
+      "file": "INTEGRITY_REVIEW.json",
+      "origin": "artifacts/research_decisions/20261113-loss-attribution-v1/INTEGRITY_REVIEW.json",
+      "sha256": "0113b42aa6ec1dcfecee46578bf1928f93a15f7454a7cf01ecdd49a7173bd921"
+    },
+    {
+      "file": "engineering-checks.json",
+      "origin": "artifacts/research_decisions/20261113-loss-attribution-v1/engineering-checks.json",
+      "sha256": "b57c85c3d14c470eefbbc6163ea3ba50208309cc0b1db76374108358cd9ebdb1"
+    }
+  ],
+  "scope": "byte-preserved retrospective result package; raw source logs remain in prior reports and full local research workspace; replay is not yet a standalone installed CLI",
+  "model_calls": 0,
+  "related_tasks": 240,
+  "independent_model_histories": 1
+}
