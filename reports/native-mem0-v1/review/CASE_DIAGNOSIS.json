@@ -1,0 +1,300 @@
+{
+  "generated_at": "2026-11-13T06:42:12.247286+00:00",
+  "scope": "All 12 retained cases in one authored two-version engineering workload. Posthoc semantic calibration by this fresh reviewer; not an independent human-labeled benchmark, not a new automated support metric and not a causal mechanism study.",
+  "source_aliases": {
+    "A": "7dc1c9f18069e2927d6293ef3771ec42e39f0cc5cc9be3be1a01add091fce79e",
+    "B": "f98ca77cfa478f0118ccbf43dead6a9a53f09758483d36a6daf9eb89b1cc84f4"
+  },
+  "arithmetic": {
+    "initial_margins": "correct total=95, selected total=80, grand total=100; selected correct in [75,80], share in [93.75%,100%]. Sufficient for gate 1 at 90%, insufficient to fix gate at 99%.",
+    "source_A_full": "76/(76+4)=95%; gate 1 at 90%, gate 0 at 99%.",
+    "source_B_full": "80/(80+0)=100%; gate 1 at both 90% and 99%."
+  },
+  "summary": {
+    "total_cases": 12,
+    "wrong_cases": 5,
+    "wrong_cases_with_semantically_sufficient_current_notes_delivered": 5,
+    "wrong_cases_proven_due_to_retrieval_nondelivery": 0,
+    "wrong_cases_proven_due_to_stale_source_use": 0,
+    "observed_native_consolidation_omissions": 1,
+    "claims_of_causal_error_reduction": 0
+  },
+  "cases": [
+    {
+      "arm": "mem0",
+      "session": 0,
+      "source_alias": "A",
+      "source_id": "7dc1c9f18069e2927d6293ef3771ec42e39f0cc5cc9be3be1a01add091fce79e",
+      "threshold": "90%",
+      "truth": 1,
+      "submitted": 1,
+      "correct": true,
+      "query_calls": 1,
+      "source_read_bytes": 154,
+      "predecision_delivered_information_sufficient": true,
+      "classification": "sufficient_current_marginal_bound",
+      "diagnosis": "Correct after an avoidable query. Delivered accurate current-source margins imply a lower selected-correct count of 75 out of 80, so the 90% gate is already 1. This diagnoses information sufficiency, not whether the reader actually used the bound.",
+      "semantic_assessment": "posthoc fresh-reviewer manual semantic calibration; no independent human annotation or automated population support score",
+      "reader_internal_cause": "not identified",
+      "original_native_text_support": "unassessed (preserved)",
+      "evidence": [
+        "artifacts/research_decisions/20261113-native-mem0-reader-v1/models/mem0/s00/t0-input.json:1",
+        "artifacts/research_decisions/20261113-native-mem0-reader-v1/models/mem0/s00/delivery.json:1",
+        "artifacts/research_decisions/20261113-native-mem0-reader-v1/models/mem0/s00/event.json:1"
+      ]
+    },
+    {
+      "arm": "mem0",
+      "session": 1,
+      "source_alias": "A",
+      "source_id": "7dc1c9f18069e2927d6293ef3771ec42e39f0cc5cc9be3be1a01add091fce79e",
+      "threshold": "99%",
+      "truth": 0,
+      "submitted": 0,
+      "correct": true,
+      "query_calls": 1,
+      "source_read_bytes": 0,
+      "predecision_delivered_information_sufficient": false,
+      "classification": "insufficient_current_marginals_after_prior_consolidation_omission",
+      "diagnosis": "Correct after cache-hit query. The prior s00 extraction contained all joint cells, but its update response retained the old marginal text; retained s00 inventory and s01 delivery lack those cells. Margins allow both 0 and 1 at 99%, so query is justified by what was delivered. This is an observed consolidation omission, not retrieval nondelivery; no counterfactual error reduction is established.",
+      "semantic_assessment": "posthoc fresh-reviewer manual semantic calibration; no independent human annotation or automated population support score",
+      "reader_internal_cause": "not identified",
+      "original_native_text_support": "unassessed (preserved)",
+      "evidence": [
+        "artifacts/research_decisions/20261113-native-mem0-reader-v1/models/mem0/s01/t0-input.json:1",
+        "artifacts/research_decisions/20261113-native-mem0-reader-v1/models/mem0/s01/delivery.json:1",
+        "artifacts/research_decisions/20261113-native-mem0-reader-v1/models/mem0/s01/event.json:1"
+      ]
+    },
+    {
+      "arm": "mem0",
+      "session": 2,
+      "source_alias": "A",
+      "source_id": "7dc1c9f18069e2927d6293ef3771ec42e39f0cc5cc9be3be1a01add091fce79e",
+      "threshold": "99%",
+      "truth": 0,
+      "submitted": 1,
+      "correct": false,
+      "query_calls": 0,
+      "source_read_bytes": 0,
+      "predecision_delivered_information_sufficient": true,
+      "classification": "wrong_despite_sufficient_current_full_note",
+      "diagnosis": "Current-source full cells 76 correct and 4 incorrect at confidence 90 are actually delivered and cited. The selected share is 76/80=95%, below 99%; submission 1 is wrong. Missing facts, retrieval nondelivery and stale-source substitution do not explain this retained trace. Arithmetic versus task/threshold interpretation versus other reader failure cannot be separated without additional evidence.",
+      "semantic_assessment": "posthoc fresh-reviewer manual semantic calibration; no independent human annotation or automated population support score",
+      "reader_internal_cause": "not identified",
+      "original_native_text_support": "unassessed (preserved)",
+      "evidence": [
+        "artifacts/research_decisions/20261113-native-mem0-reader-v1/models/mem0/s02/t0-input.json:1",
+        "artifacts/research_decisions/20261113-native-mem0-reader-v1/models/mem0/s02/delivery.json:1",
+        "artifacts/research_decisions/20261113-native-mem0-reader-v1/models/mem0/s02/event.json:1"
+      ]
+    },
+    {
+      "arm": "mem0",
+      "session": 3,
+      "source_alias": "B",
+      "source_id": "f98ca77cfa478f0118ccbf43dead6a9a53f09758483d36a6daf9eb89b1cc84f4",
+      "threshold": "99%",
+      "truth": 1,
+      "submitted": 1,
+      "correct": true,
+      "query_calls": 1,
+      "source_read_bytes": 154,
+      "predecision_delivered_information_sufficient": false,
+      "classification": "expected_current_source_gap_then_correct_query",
+      "diagnosis": "Only old source-A notes are delivered before querying new source B. Query returns the B table and gate 1, then the reader submits 1. Its old-A note citation alone does not support the current gate; current tool evidence does. No causal use of the citation is established.",
+      "semantic_assessment": "posthoc fresh-reviewer manual semantic calibration; no independent human annotation or automated population support score",
+      "reader_internal_cause": "not identified",
+      "original_native_text_support": "unassessed (preserved)",
+      "evidence": [
+        "artifacts/research_decisions/20261113-native-mem0-reader-v1/models/mem0/s03/t0-input.json:1",
+        "artifacts/research_decisions/20261113-native-mem0-reader-v1/models/mem0/s03/delivery.json:1",
+        "artifacts/research_decisions/20261113-native-mem0-reader-v1/models/mem0/s03/event.json:1"
+      ]
+    },
+    {
+      "arm": "mem0",
+      "session": 4,
+      "source_alias": "B",
+      "source_id": "f98ca77cfa478f0118ccbf43dead6a9a53f09758483d36a6daf9eb89b1cc84f4",
+      "threshold": "90%",
+      "truth": 1,
+      "submitted": 1,
+      "correct": true,
+      "query_calls": 0,
+      "source_read_bytes": 0,
+      "predecision_delivered_information_sufficient": true,
+      "classification": "correct_with_sufficient_current_full_note",
+      "diagnosis": "Accurate source-B cells are delivered and cited: 80 correct and 0 incorrect selected, share 100%, so the 90% gate is 1. Old source-A notes coexist as historical facts. This is compatible with successful reuse, not proof of causal note use.",
+      "semantic_assessment": "posthoc fresh-reviewer manual semantic calibration; no independent human annotation or automated population support score",
+      "reader_internal_cause": "not identified",
+      "original_native_text_support": "unassessed (preserved)",
+      "evidence": [
+        "artifacts/research_decisions/20261113-native-mem0-reader-v1/models/mem0/s04/t0-input.json:1",
+        "artifacts/research_decisions/20261113-native-mem0-reader-v1/models/mem0/s04/delivery.json:1",
+        "artifacts/research_decisions/20261113-native-mem0-reader-v1/models/mem0/s04/event.json:1"
+      ]
+    },
+    {
+      "arm": "mem0",
+      "session": 5,
+      "source_alias": "A",
+      "source_id": "7dc1c9f18069e2927d6293ef3771ec42e39f0cc5cc9be3be1a01add091fce79e",
+      "threshold": "99%",
+      "truth": 0,
+      "submitted": 1,
+      "correct": false,
+      "query_calls": 0,
+      "source_read_bytes": 0,
+      "predecision_delivered_information_sufficient": true,
+      "classification": "wrong_despite_sufficient_current_full_note",
+      "diagnosis": "On return to source A, its accurate full cells are actually delivered and cited even while source-B history remains. The current share is 76/80=95%, so the 99% gate is 0, but submission is 1. The trace does not establish stale-source use; the cited source matches. Exact reader failure mechanism is undetermined.",
+      "semantic_assessment": "posthoc fresh-reviewer manual semantic calibration; no independent human annotation or automated population support score",
+      "reader_internal_cause": "not identified",
+      "original_native_text_support": "unassessed (preserved)",
+      "evidence": [
+        "artifacts/research_decisions/20261113-native-mem0-reader-v1/models/mem0/s05/t0-input.json:1",
+        "artifacts/research_decisions/20261113-native-mem0-reader-v1/models/mem0/s05/delivery.json:1",
+        "artifacts/research_decisions/20261113-native-mem0-reader-v1/models/mem0/s05/event.json:1"
+      ]
+    },
+    {
+      "arm": "verbatim",
+      "session": 0,
+      "source_alias": "A",
+      "source_id": "7dc1c9f18069e2927d6293ef3771ec42e39f0cc5cc9be3be1a01add091fce79e",
+      "threshold": "90%",
+      "truth": 1,
+      "submitted": 0,
+      "correct": false,
+      "query_calls": 0,
+      "source_read_bytes": 0,
+      "predecision_delivered_information_sufficient": true,
+      "classification": "wrong_despite_sufficient_current_marginal_bound",
+      "diagnosis": "The complete unchanged initial margins are delivered and cited. The selected-correct count is at least 95+80-100=75 of 80, so its share is at least 93.75% and the 90% gate is 1. Submission 0 is wrong despite sufficient notes; exact arithmetic versus interpretation failure is undetermined.",
+      "semantic_assessment": "posthoc fresh-reviewer manual semantic calibration; no independent human annotation or automated population support score",
+      "reader_internal_cause": "not identified",
+      "original_native_text_support": "unassessed (preserved)",
+      "evidence": [
+        "artifacts/research_decisions/20261113-native-mem0-reader-v1/models/verbatim/s00/t0-input.json:1",
+        "artifacts/research_decisions/20261113-native-mem0-reader-v1/models/verbatim/s00/delivery.json:1",
+        "artifacts/research_decisions/20261113-native-mem0-reader-v1/models/verbatim/s00/event.json:1"
+      ]
+    },
+    {
+      "arm": "verbatim",
+      "session": 1,
+      "source_alias": "A",
+      "source_id": "7dc1c9f18069e2927d6293ef3771ec42e39f0cc5cc9be3be1a01add091fce79e",
+      "threshold": "99%",
+      "truth": 0,
+      "submitted": 0,
+      "correct": true,
+      "query_calls": 1,
+      "source_read_bytes": 154,
+      "predecision_delivered_information_sufficient": false,
+      "classification": "insufficient_current_marginals_then_correct_query",
+      "diagnosis": "Initial margins permit selected-correct counts from 75 to 80, spanning the 99% threshold, so they do not fix this gate. Query scans source A, returns its complete table and exact gate 0, and submission is correctly 0. No prior joint observation had been acquired by this arm.",
+      "semantic_assessment": "posthoc fresh-reviewer manual semantic calibration; no independent human annotation or automated population support score",
+      "reader_internal_cause": "not identified",
+      "original_native_text_support": "unassessed (preserved)",
+      "evidence": [
+        "artifacts/research_decisions/20261113-native-mem0-reader-v1/models/verbatim/s01/t0-input.json:1",
+        "artifacts/research_decisions/20261113-native-mem0-reader-v1/models/verbatim/s01/delivery.json:1",
+        "artifacts/research_decisions/20261113-native-mem0-reader-v1/models/verbatim/s01/event.json:1"
+      ]
+    },
+    {
+      "arm": "verbatim",
+      "session": 2,
+      "source_alias": "A",
+      "source_id": "7dc1c9f18069e2927d6293ef3771ec42e39f0cc5cc9be3be1a01add091fce79e",
+      "threshold": "99%",
+      "truth": 0,
+      "submitted": 1,
+      "correct": false,
+      "query_calls": 0,
+      "source_read_bytes": 0,
+      "predecision_delivered_information_sufficient": true,
+      "classification": "wrong_despite_sufficient_current_full_note",
+      "diagnosis": "The newly appended source-A full observation is delivered and cited as note-1. Its selected counts 76 and 4 imply 95%, below 99%, hence gate 0. Submission 1 is wrong despite intact fully delivered memory; exact reader failure mechanism is undetermined.",
+      "semantic_assessment": "posthoc fresh-reviewer manual semantic calibration; no independent human annotation or automated population support score",
+      "reader_internal_cause": "not identified",
+      "original_native_text_support": "unassessed (preserved)",
+      "evidence": [
+        "artifacts/research_decisions/20261113-native-mem0-reader-v1/models/verbatim/s02/t0-input.json:1",
+        "artifacts/research_decisions/20261113-native-mem0-reader-v1/models/verbatim/s02/delivery.json:1",
+        "artifacts/research_decisions/20261113-native-mem0-reader-v1/models/verbatim/s02/event.json:1"
+      ]
+    },
+    {
+      "arm": "verbatim",
+      "session": 3,
+      "source_alias": "B",
+      "source_id": "f98ca77cfa478f0118ccbf43dead6a9a53f09758483d36a6daf9eb89b1cc84f4",
+      "threshold": "99%",
+      "truth": 1,
+      "submitted": 1,
+      "correct": true,
+      "query_calls": 1,
+      "source_read_bytes": 154,
+      "predecision_delivered_information_sufficient": false,
+      "classification": "expected_current_source_gap_then_correct_query",
+      "diagnosis": "Only source-A notes exist before the new source-B request. The reader queries B and correctly submits gate 1 from current tool evidence. It declares no citations. This is an expected source transition, not a demonstrated stale-source error.",
+      "semantic_assessment": "posthoc fresh-reviewer manual semantic calibration; no independent human annotation or automated population support score",
+      "reader_internal_cause": "not identified",
+      "original_native_text_support": "unassessed (preserved)",
+      "evidence": [
+        "artifacts/research_decisions/20261113-native-mem0-reader-v1/models/verbatim/s03/t0-input.json:1",
+        "artifacts/research_decisions/20261113-native-mem0-reader-v1/models/verbatim/s03/delivery.json:1",
+        "artifacts/research_decisions/20261113-native-mem0-reader-v1/models/verbatim/s03/event.json:1"
+      ]
+    },
+    {
+      "arm": "verbatim",
+      "session": 4,
+      "source_alias": "B",
+      "source_id": "f98ca77cfa478f0118ccbf43dead6a9a53f09758483d36a6daf9eb89b1cc84f4",
+      "threshold": "90%",
+      "truth": 1,
+      "submitted": 1,
+      "correct": true,
+      "query_calls": 0,
+      "source_read_bytes": 0,
+      "predecision_delivered_information_sufficient": true,
+      "classification": "correct_with_sufficient_current_full_note",
+      "diagnosis": "Source-B full note-2 is delivered and cited. Selected counts 80 correct and 0 incorrect imply gate 1 at 90%. This is compatible with note reuse but does not establish causal adoption.",
+      "semantic_assessment": "posthoc fresh-reviewer manual semantic calibration; no independent human annotation or automated population support score",
+      "reader_internal_cause": "not identified",
+      "original_native_text_support": "unassessed (preserved)",
+      "evidence": [
+        "artifacts/research_decisions/20261113-native-mem0-reader-v1/models/verbatim/s04/t0-input.json:1",
+        "artifacts/research_decisions/20261113-native-mem0-reader-v1/models/verbatim/s04/delivery.json:1",
+        "artifacts/research_decisions/20261113-native-mem0-reader-v1/models/verbatim/s04/event.json:1"
+      ]
+    },
+    {
+      "arm": "verbatim",
+      "session": 5,
+      "source_alias": "A",
+      "source_id": "7dc1c9f18069e2927d6293ef3771ec42e39f0cc5cc9be3be1a01add091fce79e",
+      "threshold": "99%",
+      "truth": 0,
+      "submitted": 1,
+      "correct": false,
+      "query_calls": 0,
+      "source_read_bytes": 0,
+      "predecision_delivered_information_sufficient": true,
+      "classification": "wrong_despite_sufficient_current_full_note",
+      "diagnosis": "Source-A full note-1 remains intact, is delivered and is cited after returning from B. The selected share is 95%, so the 99% gate is 0, but submission is 1. Neither data omission nor source-mismatched citation explains the observed failure; exact reader mechanism is undetermined.",
+      "semantic_assessment": "posthoc fresh-reviewer manual semantic calibration; no independent human annotation or automated population support score",
+      "reader_internal_cause": "not identified",
+      "original_native_text_support": "unassessed (preserved)",
+      "evidence": [
+        "artifacts/research_decisions/20261113-native-mem0-reader-v1/models/verbatim/s05/t0-input.json:1",
+        "artifacts/research_decisions/20261113-native-mem0-reader-v1/models/verbatim/s05/delivery.json:1",
+        "artifacts/research_decisions/20261113-native-mem0-reader-v1/models/verbatim/s05/event.json:1"
+      ]
+    }
+  ]
+}

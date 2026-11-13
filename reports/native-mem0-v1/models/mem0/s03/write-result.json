@@ -1,0 +1,9 @@
+{
+  "results": [
+    {
+      "id": "bb5901f5-8816-4736-b503-48088416c05f",
+      "memory": "Verified a source observation with the authorized tool and wants the source identity and full values preserved for future requests: source_id f98ca77cfa478f0118ccbf43dead6a9a53f09758483d36a6daf9eb89b1cc84f4, table correct {50:15, 90:80}, incorrect {50:5, 90:0}",
+      "event": "ADD"
+    }
+  ]
+}

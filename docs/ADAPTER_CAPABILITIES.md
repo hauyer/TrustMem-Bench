@@ -8,7 +8,7 @@
 | Markdown reference store | implemented-local, offline tests | Verbatim body plus hash/revision sidecar; same five operations | Sequential writes; no cross-process transaction guarantee; detects sidecar/body mismatch |
 | SAP | trace-only, real saved logs/SQL read | Read decisions, delivered memories, quotes, invoices and readback | No live external retriever; semantic citations and causal memory use unobserved |
 | Delegated native API | bridge-only, contract tested with a test fixture | Calls only explicitly supplied operations and declares version | User must supply native SDK integration; missing operations raise `UnsupportedOperation` |
-| Mem0 | docs-reviewed-not-run | Add/update documented; no native SDK run in this increment | No performance result or installed-version compatibility certified |
+| Mem0 OSS1.0.11 | implemented-and-locally-qualified, limited native pilot | Actual infer=True add/default extraction+update, vector search, get_all, explicit update and disk reopen; 12-session two-backend reader pilot | Optional SDK/embedding dependencies, authored workload, free-text support initially unassessed; separate frozen lifecycle runner, not every suite task integrated |
 | Letta | docs-reviewed-not-run | Stateful agent/memory documentation reviewed | No integration, background consistency or performance result |
 | LangMem | docs-reviewed-not-run | Hot-path and background memory primitives documented | No integration or performance result |
 
@@ -19,3 +19,5 @@ Every real system run needs a capability declaration: system and SDK/commit vers
 If an internal metric is unavailable, publish `unobservable`. If an operation does not exist, publish `unsupported`, including the system version. Do not score either as a successful zero or a business failure. Evaluate actual available actions and end-to-end results, with unsupported capability coverage shown alongside them.
 
 Use `DelegatedMemory(name, version, operations)` only as an extension point. Supplying an `add` callable does not authorize `replace` emulation. These adapters expose no hidden scoring labels to the model. Source/version checks for a memory's evidence belong to the declared task contract, not to the memory store's universal definition of truth.
+
+The Mem0 qualification uses the already installed version and an offline BGE-small model; website signatures are not assumed to match this SDK. A [portable zero-API smoke and actual pilot scope](NATIVE_MEM0_PILOT.md) are documented. Scripted transport in the smoke is engineering calibration; the separate paid trial preserved actual native model outputs. Its reader had query/submit/abstain but no public local calculator, so it cannot establish a memory deficit beyond ordinary arithmetic-assisted agents.

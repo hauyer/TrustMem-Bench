@@ -15,6 +15,7 @@
 | H-MISSING-DISTINCTION | `SUPPORTED_WRITER_RECOVERY_ORDINARY_BASELINE` | Prior executed authored writer gives 13 recovered constraints. Ordinary baseline succeeds; no algorithm advantage | Register actual quality/cost headroom, not unsupported formatting or saturated scan objectives |
 | C-VIEW-COMPILER | Ordinary restricted AST compiler / `SUPPORTED_WRITER_PATTERN_QUALIFIED` | Renaming invariant, changed scope preserved, dynamic input unsupported; 18 deliveries and 6 persisted repeats correct | Unknown stays unknown; complete-view witness validation remains mandatory |
 | C-QUALITY-GATE | Ordinary decision bounds / `UNIFIED_RUNTIME_CALIBRATED` | Version0.3 unified agent/acquire/save/score/report; 160+32 related supported deliveries, zero API | Use calibration as platform asset; native-system behavior and method gains need separate tests |
+| C-NATIVE-MEM0 | Native inferred memory / `REAL_INFER_SEARCH_DISK_READER_QUALIFIED` | Real writer/search/disk reader loop; Mem0 4/6, full notes3/6, equal source reads; missing public calculator qualifies interpretation | Replay all12 observed inputs with equal-access ordinary arithmetic before memory-deficit claims |
 
 Promote a card only on its specified evidence. Do not turn H-ALLOC's known-evidence errors into a new semantic-binding algorithm: C-BIND already supplies the ordinary solution. Do not turn missing model tests into an observed gap. Conversely, an ordinary success updates the relevant card and baseline; it does not discard all old data or reopen topic selection.
 

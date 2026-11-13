@@ -1,0 +1,13 @@
+{
+  "status": "complete",
+  "external_model_calls": 0,
+  "scripted_writer_calls": 2,
+  "actual_task_checks": 4,
+  "native_infer_true_add": true,
+  "native_search": true,
+  "native_update": true,
+  "qdrant_disk_reopened_new_process": true,
+  "same_object_id": true,
+  "telemetry": false,
+  "actual_memory_text_after_update": "{\"kind\":\"full\",\"preflight_marker\":\"revision-2\",\"source_id\":\"7dc1c9f18069e2927d6293ef3771ec42e39f0cc5cc9be3be1a01add091fce79e\",\"table\":{\"correct\":{\"50\":19,\"90\":76},\"incorrect\":{\"50\":1,\"90\":4}}}"
+}

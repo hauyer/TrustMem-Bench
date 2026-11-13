@@ -1,0 +1,40 @@
+{
+  "results": [
+    {
+      "id": "31230e7c-d3eb-4c22-99bf-95b403c085b0",
+      "memory": "Manages a quality-review workflow",
+      "hash": "f0d9ccb7ffdbbe4012ec418437efcb74",
+      "metadata": {
+        "bench_stage": "mem0-initial"
+      },
+      "score": 0.7716652174084775,
+      "created_at": "2026-11-13T06:29:38.609630+00:00",
+      "updated_at": "2026-11-13T06:29:38.609630+00:00",
+      "user_id": "trustmem-user"
+    },
+    {
+      "id": "da3680ed-ae36-4f7d-b9da-d72f99d6a9ef",
+      "memory": "Verified a source observation with the authorized tool and wants the source identity and full values preserved for future requests: source_id 7dc1c9f18069e2927d6293ef3771ec42e39f0cc5cc9be3be1a01add091fce79e, kind full, table correct {50: 19, 90: 76}, incorrect {50: 1, 90: 4}",
+      "hash": "1bb15bc3670ba61b2e8ef896d8a959cf",
+      "metadata": {
+        "bench_stage": "mem0-s01"
+      },
+      "score": 0.7451769725449826,
+      "created_at": "2026-11-13T06:29:38.635423+00:00",
+      "updated_at": "2026-11-13T06:30:05.530487+00:00",
+      "user_id": "trustmem-user"
+    },
+    {
+      "id": "bb5901f5-8816-4736-b503-48088416c05f",
+      "memory": "Verified a source observation with the authorized tool and wants the source identity and full values preserved for future requests: source_id f98ca77cfa478f0118ccbf43dead6a9a53f09758483d36a6daf9eb89b1cc84f4, table correct {50:15, 90:80}, incorrect {50:5, 90:0}",
+      "hash": "f5d6a85b93f2ee68e9d86d54bbbaccc0",
+      "metadata": {
+        "bench_stage": "mem0-s03"
+      },
+      "score": 0.737758620755814,
+      "created_at": "2026-11-13T06:30:25.276925+00:00",
+      "updated_at": "2026-11-13T06:30:25.276925+00:00",
+      "user_id": "trustmem-user"
+    }
+  ]
+}

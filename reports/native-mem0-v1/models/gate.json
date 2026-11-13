@@ -1,0 +1,13 @@
+{
+  "status": "complete",
+  "call_attempts": 25,
+  "planned_arms": [
+    "mem0",
+    "verbatim"
+  ],
+  "executed_arms": [
+    "mem0",
+    "verbatim"
+  ],
+  "scientific_scope": "One authored two-version workload, six correlated sessions per arm; native writer and delivered search text preserved; semantic note support unassessed."
+}

@@ -1,0 +1,3 @@
+{
+  "text": "I verified this source observation with the authorized tool. Preserve the source identity and full values for future requests. {\"kind\":\"full\",\"source_id\":\"f98ca77cfa478f0118ccbf43dead6a9a53f09758483d36a6daf9eb89b1cc84f4\",\"table\":{\"correct\":{\"50\":15,\"90\":80},\"incorrect\":{\"50\":5,\"90\":0}}}"
+}

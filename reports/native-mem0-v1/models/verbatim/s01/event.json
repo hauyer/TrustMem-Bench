@@ -1,0 +1,48 @@
+{
+  "session": 1,
+  "source_id": "7dc1c9f18069e2927d6293ef3771ec42e39f0cc5cc9be3be1a01add091fce79e",
+  "request": {
+    "kind": "quality",
+    "a": "correct",
+    "cutoff": 80,
+    "numerator": 99,
+    "denominator": 100
+  },
+  "status": "submitted",
+  "source_read_bytes": 154,
+  "query_calls": 1,
+  "native_text_support": "unassessed",
+  "delivered_note_ids": [
+    "note-0"
+  ],
+  "submitted_value": 0,
+  "citations": [
+    "note-0"
+  ],
+  "current_tool_evidence": true,
+  "tool_trace": [
+    {
+      "action": {
+        "action": "query"
+      },
+      "result": {
+        "receipt": {
+          "kind": "full",
+          "source_id": "7dc1c9f18069e2927d6293ef3771ec42e39f0cc5cc9be3be1a01add091fce79e",
+          "table": {
+            "correct": {
+              "90": 76,
+              "50": 19
+            },
+            "incorrect": {
+              "90": 4,
+              "50": 1
+            }
+          }
+        },
+        "value": 0,
+        "backend_cache_hit": false
+      }
+    }
+  ]
+}

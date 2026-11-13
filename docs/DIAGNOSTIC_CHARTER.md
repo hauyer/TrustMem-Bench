@@ -54,7 +54,7 @@ These interventions are diagnostic controls; several cannot be implemented in an
 |---|---|---|---|
 | Formation | Actual history, first writer response, saved object | Scope errors, lossy compression, writer cost | SAP saved logs; semantic independent labels missing |
 | Persistence | Object ID, revision, verbatim body, fresh read | Committed/readable ratio, revision mismatch | SAP readback; SQLite/Markdown local baseline adapters |
-| Retrieval | Native query, candidate IDs, delivered payload | Availability versus delivery, retrieval bytes/tokens | Delivered SAP payload; native ranked retrieval not yet run |
+| Retrieval | Native query, candidate IDs, delivered payload | Availability versus delivery, retrieval bytes/tokens | SAP payload and native Mem0 ranked search/new-process readback in a bounded authored pilot |
 | Applicability | Task, source/version, quote context | Exact-match coverage; explicit binding mismatch if declared | SAP and EAD trace diagnostics |
 | Verification | Proposed actions, chosen tool/object, cache before call | Repeated exact checks, missed proposal coverage, quote counts | SAP 40 quota opportunities; EAD1 controlled replacement |
 | Native acquisition scope | Same first request, single-group or multi-group or full-source observation, retained state | Future supported deliveries, compressed input bytes, fallback reads, retained payload | GH Archive and Wikimedia development replay, including a rank-shift control |
@@ -75,7 +75,7 @@ Report correct completion, wrong submission, abstention and unfinished tasks tog
 
 Declare versions and actual native capabilities first. Wrap native writer/retriever behavior rather than replacing every system with a common algorithm. Keep semantic extraction/consolidation enabled when it is part of the system, count its model costs, and record whether extra history was actually read. Fork only through a native snapshot or a recorded replay supported by the system. No silent emulation of unsupported update, delete, transaction or background-drain operations.
 
-Implemented today: local SQLite and verbatim Markdown reference stores, a callable native-operation bridge, and read-only SAP diagnostics. This is **not** end-to-end adaptation of Mem0, Letta or LangMem. See [capabilities](ADAPTER_CAPABILITIES.md). The cross-system goal is a shared measurement contract, not a fictional promise that every internal field is visible in every system.
+Implemented today: local SQLite and verbatim Markdown reference stores, a callable native-operation bridge, read-only SAP diagnostics, and a limited actual Mem0 OSS1.0.11 writer/search/disk/reader lifecycle pilot. Letta and LangMem are not evaluated. Mem0's lifecycle runner reuses the task backend but is not yet an option in every suite case. See [capabilities](ADAPTER_CAPABILITIES.md). The cross-system goal is a shared measurement contract, not a fictional promise that every internal field is visible in every system.
 
 The SAP trace analyzer requires the parent workspace's frozen SAP original/continuation artifacts; these archives are not bundled into this repository. The instrument calibration and local adapter tests are self-contained. Aggregate diagnostics in `reports/diagnostics` are an evidence summary, not a standalone reproduction of the remote model calls.
 

@@ -1,0 +1,440 @@
+[
+  {
+    "arm": "mem0",
+    "events": [
+      {
+        "session": 0,
+        "source_id": "7dc1c9f18069e2927d6293ef3771ec42e39f0cc5cc9be3be1a01add091fce79e",
+        "request": {
+          "kind": "quality",
+          "a": "correct",
+          "cutoff": 80,
+          "numerator": 9,
+          "denominator": 10
+        },
+        "status": "submitted",
+        "source_read_bytes": 154,
+        "query_calls": 1,
+        "native_text_support": "unassessed",
+        "delivered_note_ids": [
+          "da3680ed-ae36-4f7d-b9da-d72f99d6a9ef",
+          "31230e7c-d3eb-4c22-99bf-95b403c085b0"
+        ],
+        "submitted_value": 1,
+        "citations": [
+          "da3680ed-ae36-4f7d-b9da-d72f99d6a9ef"
+        ],
+        "current_tool_evidence": true,
+        "tool_trace": [
+          {
+            "action": {
+              "action": "query"
+            },
+            "result": {
+              "receipt": {
+                "kind": "full",
+                "source_id": "7dc1c9f18069e2927d6293ef3771ec42e39f0cc5cc9be3be1a01add091fce79e",
+                "table": {
+                  "correct": {
+                    "90": 76,
+                    "50": 19
+                  },
+                  "incorrect": {
+                    "90": 4,
+                    "50": 1
+                  }
+                }
+              },
+              "value": 1,
+              "backend_cache_hit": false
+            }
+          }
+        ]
+      },
+      {
+        "session": 1,
+        "source_id": "7dc1c9f18069e2927d6293ef3771ec42e39f0cc5cc9be3be1a01add091fce79e",
+        "request": {
+          "kind": "quality",
+          "a": "correct",
+          "cutoff": 80,
+          "numerator": 99,
+          "denominator": 100
+        },
+        "status": "submitted",
+        "source_read_bytes": 0,
+        "query_calls": 1,
+        "native_text_support": "unassessed",
+        "delivered_note_ids": [
+          "da3680ed-ae36-4f7d-b9da-d72f99d6a9ef",
+          "31230e7c-d3eb-4c22-99bf-95b403c085b0"
+        ],
+        "submitted_value": 0,
+        "citations": [
+          "da3680ed-ae36-4f7d-b9da-d72f99d6a9ef"
+        ],
+        "current_tool_evidence": true,
+        "tool_trace": [
+          {
+            "action": {
+              "action": "query"
+            },
+            "result": {
+              "receipt": {
+                "kind": "full",
+                "source_id": "7dc1c9f18069e2927d6293ef3771ec42e39f0cc5cc9be3be1a01add091fce79e",
+                "table": {
+                  "correct": {
+                    "50": 19,
+                    "90": 76
+                  },
+                  "incorrect": {
+                    "50": 1,
+                    "90": 4
+                  }
+                }
+              },
+              "value": 0,
+              "backend_cache_hit": true
+            }
+          }
+        ]
+      },
+      {
+        "session": 2,
+        "source_id": "7dc1c9f18069e2927d6293ef3771ec42e39f0cc5cc9be3be1a01add091fce79e",
+        "request": {
+          "kind": "quality",
+          "a": "correct",
+          "cutoff": 80,
+          "numerator": 99,
+          "denominator": 100
+        },
+        "status": "submitted",
+        "source_read_bytes": 0,
+        "query_calls": 0,
+        "native_text_support": "unassessed",
+        "delivered_note_ids": [
+          "31230e7c-d3eb-4c22-99bf-95b403c085b0",
+          "da3680ed-ae36-4f7d-b9da-d72f99d6a9ef"
+        ],
+        "submitted_value": 1,
+        "citations": [
+          "da3680ed-ae36-4f7d-b9da-d72f99d6a9ef"
+        ],
+        "current_tool_evidence": false,
+        "tool_trace": []
+      },
+      {
+        "session": 3,
+        "source_id": "f98ca77cfa478f0118ccbf43dead6a9a53f09758483d36a6daf9eb89b1cc84f4",
+        "request": {
+          "kind": "quality",
+          "a": "correct",
+          "cutoff": 80,
+          "numerator": 99,
+          "denominator": 100
+        },
+        "status": "submitted",
+        "source_read_bytes": 154,
+        "query_calls": 1,
+        "native_text_support": "unassessed",
+        "delivered_note_ids": [
+          "31230e7c-d3eb-4c22-99bf-95b403c085b0",
+          "da3680ed-ae36-4f7d-b9da-d72f99d6a9ef"
+        ],
+        "submitted_value": 1,
+        "citations": [
+          "da3680ed-ae36-4f7d-b9da-d72f99d6a9ef"
+        ],
+        "current_tool_evidence": true,
+        "tool_trace": [
+          {
+            "action": {
+              "action": "query"
+            },
+            "result": {
+              "receipt": {
+                "kind": "full",
+                "source_id": "f98ca77cfa478f0118ccbf43dead6a9a53f09758483d36a6daf9eb89b1cc84f4",
+                "table": {
+                  "correct": {
+                    "90": 80,
+                    "50": 15
+                  },
+                  "incorrect": {
+                    "90": 0,
+                    "50": 5
+                  }
+                }
+              },
+              "value": 1,
+              "backend_cache_hit": false
+            }
+          }
+        ]
+      },
+      {
+        "session": 4,
+        "source_id": "f98ca77cfa478f0118ccbf43dead6a9a53f09758483d36a6daf9eb89b1cc84f4",
+        "request": {
+          "kind": "quality",
+          "a": "correct",
+          "cutoff": 80,
+          "numerator": 9,
+          "denominator": 10
+        },
+        "status": "submitted",
+        "source_read_bytes": 0,
+        "query_calls": 0,
+        "native_text_support": "unassessed",
+        "delivered_note_ids": [
+          "31230e7c-d3eb-4c22-99bf-95b403c085b0",
+          "da3680ed-ae36-4f7d-b9da-d72f99d6a9ef",
+          "bb5901f5-8816-4736-b503-48088416c05f"
+        ],
+        "submitted_value": 1,
+        "citations": [
+          "bb5901f5-8816-4736-b503-48088416c05f"
+        ],
+        "current_tool_evidence": false,
+        "tool_trace": []
+      },
+      {
+        "session": 5,
+        "source_id": "7dc1c9f18069e2927d6293ef3771ec42e39f0cc5cc9be3be1a01add091fce79e",
+        "request": {
+          "kind": "quality",
+          "a": "correct",
+          "cutoff": 80,
+          "numerator": 99,
+          "denominator": 100
+        },
+        "status": "submitted",
+        "source_read_bytes": 0,
+        "query_calls": 0,
+        "native_text_support": "unassessed",
+        "delivered_note_ids": [
+          "31230e7c-d3eb-4c22-99bf-95b403c085b0",
+          "da3680ed-ae36-4f7d-b9da-d72f99d6a9ef",
+          "bb5901f5-8816-4736-b503-48088416c05f"
+        ],
+        "submitted_value": 1,
+        "citations": [
+          "da3680ed-ae36-4f7d-b9da-d72f99d6a9ef"
+        ],
+        "current_tool_evidence": false,
+        "tool_trace": []
+      }
+    ],
+    "planned_sessions": 6,
+    "not_run": 0,
+    "backend_cache_hits": 1,
+    "backend_cache_misses": 2
+  },
+  {
+    "arm": "verbatim",
+    "events": [
+      {
+        "session": 0,
+        "source_id": "7dc1c9f18069e2927d6293ef3771ec42e39f0cc5cc9be3be1a01add091fce79e",
+        "request": {
+          "kind": "quality",
+          "a": "correct",
+          "cutoff": 80,
+          "numerator": 9,
+          "denominator": 10
+        },
+        "status": "submitted",
+        "source_read_bytes": 0,
+        "query_calls": 0,
+        "native_text_support": "unassessed",
+        "delivered_note_ids": [
+          "note-0"
+        ],
+        "submitted_value": 0,
+        "citations": [
+          "note-0"
+        ],
+        "current_tool_evidence": false,
+        "tool_trace": []
+      },
+      {
+        "session": 1,
+        "source_id": "7dc1c9f18069e2927d6293ef3771ec42e39f0cc5cc9be3be1a01add091fce79e",
+        "request": {
+          "kind": "quality",
+          "a": "correct",
+          "cutoff": 80,
+          "numerator": 99,
+          "denominator": 100
+        },
+        "status": "submitted",
+        "source_read_bytes": 154,
+        "query_calls": 1,
+        "native_text_support": "unassessed",
+        "delivered_note_ids": [
+          "note-0"
+        ],
+        "submitted_value": 0,
+        "citations": [
+          "note-0"
+        ],
+        "current_tool_evidence": true,
+        "tool_trace": [
+          {
+            "action": {
+              "action": "query"
+            },
+            "result": {
+              "receipt": {
+                "kind": "full",
+                "source_id": "7dc1c9f18069e2927d6293ef3771ec42e39f0cc5cc9be3be1a01add091fce79e",
+                "table": {
+                  "correct": {
+                    "90": 76,
+                    "50": 19
+                  },
+                  "incorrect": {
+                    "90": 4,
+                    "50": 1
+                  }
+                }
+              },
+              "value": 0,
+              "backend_cache_hit": false
+            }
+          }
+        ]
+      },
+      {
+        "session": 2,
+        "source_id": "7dc1c9f18069e2927d6293ef3771ec42e39f0cc5cc9be3be1a01add091fce79e",
+        "request": {
+          "kind": "quality",
+          "a": "correct",
+          "cutoff": 80,
+          "numerator": 99,
+          "denominator": 100
+        },
+        "status": "submitted",
+        "source_read_bytes": 0,
+        "query_calls": 0,
+        "native_text_support": "unassessed",
+        "delivered_note_ids": [
+          "note-0",
+          "note-1"
+        ],
+        "submitted_value": 1,
+        "citations": [
+          "note-1"
+        ],
+        "current_tool_evidence": false,
+        "tool_trace": []
+      },
+      {
+        "session": 3,
+        "source_id": "f98ca77cfa478f0118ccbf43dead6a9a53f09758483d36a6daf9eb89b1cc84f4",
+        "request": {
+          "kind": "quality",
+          "a": "correct",
+          "cutoff": 80,
+          "numerator": 99,
+          "denominator": 100
+        },
+        "status": "submitted",
+        "source_read_bytes": 154,
+        "query_calls": 1,
+        "native_text_support": "unassessed",
+        "delivered_note_ids": [
+          "note-0",
+          "note-1"
+        ],
+        "submitted_value": 1,
+        "citations": [],
+        "current_tool_evidence": true,
+        "tool_trace": [
+          {
+            "action": {
+              "action": "query"
+            },
+            "result": {
+              "receipt": {
+                "kind": "full",
+                "source_id": "f98ca77cfa478f0118ccbf43dead6a9a53f09758483d36a6daf9eb89b1cc84f4",
+                "table": {
+                  "correct": {
+                    "90": 80,
+                    "50": 15
+                  },
+                  "incorrect": {
+                    "90": 0,
+                    "50": 5
+                  }
+                }
+              },
+              "value": 1,
+              "backend_cache_hit": false
+            }
+          }
+        ]
+      },
+      {
+        "session": 4,
+        "source_id": "f98ca77cfa478f0118ccbf43dead6a9a53f09758483d36a6daf9eb89b1cc84f4",
+        "request": {
+          "kind": "quality",
+          "a": "correct",
+          "cutoff": 80,
+          "numerator": 9,
+          "denominator": 10
+        },
+        "status": "submitted",
+        "source_read_bytes": 0,
+        "query_calls": 0,
+        "native_text_support": "unassessed",
+        "delivered_note_ids": [
+          "note-0",
+          "note-1",
+          "note-2"
+        ],
+        "submitted_value": 1,
+        "citations": [
+          "note-2"
+        ],
+        "current_tool_evidence": false,
+        "tool_trace": []
+      },
+      {
+        "session": 5,
+        "source_id": "7dc1c9f18069e2927d6293ef3771ec42e39f0cc5cc9be3be1a01add091fce79e",
+        "request": {
+          "kind": "quality",
+          "a": "correct",
+          "cutoff": 80,
+          "numerator": 99,
+          "denominator": 100
+        },
+        "status": "submitted",
+        "source_read_bytes": 0,
+        "query_calls": 0,
+        "native_text_support": "unassessed",
+        "delivered_note_ids": [
+          "note-0",
+          "note-1",
+          "note-2"
+        ],
+        "submitted_value": 1,
+        "citations": [
+          "note-1"
+        ],
+        "current_tool_evidence": false,
+        "tool_trace": []
+      }
+    ],
+    "planned_sessions": 6,
+    "not_run": 0,
+    "backend_cache_hits": 0,
+    "backend_cache_misses": 2
+  }
+]

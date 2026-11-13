@@ -9,6 +9,24 @@ ROOT = Path(__file__).resolve().parents[1]
 
 
 class PublishedResultTests(unittest.TestCase):
+    def test_native_mem0_pilot_preserves_first_responses_and_costs(self):
+        root=ROOT/"reports/native-mem0-v1"
+        manifest=json.loads((root/"manifest.json").read_text(encoding="utf-8"))
+        for name,info in manifest["files"].items():
+            self.assertEqual(hashlib.sha256((root/name).read_bytes()).hexdigest(),info["sha256"])
+        ledger=[json.loads(line) for line in (root/"models/api/model_calls.jsonl").read_text(encoding="utf-8").splitlines()]
+        self.assertEqual(len(ledger),25)
+        self.assertEqual(len({row["call_id"] for row in ledger}),25)
+        self.assertTrue(all(row["status"]=="received" for row in ledger))
+        usage=json.loads((root/"models/metrics.json").read_text(encoding="utf-8"))
+        self.assertAlmostEqual(sum(row["estimated_peak_usd"] for row in ledger),usage["external_model_cost"])
+        results=json.loads((root/"models/results.json").read_text(encoding="utf-8"))
+        self.assertEqual([(r["arm"],r["correct"],r["wrong"]) for r in results],[("mem0",4,2),("verbatim",3,3)])
+        for result in results:
+            self.assertEqual(len(result["events"]),6)
+            self.assertEqual(sum(e["correct"] for e in result["events"]),result["correct"])
+            self.assertEqual(sum(e["source_read_bytes"] for e in result["events"]),308)
+
     def test_v03_exports_preserve_complete_streams_and_original_bytes(self):
         folder=ROOT/"reports/development-v0.3"
         manifest=json.loads((folder/"manifest.json").read_text(encoding="utf-8"))

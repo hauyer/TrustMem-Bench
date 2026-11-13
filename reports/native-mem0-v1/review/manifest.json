@@ -1,0 +1,10 @@
+{
+  "scope": "Posthoc fresh-model review, same-family/provisional, no independent human annotation",
+  "files": {
+    "INTEGRITY_REVIEW.md": "4c2bb2dfae514bad44a0b180a5d4d0d48a209299cd89a30e8452f61c679ccf5c",
+    "INTEGRITY_REVIEW.json": "80b2b736fa1bf730dd12cb5df26e56212663405464e140c26f7d9ebf1105349c",
+    "CASE_DIAGNOSIS.md": "694ced2016325e85b50d614ae85e679c0db2a5db85b10583cca6d99f37ebe906",
+    "CASE_DIAGNOSIS.json": "1b07d0fec73a86a42d8587d95aa86b3862709deb608aea306e21f1c581cdae81"
+  },
+  "raw_export_manifest_sha256": "88f4758796990c71a5d7532242446266f4287599a3b4fce3031bb0e05754da0c"
+}

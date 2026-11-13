@@ -1,0 +1,26 @@
+{
+  "session": 4,
+  "source_id": "f98ca77cfa478f0118ccbf43dead6a9a53f09758483d36a6daf9eb89b1cc84f4",
+  "request": {
+    "kind": "quality",
+    "a": "correct",
+    "cutoff": 80,
+    "numerator": 9,
+    "denominator": 10
+  },
+  "status": "submitted",
+  "source_read_bytes": 0,
+  "query_calls": 0,
+  "native_text_support": "unassessed",
+  "delivered_note_ids": [
+    "note-0",
+    "note-1",
+    "note-2"
+  ],
+  "submitted_value": 1,
+  "citations": [
+    "note-2"
+  ],
+  "current_tool_evidence": false,
+  "tool_trace": []
+}

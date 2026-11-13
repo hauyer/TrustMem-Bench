@@ -1,0 +1,4 @@
+{"a":"correct","b":"90","weight":80}
+{"a":"correct","b":"50","weight":15}
+{"a":"incorrect","b":"90","weight":0}
+{"a":"incorrect","b":"50","weight":5}

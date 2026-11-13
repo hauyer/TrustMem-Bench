@@ -1,0 +1,561 @@
+{
+  "audit_skill": "experiment-audit",
+  "verdict": "WARN",
+  "overall_verdict": "warn",
+  "integrity_status": "warn",
+  "reason_code": "bounded_pilot_reader_reasoning_confound",
+  "summary": "Deterministic integrity checks pass; actual native lifecycle is supported. Five wrong outputs occur despite sufficient current notes delivered. One separate consolidation omission is observed. Scientific attribution, baseline comparison, scope and total-cost claims need qualifiers.",
+  "generated_at": "2026-11-13T06:42:12.247286+00:00",
+  "date": "2026-11-13",
+  "requested_reviewer_model": "gpt-6.1-sol",
+  "requested_reviewer_reasoning": "ultra",
+  "reviewer_model": "unattested fresh native Codex worker",
+  "reviewer_family": "openai (host context; exact backend model not independently attested)",
+  "reviewer_reasoning": "not independently attested",
+  "executor_family": "openai (parent Codex route)",
+  "review_independence": "same-family",
+  "acceptance_status": "provisional",
+  "review_completion": "complete",
+  "agent_id": "/root/native_mem0_bench_audit",
+  "verdict_id": "20261113-native-mem0-independent-audit",
+  "trace_path": ".aris/traces/experiment-audit/20261113_native_mem0/",
+  "no_network_or_paid_calls_in_audit": true,
+  "native_store_reopened_by_auditor": false,
+  "checks": {
+    "gt_provenance": {
+      "status": "PASS",
+      "details": "Ground truth derives from authored raw weighted JSONL, not model outputs. Independent direct integer arithmetic reproduces all six gates and the 12 grades; controller SQL is invoked only after both policies finish.",
+      "evidence": [
+        "artifacts/research_decisions/20261113-native-mem0-reader-v1/cases/quality-0.jsonl:1",
+        "artifacts/research_decisions/20261113-native-mem0-reader-v1/cases/quality-1.jsonl:1",
+        "artifacts/research_decisions/20261113-native-mem0-reader-v1/snapshot/trustmem_runtime/grading.py:55",
+        "artifacts/research_decisions/20261113-native-mem0-reader-v1/snapshot/run.py:287"
+      ]
+    },
+    "score_normalization": {
+      "status": "PASS",
+      "details": "Raw correct/wrong/query/source-byte counts are reproduced; no prediction-statistic normalization is used.",
+      "evidence": [
+        "artifacts/research_decisions/20261113-native-mem0-reader-v1/snapshot/run.py:289",
+        "artifacts/research_decisions/20261113-native-mem0-reader-v1/models/results.json:1"
+      ]
+    },
+    "result_existence": {
+      "status": "PASS",
+      "details": "All planned 12 sessions are retained, raw results match graded results except added correctness flags; 25 sequential metered records preserve all first responses, all 17 reader actions match saved responses and submissions.",
+      "evidence": [
+        "artifacts/research_decisions/20261113-native-mem0-reader-v1/models/gate.json:1",
+        "artifacts/research_decisions/20261113-native-mem0-reader-v1/models/api/model_calls.jsonl:1",
+        ".aris/traces/experiment-audit/20261113_native_mem0/DETERMINISTIC_CHECKS.json:1"
+      ]
+    },
+    "dead_code": {
+      "status": "PASS",
+      "details": "The reported score/count/cost computations are called and represented in artifacts. Natural-language semantic support is expressly unassessed; no phantom automated support score is reported.",
+      "evidence": [
+        "artifacts/research_decisions/20261113-native-mem0-reader-v1/snapshot/run.py:232",
+        "artifacts/research_decisions/20261113-native-mem0-reader-v1/snapshot/run.py:287",
+        "artifacts/research_decisions/20261113-native-mem0-reader-v1/snapshot/metered_deepseek.py:117"
+      ]
+    },
+    "scope": {
+      "status": "WARN",
+      "details": "One authored two-version engineering environment, six correlated sessions per backend, no replicate histories or population inference. Protocol already states these limits.",
+      "evidence": [
+        "artifacts/research_decisions/20261113-native-mem0-reader-v1/PROTOCOL.md:7",
+        "artifacts/research_decisions/20261113-native-mem0-reader-v1/models/gate.json:13"
+      ]
+    },
+    "eval_type": {
+      "status": "WARN",
+      "classification": "simulation_only",
+      "details": "Classification refers only to the authored synthetic engineering environment: the native Mem0 SDK, disk operations and retained external model interactions are real. Ground truth is exact for authored source bytes, not model-derived, production-history data or independent human evaluation.",
+      "evidence": [
+        "artifacts/research_decisions/20261113-native-mem0-reader-v1/snapshot/run.py:73",
+        "artifacts/research_decisions/20261113-native-mem0-reader-v1/cases/quality.case.json:6",
+        "artifacts/research_decisions/20261113-native-mem0-reader-v1/models/api/model_calls.jsonl:1"
+      ]
+    },
+    "frozen_provenance": {
+      "status": "PASS",
+      "details": "All 43 preflight and 44 reader freeze entries match. Current runner, protocol and native adapter match reader snapshots. Runtime snapshot import path and child PYTHONPATH are explicit; four installed version strings match freeze.",
+      "evidence": [
+        "artifacts/research_decisions/20261113-native-mem0-reader-v1/snapshot/run.py:22",
+        "artifacts/research_decisions/20261113-native-mem0-reader-v1/snapshot/run.py:58",
+        "artifacts/research_decisions/20261113-native-mem0-reader-v1/snapshot/run.py:106",
+        ".aris/traces/experiment-audit/20261113_native_mem0/DETERMINISTIC_CHECKS.json:1"
+      ]
+    },
+    "native_lifecycle": {
+      "status": "PASS",
+      "details": "Adapter retains native infer=True, SDK default extraction/consolidation prompts, native Qdrant search/ranking and disk state. Scripted zero-API preflight checks ADD, explicit UPDATE and fresh-process reopen; paid trace shows autonomous ADD/UPDATE. Six subsequent subprocesses reopen and search the disk store. This is a genuine new Python process, not an independently running external agent.",
+      "evidence": [
+        "artifacts/research_decisions/20261113-native-mem0-reader-v1/snapshot/trustmem_diagnostics/native_mem0.py:86",
+        "artifacts/research_decisions/20261113-native-mem0-reader-v1/snapshot/run.py:102",
+        "artifacts/research_decisions/20261113-native-mem0-reader-v1/snapshot/run.py:124",
+        "artifacts/research_decisions/20261113-native-mem0-preflight-v1/smoke/operations.json:1",
+        "artifacts/research_decisions/20261113-native-mem0-reader-v1/models/mem0/s00/reader.stdout:1",
+        "artifacts/research_decisions/20261113-native-mem0-reader-v1/models/mem0/s03/write-result.json:1"
+      ]
+    },
+    "tool_fairness": {
+      "status": "WARN",
+      "details": "Initial text, reader system, task sequence and source-bound cache implementation are equal. Each arm owns a persistent cache, rather than sharing one arm's observations with the other. Full verbatim memory is a strong storage control; distinct acquisitions follow actual actions. The unavailable calculator and one fixed order prevent isolated memory-system causal comparison.",
+      "evidence": [
+        "artifacts/research_decisions/20261113-native-mem0-reader-v1/snapshot/run.py:191",
+        "artifacts/research_decisions/20261113-native-mem0-reader-v1/snapshot/run.py:198",
+        "artifacts/research_decisions/20261113-native-mem0-reader-v1/snapshot/run.py:238",
+        "artifacts/research_decisions/20261113-native-mem0-reader-v1/snapshot/trustmem_runtime/tool_cache.py:21"
+      ]
+    },
+    "cost_and_caps": {
+      "status": "WARN",
+      "details": "All 25 records are received/stop, max_tokens=1536, thinking disabled. Global IDs 1..25 and $0.005360538 reproduce metrics and fit caps. Native transport failures are tracked even if swallowed by SDK, but transport tracking does not imply detection of all SDK semantic parse/action errors. No such error is observed in retained valid JSON calls. Full memory/embedding/end-to-end cost is not instrumented.",
+      "evidence": [
+        "artifacts/research_decisions/20261113-native-mem0-reader-v1/snapshot/trustmem_diagnostics/native_mem0.py:26",
+        "artifacts/research_decisions/20261113-native-mem0-reader-v1/snapshot/trustmem_diagnostics/native_mem0.py:86",
+        "artifacts/research_decisions/20261113-native-mem0-reader-v1/snapshot/metered_deepseek.py:61",
+        "artifacts/research_decisions/20261113-native-mem0-reader-v1/models/metrics.json:1"
+      ]
+    }
+  },
+  "findings": [
+    {
+      "id": "F1",
+      "severity": "WARN",
+      "title": "Wrong outputs are not evidence of missing or undelivered memory",
+      "details": "All five wrong cases received semantically sufficient correct current-source information. The native note-text support field was originally unassessed; the all-case diagnosis is separate posthoc reviewer calibration. Reader arithmetic/threshold interpretation cannot be isolated.",
+      "evidence": [
+        "artifacts/research_decisions/20261113-native-mem0-reader-v1/models/mem0/s02/t0-input.json:25",
+        "artifacts/research_decisions/20261113-native-mem0-reader-v1/models/mem0/s05/t0-input.json:25",
+        "artifacts/research_decisions/20261113-native-mem0-reader-v1/models/verbatim/s00/t0-input.json:13",
+        "artifacts/research_decisions/20261113-native-mem0-reader-v1/models/verbatim/s02/t0-input.json:17",
+        "artifacts/research_decisions/20261113-native-mem0-reader-v1/models/verbatim/s05/t0-input.json:17"
+      ]
+    },
+    {
+      "id": "F2",
+      "severity": "WARN",
+      "title": "One actual consolidation omission, without a demonstrated incorrect-output consequence",
+      "details": "The s00 native extraction preserved full cells; its consolidation update kept only old margins. This made s01 notes insufficient at 99%; s01 queried the existing source cache and correctly submitted. Its following update installed the full cells. All inventories were actually delivered by search, so this was not a retrieval miss.",
+      "evidence": [
+        "artifacts/research_decisions/20261113-native-mem0-reader-v1/models/api/model_calls.jsonl:5",
+        "artifacts/research_decisions/20261113-native-mem0-reader-v1/models/api/model_calls.jsonl:6",
+        "artifacts/research_decisions/20261113-native-mem0-reader-v1/models/mem0/s00/write-result.json:5",
+        "artifacts/research_decisions/20261113-native-mem0-reader-v1/models/mem0/mem0-s00-inventory.json:16",
+        "artifacts/research_decisions/20261113-native-mem0-reader-v1/models/mem0/s01/event.json:1",
+        "artifacts/research_decisions/20261113-native-mem0-reader-v1/models/mem0/s01/write-result.json:5"
+      ]
+    },
+    {
+      "id": "F3",
+      "severity": "WARN",
+      "title": "Public calculator is absent from the reader action interface",
+      "details": "Only submit/query/abstain are legal. The shared exact calculator is called internally after query, not exposed for existing natural-language notes. Both current arms have equal tools, but memory and reader reasoning are confounded, and scores do not directly compare to earlier calculator-enabled structured policies.",
+      "evidence": [
+        "artifacts/research_decisions/20261113-native-mem0-reader-v1/snapshot/run.py:29",
+        "artifacts/research_decisions/20261113-native-mem0-reader-v1/snapshot/run.py:255",
+        "artifacts/research_decisions/20261113-native-mem0-reader-v1/snapshot/run.py:265",
+        "artifacts/research_decisions/20261113-native-mem0-reader-v1/snapshot/trustmem_runtime/agent.py:21",
+        "artifacts/research_decisions/20261113-native-mem0-reader-v1/snapshot/trustmem_runtime/run.py:185"
+      ]
+    },
+    {
+      "id": "F4",
+      "severity": "WARN",
+      "title": "One fixed-order correlated pilot supports descriptive engineering claims",
+      "details": "One authored two-version four-row-per-version source, six ordered sessions per arm, one history/seed, Mem0 executed before verbatim. Query-driven acquisitions differ legitimately. No causal backend ranking, population rates, production-history claim, general robustness or new-method advantage follows.",
+      "evidence": [
+        "artifacts/research_decisions/20261113-native-mem0-reader-v1/PROTOCOL.md:7",
+        "artifacts/research_decisions/20261113-native-mem0-reader-v1/cases/quality.case.json:1",
+        "artifacts/research_decisions/20261113-native-mem0-reader-v1/freeze.json:8",
+        "artifacts/research_decisions/20261113-native-mem0-reader-v1/snapshot/run.py:73",
+        "artifacts/research_decisions/20261113-native-mem0-reader-v1/snapshot/run.py:195"
+      ]
+    },
+    {
+      "id": "F5",
+      "severity": "WARN",
+      "title": "Source scans and total operational cost require distinct denominators",
+      "details": "Each arm scanned 308 source bytes during tasks. The common initial scan was 154 bytes once, so actual task-plus-common-setup scans total 770 bytes across the experiment (not 924). Hash validation/reference scans, memory bytes, offline embedding work and full end-to-end latency are outside this task-scan metric. The $0.005360538 is a rate-based estimate from retained token usage, not an invoice; provider caching varies by call/order.",
+      "evidence": [
+        "artifacts/research_decisions/20261113-native-mem0-reader-v1/models/initial_experience.json:3",
+        "artifacts/research_decisions/20261113-native-mem0-reader-v1/models/results.json:1",
+        "artifacts/research_decisions/20261113-native-mem0-reader-v1/snapshot/run.py:190",
+        "artifacts/research_decisions/20261113-native-mem0-reader-v1/snapshot/trustmem_runtime/run.py:40",
+        "artifacts/research_decisions/20261113-native-mem0-reader-v1/snapshot/metered_deepseek.py:13",
+        "artifacts/research_decisions/20261113-native-mem0-reader-v1/models/api/model_calls.jsonl:1"
+      ]
+    },
+    {
+      "id": "F6",
+      "severity": "WARN",
+      "title": "Identity and environment provenance remain bounded",
+      "details": "Requested reviewer route was gpt-6.1-sol/ultra. This worker is the fresh native Codex reviewer; actual model/effort are not independently attested. Retained experimental requests and responses say deepseek-flash, without immutable server deployment identity. Selected SDK source files, four package versions and offline embedding assets are frozen, but not every transitive package/source or hardware detail.",
+      "evidence": [
+        ".aris/traces/experiment-audit/20261113_native_mem0/prompt.md:1",
+        "artifacts/research_decisions/20261113-native-mem0-reader-v1/freeze.json:28",
+        "artifacts/research_decisions/20261113-native-mem0-reader-v1/models/api/model_calls.jsonl:1",
+        "artifacts/research_decisions/20261113-native-mem0-reader-v1/snapshot/trustmem_diagnostics/native_mem0.py:45"
+      ]
+    }
+  ],
+  "independent_truth": {
+    "0": 1,
+    "1": 0,
+    "2": 0,
+    "3": 1,
+    "4": 1,
+    "5": 0
+  },
+  "recomputed_results": {
+    "mem0": {
+      "correct": 4,
+      "wrong": 2,
+      "query_calls": 3,
+      "source_read_bytes": 308,
+      "matches": true,
+      "not_run": 0
+    },
+    "verbatim": {
+      "correct": 3,
+      "wrong": 3,
+      "query_calls": 2,
+      "source_read_bytes": 308,
+      "matches": true,
+      "not_run": 0
+    }
+  },
+  "call_accounting": {
+    "count": 25,
+    "ids": [
+      "writer-mem0-initial-001",
+      "writer-mem0-initial-002",
+      "reader-mem0-s00-t0-003",
+      "reader-mem0-s00-t1-004",
+      "writer-mem0-s00-005",
+      "writer-mem0-s00-006",
+      "reader-mem0-s01-t0-007",
+      "reader-mem0-s01-t1-008",
+      "writer-mem0-s01-009",
+      "writer-mem0-s01-010",
+      "reader-mem0-s02-t0-011",
+      "reader-mem0-s03-t0-012",
+      "reader-mem0-s03-t1-013",
+      "writer-mem0-s03-014",
+      "writer-mem0-s03-015",
+      "reader-mem0-s04-t0-016",
+      "reader-mem0-s05-t0-017",
+      "reader-verbatim-s00-t0-018",
+      "reader-verbatim-s01-t0-019",
+      "reader-verbatim-s01-t1-020",
+      "reader-verbatim-s02-t0-021",
+      "reader-verbatim-s03-t0-022",
+      "reader-verbatim-s03-t1-023",
+      "reader-verbatim-s04-t0-024",
+      "reader-verbatim-s05-t0-025"
+    ],
+    "sequential_ids": true,
+    "all_received": true,
+    "all_stop": true,
+    "requested_models": [
+      "deepseek-flash"
+    ],
+    "reported_models": [
+      "deepseek-flash"
+    ],
+    "all_nonreasoning": true,
+    "all_max1536": true,
+    "stages": {
+      "writer-mem0": {
+        "calls": 8,
+        "prompt_tokens": 10897,
+        "completion_tokens": 1242,
+        "total_tokens": 12139,
+        "prompt_cache_hit_tokens": 7163,
+        "prompt_cache_miss_tokens": 3734,
+        "estimated_peak_usd": 0.0026535779999999998,
+        "transport_latency_ms": 20387.335500010522
+      },
+      "reader-mem0": {
+        "calls": 9,
+        "prompt_tokens": 7885,
+        "completion_tokens": 245,
+        "total_tokens": 8130,
+        "prompt_cache_hit_tokens": 2688,
+        "prompt_cache_miss_tokens": 5197,
+        "estimated_peak_usd": 0.0018692279999999997,
+        "transport_latency_ms": 17244.012099996326
+      },
+      "reader-verbatim": {
+        "calls": 8,
+        "prompt_tokens": 5347,
+        "completion_tokens": 114,
+        "total_tokens": 5461,
+        "prompt_cache_hit_tokens": 3072,
+        "prompt_cache_miss_tokens": 2275,
+        "estimated_peak_usd": 0.0008377319999999999,
+        "transport_latency_ms": 14675.95319999964
+      }
+    },
+    "cost_recomputed": 0.005360538,
+    "cost_matches_metrics": true,
+    "within_caps": true
+  },
+  "freeze_verification": {
+    "preflight_freeze": {
+      "count": 43,
+      "all_match": true
+    },
+    "reader_freeze": {
+      "count": 44,
+      "all_match": true
+    }
+  },
+  "audited_input_hashes": {
+    "artifacts/research_decisions/20261113-native-mem0-preflight-v1/snapshot/metered_deepseek.py": "sha256:245025f3804731727264f5b96f58e86f7f048b9feee66a50f49d535881bbf467",
+    "artifacts/research_decisions/20261113-native-mem0-preflight-v1/snapshot/run.py": "sha256:c9c67d9623cf20e43cc7e172fa26af1f1d671b3c3d8b0f82c1575d6080b788cd",
+    "artifacts/research_decisions/20261113-native-mem0-preflight-v1/snapshot/trustmem_diagnostics/adapters.py": "sha256:150ea3b33fc292041c12609b84b7b4d073f9138baaa6f1bbe51ac698a77407bd",
+    "artifacts/research_decisions/20261113-native-mem0-preflight-v1/snapshot/trustmem_diagnostics/calibration.py": "sha256:7754a0cbd6adac846f3ee8e7e4031cf92b4bf01857f81b52399feb015205b186",
+    "artifacts/research_decisions/20261113-native-mem0-preflight-v1/snapshot/trustmem_diagnostics/metrics.py": "sha256:2b356157c6b5c3bae3e0739b7ba4c4ef2f9d842ccdd7dfbadc511a9621a1fb44",
+    "artifacts/research_decisions/20261113-native-mem0-preflight-v1/snapshot/trustmem_diagnostics/native_mem0.py": "sha256:d01f6fa133cb2d8ed10fd096794de489edaff896825551d19a16865867707bc3",
+    "artifacts/research_decisions/20261113-native-mem0-preflight-v1/snapshot/trustmem_diagnostics/sap.py": "sha256:efae7b689a01c4acb0c373915c00c16db7d610d5601e5f5386f88076cc6015c9",
+    "artifacts/research_decisions/20261113-native-mem0-preflight-v1/snapshot/trustmem_diagnostics/__init__.py": "sha256:b522601f07ab563e29a57edfbfaa02d14f1d4e65da7ad0baf244cdfca26c5ce0",
+    "artifacts/research_decisions/20261113-native-mem0-preflight-v1/snapshot/trustmem_diagnostics/__main__.py": "sha256:f822ddaf94e06125dab1ffd22b20e6c65dfd047f5031cce1ff3446c2cbeaa8c8",
+    "artifacts/research_decisions/20261113-native-mem0-preflight-v1/snapshot/trustmem_runtime/agent.py": "sha256:fc10b4f74408a589bde0aef43020f11acba828dc5c51dbdc0ecacde475bad807",
+    "artifacts/research_decisions/20261113-native-mem0-preflight-v1/snapshot/trustmem_runtime/data.py": "sha256:cf4433b2c3ab6211ca17ed836873e73bad48eaf2bcb5305cf0d2249e497bc161",
+    "artifacts/research_decisions/20261113-native-mem0-preflight-v1/snapshot/trustmem_runtime/evidence.py": "sha256:409602ffc057d2e11488768ab41b593b396460c2e1788ea243586e5d40d3378b",
+    "artifacts/research_decisions/20261113-native-mem0-preflight-v1/snapshot/trustmem_runtime/fixtures.py": "sha256:9fb4426fabe4616cec3bda639525228f862cd4858f45c7b9c22ee894434aa29f",
+    "artifacts/research_decisions/20261113-native-mem0-preflight-v1/snapshot/trustmem_runtime/grading.py": "sha256:aa81cdc6e5523535d76b17c3fa9c2b2e0cd521a87fd7ec7e2419c6d0cfa09b8b",
+    "artifacts/research_decisions/20261113-native-mem0-preflight-v1/snapshot/trustmem_runtime/prepare_confidence.py": "sha256:a2747b692333dbf0a9f0497c01884b8a10c29a3d8889ee58544259972c8cbfe3",
+    "artifacts/research_decisions/20261113-native-mem0-preflight-v1/snapshot/trustmem_runtime/prepare_public.py": "sha256:d3c106eba15b2dcd85ae137226822ba959e33fa736c83643d2bd1bf361138794",
+    "artifacts/research_decisions/20261113-native-mem0-preflight-v1/snapshot/trustmem_runtime/replay_agent.py": "sha256:0af9520242e44e7c9e5482cba6d2d94e423a31be8c064a5fde13938dad151f18",
+    "artifacts/research_decisions/20261113-native-mem0-preflight-v1/snapshot/trustmem_runtime/reporting.py": "sha256:8dcc964976c4522691efe02e9c52d297656e48fe8ecad382cca2460b568e8038",
+    "artifacts/research_decisions/20261113-native-mem0-preflight-v1/snapshot/trustmem_runtime/run.py": "sha256:3f6c3adb986fdf71a7279b7cacb7db6670b54a57ffb58a10fc04ad03864526c2",
+    "artifacts/research_decisions/20261113-native-mem0-preflight-v1/snapshot/trustmem_runtime/suite.py": "sha256:68f40a07c6584a226406e62c123faebfb4345897cd06d2b220a3f60ecb09aa07",
+    "artifacts/research_decisions/20261113-native-mem0-preflight-v1/snapshot/trustmem_runtime/tool_cache.py": "sha256:6e63c52e762bba31130f7a65b0918f888e95b6e6db6719e8661340cf088587f1",
+    "artifacts/research_decisions/20261113-native-mem0-preflight-v1/snapshot/trustmem_runtime/__init__.py": "sha256:4983f6ae4697810367a83dfadb533237d49234b4ef61cc199f8ba77ad654fdfe",
+    "artifacts/research_decisions/20261113-native-mem0-preflight-v1/PROTOCOL.md": "sha256:b6b7cf5fe9a180ee2995c6cdbcf1b72cd07db80aeb219470a3b0e41eef965a2f",
+    "artifacts/research_decisions/20261113-native-mem0-preflight-v1/cases/cross-0.jsonl": "sha256:03b6e7c6432bac225cf41cb81dd25d0ff867b7cee881b7c95d1438aed6e7fb64",
+    "artifacts/research_decisions/20261113-native-mem0-preflight-v1/cases/cross-1.jsonl": "sha256:45bfe2c6343d0ce0bead517a5b7a65e8a63c7b80321876ec5fc0e267c237fe86",
+    "artifacts/research_decisions/20261113-native-mem0-preflight-v1/cases/cross.case.json": "sha256:05474c356e07c87ea5e15dfa3dcc67be43dff6d2cbd9021a2cfaf1150a7af674",
+    "artifacts/research_decisions/20261113-native-mem0-preflight-v1/cases/quality-0.jsonl": "sha256:7dc1c9f18069e2927d6293ef3771ec42e39f0cc5cc9be3be1a01add091fce79e",
+    "artifacts/research_decisions/20261113-native-mem0-preflight-v1/cases/quality-1.jsonl": "sha256:f98ca77cfa478f0118ccbf43dead6a9a53f09758483d36a6daf9eb89b1cc84f4",
+    "artifacts/research_decisions/20261113-native-mem0-preflight-v1/cases/quality.case.json": "sha256:0f34b455465a5d2750058045a388c4c4d67afa98105d22f035a02c77e5da5702",
+    "artifacts/research_decisions/20261113-native-mem0-preflight-v1/cases/range-0.jsonl": "sha256:b5e852d5e1b0c77ef4cf455ca9e6d58d3f89637afd4bc7936de9a15a28fadd98",
+    "artifacts/research_decisions/20261113-native-mem0-preflight-v1/cases/range-1.jsonl": "sha256:6f342afd740c181cd6c58e78fc805814a06ff83d075935c4d8aa07c1197fc07c",
+    "artifacts/research_decisions/20261113-native-mem0-preflight-v1/cases/range.case.json": "sha256:73a5e53f2a4c417570aca53ad7e13935a708ef6d9db6e0948d8bc7678b191857",
+    "artifacts/research_decisions/20261113-native-mem0-preflight-v1/cases/threshold-0.jsonl": "sha256:2aee61996fef0962bb12283383fbd50655cb23e92ee5a2e58dca7e4e721c0da6",
+    "artifacts/research_decisions/20261113-native-mem0-preflight-v1/cases/threshold-1.jsonl": "sha256:e9a2461065832f3b577bd02ef7137611a1ba1056d5c65e5f659a22b023624522",
+    "artifacts/research_decisions/20261113-native-mem0-preflight-v1/cases/threshold.case.json": "sha256:ee6c60ea719efe28c9af79af9057081c6995b62cdbe0219c7707d41a8f4e9b8e",
+    "memory-revocation-research/.venv-mem0-probe/Lib/site-packages/mem0/memory/main.py": "sha256:04035505fc37dce54a98e5868b6775d3f57f40c4f070e6d6463138286e98e3e1",
+    "memory-revocation-research/.venv-mem0-probe/Lib/site-packages/mem0/configs/prompts.py": "sha256:05be41d3d0ea7e877fbde2875d146a15624435e32ca04949bc4f6304a9bd7cad",
+    "memory-revocation-research/.venv-mem0-probe/Lib/site-packages/mem0/memory/utils.py": "sha256:0ade2e4b68122df61003ea289bbe2c86247c5dc92e18776abcb5e9fba6dcce2f",
+    "memory-revocation-research/native-embedding-cache/models/models--qdrant--bge-small-en-v1.5-onnx-q/snapshots/aa8f8b060edb00e03bfdd08813a2949946c8ba55/config.json": "sha256:13582bcf2effc85b7bf3d3f5532e686bc1c9ce86bb009d10f0ec33cbe92299dd",
+    "memory-revocation-research/native-embedding-cache/models/models--qdrant--bge-small-en-v1.5-onnx-q/snapshots/aa8f8b060edb00e03bfdd08813a2949946c8ba55/model_optimized.onnx": "sha256:51f1bd0addd6e859e42c2c8021a5e5461385bb676a649f4b269aa445449f2431",
+    "memory-revocation-research/native-embedding-cache/models/models--qdrant--bge-small-en-v1.5-onnx-q/snapshots/aa8f8b060edb00e03bfdd08813a2949946c8ba55/special_tokens_map.json": "sha256:5d5b662e421ea9fac075174bb0688ee0d9431699900b90662acd44b2a350503a",
+    "memory-revocation-research/native-embedding-cache/models/models--qdrant--bge-small-en-v1.5-onnx-q/snapshots/aa8f8b060edb00e03bfdd08813a2949946c8ba55/tokenizer.json": "sha256:d241a60d5e8f04cc1b2b3e9ef7a4921b27bf526d9f6050ab90f9267a1f9e5c66",
+    "memory-revocation-research/native-embedding-cache/models/models--qdrant--bge-small-en-v1.5-onnx-q/snapshots/aa8f8b060edb00e03bfdd08813a2949946c8ba55/tokenizer_config.json": "sha256:0b29c7bfc889e53b36d9dd3e686dd4300f6525110eaa98c76a5dafceb2029f53",
+    "artifacts/research_decisions/20261113-native-mem0-reader-v1/snapshot/metered_deepseek.py": "sha256:245025f3804731727264f5b96f58e86f7f048b9feee66a50f49d535881bbf467",
+    "artifacts/research_decisions/20261113-native-mem0-reader-v1/snapshot/run.py": "sha256:c9c67d9623cf20e43cc7e172fa26af1f1d671b3c3d8b0f82c1575d6080b788cd",
+    "artifacts/research_decisions/20261113-native-mem0-reader-v1/snapshot/trustmem_diagnostics/adapters.py": "sha256:150ea3b33fc292041c12609b84b7b4d073f9138baaa6f1bbe51ac698a77407bd",
+    "artifacts/research_decisions/20261113-native-mem0-reader-v1/snapshot/trustmem_diagnostics/calibration.py": "sha256:7754a0cbd6adac846f3ee8e7e4031cf92b4bf01857f81b52399feb015205b186",
+    "artifacts/research_decisions/20261113-native-mem0-reader-v1/snapshot/trustmem_diagnostics/metrics.py": "sha256:2b356157c6b5c3bae3e0739b7ba4c4ef2f9d842ccdd7dfbadc511a9621a1fb44",
+    "artifacts/research_decisions/20261113-native-mem0-reader-v1/snapshot/trustmem_diagnostics/native_mem0.py": "sha256:d01f6fa133cb2d8ed10fd096794de489edaff896825551d19a16865867707bc3",
+    "artifacts/research_decisions/20261113-native-mem0-reader-v1/snapshot/trustmem_diagnostics/sap.py": "sha256:efae7b689a01c4acb0c373915c00c16db7d610d5601e5f5386f88076cc6015c9",
+    "artifacts/research_decisions/20261113-native-mem0-reader-v1/snapshot/trustmem_diagnostics/__init__.py": "sha256:b522601f07ab563e29a57edfbfaa02d14f1d4e65da7ad0baf244cdfca26c5ce0",
+    "artifacts/research_decisions/20261113-native-mem0-reader-v1/snapshot/trustmem_diagnostics/__main__.py": "sha256:f822ddaf94e06125dab1ffd22b20e6c65dfd047f5031cce1ff3446c2cbeaa8c8",
+    "artifacts/research_decisions/20261113-native-mem0-reader-v1/snapshot/trustmem_runtime/agent.py": "sha256:fc10b4f74408a589bde0aef43020f11acba828dc5c51dbdc0ecacde475bad807",
+    "artifacts/research_decisions/20261113-native-mem0-reader-v1/snapshot/trustmem_runtime/data.py": "sha256:cf4433b2c3ab6211ca17ed836873e73bad48eaf2bcb5305cf0d2249e497bc161",
+    "artifacts/research_decisions/20261113-native-mem0-reader-v1/snapshot/trustmem_runtime/evidence.py": "sha256:409602ffc057d2e11488768ab41b593b396460c2e1788ea243586e5d40d3378b",
+    "artifacts/research_decisions/20261113-native-mem0-reader-v1/snapshot/trustmem_runtime/fixtures.py": "sha256:9fb4426fabe4616cec3bda639525228f862cd4858f45c7b9c22ee894434aa29f",
+    "artifacts/research_decisions/20261113-native-mem0-reader-v1/snapshot/trustmem_runtime/grading.py": "sha256:aa81cdc6e5523535d76b17c3fa9c2b2e0cd521a87fd7ec7e2419c6d0cfa09b8b",
+    "artifacts/research_decisions/20261113-native-mem0-reader-v1/snapshot/trustmem_runtime/prepare_confidence.py": "sha256:a2747b692333dbf0a9f0497c01884b8a10c29a3d8889ee58544259972c8cbfe3",
+    "artifacts/research_decisions/20261113-native-mem0-reader-v1/snapshot/trustmem_runtime/prepare_public.py": "sha256:d3c106eba15b2dcd85ae137226822ba959e33fa736c83643d2bd1bf361138794",
+    "artifacts/research_decisions/20261113-native-mem0-reader-v1/snapshot/trustmem_runtime/replay_agent.py": "sha256:0af9520242e44e7c9e5482cba6d2d94e423a31be8c064a5fde13938dad151f18",
+    "artifacts/research_decisions/20261113-native-mem0-reader-v1/snapshot/trustmem_runtime/reporting.py": "sha256:8dcc964976c4522691efe02e9c52d297656e48fe8ecad382cca2460b568e8038",
+    "artifacts/research_decisions/20261113-native-mem0-reader-v1/snapshot/trustmem_runtime/run.py": "sha256:3f6c3adb986fdf71a7279b7cacb7db6670b54a57ffb58a10fc04ad03864526c2",
+    "artifacts/research_decisions/20261113-native-mem0-reader-v1/snapshot/trustmem_runtime/suite.py": "sha256:68f40a07c6584a226406e62c123faebfb4345897cd06d2b220a3f60ecb09aa07",
+    "artifacts/research_decisions/20261113-native-mem0-reader-v1/snapshot/trustmem_runtime/tool_cache.py": "sha256:6e63c52e762bba31130f7a65b0918f888e95b6e6db6719e8661340cf088587f1",
+    "artifacts/research_decisions/20261113-native-mem0-reader-v1/snapshot/trustmem_runtime/__init__.py": "sha256:4983f6ae4697810367a83dfadb533237d49234b4ef61cc199f8ba77ad654fdfe",
+    "artifacts/research_decisions/20261113-native-mem0-reader-v1/PROTOCOL.md": "sha256:b6b7cf5fe9a180ee2995c6cdbcf1b72cd07db80aeb219470a3b0e41eef965a2f",
+    "artifacts/research_decisions/20261113-native-mem0-reader-v1/cases/cross-0.jsonl": "sha256:03b6e7c6432bac225cf41cb81dd25d0ff867b7cee881b7c95d1438aed6e7fb64",
+    "artifacts/research_decisions/20261113-native-mem0-reader-v1/cases/cross-1.jsonl": "sha256:45bfe2c6343d0ce0bead517a5b7a65e8a63c7b80321876ec5fc0e267c237fe86",
+    "artifacts/research_decisions/20261113-native-mem0-reader-v1/cases/cross.case.json": "sha256:05474c356e07c87ea5e15dfa3dcc67be43dff6d2cbd9021a2cfaf1150a7af674",
+    "artifacts/research_decisions/20261113-native-mem0-reader-v1/cases/quality-0.jsonl": "sha256:7dc1c9f18069e2927d6293ef3771ec42e39f0cc5cc9be3be1a01add091fce79e",
+    "artifacts/research_decisions/20261113-native-mem0-reader-v1/cases/quality-1.jsonl": "sha256:f98ca77cfa478f0118ccbf43dead6a9a53f09758483d36a6daf9eb89b1cc84f4",
+    "artifacts/research_decisions/20261113-native-mem0-reader-v1/cases/quality.case.json": "sha256:0f34b455465a5d2750058045a388c4c4d67afa98105d22f035a02c77e5da5702",
+    "artifacts/research_decisions/20261113-native-mem0-reader-v1/cases/range-0.jsonl": "sha256:b5e852d5e1b0c77ef4cf455ca9e6d58d3f89637afd4bc7936de9a15a28fadd98",
+    "artifacts/research_decisions/20261113-native-mem0-reader-v1/cases/range-1.jsonl": "sha256:6f342afd740c181cd6c58e78fc805814a06ff83d075935c4d8aa07c1197fc07c",
+    "artifacts/research_decisions/20261113-native-mem0-reader-v1/cases/range.case.json": "sha256:73a5e53f2a4c417570aca53ad7e13935a708ef6d9db6e0948d8bc7678b191857",
+    "artifacts/research_decisions/20261113-native-mem0-reader-v1/cases/threshold-0.jsonl": "sha256:2aee61996fef0962bb12283383fbd50655cb23e92ee5a2e58dca7e4e721c0da6",
+    "artifacts/research_decisions/20261113-native-mem0-reader-v1/cases/threshold-1.jsonl": "sha256:e9a2461065832f3b577bd02ef7137611a1ba1056d5c65e5f659a22b023624522",
+    "artifacts/research_decisions/20261113-native-mem0-reader-v1/cases/threshold.case.json": "sha256:ee6c60ea719efe28c9af79af9057081c6995b62cdbe0219c7707d41a8f4e9b8e",
+    "artifacts/research_decisions/20261113-native-mem0-preflight-v1/smoke/results.json": "sha256:4fb97503cc8161b9f2e9d9273da0fdd269ae83ea255998cb5e283e999ea884c2",
+    "artifacts/research_decisions/20261113-native-mem0-reader-v1/models/api/model_calls.jsonl": "sha256:ff4db70329c73e0dd90181cc8727a0ac15d72d9e40789b5d83076e073b7cc3b4",
+    "artifacts/research_decisions/20261113-native-mem0-reader-v1/models/gate.json": "sha256:fb8b8d6835a67f7e4ab75c471f27e77e3bba0b4c70dde3dae84e40b52aa1b63d",
+    "artifacts/research_decisions/20261113-native-mem0-reader-v1/models/initial_experience.json": "sha256:249967ac0d4e697bc545eb2d759519547e05d0f447e4ed8d02c7fa87ec556fd0",
+    "artifacts/research_decisions/20261113-native-mem0-reader-v1/models/mem0/events.json": "sha256:303531090b088c02ef367be5b91b71e9dc7bb2e3801c41440e405fd9415615d5",
+    "artifacts/research_decisions/20261113-native-mem0-reader-v1/models/mem0/initial-write.json": "sha256:09dd5c7e7d87e4b9ded968e5188e7d2431c8c4b88a8f9bb3e47d8516dd27fb19",
+    "artifacts/research_decisions/20261113-native-mem0-reader-v1/models/mem0/mem0-initial-inventory.json": "sha256:1fced2cd7e80b9f4e64e41f17e7a6a1b3b39f752c41f2c2484bc2f27e30494dd",
+    "artifacts/research_decisions/20261113-native-mem0-reader-v1/models/mem0/mem0-s00-inventory.json": "sha256:acdd21cc994dd4b799c7cde1869fd27f750d1ad763db7c90cd5c6d2ea1f5f17c",
+    "artifacts/research_decisions/20261113-native-mem0-reader-v1/models/mem0/mem0-s01-inventory.json": "sha256:bd7016b093db3f536e8d00dafb5618658bb9d160de20bfe98bee939ccb385325",
+    "artifacts/research_decisions/20261113-native-mem0-reader-v1/models/mem0/mem0-s03-inventory.json": "sha256:5a32c5510043bc1d2f074e93bee9855a2ac187bc8c8cbc09334e2a0eca1a51ff",
+    "artifacts/research_decisions/20261113-native-mem0-reader-v1/models/mem0/s00/delivered.json": "sha256:b08919dbfb8462e8ea26ddfdae569470ed35a1ecebbcd39d2af7b0af0f2080f8",
+    "artifacts/research_decisions/20261113-native-mem0-reader-v1/models/mem0/s00/delivery.json": "sha256:3ca938d7383dfa7dbec074e8bdce44bb90412c5e940e18b9294b96d63ef4fa5c",
+    "artifacts/research_decisions/20261113-native-mem0-reader-v1/models/mem0/s00/event.json": "sha256:dbf8788fe128198f9fecfe426c4d0eb24ca6b7e6352b388a88341bf7d43c3327",
+    "artifacts/research_decisions/20261113-native-mem0-reader-v1/models/mem0/s00/inventory-diagnostic-only.json": "sha256:1fced2cd7e80b9f4e64e41f17e7a6a1b3b39f752c41f2c2484bc2f27e30494dd",
+    "artifacts/research_decisions/20261113-native-mem0-reader-v1/models/mem0/s00/native-ingestion-input.json": "sha256:7cf7e927dfb0c6893b35c92c9291018f9f8b188178a28d7dc0387a45672acc4a",
+    "artifacts/research_decisions/20261113-native-mem0-reader-v1/models/mem0/s00/reader.stderr": "sha256:e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "artifacts/research_decisions/20261113-native-mem0-reader-v1/models/mem0/s00/reader.stdout": "sha256:d92f598df435a1d185c79b37685185f1f7b106f6fd41b21f28998a1f47c46464",
+    "artifacts/research_decisions/20261113-native-mem0-reader-v1/models/mem0/s00/t0-input.json": "sha256:349c597e8141729addba23ced3c93d14869318d0df9a7f07ea2c695e400e4ce3",
+    "artifacts/research_decisions/20261113-native-mem0-reader-v1/models/mem0/s00/t0-response.json": "sha256:7d30193f9c840c69f8a46c82c5f48d90a33f52b1bea13f78fc365633a1925ff1",
+    "artifacts/research_decisions/20261113-native-mem0-reader-v1/models/mem0/s00/t1-input.json": "sha256:48438450aa5abb75beafaf87f595d74da79cef2b5a7eb6b97087d86a1055bbc7",
+    "artifacts/research_decisions/20261113-native-mem0-reader-v1/models/mem0/s00/t1-response.json": "sha256:3ca938d7383dfa7dbec074e8bdce44bb90412c5e940e18b9294b96d63ef4fa5c",
+    "artifacts/research_decisions/20261113-native-mem0-reader-v1/models/mem0/s00/write-result.json": "sha256:a3674430e5cbe2b45ee8639ac53de3d2d947ef402b2ad7cb3f6076262f000ca7",
+    "artifacts/research_decisions/20261113-native-mem0-reader-v1/models/mem0/s01/delivered.json": "sha256:371ef62129687740b53e9ed577b5c3345228496cb49f4153bd57196b1fcd8968",
+    "artifacts/research_decisions/20261113-native-mem0-reader-v1/models/mem0/s01/delivery.json": "sha256:b6bb613be3a2b15a46323b4dd39c6ccb07299a27eab311e249e9fd5d2923607f",
+    "artifacts/research_decisions/20261113-native-mem0-reader-v1/models/mem0/s01/event.json": "sha256:706c4078bb0ce34af25f6dd5186ec47248e98a02fc467f20c0b1572a9a712a7c",
+    "artifacts/research_decisions/20261113-native-mem0-reader-v1/models/mem0/s01/inventory-diagnostic-only.json": "sha256:acdd21cc994dd4b799c7cde1869fd27f750d1ad763db7c90cd5c6d2ea1f5f17c",
+    "artifacts/research_decisions/20261113-native-mem0-reader-v1/models/mem0/s01/native-ingestion-input.json": "sha256:7cf7e927dfb0c6893b35c92c9291018f9f8b188178a28d7dc0387a45672acc4a",
+    "artifacts/research_decisions/20261113-native-mem0-reader-v1/models/mem0/s01/reader.stderr": "sha256:e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "artifacts/research_decisions/20261113-native-mem0-reader-v1/models/mem0/s01/reader.stdout": "sha256:abc4ce89c302aaafd7ff2279987be34f2dd224b2a071790e7b45eb492924fff4",
+    "artifacts/research_decisions/20261113-native-mem0-reader-v1/models/mem0/s01/t0-input.json": "sha256:9d23c3aa8058e1603b6a888981e2801d59a41bb7221e85ea77387c1b05e5115e",
+    "artifacts/research_decisions/20261113-native-mem0-reader-v1/models/mem0/s01/t0-response.json": "sha256:7d30193f9c840c69f8a46c82c5f48d90a33f52b1bea13f78fc365633a1925ff1",
+    "artifacts/research_decisions/20261113-native-mem0-reader-v1/models/mem0/s01/t1-input.json": "sha256:27796812edfef1ed1db0d9bfa7eced98646487ad0c5a64b4b0f6be98f223b347",
+    "artifacts/research_decisions/20261113-native-mem0-reader-v1/models/mem0/s01/t1-response.json": "sha256:b6bb613be3a2b15a46323b4dd39c6ccb07299a27eab311e249e9fd5d2923607f",
+    "artifacts/research_decisions/20261113-native-mem0-reader-v1/models/mem0/s01/write-result.json": "sha256:a03c206e8fb93724fdb08f3a4b19eacc93a625106c7f62a9a2c8679dba73d4e8",
+    "artifacts/research_decisions/20261113-native-mem0-reader-v1/models/mem0/s02/delivered.json": "sha256:54d26d765936a74249d61ec8222275f163ff075dfd9df0c2068dd5af4f94b1d0",
+    "artifacts/research_decisions/20261113-native-mem0-reader-v1/models/mem0/s02/delivery.json": "sha256:3ca938d7383dfa7dbec074e8bdce44bb90412c5e940e18b9294b96d63ef4fa5c",
+    "artifacts/research_decisions/20261113-native-mem0-reader-v1/models/mem0/s02/event.json": "sha256:6efd3205de88dc21062c0f6aec82cb928e6fc875a87cda8c7903db7bad17c659",
+    "artifacts/research_decisions/20261113-native-mem0-reader-v1/models/mem0/s02/inventory-diagnostic-only.json": "sha256:bd7016b093db3f536e8d00dafb5618658bb9d160de20bfe98bee939ccb385325",
+    "artifacts/research_decisions/20261113-native-mem0-reader-v1/models/mem0/s02/reader.stderr": "sha256:e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "artifacts/research_decisions/20261113-native-mem0-reader-v1/models/mem0/s02/reader.stdout": "sha256:55bea65b7ce157795b850a4adc1307ad29cdd60aa6504526ce418166b4fa7ee1",
+    "artifacts/research_decisions/20261113-native-mem0-reader-v1/models/mem0/s02/t0-input.json": "sha256:b82183176b0e16fd2ab96e97f8b0b8eb50d276f33d7a4f39d2ac293fd526fbcd",
+    "artifacts/research_decisions/20261113-native-mem0-reader-v1/models/mem0/s02/t0-response.json": "sha256:3ca938d7383dfa7dbec074e8bdce44bb90412c5e940e18b9294b96d63ef4fa5c",
+    "artifacts/research_decisions/20261113-native-mem0-reader-v1/models/mem0/s03/delivered.json": "sha256:739c366ff99ba63532fdcc3d4125320032adec3902604fc584ac62728e6db188",
+    "artifacts/research_decisions/20261113-native-mem0-reader-v1/models/mem0/s03/delivery.json": "sha256:3ca938d7383dfa7dbec074e8bdce44bb90412c5e940e18b9294b96d63ef4fa5c",
+    "artifacts/research_decisions/20261113-native-mem0-reader-v1/models/mem0/s03/event.json": "sha256:f566a666ef9b4ebaaaec56f40e0d53f68dbc0d6a40ce7539ddb849a02ebc3f75",
+    "artifacts/research_decisions/20261113-native-mem0-reader-v1/models/mem0/s03/inventory-diagnostic-only.json": "sha256:bd7016b093db3f536e8d00dafb5618658bb9d160de20bfe98bee939ccb385325",
+    "artifacts/research_decisions/20261113-native-mem0-reader-v1/models/mem0/s03/native-ingestion-input.json": "sha256:9771a853b533edf2cb6f556f66d7dfb55d5d00fd25480e92dfc5a74f0d498e91",
+    "artifacts/research_decisions/20261113-native-mem0-reader-v1/models/mem0/s03/reader.stderr": "sha256:e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "artifacts/research_decisions/20261113-native-mem0-reader-v1/models/mem0/s03/reader.stdout": "sha256:c9ef7a388bf2c3e7fb15903cb8cb8578ba1c29950ad3a2d1b29489a3d5d2ed07",
+    "artifacts/research_decisions/20261113-native-mem0-reader-v1/models/mem0/s03/t0-input.json": "sha256:68067cfbc3aec04ff52688cd85d5c9490ebf104c17684fa63d3dd8ddf0cb7006",
+    "artifacts/research_decisions/20261113-native-mem0-reader-v1/models/mem0/s03/t0-response.json": "sha256:7d30193f9c840c69f8a46c82c5f48d90a33f52b1bea13f78fc365633a1925ff1",
+    "artifacts/research_decisions/20261113-native-mem0-reader-v1/models/mem0/s03/t1-input.json": "sha256:0c1bdc7d4849cb90e3b2784a1a6fa859d0689e60bd9ec9f43aded39852f95822",
+    "artifacts/research_decisions/20261113-native-mem0-reader-v1/models/mem0/s03/t1-response.json": "sha256:3ca938d7383dfa7dbec074e8bdce44bb90412c5e940e18b9294b96d63ef4fa5c",
+    "artifacts/research_decisions/20261113-native-mem0-reader-v1/models/mem0/s03/write-result.json": "sha256:3e6892be6376b9dc108b9b3cb83bd7ec1ff75d3e5686b0301fe240629e593ffa",
+    "artifacts/research_decisions/20261113-native-mem0-reader-v1/models/mem0/s04/delivered.json": "sha256:ef18c8bb2d89752f8ba05ed2532a973e4c62e8fd46760587365d12cbaded4644",
+    "artifacts/research_decisions/20261113-native-mem0-reader-v1/models/mem0/s04/delivery.json": "sha256:b82d9241449e281c1faf2a5046d103b43c2aa516e9291c983e44aab1f66d4917",
+    "artifacts/research_decisions/20261113-native-mem0-reader-v1/models/mem0/s04/event.json": "sha256:513c89186be057c4d149f63d39281faa78e379e69cffc84b9134c93ccc271551",
+    "artifacts/research_decisions/20261113-native-mem0-reader-v1/models/mem0/s04/inventory-diagnostic-only.json": "sha256:5a32c5510043bc1d2f074e93bee9855a2ac187bc8c8cbc09334e2a0eca1a51ff",
+    "artifacts/research_decisions/20261113-native-mem0-reader-v1/models/mem0/s04/reader.stderr": "sha256:e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "artifacts/research_decisions/20261113-native-mem0-reader-v1/models/mem0/s04/reader.stdout": "sha256:d5077753cf246a24b5b94f9eeaa60ef90d3a9477fb67969136d651821178aca7",
+    "artifacts/research_decisions/20261113-native-mem0-reader-v1/models/mem0/s04/t0-input.json": "sha256:d701b8bcb58bc80fc94c2d8b906e756f27985e398b3ccdc2ea7a332031d8a6b3",
+    "artifacts/research_decisions/20261113-native-mem0-reader-v1/models/mem0/s04/t0-response.json": "sha256:b82d9241449e281c1faf2a5046d103b43c2aa516e9291c983e44aab1f66d4917",
+    "artifacts/research_decisions/20261113-native-mem0-reader-v1/models/mem0/s05/delivered.json": "sha256:52da3d7c45f8db1c0aa8332c4dee5f632c01958f430efbb1f3a61a2077310248",
+    "artifacts/research_decisions/20261113-native-mem0-reader-v1/models/mem0/s05/delivery.json": "sha256:3ca938d7383dfa7dbec074e8bdce44bb90412c5e940e18b9294b96d63ef4fa5c",
+    "artifacts/research_decisions/20261113-native-mem0-reader-v1/models/mem0/s05/event.json": "sha256:50940e956adfb55e002992482392820114b5e4aef4e3eaa72250cd7fe6043214",
+    "artifacts/research_decisions/20261113-native-mem0-reader-v1/models/mem0/s05/inventory-diagnostic-only.json": "sha256:5a32c5510043bc1d2f074e93bee9855a2ac187bc8c8cbc09334e2a0eca1a51ff",
+    "artifacts/research_decisions/20261113-native-mem0-reader-v1/models/mem0/s05/reader.stderr": "sha256:e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "artifacts/research_decisions/20261113-native-mem0-reader-v1/models/mem0/s05/reader.stdout": "sha256:a757088536a2e9ce0d7764f9dbc0d6faf33bcd94269b695cafd4ddc399b95ee1",
+    "artifacts/research_decisions/20261113-native-mem0-reader-v1/models/mem0/s05/t0-input.json": "sha256:8f85fa97ff1811b03564487c12012ec35a4daae1596b56b55482f72b350d7822",
+    "artifacts/research_decisions/20261113-native-mem0-reader-v1/models/mem0/s05/t0-response.json": "sha256:3ca938d7383dfa7dbec074e8bdce44bb90412c5e940e18b9294b96d63ef4fa5c",
+    "artifacts/research_decisions/20261113-native-mem0-reader-v1/models/metrics.json": "sha256:f017ba04160c2ce71b5746d6df7ccd1d8a66d393579808668c6080a34bc32070",
+    "artifacts/research_decisions/20261113-native-mem0-reader-v1/models/raw-results.json": "sha256:0583f17f51808fd029d3ba69bd1284e48c721431e171dd4370e87f0441933e27",
+    "artifacts/research_decisions/20261113-native-mem0-reader-v1/models/reference-after-policy.json": "sha256:eae1ef53fbdbc04d4a991e879ef3b5270f0873cecafd9ed1c6dab198219c19bf",
+    "artifacts/research_decisions/20261113-native-mem0-reader-v1/models/results.json": "sha256:2157a5f6b83f2ce91ad382033e75ac4488ae86d43f0aad7f33b19347882a6486",
+    "artifacts/research_decisions/20261113-native-mem0-reader-v1/models/verbatim/events.json": "sha256:aa0905d25bf2bea6192b0d5294a18a458a2c809faf6ab91ecd934c38103856b6",
+    "artifacts/research_decisions/20261113-native-mem0-reader-v1/models/verbatim/initial-write.json": "sha256:27e7ebb4f65e22607d0d705a6d42c93ff85e8274af46ad4317485cddc979f899",
+    "artifacts/research_decisions/20261113-native-mem0-reader-v1/models/verbatim/notes.json": "sha256:fec468f97c9c5a3a0da04524d2fb8bd716877096993c8022ac3aafec8d9d54f4",
+    "artifacts/research_decisions/20261113-native-mem0-reader-v1/models/verbatim/s00/delivered.json": "sha256:75546f7249b4e71be8bc88b17b52ea6b563feb4e83f12a4ea337013efec7d88b",
+    "artifacts/research_decisions/20261113-native-mem0-reader-v1/models/verbatim/s00/delivery.json": "sha256:0e4f66eb8b216652e1c8ae15851a80552cbae317d29be49d522e6a660ce7b443",
+    "artifacts/research_decisions/20261113-native-mem0-reader-v1/models/verbatim/s00/event.json": "sha256:bfd5ff1bb6b0704fea998b013ff924323e8c5fda9889f006481ec84a77de4ad7",
+    "artifacts/research_decisions/20261113-native-mem0-reader-v1/models/verbatim/s00/t0-input.json": "sha256:6112ced200a0eb5396b7ebc571a24eaa5256aaf0b98029cbfe478dcff33fd2ca",
+    "artifacts/research_decisions/20261113-native-mem0-reader-v1/models/verbatim/s00/t0-response.json": "sha256:0e4f66eb8b216652e1c8ae15851a80552cbae317d29be49d522e6a660ce7b443",
+    "artifacts/research_decisions/20261113-native-mem0-reader-v1/models/verbatim/s01/delivered.json": "sha256:75546f7249b4e71be8bc88b17b52ea6b563feb4e83f12a4ea337013efec7d88b",
+    "artifacts/research_decisions/20261113-native-mem0-reader-v1/models/verbatim/s01/delivery.json": "sha256:0e4f66eb8b216652e1c8ae15851a80552cbae317d29be49d522e6a660ce7b443",
+    "artifacts/research_decisions/20261113-native-mem0-reader-v1/models/verbatim/s01/event.json": "sha256:8bfab21d3483ab4f2145b85304cf7c8c83aa35a951cf265f7f7fe908f9dd2142",
+    "artifacts/research_decisions/20261113-native-mem0-reader-v1/models/verbatim/s01/native-ingestion-input.json": "sha256:7cf7e927dfb0c6893b35c92c9291018f9f8b188178a28d7dc0387a45672acc4a",
+    "artifacts/research_decisions/20261113-native-mem0-reader-v1/models/verbatim/s01/t0-input.json": "sha256:55231070f73c8172fc2cd815944e32a6e4b4af3da6472578cdce6c47a0a8e52f",
+    "artifacts/research_decisions/20261113-native-mem0-reader-v1/models/verbatim/s01/t0-response.json": "sha256:7d30193f9c840c69f8a46c82c5f48d90a33f52b1bea13f78fc365633a1925ff1",
+    "artifacts/research_decisions/20261113-native-mem0-reader-v1/models/verbatim/s01/t1-input.json": "sha256:2dd8bfe9dcd8889f9879c86b6f7069f50afad94c73242f236bedae1991830220",
+    "artifacts/research_decisions/20261113-native-mem0-reader-v1/models/verbatim/s01/t1-response.json": "sha256:0e4f66eb8b216652e1c8ae15851a80552cbae317d29be49d522e6a660ce7b443",
+    "artifacts/research_decisions/20261113-native-mem0-reader-v1/models/verbatim/s01/write-result.json": "sha256:240169ed4e9a2cbd67cb42f8b8bf0ba765a76aac990fdf10a9a8f737ccdef8d9",
+    "artifacts/research_decisions/20261113-native-mem0-reader-v1/models/verbatim/s02/delivered.json": "sha256:9a089e80c484bd35b56501f01bf19ae4df95496ad3ffb9da45c32bdeb594226d",
+    "artifacts/research_decisions/20261113-native-mem0-reader-v1/models/verbatim/s02/delivery.json": "sha256:0ebd814a3c3ef440703a2875cb3ece5e8d2e090b8498a0cd191c0d654b8fa0cc",
+    "artifacts/research_decisions/20261113-native-mem0-reader-v1/models/verbatim/s02/event.json": "sha256:63489b6b75224b67e3e0c778ae10fb9c277f339eba981f50a69194a55631f812",
+    "artifacts/research_decisions/20261113-native-mem0-reader-v1/models/verbatim/s02/t0-input.json": "sha256:29b3c66971c957ae9acff6aba728b3796cd28d4535aefdd396510140c77cf66a",
+    "artifacts/research_decisions/20261113-native-mem0-reader-v1/models/verbatim/s02/t0-response.json": "sha256:0ebd814a3c3ef440703a2875cb3ece5e8d2e090b8498a0cd191c0d654b8fa0cc",
+    "artifacts/research_decisions/20261113-native-mem0-reader-v1/models/verbatim/s03/delivered.json": "sha256:9a089e80c484bd35b56501f01bf19ae4df95496ad3ffb9da45c32bdeb594226d",
+    "artifacts/research_decisions/20261113-native-mem0-reader-v1/models/verbatim/s03/delivery.json": "sha256:5f52e4df7aa2982c9de7e55822727faa1bea17686fc93d376792a6eec3041095",
+    "artifacts/research_decisions/20261113-native-mem0-reader-v1/models/verbatim/s03/event.json": "sha256:16fcbac667379bdacfb2e25c0ed3454061c95ca56b837bbf1b60fc251c40e885",
+    "artifacts/research_decisions/20261113-native-mem0-reader-v1/models/verbatim/s03/native-ingestion-input.json": "sha256:9771a853b533edf2cb6f556f66d7dfb55d5d00fd25480e92dfc5a74f0d498e91",
+    "artifacts/research_decisions/20261113-native-mem0-reader-v1/models/verbatim/s03/t0-input.json": "sha256:c174d696856a1e40a733afdd4c886891638d755adbe8f79141025f995b25359f",
+    "artifacts/research_decisions/20261113-native-mem0-reader-v1/models/verbatim/s03/t0-response.json": "sha256:7d30193f9c840c69f8a46c82c5f48d90a33f52b1bea13f78fc365633a1925ff1",
+    "artifacts/research_decisions/20261113-native-mem0-reader-v1/models/verbatim/s03/t1-input.json": "sha256:f99ed1e0124879f015ba6cacecd3fc2b3a5322bc2d36d85073abc45d61c52111",
+    "artifacts/research_decisions/20261113-native-mem0-reader-v1/models/verbatim/s03/t1-response.json": "sha256:5f52e4df7aa2982c9de7e55822727faa1bea17686fc93d376792a6eec3041095",
+    "artifacts/research_decisions/20261113-native-mem0-reader-v1/models/verbatim/s03/write-result.json": "sha256:99219f84b537ecba1816b618c98de680128d56d9584badebb1b6c864c9397075",
+    "artifacts/research_decisions/20261113-native-mem0-reader-v1/models/verbatim/s04/delivered.json": "sha256:df6ab59b5ac172d27327366933e5fac6820d97cf10d891c8e16474f9c90dfcad",
+    "artifacts/research_decisions/20261113-native-mem0-reader-v1/models/verbatim/s04/delivery.json": "sha256:6b791ddebdbf9371ade163fe2bc84c690c01952cc628bac31edf51dd8b58ff71",
+    "artifacts/research_decisions/20261113-native-mem0-reader-v1/models/verbatim/s04/event.json": "sha256:74f161e12e58a5d573a3e742e971ba7766b1bc2ff3eb25793391aa8e5e99bd31",
+    "artifacts/research_decisions/20261113-native-mem0-reader-v1/models/verbatim/s04/t0-input.json": "sha256:52a3d7977b3f52358c3de7d850f668df95ea51704489aef684be872f2b60158e",
+    "artifacts/research_decisions/20261113-native-mem0-reader-v1/models/verbatim/s04/t0-response.json": "sha256:6b791ddebdbf9371ade163fe2bc84c690c01952cc628bac31edf51dd8b58ff71",
+    "artifacts/research_decisions/20261113-native-mem0-reader-v1/models/verbatim/s05/delivered.json": "sha256:df6ab59b5ac172d27327366933e5fac6820d97cf10d891c8e16474f9c90dfcad",
+    "artifacts/research_decisions/20261113-native-mem0-reader-v1/models/verbatim/s05/delivery.json": "sha256:0ebd814a3c3ef440703a2875cb3ece5e8d2e090b8498a0cd191c0d654b8fa0cc",
+    "artifacts/research_decisions/20261113-native-mem0-reader-v1/models/verbatim/s05/event.json": "sha256:147d9fb7710af3e3f6d8331eaf964a70a06c6dacdc84d21f80e62fe19390486b",
+    "artifacts/research_decisions/20261113-native-mem0-reader-v1/models/verbatim/s05/t0-input.json": "sha256:3f37cef3d7564229c0a380e99d763852784fd3c2ac291a8e726a98ba3f705cbb",
+    "artifacts/research_decisions/20261113-native-mem0-reader-v1/models/verbatim/s05/t0-response.json": "sha256:0ebd814a3c3ef440703a2875cb3ece5e8d2e090b8498a0cd191c0d654b8fa0cc",
+    "artifacts/research_decisions/20261113-native-mem0-preflight-v1/smoke/operations.json": "sha256:478f75cadde3b926f4b5ef47b078a9050c8ea8a771602df97e85c35b8b7151a7",
+    "artifacts/research_decisions/20261113-native-mem0-preflight-v1/smoke/reader.stderr": "sha256:e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "artifacts/research_decisions/20261113-native-mem0-preflight-v1/smoke/reader.stdout": "sha256:a79ac798670b69bce87dda072d0edf6cc2b31f2ed6d5036003766db80ee58766",
+    "artifacts/research_decisions/20261113-native-mem0-reader-v1/freeze.json": "sha256:fd720a6211725e277792d2db171a14dd44cbaea7e8beef5007a031dabac7bb1e",
+    "artifacts/research_decisions/20261113-native-mem0-preflight-v1/freeze.json": "sha256:10cb15de5058ba293e7c271597229d450d1eb52dcf3014457c88526ac1a8623f"
+  },
+  "case_diagnosis": "CASE_DIAGNOSIS.json",
+  "claims": [
+    {
+      "id": "C1",
+      "claim": "Reusable native Mem0 adapter and real write/persist/search/read/new-experience lifecycle",
+      "impact": "supported",
+      "qualifier": "Pinned engineering environment and actual retained native operations; preflight scripted responses are interface evidence only."
+    },
+    {
+      "id": "C2",
+      "claim": "Observed Mem0 4/6 versus verbatim 3/6 correct",
+      "impact": "supported_descriptively",
+      "qualifier": "One correlated history per arm, no statistical or causal backend ranking."
+    },
+    {
+      "id": "C3",
+      "claim": "Native consolidation can omit acquired joint cells",
+      "impact": "supported_instance",
+      "qualifier": "One directly retained s00 case; no estimated frequency or causal claim about later wrong outputs."
+    },
+    {
+      "id": "C4",
+      "claim": "The observed wrong answers are caused by memory loss or stale retrieval",
+      "impact": "unsupported",
+      "qualifier": "All five errors have sufficient correct current-source information delivered; exact reader mechanism is undetermined."
+    },
+    {
+      "id": "C5",
+      "claim": "Improvement over earlier strong calculator-enabled baseline or a new method",
+      "impact": "unsupported",
+      "qualifier": "Current action interface omits that calculator and no method comparison was run."
+    },
+    {
+      "id": "C6",
+      "claim": "Lower total memory-system cost or general production robustness",
+      "impact": "unsupported",
+      "qualifier": "Partial byte/API-cost instrumentation and one authored pilot only."
+    }
+  ],
+  "action_items": [
+    "Keep descriptive engineering claims and preserve the original unassessed semantic-support field.",
+    "Use the separate posthoc all-case diagnosis when discussing observed errors; do not call all failures memory or retrieval errors.",
+    "For future isolated memory attribution, predefine equivalent arithmetic assistance and semantic calibration before running; no additional paid calls are required to deliver this audit.",
+    "Keep task-query/source-scan metrics separate from common setup, evaluator/hash reads and uninstrumented memory/embedding/latency costs.",
+    "Retain requested versus attested reviewer/model identity and same-family provisional assurance."
+  ]
+}

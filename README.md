@@ -60,6 +60,8 @@ The new [diagnostic charter](docs/DIAGNOSTIC_CHARTER.md) fixes the research chai
 
 `trustmem_diagnostics` (Python 3.10+) adds explicit denominators/observability, read-only SAP trace analysis, native-operation hooks and sensitivity controls. Run `python -B -m trustmem_diagnostics.calibration --output local-runs/diagnostic-calibration.json` for authored instrument checks without API use. These controls are not estimates of model error rates.
 
+An optional [native Mem0 OSS adapter and pilot](docs/NATIVE_MEM0_PILOT.md) now qualifies actual infer=True writing, native search/update and independent-process disk reopen. The default core install remains dependency-free; this optional path pins its own SDK and existing local embedding model. Its first small reader trial is an authored development workload, not a system ranking.
+
 - Correct submissions and correct submissions with sufficient declared evidence.
 - Lucky unsupported answers, wrong answers, unsupported declarations, abstention, launch/format failure and step limits.
 - Actual source reads, common history scanning, identity checking, memory payload reads/writes, SQLite size, agent invocations, observation transport and wall time. These units are not collapsed into one cost.

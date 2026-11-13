@@ -1,0 +1,94 @@
+{
+  "version": "0.3-dev",
+  "id": "engineering-range",
+  "mechanism": "range",
+  "split": "engineering-smoke",
+  "history_group": "synthetic-range",
+  "initial_source": "b5e852d5e1b0c77ef4cf455ca9e6d58d3f89637afd4bc7936de9a15a28fadd98",
+  "sources": {
+    "b5e852d5e1b0c77ef4cf455ca9e6d58d3f89637afd4bc7936de9a15a28fadd98": {
+      "path": "range-0.jsonl",
+      "format": "weighted-jsonl",
+      "sha256": "b5e852d5e1b0c77ef4cf455ca9e6d58d3f89637afd4bc7936de9a15a28fadd98"
+    },
+    "6f342afd740c181cd6c58e78fc805814a06ff83d075935c4d8aa07c1197fc07c": {
+      "path": "range-1.jsonl",
+      "format": "weighted-jsonl",
+      "sha256": "6f342afd740c181cd6c58e78fc805814a06ff83d075935c4d8aa07c1197fc07c"
+    }
+  },
+  "tasks": [
+    {
+      "source_id": "b5e852d5e1b0c77ef4cf455ca9e6d58d3f89637afd4bc7936de9a15a28fadd98",
+      "request": {
+        "kind": "range",
+        "a": "red",
+        "lo": 1,
+        "hi": 2
+      }
+    },
+    {
+      "source_id": "b5e852d5e1b0c77ef4cf455ca9e6d58d3f89637afd4bc7936de9a15a28fadd98",
+      "request": {
+        "kind": "range",
+        "a": "red",
+        "lo": 1,
+        "hi": 3
+      }
+    },
+    {
+      "source_id": "b5e852d5e1b0c77ef4cf455ca9e6d58d3f89637afd4bc7936de9a15a28fadd98",
+      "request": {
+        "kind": "range",
+        "a": "red",
+        "lo": 1,
+        "hi": 4
+      }
+    },
+    {
+      "source_id": "b5e852d5e1b0c77ef4cf455ca9e6d58d3f89637afd4bc7936de9a15a28fadd98",
+      "request": {
+        "kind": "range",
+        "a": "red",
+        "lo": 1,
+        "hi": 4
+      }
+    },
+    {
+      "source_id": "6f342afd740c181cd6c58e78fc805814a06ff83d075935c4d8aa07c1197fc07c",
+      "request": {
+        "kind": "range",
+        "a": "red",
+        "lo": 1,
+        "hi": 4
+      }
+    },
+    {
+      "source_id": "6f342afd740c181cd6c58e78fc805814a06ff83d075935c4d8aa07c1197fc07c",
+      "request": {
+        "kind": "range",
+        "a": "red",
+        "lo": 1,
+        "hi": 4
+      }
+    },
+    {
+      "source_id": "6f342afd740c181cd6c58e78fc805814a06ff83d075935c4d8aa07c1197fc07c",
+      "request": {
+        "kind": "range",
+        "a": "blue",
+        "lo": 1,
+        "hi": 2
+      }
+    },
+    {
+      "source_id": "b5e852d5e1b0c77ef4cf455ca9e6d58d3f89637afd4bc7936de9a15a28fadd98",
+      "request": {
+        "kind": "range",
+        "a": "red",
+        "lo": 1,
+        "hi": 4
+      }
+    }
+  ]
+}
