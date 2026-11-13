@@ -1,0 +1,36 @@
+{
+  "verdict": "WARN",
+  "integrity_verdict": "PASS",
+  "blocking_errors": false,
+  "requested_reviewer_model": "gpt-6.1-sol",
+  "requested_reasoning_effort": "ultra",
+  "reported_reviewer_model": null,
+  "reviewer_task": "/root/public_pilot_audit",
+  "review_independence": "same-family",
+  "acceptance_status": "provisional",
+  "completed_at": "2026-11-13T17:44:50.636920+08:00",
+  "checks": {
+    "raw_gzip_rows_reparsed": 10472965,
+    "task_positions": 48,
+    "correct": 35,
+    "wrong": 2,
+    "interface_failures": 11,
+    "api_requests": 94,
+    "reader_pairs": 89,
+    "unknown_usage_requests": 1,
+    "original_v3_artifacts": 73,
+    "phase_freeze_counts": [
+      69,
+      70,
+      102,
+      209
+    ]
+  },
+  "scope": "Current limited descriptive claims only; no formal confirmation or memory framework ranking",
+  "warnings": [
+    "Reader-2 did not prescribe action key explicitly",
+    "Mem0 initial facts empty",
+    "No saves; maintenance differences not exercised",
+    "One resource-qualified history and adaptive preparation/continuation"
+  ]
+}

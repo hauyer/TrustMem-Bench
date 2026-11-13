@@ -1,0 +1,72 @@
+{
+  "at": "2026-11-13T09:05:48.103635+00:00",
+  "model": "deepseek-flash",
+  "thinking": "disabled",
+  "max_tokens": 8192,
+  "calls_cap": 599,
+  "usd_cap": 2.98,
+  "normal_actions": 4,
+  "planned_task_positions": 96,
+  "planned_streams": 12,
+  "schedule": [
+    {
+      "case": {
+        "index": 1,
+        "path": "artifacts/research_decisions/20261113-confirmation-selection-v1/public-cases/wiki.case.json",
+        "id": "native-wiki",
+        "mechanism": "cross",
+        "public": true
+      },
+      "backend": "coverage",
+      "modes": [
+        "free",
+        "tool_first"
+      ]
+    },
+    {
+      "case": {
+        "index": 1,
+        "path": "artifacts/research_decisions/20261113-confirmation-selection-v1/public-cases/wiki.case.json",
+        "id": "native-wiki",
+        "mechanism": "cross",
+        "public": true
+      },
+      "backend": "mem0",
+      "modes": [
+        "free",
+        "tool_first"
+      ]
+    },
+    {
+      "case": {
+        "index": 1,
+        "path": "artifacts/research_decisions/20261113-confirmation-selection-v1/public-cases/wiki.case.json",
+        "id": "native-wiki",
+        "mechanism": "cross",
+        "public": true
+      },
+      "backend": "verbatim",
+      "modes": [
+        "free",
+        "tool_first"
+      ]
+    }
+  ],
+  "qualification_sha256": "ba7b0c38c89eda2f2492d275ac6471877daf19210fb47c52f262a7a59f770ddc",
+  "native_sha256": "e40813f625eb23d9dafd5d9ebbac85409a657640337dd7917af129cd485faf4d",
+  "freeze_sha256": "3047acbd6fbcfae27939418eea1bc1cc6ef0601e3e2fa6e5b8954d4fa81b9ac8",
+  "pricing_url": "https://api-docs.deepseek.com/quick_start/pricing/",
+  "rates_usd_per_million": {
+    "cache_hit": 0.006,
+    "cache_miss": 0.3,
+    "output": 1.2
+  },
+  "resource_admission_sha256": "e3c9b73e2807bcc485d9c8ad49dcdfb53fdf9287eb173ec02a661e5f065eabfa",
+  "eligible_task_positions": 48,
+  "resource_excluded_task_positions": 48,
+  "parent_planned_task_positions": 96,
+  "recovery_parent": "artifacts/research_decisions/20261113-confirmation-pilot-v2/models/failure.json",
+  "format_only_change": true,
+  "aggregate_parent_and_recovery_calls_cap": 600,
+  "aggregate_estimated_usd_cap": 3.0
+}

@@ -1,0 +1,30 @@
+{
+  "at": "2026-11-13T09:05:49.164769+00:00",
+  "rows": [
+    {
+      "case": "native-gh",
+      "index": 0,
+      "input_files": 22,
+      "max_input_bytes": 5800569,
+      "admitted": false,
+      "limit_bytes": 524288
+    },
+    {
+      "case": "native-wiki",
+      "index": 1,
+      "input_files": 22,
+      "max_input_bytes": 264310,
+      "admitted": true,
+      "limit_bytes": 524288
+    }
+  ],
+  "model_calls_so_far": 0,
+  "script_sha256": "73f540c1d1938a872a578b1963d6d279f6c6cbaff6facb769e63bae2b7d33209",
+  "addendum_sha256": "1f06e0981d27a21f0d6d4dd4b8dcd8cc8b65aa588df8d1578a7464619bb9a520",
+  "parent_admission_sha256": "07c755b764c56407bcebae87c7a899eca17896689781102178b5aad8065a60a0",
+  "eligible_histories": 1,
+  "excluded_histories": 1,
+  "eligible_task_positions": 48,
+  "excluded_task_positions": 48,
+  "basis": "serialized input size only; no model outcomes, no per-backend/task exclusion"
+}

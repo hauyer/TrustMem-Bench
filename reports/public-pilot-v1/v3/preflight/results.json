@@ -1,0 +1,329 @@
+{
+  "rows": [
+    {
+      "case": "native-gh",
+      "public": true,
+      "policy": "lazy",
+      "correct": 8,
+      "tasks": 8,
+      "source_read_bytes": 85425442,
+      "archive_read_payload_bytes": 1319508,
+      "bootstrap_full_payload_bytes": 1319508,
+      "bootstrap_summary_bytes": 1084366,
+      "constant_zero_correct": 1,
+      "common_history_scan": {
+        "source_read_bytes": 82010008,
+        "scan_seconds": 14.547378199989907
+      }
+    },
+    {
+      "case": "native-gh",
+      "public": true,
+      "policy": "eager",
+      "correct": 8,
+      "tasks": 8,
+      "source_read_bytes": 85425442,
+      "archive_read_payload_bytes": 0,
+      "bootstrap_full_payload_bytes": 1319508,
+      "bootstrap_summary_bytes": 1084366,
+      "constant_zero_correct": 1,
+      "common_history_scan": {
+        "source_read_bytes": 82010008,
+        "scan_seconds": 14.547378199989907
+      }
+    },
+    {
+      "case": "native-wiki",
+      "public": true,
+      "policy": "lazy",
+      "correct": 8,
+      "tasks": 8,
+      "source_read_bytes": 44287377,
+      "archive_read_payload_bytes": 58948,
+      "bootstrap_full_payload_bytes": 58948,
+      "bootstrap_summary_bytes": 19635,
+      "constant_zero_correct": 1,
+      "common_history_scan": {
+        "source_read_bytes": 45359446,
+        "scan_seconds": 24.463675200007856
+      }
+    },
+    {
+      "case": "native-wiki",
+      "public": true,
+      "policy": "eager",
+      "correct": 8,
+      "tasks": 8,
+      "source_read_bytes": 44287377,
+      "archive_read_payload_bytes": 0,
+      "bootstrap_full_payload_bytes": 58948,
+      "bootstrap_summary_bytes": 19635,
+      "constant_zero_correct": 1,
+      "common_history_scan": {
+        "source_read_bytes": 45359446,
+        "scan_seconds": 24.463675200007856
+      }
+    },
+    {
+      "case": "confirmation-quality-00",
+      "public": false,
+      "policy": "lazy",
+      "correct": 8,
+      "tasks": 8,
+      "source_read_bytes": 156,
+      "archive_read_payload_bytes": 0,
+      "bootstrap_full_payload_bytes": 162,
+      "bootstrap_summary_bytes": 174,
+      "constant_zero_correct": 8,
+      "common_history_scan": {
+        "source_read_bytes": 156,
+        "scan_seconds": 0.0004797999863512814
+      }
+    },
+    {
+      "case": "confirmation-quality-00",
+      "public": false,
+      "policy": "eager",
+      "correct": 8,
+      "tasks": 8,
+      "source_read_bytes": 156,
+      "archive_read_payload_bytes": 0,
+      "bootstrap_full_payload_bytes": 162,
+      "bootstrap_summary_bytes": 174,
+      "constant_zero_correct": 8,
+      "common_history_scan": {
+        "source_read_bytes": 156,
+        "scan_seconds": 0.0004797999863512814
+      }
+    },
+    {
+      "case": "confirmation-quality-01",
+      "public": false,
+      "policy": "lazy",
+      "correct": 8,
+      "tasks": 8,
+      "source_read_bytes": 156,
+      "archive_read_payload_bytes": 0,
+      "bootstrap_full_payload_bytes": 161,
+      "bootstrap_summary_bytes": 174,
+      "constant_zero_correct": 8,
+      "common_history_scan": {
+        "source_read_bytes": 155,
+        "scan_seconds": 0.0003794000076595694
+      }
+    },
+    {
+      "case": "confirmation-quality-01",
+      "public": false,
+      "policy": "eager",
+      "correct": 8,
+      "tasks": 8,
+      "source_read_bytes": 156,
+      "archive_read_payload_bytes": 0,
+      "bootstrap_full_payload_bytes": 161,
+      "bootstrap_summary_bytes": 174,
+      "constant_zero_correct": 8,
+      "common_history_scan": {
+        "source_read_bytes": 155,
+        "scan_seconds": 0.0003794000076595694
+      }
+    },
+    {
+      "case": "confirmation-quality-02",
+      "public": false,
+      "policy": "lazy",
+      "correct": 8,
+      "tasks": 8,
+      "source_read_bytes": 156,
+      "archive_read_payload_bytes": 162,
+      "bootstrap_full_payload_bytes": 162,
+      "bootstrap_summary_bytes": 175,
+      "constant_zero_correct": 8,
+      "common_history_scan": {
+        "source_read_bytes": 156,
+        "scan_seconds": 0.0003547999949660152
+      }
+    },
+    {
+      "case": "confirmation-quality-02",
+      "public": false,
+      "policy": "eager",
+      "correct": 8,
+      "tasks": 8,
+      "source_read_bytes": 156,
+      "archive_read_payload_bytes": 0,
+      "bootstrap_full_payload_bytes": 162,
+      "bootstrap_summary_bytes": 175,
+      "constant_zero_correct": 8,
+      "common_history_scan": {
+        "source_read_bytes": 156,
+        "scan_seconds": 0.0003547999949660152
+      }
+    },
+    {
+      "case": "confirmation-quality-03",
+      "public": false,
+      "policy": "lazy",
+      "correct": 8,
+      "tasks": 8,
+      "source_read_bytes": 154,
+      "archive_read_payload_bytes": 0,
+      "bootstrap_full_payload_bytes": 161,
+      "bootstrap_summary_bytes": 173,
+      "constant_zero_correct": 8,
+      "common_history_scan": {
+        "source_read_bytes": 155,
+        "scan_seconds": 0.0002519999979995191
+      }
+    },
+    {
+      "case": "confirmation-quality-03",
+      "public": false,
+      "policy": "eager",
+      "correct": 8,
+      "tasks": 8,
+      "source_read_bytes": 154,
+      "archive_read_payload_bytes": 0,
+      "bootstrap_full_payload_bytes": 161,
+      "bootstrap_summary_bytes": 173,
+      "constant_zero_correct": 8,
+      "common_history_scan": {
+        "source_read_bytes": 155,
+        "scan_seconds": 0.0002519999979995191
+      }
+    },
+    {
+      "case": "confirmation-quality-04",
+      "public": false,
+      "policy": "lazy",
+      "correct": 8,
+      "tasks": 8,
+      "source_read_bytes": 155,
+      "archive_read_payload_bytes": 0,
+      "bootstrap_full_payload_bytes": 162,
+      "bootstrap_summary_bytes": 173,
+      "constant_zero_correct": 8,
+      "common_history_scan": {
+        "source_read_bytes": 156,
+        "scan_seconds": 0.00041459999920334667
+      }
+    },
+    {
+      "case": "confirmation-quality-04",
+      "public": false,
+      "policy": "eager",
+      "correct": 8,
+      "tasks": 8,
+      "source_read_bytes": 155,
+      "archive_read_payload_bytes": 0,
+      "bootstrap_full_payload_bytes": 162,
+      "bootstrap_summary_bytes": 173,
+      "constant_zero_correct": 8,
+      "common_history_scan": {
+        "source_read_bytes": 156,
+        "scan_seconds": 0.00041459999920334667
+      }
+    },
+    {
+      "case": "confirmation-quality-05",
+      "public": false,
+      "policy": "lazy",
+      "correct": 8,
+      "tasks": 8,
+      "source_read_bytes": 155,
+      "archive_read_payload_bytes": 160,
+      "bootstrap_full_payload_bytes": 160,
+      "bootstrap_summary_bytes": 172,
+      "constant_zero_correct": 6,
+      "common_history_scan": {
+        "source_read_bytes": 154,
+        "scan_seconds": 0.0003657000052044168
+      }
+    },
+    {
+      "case": "confirmation-quality-05",
+      "public": false,
+      "policy": "eager",
+      "correct": 8,
+      "tasks": 8,
+      "source_read_bytes": 155,
+      "archive_read_payload_bytes": 0,
+      "bootstrap_full_payload_bytes": 160,
+      "bootstrap_summary_bytes": 172,
+      "constant_zero_correct": 6,
+      "common_history_scan": {
+        "source_read_bytes": 154,
+        "scan_seconds": 0.0003657000052044168
+      }
+    },
+    {
+      "case": "confirmation-quality-06",
+      "public": false,
+      "policy": "lazy",
+      "correct": 8,
+      "tasks": 8,
+      "source_read_bytes": 156,
+      "archive_read_payload_bytes": 0,
+      "bootstrap_full_payload_bytes": 160,
+      "bootstrap_summary_bytes": 172,
+      "constant_zero_correct": 8,
+      "common_history_scan": {
+        "source_read_bytes": 154,
+        "scan_seconds": 0.0003225000109523535
+      }
+    },
+    {
+      "case": "confirmation-quality-06",
+      "public": false,
+      "policy": "eager",
+      "correct": 8,
+      "tasks": 8,
+      "source_read_bytes": 156,
+      "archive_read_payload_bytes": 0,
+      "bootstrap_full_payload_bytes": 160,
+      "bootstrap_summary_bytes": 172,
+      "constant_zero_correct": 8,
+      "common_history_scan": {
+        "source_read_bytes": 154,
+        "scan_seconds": 0.0003225000109523535
+      }
+    },
+    {
+      "case": "confirmation-quality-07",
+      "public": false,
+      "policy": "lazy",
+      "correct": 8,
+      "tasks": 8,
+      "source_read_bytes": 155,
+      "archive_read_payload_bytes": 0,
+      "bootstrap_full_payload_bytes": 161,
+      "bootstrap_summary_bytes": 171,
+      "constant_zero_correct": 8,
+      "common_history_scan": {
+        "source_read_bytes": 155,
+        "scan_seconds": 0.0002933999930974096
+      }
+    },
+    {
+      "case": "confirmation-quality-07",
+      "public": false,
+      "policy": "eager",
+      "correct": 8,
+      "tasks": 8,
+      "source_read_bytes": 155,
+      "archive_read_payload_bytes": 0,
+      "bootstrap_full_payload_bytes": 161,
+      "bootstrap_summary_bytes": 171,
+      "constant_zero_correct": 8,
+      "common_history_scan": {
+        "source_read_bytes": 155,
+        "scan_seconds": 0.0002933999930974096
+      }
+    }
+  ],
+  "tasks": 160,
+  "correct": 160,
+  "api_calls": 0,
+  "usd": 0,
+  "scope": "ordinary qualification on all10 frozen candidate histories; not model effects"
+}

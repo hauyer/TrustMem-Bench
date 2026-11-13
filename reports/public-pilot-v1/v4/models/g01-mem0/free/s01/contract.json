@@ -1,0 +1,15 @@
+{
+  "version": "native-reader-2",
+  "mode": "free",
+  "max_actions": 4,
+  "task": {
+    "kind": "joint",
+    "a": "en.m",
+    "b": "__trustmem_absent_group__"
+  },
+  "current_source_id": "288f058f25b6aa1c7df04981335e1b64f70ff4f1b0f534b55f117e1e323a7216",
+  "note_ids": [],
+  "host_masks_actions": false,
+  "host_repairs": false,
+  "model_calls_by_runtime": 0
+}

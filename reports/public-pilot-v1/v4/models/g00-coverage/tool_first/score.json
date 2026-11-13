@@ -1,0 +1,486 @@
+{
+  "planned": 8,
+  "executed": 8,
+  "not_run": 0,
+  "correct": 8,
+  "wrong": 0,
+  "unfinished": 0,
+  "abstained": 0,
+  "source_read_bytes": 89646823,
+  "archive_read_payload_bytes": 58948,
+  "rows": [
+    {
+      "index": 0,
+      "status": "submitted",
+      "value": 7510527,
+      "expected": 7510527,
+      "correct": true,
+      "wrong": false,
+      "authentication": [
+        {
+          "support": {
+            "status": "sufficient",
+            "supported_value": 7510527,
+            "stale_receipts_present": 0,
+            "unassessed_text": true,
+            "parser_errors": []
+          },
+          "invalid_content": 0,
+          "unknown_sources": 0,
+          "conflicting_same_observation": 0,
+          "checks": [
+            {
+              "status": "authentic",
+              "source_id": "288f058f25b6aa1c7df04981335e1b64f70ff4f1b0f534b55f117e1e323a7216",
+              "kind": "margins"
+            }
+          ]
+        }
+      ],
+      "source_read_bytes": 0,
+      "archive_read_payload_bytes": 0
+    },
+    {
+      "index": 1,
+      "status": "submitted",
+      "value": 0,
+      "expected": 0,
+      "correct": true,
+      "wrong": false,
+      "authentication": [
+        {
+          "support": {
+            "status": "sufficient",
+            "supported_value": 0,
+            "stale_receipts_present": 0,
+            "unassessed_text": true,
+            "parser_errors": []
+          },
+          "invalid_content": 0,
+          "unknown_sources": 0,
+          "conflicting_same_observation": 0,
+          "checks": [
+            {
+              "status": "authentic",
+              "source_id": "288f058f25b6aa1c7df04981335e1b64f70ff4f1b0f534b55f117e1e323a7216",
+              "kind": "margins"
+            }
+          ]
+        },
+        {
+          "support": {
+            "status": "sufficient",
+            "supported_value": 0,
+            "stale_receipts_present": 0,
+            "unassessed_text": true,
+            "parser_errors": []
+          },
+          "invalid_content": 0,
+          "unknown_sources": 0,
+          "conflicting_same_observation": 0,
+          "checks": [
+            {
+              "status": "authentic",
+              "source_id": "288f058f25b6aa1c7df04981335e1b64f70ff4f1b0f534b55f117e1e323a7216",
+              "kind": "margins"
+            },
+            {
+              "status": "authentic",
+              "source_id": "288f058f25b6aa1c7df04981335e1b64f70ff4f1b0f534b55f117e1e323a7216",
+              "kind": "full"
+            }
+          ]
+        }
+      ],
+      "source_read_bytes": 45359446,
+      "archive_read_payload_bytes": 0
+    },
+    {
+      "index": 2,
+      "status": "submitted",
+      "value": 7324894,
+      "expected": 7324894,
+      "correct": true,
+      "wrong": false,
+      "authentication": [
+        {
+          "support": {
+            "status": "unknown",
+            "supported_value": null,
+            "stale_receipts_present": 0,
+            "unassessed_text": true,
+            "parser_errors": []
+          },
+          "invalid_content": 0,
+          "unknown_sources": 0,
+          "conflicting_same_observation": 0,
+          "checks": [
+            {
+              "status": "authentic",
+              "source_id": "288f058f25b6aa1c7df04981335e1b64f70ff4f1b0f534b55f117e1e323a7216",
+              "kind": "margins"
+            }
+          ]
+        },
+        {
+          "support": {
+            "status": "unknown",
+            "supported_value": null,
+            "stale_receipts_present": 0,
+            "unassessed_text": true,
+            "parser_errors": []
+          },
+          "invalid_content": 0,
+          "unknown_sources": 0,
+          "conflicting_same_observation": 0,
+          "checks": [
+            {
+              "status": "authentic",
+              "source_id": "288f058f25b6aa1c7df04981335e1b64f70ff4f1b0f534b55f117e1e323a7216",
+              "kind": "margins"
+            }
+          ]
+        },
+        {
+          "support": {
+            "status": "sufficient",
+            "supported_value": 7324894,
+            "stale_receipts_present": 0,
+            "unassessed_text": true,
+            "parser_errors": []
+          },
+          "invalid_content": 0,
+          "unknown_sources": 0,
+          "conflicting_same_observation": 0,
+          "checks": [
+            {
+              "status": "authentic",
+              "source_id": "288f058f25b6aa1c7df04981335e1b64f70ff4f1b0f534b55f117e1e323a7216",
+              "kind": "margins"
+            },
+            {
+              "status": "authentic",
+              "source_id": "288f058f25b6aa1c7df04981335e1b64f70ff4f1b0f534b55f117e1e323a7216",
+              "kind": "full"
+            }
+          ]
+        }
+      ],
+      "source_read_bytes": 0,
+      "archive_read_payload_bytes": 0
+    },
+    {
+      "index": 3,
+      "status": "submitted",
+      "value": 7324894,
+      "expected": 7324894,
+      "correct": true,
+      "wrong": false,
+      "authentication": [
+        {
+          "support": {
+            "status": "unknown",
+            "supported_value": null,
+            "stale_receipts_present": 0,
+            "unassessed_text": true,
+            "parser_errors": []
+          },
+          "invalid_content": 0,
+          "unknown_sources": 0,
+          "conflicting_same_observation": 0,
+          "checks": [
+            {
+              "status": "authentic",
+              "source_id": "288f058f25b6aa1c7df04981335e1b64f70ff4f1b0f534b55f117e1e323a7216",
+              "kind": "margins"
+            }
+          ]
+        },
+        {
+          "support": {
+            "status": "unknown",
+            "supported_value": null,
+            "stale_receipts_present": 0,
+            "unassessed_text": true,
+            "parser_errors": []
+          },
+          "invalid_content": 0,
+          "unknown_sources": 0,
+          "conflicting_same_observation": 0,
+          "checks": [
+            {
+              "status": "authentic",
+              "source_id": "288f058f25b6aa1c7df04981335e1b64f70ff4f1b0f534b55f117e1e323a7216",
+              "kind": "margins"
+            }
+          ]
+        },
+        {
+          "support": {
+            "status": "sufficient",
+            "supported_value": 7324894,
+            "stale_receipts_present": 0,
+            "unassessed_text": true,
+            "parser_errors": []
+          },
+          "invalid_content": 0,
+          "unknown_sources": 0,
+          "conflicting_same_observation": 0,
+          "checks": [
+            {
+              "status": "authentic",
+              "source_id": "288f058f25b6aa1c7df04981335e1b64f70ff4f1b0f534b55f117e1e323a7216",
+              "kind": "margins"
+            },
+            {
+              "status": "authentic",
+              "source_id": "288f058f25b6aa1c7df04981335e1b64f70ff4f1b0f534b55f117e1e323a7216",
+              "kind": "full"
+            }
+          ]
+        }
+      ],
+      "source_read_bytes": 0,
+      "archive_read_payload_bytes": 0
+    },
+    {
+      "index": 4,
+      "status": "submitted",
+      "value": 6337276,
+      "expected": 6337276,
+      "correct": true,
+      "wrong": false,
+      "authentication": [
+        {
+          "support": {
+            "status": "unknown",
+            "supported_value": null,
+            "stale_receipts_present": 1,
+            "unassessed_text": true,
+            "parser_errors": []
+          },
+          "invalid_content": 0,
+          "unknown_sources": 0,
+          "conflicting_same_observation": 0,
+          "checks": [
+            {
+              "status": "authentic",
+              "source_id": "288f058f25b6aa1c7df04981335e1b64f70ff4f1b0f534b55f117e1e323a7216",
+              "kind": "margins"
+            }
+          ]
+        },
+        {
+          "support": {
+            "status": "sufficient",
+            "supported_value": 6337276,
+            "stale_receipts_present": 1,
+            "unassessed_text": true,
+            "parser_errors": []
+          },
+          "invalid_content": 0,
+          "unknown_sources": 0,
+          "conflicting_same_observation": 0,
+          "checks": [
+            {
+              "status": "authentic",
+              "source_id": "288f058f25b6aa1c7df04981335e1b64f70ff4f1b0f534b55f117e1e323a7216",
+              "kind": "margins"
+            },
+            {
+              "status": "authentic",
+              "source_id": "4375b54d20ec48e4086f4a4215a33b90e76513e801dd1d8cc918cf0640827f72",
+              "kind": "full"
+            }
+          ]
+        }
+      ],
+      "source_read_bytes": 44287377,
+      "archive_read_payload_bytes": 0
+    },
+    {
+      "index": 5,
+      "status": "submitted",
+      "value": 6337276,
+      "expected": 6337276,
+      "correct": true,
+      "wrong": false,
+      "authentication": [
+        {
+          "support": {
+            "status": "unknown",
+            "supported_value": null,
+            "stale_receipts_present": 1,
+            "unassessed_text": true,
+            "parser_errors": []
+          },
+          "invalid_content": 0,
+          "unknown_sources": 0,
+          "conflicting_same_observation": 0,
+          "checks": [
+            {
+              "status": "authentic",
+              "source_id": "288f058f25b6aa1c7df04981335e1b64f70ff4f1b0f534b55f117e1e323a7216",
+              "kind": "margins"
+            }
+          ]
+        },
+        {
+          "support": {
+            "status": "sufficient",
+            "supported_value": 6337276,
+            "stale_receipts_present": 1,
+            "unassessed_text": true,
+            "parser_errors": []
+          },
+          "invalid_content": 0,
+          "unknown_sources": 0,
+          "conflicting_same_observation": 0,
+          "checks": [
+            {
+              "status": "authentic",
+              "source_id": "288f058f25b6aa1c7df04981335e1b64f70ff4f1b0f534b55f117e1e323a7216",
+              "kind": "margins"
+            },
+            {
+              "status": "authentic",
+              "source_id": "4375b54d20ec48e4086f4a4215a33b90e76513e801dd1d8cc918cf0640827f72",
+              "kind": "full"
+            }
+          ]
+        }
+      ],
+      "source_read_bytes": 0,
+      "archive_read_payload_bytes": 0
+    },
+    {
+      "index": 6,
+      "status": "submitted",
+      "value": 2931100,
+      "expected": 2931100,
+      "correct": true,
+      "wrong": false,
+      "authentication": [
+        {
+          "support": {
+            "status": "unknown",
+            "supported_value": null,
+            "stale_receipts_present": 1,
+            "unassessed_text": true,
+            "parser_errors": []
+          },
+          "invalid_content": 0,
+          "unknown_sources": 0,
+          "conflicting_same_observation": 0,
+          "checks": [
+            {
+              "status": "authentic",
+              "source_id": "288f058f25b6aa1c7df04981335e1b64f70ff4f1b0f534b55f117e1e323a7216",
+              "kind": "margins"
+            }
+          ]
+        },
+        {
+          "support": {
+            "status": "sufficient",
+            "supported_value": 2931100,
+            "stale_receipts_present": 1,
+            "unassessed_text": true,
+            "parser_errors": []
+          },
+          "invalid_content": 0,
+          "unknown_sources": 0,
+          "conflicting_same_observation": 0,
+          "checks": [
+            {
+              "status": "authentic",
+              "source_id": "288f058f25b6aa1c7df04981335e1b64f70ff4f1b0f534b55f117e1e323a7216",
+              "kind": "margins"
+            },
+            {
+              "status": "authentic",
+              "source_id": "4375b54d20ec48e4086f4a4215a33b90e76513e801dd1d8cc918cf0640827f72",
+              "kind": "full"
+            }
+          ]
+        }
+      ],
+      "source_read_bytes": 0,
+      "archive_read_payload_bytes": 0
+    },
+    {
+      "index": 7,
+      "status": "submitted",
+      "value": 7324894,
+      "expected": 7324894,
+      "correct": true,
+      "wrong": false,
+      "authentication": [
+        {
+          "support": {
+            "status": "unknown",
+            "supported_value": null,
+            "stale_receipts_present": 0,
+            "unassessed_text": true,
+            "parser_errors": []
+          },
+          "invalid_content": 0,
+          "unknown_sources": 0,
+          "conflicting_same_observation": 0,
+          "checks": [
+            {
+              "status": "authentic",
+              "source_id": "288f058f25b6aa1c7df04981335e1b64f70ff4f1b0f534b55f117e1e323a7216",
+              "kind": "margins"
+            }
+          ]
+        },
+        {
+          "support": {
+            "status": "unknown",
+            "supported_value": null,
+            "stale_receipts_present": 0,
+            "unassessed_text": true,
+            "parser_errors": []
+          },
+          "invalid_content": 0,
+          "unknown_sources": 0,
+          "conflicting_same_observation": 0,
+          "checks": [
+            {
+              "status": "authentic",
+              "source_id": "288f058f25b6aa1c7df04981335e1b64f70ff4f1b0f534b55f117e1e323a7216",
+              "kind": "margins"
+            }
+          ]
+        },
+        {
+          "support": {
+            "status": "sufficient",
+            "supported_value": 7324894,
+            "stale_receipts_present": 0,
+            "unassessed_text": true,
+            "parser_errors": []
+          },
+          "invalid_content": 0,
+          "unknown_sources": 0,
+          "conflicting_same_observation": 0,
+          "checks": [
+            {
+              "status": "authentic",
+              "source_id": "288f058f25b6aa1c7df04981335e1b64f70ff4f1b0f534b55f117e1e323a7216",
+              "kind": "margins"
+            },
+            {
+              "status": "authentic",
+              "source_id": "288f058f25b6aa1c7df04981335e1b64f70ff4f1b0f534b55f117e1e323a7216",
+              "kind": "full"
+            }
+          ]
+        }
+      ],
+      "source_read_bytes": 0,
+      "archive_read_payload_bytes": 58948
+    }
+  ]
+}

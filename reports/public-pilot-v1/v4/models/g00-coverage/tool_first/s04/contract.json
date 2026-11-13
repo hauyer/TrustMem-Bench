@@ -1,0 +1,17 @@
+{
+  "version": "native-reader-2",
+  "mode": "tool_first",
+  "max_actions": 4,
+  "task": {
+    "kind": "joint",
+    "a": "en.m",
+    "b": "no-colon"
+  },
+  "current_source_id": "4375b54d20ec48e4086f4a4215a33b90e76513e801dd1d8cc918cf0640827f72",
+  "note_ids": [
+    "53b750a6b1c843fc92523425f050b7c3"
+  ],
+  "host_masks_actions": false,
+  "host_repairs": false,
+  "model_calls_by_runtime": 0
+}

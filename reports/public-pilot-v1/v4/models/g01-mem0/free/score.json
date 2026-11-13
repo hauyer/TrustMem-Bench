@@ -1,0 +1,251 @@
+{
+  "planned": 8,
+  "executed": 8,
+  "not_run": 0,
+  "correct": 2,
+  "wrong": 0,
+  "unfinished": 6,
+  "abstained": 0,
+  "source_read_bytes": 45359446,
+  "archive_read_payload_bytes": 0,
+  "rows": [
+    {
+      "index": 0,
+      "status": "interface_failure",
+      "value": null,
+      "expected": 7510527,
+      "correct": false,
+      "wrong": false,
+      "authentication": [
+        {
+          "support": {
+            "status": "not_certified",
+            "supported_value": null,
+            "stale_receipts_present": 0,
+            "unassessed_text": false,
+            "parser_errors": []
+          },
+          "invalid_content": 0,
+          "unknown_sources": 0,
+          "conflicting_same_observation": 0,
+          "checks": []
+        }
+      ],
+      "source_read_bytes": 0,
+      "archive_read_payload_bytes": 0
+    },
+    {
+      "index": 1,
+      "status": "submitted",
+      "value": 0,
+      "expected": 0,
+      "correct": true,
+      "wrong": false,
+      "authentication": [
+        {
+          "support": {
+            "status": "not_certified",
+            "supported_value": null,
+            "stale_receipts_present": 0,
+            "unassessed_text": false,
+            "parser_errors": []
+          },
+          "invalid_content": 0,
+          "unknown_sources": 0,
+          "conflicting_same_observation": 0,
+          "checks": []
+        },
+        {
+          "support": {
+            "status": "sufficient",
+            "supported_value": 0,
+            "stale_receipts_present": 0,
+            "unassessed_text": false,
+            "parser_errors": []
+          },
+          "invalid_content": 0,
+          "unknown_sources": 0,
+          "conflicting_same_observation": 0,
+          "checks": [
+            {
+              "status": "authentic",
+              "source_id": "288f058f25b6aa1c7df04981335e1b64f70ff4f1b0f534b55f117e1e323a7216",
+              "kind": "full"
+            }
+          ]
+        }
+      ],
+      "source_read_bytes": 45359446,
+      "archive_read_payload_bytes": 0
+    },
+    {
+      "index": 2,
+      "status": "interface_failure",
+      "value": null,
+      "expected": 7324894,
+      "correct": false,
+      "wrong": false,
+      "authentication": [
+        {
+          "support": {
+            "status": "not_certified",
+            "supported_value": null,
+            "stale_receipts_present": 0,
+            "unassessed_text": false,
+            "parser_errors": []
+          },
+          "invalid_content": 0,
+          "unknown_sources": 0,
+          "conflicting_same_observation": 0,
+          "checks": []
+        }
+      ],
+      "source_read_bytes": 0,
+      "archive_read_payload_bytes": 0
+    },
+    {
+      "index": 3,
+      "status": "interface_failure",
+      "value": null,
+      "expected": 7324894,
+      "correct": false,
+      "wrong": false,
+      "authentication": [
+        {
+          "support": {
+            "status": "not_certified",
+            "supported_value": null,
+            "stale_receipts_present": 0,
+            "unassessed_text": false,
+            "parser_errors": []
+          },
+          "invalid_content": 0,
+          "unknown_sources": 0,
+          "conflicting_same_observation": 0,
+          "checks": []
+        }
+      ],
+      "source_read_bytes": 0,
+      "archive_read_payload_bytes": 0
+    },
+    {
+      "index": 4,
+      "status": "interface_failure",
+      "value": null,
+      "expected": 6337276,
+      "correct": false,
+      "wrong": false,
+      "authentication": [
+        {
+          "support": {
+            "status": "not_certified",
+            "supported_value": null,
+            "stale_receipts_present": 0,
+            "unassessed_text": false,
+            "parser_errors": []
+          },
+          "invalid_content": 0,
+          "unknown_sources": 0,
+          "conflicting_same_observation": 0,
+          "checks": []
+        }
+      ],
+      "source_read_bytes": 0,
+      "archive_read_payload_bytes": 0
+    },
+    {
+      "index": 5,
+      "status": "interface_failure",
+      "value": null,
+      "expected": 6337276,
+      "correct": false,
+      "wrong": false,
+      "authentication": [
+        {
+          "support": {
+            "status": "not_certified",
+            "supported_value": null,
+            "stale_receipts_present": 0,
+            "unassessed_text": false,
+            "parser_errors": []
+          },
+          "invalid_content": 0,
+          "unknown_sources": 0,
+          "conflicting_same_observation": 0,
+          "checks": []
+        }
+      ],
+      "source_read_bytes": 0,
+      "archive_read_payload_bytes": 0
+    },
+    {
+      "index": 6,
+      "status": "interface_failure",
+      "value": null,
+      "expected": 2931100,
+      "correct": false,
+      "wrong": false,
+      "authentication": [
+        {
+          "support": {
+            "status": "not_certified",
+            "supported_value": null,
+            "stale_receipts_present": 0,
+            "unassessed_text": false,
+            "parser_errors": []
+          },
+          "invalid_content": 0,
+          "unknown_sources": 0,
+          "conflicting_same_observation": 0,
+          "checks": []
+        }
+      ],
+      "source_read_bytes": 0,
+      "archive_read_payload_bytes": 0
+    },
+    {
+      "index": 7,
+      "status": "submitted",
+      "value": 7324894,
+      "expected": 7324894,
+      "correct": true,
+      "wrong": false,
+      "authentication": [
+        {
+          "support": {
+            "status": "not_certified",
+            "supported_value": null,
+            "stale_receipts_present": 0,
+            "unassessed_text": false,
+            "parser_errors": []
+          },
+          "invalid_content": 0,
+          "unknown_sources": 0,
+          "conflicting_same_observation": 0,
+          "checks": []
+        },
+        {
+          "support": {
+            "status": "sufficient",
+            "supported_value": 7324894,
+            "stale_receipts_present": 0,
+            "unassessed_text": false,
+            "parser_errors": []
+          },
+          "invalid_content": 0,
+          "unknown_sources": 0,
+          "conflicting_same_observation": 0,
+          "checks": [
+            {
+              "status": "authentic",
+              "source_id": "288f058f25b6aa1c7df04981335e1b64f70ff4f1b0f534b55f117e1e323a7216",
+              "kind": "full"
+            }
+          ]
+        }
+      ],
+      "source_read_bytes": 0,
+      "archive_read_payload_bytes": 0
+    }
+  ]
+}

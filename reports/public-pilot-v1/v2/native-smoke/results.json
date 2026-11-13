@@ -1,0 +1,18 @@
+{
+  "qualified": true,
+  "scripted_native_writer_callbacks": 2,
+  "branches": [
+    {
+      "mode": "free",
+      "source_read_bytes": 0,
+      "archive_read_payload_bytes": 160
+    },
+    {
+      "mode": "tool_first",
+      "source_read_bytes": 0,
+      "archive_read_payload_bytes": 160
+    }
+  ],
+  "api_calls": 0,
+  "usd": 0
+}

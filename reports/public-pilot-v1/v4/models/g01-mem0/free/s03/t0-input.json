@@ -1,0 +1,34 @@
+{
+  "contract_version": "native-reader-2",
+  "current_source_id": "288f058f25b6aa1c7df04981335e1b64f70ff4f1b0f534b55f117e1e323a7216",
+  "task": {
+    "kind": "joint",
+    "a": "en.m",
+    "b": "no-colon"
+  },
+  "retrieved_notes": [],
+  "tool_trace": [],
+  "remaining_actions": 4,
+  "terminal_action_required": true,
+  "terminal_actions": [
+    "submit",
+    "abstain"
+  ],
+  "archive_catalog": [
+    {
+      "id": "a8397a0b1b149624bd55e923996cbba5b1e39e66e5e2484e52e6d18f63b87d10",
+      "source_id": "288f058f25b6aa1c7df04981335e1b64f70ff4f1b0f534b55f117e1e323a7216",
+      "kind": "full",
+      "scope_a": null
+    }
+  ],
+  "allowed_actions": [
+    "query",
+    "recover",
+    "calculate",
+    "quality_check",
+    "save",
+    "submit",
+    "abstain"
+  ]
+}

@@ -1,0 +1,23 @@
+{
+  "session_id": "s00",
+  "contract_version": "native-reader-2",
+  "status": "submitted",
+  "value": 7510527,
+  "source_read_bytes": 0,
+  "source_scan_seconds": 0.0,
+  "query_calls": 0,
+  "calculate_calls": 0,
+  "quality_check_calls": 0,
+  "recover_calls": 0,
+  "archive_read_payload_bytes": 0,
+  "save_calls": 0,
+  "tool_errors": 0,
+  "actual_invocations": 1,
+  "observation_payload_bytes": 23881,
+  "trace": [],
+  "citations": [
+    "53b750a6b1c843fc92523425f050b7c3"
+  ],
+  "generated_results": 0,
+  "generated_not_delivered": 0
+}

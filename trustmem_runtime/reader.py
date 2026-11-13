@@ -6,7 +6,12 @@ from .data import canonical, scan
 from .evidence import calculate
 
 
-CONTRACT_VERSION = "native-reader-1"
+CONTRACT_VERSION = "native-reader-3"
+ACTION_SCHEMA = {"type":"object","required":["action"],"properties":{
+    "action":{"type":"string","enum":["query","recover","calculate","quality_check","save","submit","abstain"]},
+    "scope":{"enum":["group","full"]},"archive_id":{"type":"string"},
+    "evidence":{"type":"array","items":{"type":"string"}},"receipt_id":{"type":"string"},
+    "value":{"type":"integer"},"citations":{"type":"array","items":{"type":"string"}}}}
 SYSTEM = """Continue a multi-session workflow using only the supplied notes and tools.
 Current source identity and the current request are authoritative. Old-source notes
 may be valid history, but do not support this source. Each source is a weighted
@@ -15,9 +20,17 @@ b<=limit; range selects a and lo<=b<=hi. quality returns 1 iff the selected rows
 with b>=cutoff are nonempty and their share belonging to a>=numerator/denominator.
 For nonnegative counts, marginal totals bound a joint count by
 max(0,a_total+b_total-total)..min(a_total,b_total). A bound may decide a gate.
-Return exactly one JSON action. Tools consume actions, including failed tools:
+Return exactly one JSON object with the required string key "action" and the
+appropriate argument fields at the top level. For example a source query is
+{"action":"query","scope":"full"}; a calculator request is
+{"action":"calculate","evidence":["an-available-ID"]}. The key "action" is
+required for every operation. Use the action_schema supplied in the input.
+Tools consume actions, including failed tools:
 query(scope:group|full) obtains a current-source observation, using the common
 persistent cache if covered; it returns a task-bound value when justified.
+recover(archive_id:ID) reads an already available authorized historical observation
+from archive_catalog without scanning its original source. Only cataloged past
+observations are available. Archive transport/storage costs are counted separately.
 calculate(evidence:[IDs]) uses complete JSON receipt literals in specified notes
 and acquired observations; it returns null if this format/contract does not certify
 the request. Null is not proof that the prose is uninformative. The tool does not
@@ -61,8 +74,8 @@ def note_receipts(text):
 
 class CaseTools:
     """Actual current-source scans/cache; grader is deliberately absent."""
-    def __init__(self, sources, cache=None):
-        self.sources, self.cache = sources, cache
+    def __init__(self, sources, cache=None, archive=None):
+        self.sources, self.cache, self.archive = sources, cache, archive
 
     def query(self, source_id, task, scope):
         if scope not in ("group", "full"):
@@ -77,6 +90,8 @@ class CaseTools:
                 receipt["scope_a"]=task["a"]
             if self.cache:
                 self.cache.put(receipt)
+        if self.archive:
+            self.archive.put(receipt)
         return receipt,dict(**cost,backend_cache_hit=hit)
 
 
@@ -105,13 +120,15 @@ def run_session(*, task, source_id, notes, respond, tools, output, save=None,
     trace=[]
     event=dict(session_id=session_id,contract_version=CONTRACT_VERSION,status="unfinished",
         value=None,source_read_bytes=0,source_scan_seconds=0.0,query_calls=0,calculate_calls=0,
-        quality_check_calls=0,save_calls=0,tool_errors=0,actual_invocations=0,
+        quality_check_calls=0,recover_calls=0,archive_read_payload_bytes=0,save_calls=0,tool_errors=0,actual_invocations=0,
         observation_payload_bytes=0,trace=trace)
     for turn in range(max_actions):
         payload=dict(contract_version=CONTRACT_VERSION,current_source_id=source_id,task=task,
             retrieved_notes=notes,tool_trace=trace,remaining_actions=max_actions-turn,
             terminal_action_required=True,terminal_actions=["submit","abstain"],
-            allowed_actions=["query","calculate","quality_check","save","submit","abstain"])
+            action_schema=ACTION_SCHEMA,
+            archive_catalog=tools.archive.catalog() if tools.archive else [],
+            allowed_actions=["query","recover","calculate","quality_check","save","submit","abstain"])
         dump(out/f"t{turn}-input.json",payload)
         event["actual_invocations"]+=1
         event["observation_payload_bytes"]+=len(canonical(payload).encode())
@@ -136,14 +153,23 @@ def run_session(*, task, source_id, notes, respond, tools, output, save=None,
             if name=="abstain":
                 event["status"]="abstained"
                 break
-            if name=="query":
-                event["query_calls"]+=1
-                receipt,cost=tools.query(source_id,task,action.get("scope","full"))
+            if name in ("query","recover"):
+                if name=="query":
+                    event["query_calls"]+=1
+                    receipt,cost=tools.query(source_id,task,action.get("scope","full"))
+                else:
+                    event["recover_calls"]+=1
+                    if tools.archive is None:raise ValueError("No archive configured")
+                    receipt,size=tools.archive.get(action.get("archive_id"))
+                    cost=dict(source_read_bytes=0,scan_seconds=0.0,archive_read_payload_bytes=size,backend_cache_hit=False)
+                    event["archive_read_payload_bytes"]+=size
                 ident=f"observation:{session_id}:{turn}"
                 acquired[ident]=receipt
                 pool[ident]=[receipt]
                 all_receipts=[r for collection in pool.values() for r in collection]
-                value=calculate(all_receipts,task,source_id)
+                # An acquired full observation must not be overridden by a corrupt note.
+                value=calculate([receipt],task,source_id)
+                if value is None:value=calculate(all_receipts,task,source_id)
                 result=dict(receipt_id=ident,receipt=receipt,value=value,
                     evidence=list(pool),task_binding="host_current_task",**cost)
                 event["source_read_bytes"]+=cost["source_read_bytes"]

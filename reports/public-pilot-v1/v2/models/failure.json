@@ -1,0 +1,5 @@
+{
+  "type": "RuntimeError",
+  "message": "DeepSeek HTTP 400; see sanitized call log",
+  "calls": 1
+}

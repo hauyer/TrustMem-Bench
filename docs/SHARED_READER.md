@@ -1,5 +1,10 @@
 # Common native-note reader contract
 
+The current production contract is `native-reader-3`, with an explicit `action`
+schema. The [public pilot](PUBLIC_PILOT.md) used frozen reader-2 and retains its
+format-contract limitations. Reader-3 has engineering checks but no model effect
+result yet. The original70 scripted qualification tasks used reader-1.
+
 `trustmem_runtime.reader.run_session` accepts original retrieved notes, a reader
 callback, current task/source, actual source tools and an optional native save
 callback. No hidden reference or model client is part of this runtime.

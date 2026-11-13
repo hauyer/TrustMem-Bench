@@ -1,0 +1,16 @@
+{
+  "version": "native-reader-2",
+  "mode": "tool_first",
+  "max_actions": 4,
+  "task": {
+    "kind": "marginal",
+    "a": "en.m"
+  },
+  "current_source_id": "288f058f25b6aa1c7df04981335e1b64f70ff4f1b0f534b55f117e1e323a7216",
+  "note_ids": [
+    "53b750a6b1c843fc92523425f050b7c3"
+  ],
+  "host_masks_actions": false,
+  "host_repairs": false,
+  "model_calls_by_runtime": 0
+}

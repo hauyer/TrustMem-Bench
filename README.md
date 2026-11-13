@@ -84,6 +84,12 @@ python trustmem.py inspect legacy/dev-007
 
 ## Release status
 
+The [bounded public pilot](docs/PUBLIC_PILOT.md) executed48 eligible positions and
+keeps all format failures, an empty native intake and every first response. It
+provides local source-validity and read-cost observations, not a system ranking
+or independent confirmation. The current explicit-schema reader is a subsequent
+engineering repair and has not been substituted into those results.
+
 [Development results](docs/DEVELOPMENT_RESULTS.md) record executed calibrations and their limitations. Raw local runs, credentials and source datasets are excluded from Git. The repository remains private. Code/data licensing is pending; native datasets retain their providers' terms.
 
 [Version 0.3 results](docs/DEVELOPMENT_V03_RESULTS.md) add 20 cache-off and four matched cache-on ordinary streams, all 192 planned requests completed with sufficient evidence. These are engineering/development denominators, not independent histories or a model comparison.

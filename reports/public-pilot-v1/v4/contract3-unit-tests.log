@@ -1,0 +1,7 @@
+{"admitted": "new-one", "bytes": 99, "group_contiguous": false}
+{"admitted": "new-two", "bytes": 101, "group_contiguous": false}
+.................................................................
+----------------------------------------------------------------------
+Ran 65 tests in 15.618s
+
+OK

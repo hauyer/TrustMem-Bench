@@ -1,0 +1,11 @@
+{
+  "at": "2026-11-13T09:09:36.551076+00:00",
+  "parent_api_requests": 1,
+  "parent_model_outputs": 0,
+  "parent_usage_unknown_reserved_usd": 0.0184866,
+  "new_calls_cap": 599,
+  "new_usd_cap": 2.98,
+  "exact_ast_change_verified": true,
+  "task_selection_and_schedule_changed": false,
+  "all_original_failures_retained": true
+}

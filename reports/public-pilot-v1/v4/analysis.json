@@ -1,0 +1,247 @@
+{
+  "parent_planned_positions": 96,
+  "eligible_positions": 48,
+  "resource_excluded_positions": 48,
+  "executed_positions": 48,
+  "correct": 35,
+  "wrong": 2,
+  "unfinished": 11,
+  "abstained": 0,
+  "interface_failures": 11,
+  "api_requests": 94,
+  "received_model_responses": 93,
+  "known_usage_requests": 93,
+  "unknown_usage_requests": 1,
+  "estimated_peak_usd": 0.42485756399999997,
+  "invoice_observed": false,
+  "roles": {
+    "bootstrap": {
+      "calls": 4,
+      "input_tokens": 40527,
+      "output_tokens": 15,
+      "estimated_peak_usd": 0.022835243999999998,
+      "usage_unknown": 1
+    },
+    "reader": {
+      "calls": 89,
+      "input_tokens": 1894240,
+      "output_tokens": 2728,
+      "estimated_peak_usd": 0.39904051199999996,
+      "usage_unknown": 0
+    },
+    "writer": {
+      "calls": 1,
+      "input_tokens": 10672,
+      "output_tokens": 5,
+      "estimated_peak_usd": 0.002981808,
+      "usage_unknown": 0
+    }
+  },
+  "rows": [
+    {
+      "case": "native-wiki",
+      "backend": "coverage",
+      "mode": "free",
+      "planned": 8,
+      "executed": 8,
+      "correct": 6,
+      "wrong": 1,
+      "unfinished": 1,
+      "abstained": 0,
+      "source_read_bytes": 89646823,
+      "archive_read_payload_bytes": 58948,
+      "query_calls": 5,
+      "recover_calls": 1,
+      "save_calls": 0,
+      "input_payload_bytes": 716300,
+      "interface_failures": 1,
+      "format_failure_responses": [
+        {
+          "type": "query",
+          "scope": "full"
+        }
+      ],
+      "final_support": {
+        "sufficient": 6,
+        "unknown": 2
+      },
+      "wrong_after_authenticated_support": 0,
+      "invalid_final_receipt_occurrences": 0,
+      "bootstrap": "start"
+    },
+    {
+      "case": "native-wiki",
+      "backend": "coverage",
+      "mode": "tool_first",
+      "planned": 8,
+      "executed": 8,
+      "correct": 8,
+      "wrong": 0,
+      "unfinished": 0,
+      "abstained": 0,
+      "source_read_bytes": 89646823,
+      "archive_read_payload_bytes": 58948,
+      "query_calls": 6,
+      "recover_calls": 1,
+      "save_calls": 0,
+      "input_payload_bytes": 850959,
+      "interface_failures": 0,
+      "format_failure_responses": [],
+      "final_support": {
+        "sufficient": 8
+      },
+      "wrong_after_authenticated_support": 0,
+      "invalid_final_receipt_occurrences": 0,
+      "bootstrap": "start"
+    },
+    {
+      "case": "native-wiki",
+      "backend": "mem0",
+      "mode": "free",
+      "planned": 8,
+      "executed": 8,
+      "correct": 2,
+      "wrong": 0,
+      "unfinished": 6,
+      "abstained": 0,
+      "source_read_bytes": 45359446,
+      "archive_read_payload_bytes": 0,
+      "query_calls": 2,
+      "recover_calls": 0,
+      "save_calls": 0,
+      "input_payload_bytes": 124472,
+      "interface_failures": 6,
+      "format_failure_responses": [
+        {
+          "type": "query",
+          "scope": "group",
+          "a": "en.m"
+        },
+        {
+          "type": "query",
+          "scope": "full"
+        },
+        {
+          "type": "query",
+          "scope": "full"
+        },
+        {
+          "type": "query",
+          "scope": "full"
+        },
+        {
+          "type": "query",
+          "scope": "full"
+        },
+        {
+          "type": "query",
+          "scope": "full"
+        }
+      ],
+      "final_support": {
+        "not_certified": 6,
+        "sufficient": 2
+      },
+      "wrong_after_authenticated_support": 0,
+      "invalid_final_receipt_occurrences": 0,
+      "bootstrap": "start"
+    },
+    {
+      "case": "native-wiki",
+      "backend": "mem0",
+      "mode": "tool_first",
+      "planned": 8,
+      "executed": 8,
+      "correct": 4,
+      "wrong": 0,
+      "unfinished": 4,
+      "abstained": 0,
+      "source_read_bytes": 45359446,
+      "archive_read_payload_bytes": 58948,
+      "query_calls": 3,
+      "recover_calls": 1,
+      "save_calls": 0,
+      "input_payload_bytes": 244200,
+      "interface_failures": 4,
+      "format_failure_responses": [
+        {
+          "type": "query",
+          "scope": "full"
+        },
+        {
+          "type": "query",
+          "scope": "full"
+        },
+        {
+          "type": "query",
+          "scope": "full"
+        },
+        {
+          "type": "query",
+          "scope": "full"
+        }
+      ],
+      "final_support": {
+        "sufficient": 4,
+        "not_certified": 4
+      },
+      "wrong_after_authenticated_support": 0,
+      "invalid_final_receipt_occurrences": 0,
+      "bootstrap": "start"
+    },
+    {
+      "case": "native-wiki",
+      "backend": "verbatim",
+      "mode": "free",
+      "planned": 8,
+      "executed": 8,
+      "correct": 7,
+      "wrong": 1,
+      "unfinished": 0,
+      "abstained": 0,
+      "source_read_bytes": 89646823,
+      "archive_read_payload_bytes": 117896,
+      "query_calls": 5,
+      "recover_calls": 2,
+      "save_calls": 0,
+      "input_payload_bytes": 800659,
+      "interface_failures": 0,
+      "format_failure_responses": [],
+      "final_support": {
+        "sufficient": 7,
+        "unknown": 1
+      },
+      "wrong_after_authenticated_support": 0,
+      "invalid_final_receipt_occurrences": 0,
+      "bootstrap": "start"
+    },
+    {
+      "case": "native-wiki",
+      "backend": "verbatim",
+      "mode": "tool_first",
+      "planned": 8,
+      "executed": 8,
+      "correct": 8,
+      "wrong": 0,
+      "unfinished": 0,
+      "abstained": 0,
+      "source_read_bytes": 89646823,
+      "archive_read_payload_bytes": 58948,
+      "query_calls": 6,
+      "recover_calls": 1,
+      "save_calls": 0,
+      "input_payload_bytes": 850777,
+      "interface_failures": 0,
+      "format_failure_responses": [],
+      "final_support": {
+        "sufficient": 8
+      },
+      "wrong_after_authenticated_support": 0,
+      "invalid_final_receipt_occurrences": 0,
+      "bootstrap": "start"
+    }
+  ],
+  "failure": null,
+  "histories": 1,
+  "scope": "adaptive development pilot; all first outputs and first7 positions retained, no per-state retries; format contract is underspecified for action field"
+}

@@ -80,6 +80,19 @@ class ReaderTests(unittest.TestCase):
             self.assertEqual(seen[0][1],seen[1][1])
             self.assertNotEqual(seen[0][0],seen[1][0])
 
+    def test_action_schema_is_explicit_but_host_does_not_repair_type_alias(self):
+        with tempfile.TemporaryDirectory() as d:
+            captured=[]
+            def policy(system,payload):
+                captured.append((system,payload))
+                return dict(type="query",scope="full")
+            event=run_session(task=dict(kind="marginal",a="red"),source_id="A",notes=[],
+                respond=policy,tools=CaseTools({}),output=Path(d)/"stream")
+            self.assertEqual(captured[0][1]["action_schema"]["required"],["action"])
+            self.assertIn('"action":"query"',captured[0][0])
+            self.assertEqual(event["status"],"interface_failure")
+            self.assertEqual(event["query_calls"],0)
+
 
 if __name__=="__main__":
     unittest.main()

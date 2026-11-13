@@ -1,0 +1,8 @@
+{
+  "tests_run": 65,
+  "exit_code": 0,
+  "duration_seconds": 15.618,
+  "actual_process_session": 45470,
+  "log": "contract3-unit-tests.log",
+  "scope": "Production reader-3 engineering checks after the reader-2 pilot; no replacement of pilot outcomes"
+}

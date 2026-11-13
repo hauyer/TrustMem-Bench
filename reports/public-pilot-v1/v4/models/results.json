@@ -1,0 +1,2531 @@
+{
+  "parent_planned_streams": 12,
+  "parent_planned_positions": 96,
+  "eligible_streams": 6,
+  "eligible_positions": 48,
+  "resource_excluded_positions": 48,
+  "completed_streams": 6,
+  "completed": [
+    {
+      "group": 0,
+      "backend": "coverage",
+      "mode": "free",
+      "case": "native-wiki",
+      "path": "models/g00-coverage/free",
+      "events": 8,
+      "bootstrap": "start",
+      "resumed_positions": 7,
+      "common_history_scan": {
+        "source_read_bytes": 45359446,
+        "scan_seconds": 12.318193599989172
+      }
+    },
+    {
+      "group": 0,
+      "backend": "coverage",
+      "mode": "tool_first",
+      "case": "native-wiki",
+      "path": "models/g00-coverage/tool_first",
+      "events": 8,
+      "bootstrap": "start",
+      "resumed_positions": 0,
+      "common_history_scan": {
+        "source_read_bytes": 45359446,
+        "scan_seconds": 12.318193599989172
+      }
+    },
+    {
+      "group": 1,
+      "backend": "mem0",
+      "mode": "free",
+      "case": "native-wiki",
+      "path": "models/g01-mem0/free",
+      "events": 8,
+      "bootstrap": "start",
+      "resumed_positions": 0,
+      "common_history_scan": {
+        "source_read_bytes": 45359446,
+        "scan_seconds": 12.301175400003558
+      }
+    },
+    {
+      "group": 1,
+      "backend": "mem0",
+      "mode": "tool_first",
+      "case": "native-wiki",
+      "path": "models/g01-mem0/tool_first",
+      "events": 8,
+      "bootstrap": "start",
+      "resumed_positions": 0,
+      "common_history_scan": {
+        "source_read_bytes": 45359446,
+        "scan_seconds": 12.301175400003558
+      }
+    },
+    {
+      "group": 2,
+      "backend": "verbatim",
+      "mode": "free",
+      "case": "native-wiki",
+      "path": "models/g02-verbatim/free",
+      "events": 8,
+      "bootstrap": "start",
+      "resumed_positions": 0,
+      "common_history_scan": {
+        "source_read_bytes": 45359446,
+        "scan_seconds": 11.93109130000812
+      }
+    },
+    {
+      "group": 2,
+      "backend": "verbatim",
+      "mode": "tool_first",
+      "case": "native-wiki",
+      "path": "models/g02-verbatim/tool_first",
+      "events": 8,
+      "bootstrap": "start",
+      "resumed_positions": 0,
+      "common_history_scan": {
+        "source_read_bytes": 45359446,
+        "scan_seconds": 11.93109130000812
+      }
+    }
+  ],
+  "scored": [
+    {
+      "group": 0,
+      "backend": "coverage",
+      "mode": "free",
+      "case": "native-wiki",
+      "score": {
+        "planned": 8,
+        "executed": 8,
+        "not_run": 0,
+        "correct": 6,
+        "wrong": 1,
+        "unfinished": 1,
+        "abstained": 0,
+        "source_read_bytes": 89646823,
+        "archive_read_payload_bytes": 58948,
+        "rows": [
+          {
+            "index": 0,
+            "status": "submitted",
+            "value": 7510527,
+            "expected": 7510527,
+            "correct": true,
+            "wrong": false,
+            "authentication": [
+              {
+                "support": {
+                  "status": "sufficient",
+                  "supported_value": 7510527,
+                  "stale_receipts_present": 0,
+                  "unassessed_text": true,
+                  "parser_errors": []
+                },
+                "invalid_content": 0,
+                "unknown_sources": 0,
+                "conflicting_same_observation": 0,
+                "checks": [
+                  {
+                    "status": "authentic",
+                    "source_id": "288f058f25b6aa1c7df04981335e1b64f70ff4f1b0f534b55f117e1e323a7216",
+                    "kind": "margins"
+                  }
+                ]
+              }
+            ],
+            "source_read_bytes": 0,
+            "archive_read_payload_bytes": 0
+          },
+          {
+            "index": 1,
+            "status": "submitted",
+            "value": 0,
+            "expected": 0,
+            "correct": true,
+            "wrong": false,
+            "authentication": [
+              {
+                "support": {
+                  "status": "sufficient",
+                  "supported_value": 0,
+                  "stale_receipts_present": 0,
+                  "unassessed_text": true,
+                  "parser_errors": []
+                },
+                "invalid_content": 0,
+                "unknown_sources": 0,
+                "conflicting_same_observation": 0,
+                "checks": [
+                  {
+                    "status": "authentic",
+                    "source_id": "288f058f25b6aa1c7df04981335e1b64f70ff4f1b0f534b55f117e1e323a7216",
+                    "kind": "margins"
+                  }
+                ]
+              },
+              {
+                "support": {
+                  "status": "sufficient",
+                  "supported_value": 0,
+                  "stale_receipts_present": 0,
+                  "unassessed_text": true,
+                  "parser_errors": []
+                },
+                "invalid_content": 0,
+                "unknown_sources": 0,
+                "conflicting_same_observation": 0,
+                "checks": [
+                  {
+                    "status": "authentic",
+                    "source_id": "288f058f25b6aa1c7df04981335e1b64f70ff4f1b0f534b55f117e1e323a7216",
+                    "kind": "margins"
+                  },
+                  {
+                    "status": "authentic",
+                    "source_id": "288f058f25b6aa1c7df04981335e1b64f70ff4f1b0f534b55f117e1e323a7216",
+                    "kind": "full"
+                  }
+                ]
+              }
+            ],
+            "source_read_bytes": 45359446,
+            "archive_read_payload_bytes": 0
+          },
+          {
+            "index": 2,
+            "status": "submitted",
+            "value": 7324894,
+            "expected": 7324894,
+            "correct": true,
+            "wrong": false,
+            "authentication": [
+              {
+                "support": {
+                  "status": "unknown",
+                  "supported_value": null,
+                  "stale_receipts_present": 0,
+                  "unassessed_text": true,
+                  "parser_errors": []
+                },
+                "invalid_content": 0,
+                "unknown_sources": 0,
+                "conflicting_same_observation": 0,
+                "checks": [
+                  {
+                    "status": "authentic",
+                    "source_id": "288f058f25b6aa1c7df04981335e1b64f70ff4f1b0f534b55f117e1e323a7216",
+                    "kind": "margins"
+                  }
+                ]
+              },
+              {
+                "support": {
+                  "status": "sufficient",
+                  "supported_value": 7324894,
+                  "stale_receipts_present": 0,
+                  "unassessed_text": true,
+                  "parser_errors": []
+                },
+                "invalid_content": 0,
+                "unknown_sources": 0,
+                "conflicting_same_observation": 0,
+                "checks": [
+                  {
+                    "status": "authentic",
+                    "source_id": "288f058f25b6aa1c7df04981335e1b64f70ff4f1b0f534b55f117e1e323a7216",
+                    "kind": "margins"
+                  },
+                  {
+                    "status": "authentic",
+                    "source_id": "288f058f25b6aa1c7df04981335e1b64f70ff4f1b0f534b55f117e1e323a7216",
+                    "kind": "full"
+                  }
+                ]
+              }
+            ],
+            "source_read_bytes": 0,
+            "archive_read_payload_bytes": 0
+          },
+          {
+            "index": 3,
+            "status": "submitted",
+            "value": 7324894,
+            "expected": 7324894,
+            "correct": true,
+            "wrong": false,
+            "authentication": [
+              {
+                "support": {
+                  "status": "unknown",
+                  "supported_value": null,
+                  "stale_receipts_present": 0,
+                  "unassessed_text": true,
+                  "parser_errors": []
+                },
+                "invalid_content": 0,
+                "unknown_sources": 0,
+                "conflicting_same_observation": 0,
+                "checks": [
+                  {
+                    "status": "authentic",
+                    "source_id": "288f058f25b6aa1c7df04981335e1b64f70ff4f1b0f534b55f117e1e323a7216",
+                    "kind": "margins"
+                  }
+                ]
+              },
+              {
+                "support": {
+                  "status": "sufficient",
+                  "supported_value": 7324894,
+                  "stale_receipts_present": 0,
+                  "unassessed_text": true,
+                  "parser_errors": []
+                },
+                "invalid_content": 0,
+                "unknown_sources": 0,
+                "conflicting_same_observation": 0,
+                "checks": [
+                  {
+                    "status": "authentic",
+                    "source_id": "288f058f25b6aa1c7df04981335e1b64f70ff4f1b0f534b55f117e1e323a7216",
+                    "kind": "margins"
+                  },
+                  {
+                    "status": "authentic",
+                    "source_id": "288f058f25b6aa1c7df04981335e1b64f70ff4f1b0f534b55f117e1e323a7216",
+                    "kind": "full"
+                  }
+                ]
+              }
+            ],
+            "source_read_bytes": 0,
+            "archive_read_payload_bytes": 0
+          },
+          {
+            "index": 4,
+            "status": "submitted",
+            "value": 7324894,
+            "expected": 6337276,
+            "correct": false,
+            "wrong": true,
+            "authentication": [
+              {
+                "support": {
+                  "status": "unknown",
+                  "supported_value": null,
+                  "stale_receipts_present": 1,
+                  "unassessed_text": true,
+                  "parser_errors": []
+                },
+                "invalid_content": 0,
+                "unknown_sources": 0,
+                "conflicting_same_observation": 0,
+                "checks": [
+                  {
+                    "status": "authentic",
+                    "source_id": "288f058f25b6aa1c7df04981335e1b64f70ff4f1b0f534b55f117e1e323a7216",
+                    "kind": "margins"
+                  }
+                ]
+              },
+              {
+                "support": {
+                  "status": "unknown",
+                  "supported_value": null,
+                  "stale_receipts_present": 2,
+                  "unassessed_text": true,
+                  "parser_errors": []
+                },
+                "invalid_content": 0,
+                "unknown_sources": 0,
+                "conflicting_same_observation": 0,
+                "checks": [
+                  {
+                    "status": "authentic",
+                    "source_id": "288f058f25b6aa1c7df04981335e1b64f70ff4f1b0f534b55f117e1e323a7216",
+                    "kind": "margins"
+                  },
+                  {
+                    "status": "authentic",
+                    "source_id": "288f058f25b6aa1c7df04981335e1b64f70ff4f1b0f534b55f117e1e323a7216",
+                    "kind": "full"
+                  }
+                ]
+              }
+            ],
+            "source_read_bytes": 0,
+            "archive_read_payload_bytes": 58948
+          },
+          {
+            "index": 5,
+            "status": "submitted",
+            "value": 6337276,
+            "expected": 6337276,
+            "correct": true,
+            "wrong": false,
+            "authentication": [
+              {
+                "support": {
+                  "status": "unknown",
+                  "supported_value": null,
+                  "stale_receipts_present": 1,
+                  "unassessed_text": true,
+                  "parser_errors": []
+                },
+                "invalid_content": 0,
+                "unknown_sources": 0,
+                "conflicting_same_observation": 0,
+                "checks": [
+                  {
+                    "status": "authentic",
+                    "source_id": "288f058f25b6aa1c7df04981335e1b64f70ff4f1b0f534b55f117e1e323a7216",
+                    "kind": "margins"
+                  }
+                ]
+              },
+              {
+                "support": {
+                  "status": "unknown",
+                  "supported_value": null,
+                  "stale_receipts_present": 1,
+                  "unassessed_text": true,
+                  "parser_errors": []
+                },
+                "invalid_content": 0,
+                "unknown_sources": 0,
+                "conflicting_same_observation": 0,
+                "checks": [
+                  {
+                    "status": "authentic",
+                    "source_id": "288f058f25b6aa1c7df04981335e1b64f70ff4f1b0f534b55f117e1e323a7216",
+                    "kind": "margins"
+                  }
+                ]
+              },
+              {
+                "support": {
+                  "status": "sufficient",
+                  "supported_value": 6337276,
+                  "stale_receipts_present": 1,
+                  "unassessed_text": true,
+                  "parser_errors": []
+                },
+                "invalid_content": 0,
+                "unknown_sources": 0,
+                "conflicting_same_observation": 0,
+                "checks": [
+                  {
+                    "status": "authentic",
+                    "source_id": "288f058f25b6aa1c7df04981335e1b64f70ff4f1b0f534b55f117e1e323a7216",
+                    "kind": "margins"
+                  },
+                  {
+                    "status": "authentic",
+                    "source_id": "4375b54d20ec48e4086f4a4215a33b90e76513e801dd1d8cc918cf0640827f72",
+                    "kind": "full"
+                  }
+                ]
+              }
+            ],
+            "source_read_bytes": 44287377,
+            "archive_read_payload_bytes": 0
+          },
+          {
+            "index": 6,
+            "status": "interface_failure",
+            "value": null,
+            "expected": 2931100,
+            "correct": false,
+            "wrong": false,
+            "authentication": [
+              {
+                "support": {
+                  "status": "unknown",
+                  "supported_value": null,
+                  "stale_receipts_present": 1,
+                  "unassessed_text": true,
+                  "parser_errors": []
+                },
+                "invalid_content": 0,
+                "unknown_sources": 0,
+                "conflicting_same_observation": 0,
+                "checks": [
+                  {
+                    "status": "authentic",
+                    "source_id": "288f058f25b6aa1c7df04981335e1b64f70ff4f1b0f534b55f117e1e323a7216",
+                    "kind": "margins"
+                  }
+                ]
+              }
+            ],
+            "source_read_bytes": 0,
+            "archive_read_payload_bytes": 0
+          },
+          {
+            "index": 7,
+            "status": "submitted",
+            "value": 7324894,
+            "expected": 7324894,
+            "correct": true,
+            "wrong": false,
+            "authentication": [
+              {
+                "support": {
+                  "status": "unknown",
+                  "supported_value": null,
+                  "stale_receipts_present": 0,
+                  "unassessed_text": true,
+                  "parser_errors": []
+                },
+                "invalid_content": 0,
+                "unknown_sources": 0,
+                "conflicting_same_observation": 0,
+                "checks": [
+                  {
+                    "status": "authentic",
+                    "source_id": "288f058f25b6aa1c7df04981335e1b64f70ff4f1b0f534b55f117e1e323a7216",
+                    "kind": "margins"
+                  }
+                ]
+              },
+              {
+                "support": {
+                  "status": "sufficient",
+                  "supported_value": 7324894,
+                  "stale_receipts_present": 0,
+                  "unassessed_text": true,
+                  "parser_errors": []
+                },
+                "invalid_content": 0,
+                "unknown_sources": 0,
+                "conflicting_same_observation": 0,
+                "checks": [
+                  {
+                    "status": "authentic",
+                    "source_id": "288f058f25b6aa1c7df04981335e1b64f70ff4f1b0f534b55f117e1e323a7216",
+                    "kind": "margins"
+                  },
+                  {
+                    "status": "authentic",
+                    "source_id": "288f058f25b6aa1c7df04981335e1b64f70ff4f1b0f534b55f117e1e323a7216",
+                    "kind": "full"
+                  }
+                ]
+              }
+            ],
+            "source_read_bytes": 0,
+            "archive_read_payload_bytes": 0
+          }
+        ]
+      }
+    },
+    {
+      "group": 0,
+      "backend": "coverage",
+      "mode": "tool_first",
+      "case": "native-wiki",
+      "score": {
+        "planned": 8,
+        "executed": 8,
+        "not_run": 0,
+        "correct": 8,
+        "wrong": 0,
+        "unfinished": 0,
+        "abstained": 0,
+        "source_read_bytes": 89646823,
+        "archive_read_payload_bytes": 58948,
+        "rows": [
+          {
+            "index": 0,
+            "status": "submitted",
+            "value": 7510527,
+            "expected": 7510527,
+            "correct": true,
+            "wrong": false,
+            "authentication": [
+              {
+                "support": {
+                  "status": "sufficient",
+                  "supported_value": 7510527,
+                  "stale_receipts_present": 0,
+                  "unassessed_text": true,
+                  "parser_errors": []
+                },
+                "invalid_content": 0,
+                "unknown_sources": 0,
+                "conflicting_same_observation": 0,
+                "checks": [
+                  {
+                    "status": "authentic",
+                    "source_id": "288f058f25b6aa1c7df04981335e1b64f70ff4f1b0f534b55f117e1e323a7216",
+                    "kind": "margins"
+                  }
+                ]
+              }
+            ],
+            "source_read_bytes": 0,
+            "archive_read_payload_bytes": 0
+          },
+          {
+            "index": 1,
+            "status": "submitted",
+            "value": 0,
+            "expected": 0,
+            "correct": true,
+            "wrong": false,
+            "authentication": [
+              {
+                "support": {
+                  "status": "sufficient",
+                  "supported_value": 0,
+                  "stale_receipts_present": 0,
+                  "unassessed_text": true,
+                  "parser_errors": []
+                },
+                "invalid_content": 0,
+                "unknown_sources": 0,
+                "conflicting_same_observation": 0,
+                "checks": [
+                  {
+                    "status": "authentic",
+                    "source_id": "288f058f25b6aa1c7df04981335e1b64f70ff4f1b0f534b55f117e1e323a7216",
+                    "kind": "margins"
+                  }
+                ]
+              },
+              {
+                "support": {
+                  "status": "sufficient",
+                  "supported_value": 0,
+                  "stale_receipts_present": 0,
+                  "unassessed_text": true,
+                  "parser_errors": []
+                },
+                "invalid_content": 0,
+                "unknown_sources": 0,
+                "conflicting_same_observation": 0,
+                "checks": [
+                  {
+                    "status": "authentic",
+                    "source_id": "288f058f25b6aa1c7df04981335e1b64f70ff4f1b0f534b55f117e1e323a7216",
+                    "kind": "margins"
+                  },
+                  {
+                    "status": "authentic",
+                    "source_id": "288f058f25b6aa1c7df04981335e1b64f70ff4f1b0f534b55f117e1e323a7216",
+                    "kind": "full"
+                  }
+                ]
+              }
+            ],
+            "source_read_bytes": 45359446,
+            "archive_read_payload_bytes": 0
+          },
+          {
+            "index": 2,
+            "status": "submitted",
+            "value": 7324894,
+            "expected": 7324894,
+            "correct": true,
+            "wrong": false,
+            "authentication": [
+              {
+                "support": {
+                  "status": "unknown",
+                  "supported_value": null,
+                  "stale_receipts_present": 0,
+                  "unassessed_text": true,
+                  "parser_errors": []
+                },
+                "invalid_content": 0,
+                "unknown_sources": 0,
+                "conflicting_same_observation": 0,
+                "checks": [
+                  {
+                    "status": "authentic",
+                    "source_id": "288f058f25b6aa1c7df04981335e1b64f70ff4f1b0f534b55f117e1e323a7216",
+                    "kind": "margins"
+                  }
+                ]
+              },
+              {
+                "support": {
+                  "status": "unknown",
+                  "supported_value": null,
+                  "stale_receipts_present": 0,
+                  "unassessed_text": true,
+                  "parser_errors": []
+                },
+                "invalid_content": 0,
+                "unknown_sources": 0,
+                "conflicting_same_observation": 0,
+                "checks": [
+                  {
+                    "status": "authentic",
+                    "source_id": "288f058f25b6aa1c7df04981335e1b64f70ff4f1b0f534b55f117e1e323a7216",
+                    "kind": "margins"
+                  }
+                ]
+              },
+              {
+                "support": {
+                  "status": "sufficient",
+                  "supported_value": 7324894,
+                  "stale_receipts_present": 0,
+                  "unassessed_text": true,
+                  "parser_errors": []
+                },
+                "invalid_content": 0,
+                "unknown_sources": 0,
+                "conflicting_same_observation": 0,
+                "checks": [
+                  {
+                    "status": "authentic",
+                    "source_id": "288f058f25b6aa1c7df04981335e1b64f70ff4f1b0f534b55f117e1e323a7216",
+                    "kind": "margins"
+                  },
+                  {
+                    "status": "authentic",
+                    "source_id": "288f058f25b6aa1c7df04981335e1b64f70ff4f1b0f534b55f117e1e323a7216",
+                    "kind": "full"
+                  }
+                ]
+              }
+            ],
+            "source_read_bytes": 0,
+            "archive_read_payload_bytes": 0
+          },
+          {
+            "index": 3,
+            "status": "submitted",
+            "value": 7324894,
+            "expected": 7324894,
+            "correct": true,
+            "wrong": false,
+            "authentication": [
+              {
+                "support": {
+                  "status": "unknown",
+                  "supported_value": null,
+                  "stale_receipts_present": 0,
+                  "unassessed_text": true,
+                  "parser_errors": []
+                },
+                "invalid_content": 0,
+                "unknown_sources": 0,
+                "conflicting_same_observation": 0,
+                "checks": [
+                  {
+                    "status": "authentic",
+                    "source_id": "288f058f25b6aa1c7df04981335e1b64f70ff4f1b0f534b55f117e1e323a7216",
+                    "kind": "margins"
+                  }
+                ]
+              },
+              {
+                "support": {
+                  "status": "unknown",
+                  "supported_value": null,
+                  "stale_receipts_present": 0,
+                  "unassessed_text": true,
+                  "parser_errors": []
+                },
+                "invalid_content": 0,
+                "unknown_sources": 0,
+                "conflicting_same_observation": 0,
+                "checks": [
+                  {
+                    "status": "authentic",
+                    "source_id": "288f058f25b6aa1c7df04981335e1b64f70ff4f1b0f534b55f117e1e323a7216",
+                    "kind": "margins"
+                  }
+                ]
+              },
+              {
+                "support": {
+                  "status": "sufficient",
+                  "supported_value": 7324894,
+                  "stale_receipts_present": 0,
+                  "unassessed_text": true,
+                  "parser_errors": []
+                },
+                "invalid_content": 0,
+                "unknown_sources": 0,
+                "conflicting_same_observation": 0,
+                "checks": [
+                  {
+                    "status": "authentic",
+                    "source_id": "288f058f25b6aa1c7df04981335e1b64f70ff4f1b0f534b55f117e1e323a7216",
+                    "kind": "margins"
+                  },
+                  {
+                    "status": "authentic",
+                    "source_id": "288f058f25b6aa1c7df04981335e1b64f70ff4f1b0f534b55f117e1e323a7216",
+                    "kind": "full"
+                  }
+                ]
+              }
+            ],
+            "source_read_bytes": 0,
+            "archive_read_payload_bytes": 0
+          },
+          {
+            "index": 4,
+            "status": "submitted",
+            "value": 6337276,
+            "expected": 6337276,
+            "correct": true,
+            "wrong": false,
+            "authentication": [
+              {
+                "support": {
+                  "status": "unknown",
+                  "supported_value": null,
+                  "stale_receipts_present": 1,
+                  "unassessed_text": true,
+                  "parser_errors": []
+                },
+                "invalid_content": 0,
+                "unknown_sources": 0,
+                "conflicting_same_observation": 0,
+                "checks": [
+                  {
+                    "status": "authentic",
+                    "source_id": "288f058f25b6aa1c7df04981335e1b64f70ff4f1b0f534b55f117e1e323a7216",
+                    "kind": "margins"
+                  }
+                ]
+              },
+              {
+                "support": {
+                  "status": "sufficient",
+                  "supported_value": 6337276,
+                  "stale_receipts_present": 1,
+                  "unassessed_text": true,
+                  "parser_errors": []
+                },
+                "invalid_content": 0,
+                "unknown_sources": 0,
+                "conflicting_same_observation": 0,
+                "checks": [
+                  {
+                    "status": "authentic",
+                    "source_id": "288f058f25b6aa1c7df04981335e1b64f70ff4f1b0f534b55f117e1e323a7216",
+                    "kind": "margins"
+                  },
+                  {
+                    "status": "authentic",
+                    "source_id": "4375b54d20ec48e4086f4a4215a33b90e76513e801dd1d8cc918cf0640827f72",
+                    "kind": "full"
+                  }
+                ]
+              }
+            ],
+            "source_read_bytes": 44287377,
+            "archive_read_payload_bytes": 0
+          },
+          {
+            "index": 5,
+            "status": "submitted",
+            "value": 6337276,
+            "expected": 6337276,
+            "correct": true,
+            "wrong": false,
+            "authentication": [
+              {
+                "support": {
+                  "status": "unknown",
+                  "supported_value": null,
+                  "stale_receipts_present": 1,
+                  "unassessed_text": true,
+                  "parser_errors": []
+                },
+                "invalid_content": 0,
+                "unknown_sources": 0,
+                "conflicting_same_observation": 0,
+                "checks": [
+                  {
+                    "status": "authentic",
+                    "source_id": "288f058f25b6aa1c7df04981335e1b64f70ff4f1b0f534b55f117e1e323a7216",
+                    "kind": "margins"
+                  }
+                ]
+              },
+              {
+                "support": {
+                  "status": "sufficient",
+                  "supported_value": 6337276,
+                  "stale_receipts_present": 1,
+                  "unassessed_text": true,
+                  "parser_errors": []
+                },
+                "invalid_content": 0,
+                "unknown_sources": 0,
+                "conflicting_same_observation": 0,
+                "checks": [
+                  {
+                    "status": "authentic",
+                    "source_id": "288f058f25b6aa1c7df04981335e1b64f70ff4f1b0f534b55f117e1e323a7216",
+                    "kind": "margins"
+                  },
+                  {
+                    "status": "authentic",
+                    "source_id": "4375b54d20ec48e4086f4a4215a33b90e76513e801dd1d8cc918cf0640827f72",
+                    "kind": "full"
+                  }
+                ]
+              }
+            ],
+            "source_read_bytes": 0,
+            "archive_read_payload_bytes": 0
+          },
+          {
+            "index": 6,
+            "status": "submitted",
+            "value": 2931100,
+            "expected": 2931100,
+            "correct": true,
+            "wrong": false,
+            "authentication": [
+              {
+                "support": {
+                  "status": "unknown",
+                  "supported_value": null,
+                  "stale_receipts_present": 1,
+                  "unassessed_text": true,
+                  "parser_errors": []
+                },
+                "invalid_content": 0,
+                "unknown_sources": 0,
+                "conflicting_same_observation": 0,
+                "checks": [
+                  {
+                    "status": "authentic",
+                    "source_id": "288f058f25b6aa1c7df04981335e1b64f70ff4f1b0f534b55f117e1e323a7216",
+                    "kind": "margins"
+                  }
+                ]
+              },
+              {
+                "support": {
+                  "status": "sufficient",
+                  "supported_value": 2931100,
+                  "stale_receipts_present": 1,
+                  "unassessed_text": true,
+                  "parser_errors": []
+                },
+                "invalid_content": 0,
+                "unknown_sources": 0,
+                "conflicting_same_observation": 0,
+                "checks": [
+                  {
+                    "status": "authentic",
+                    "source_id": "288f058f25b6aa1c7df04981335e1b64f70ff4f1b0f534b55f117e1e323a7216",
+                    "kind": "margins"
+                  },
+                  {
+                    "status": "authentic",
+                    "source_id": "4375b54d20ec48e4086f4a4215a33b90e76513e801dd1d8cc918cf0640827f72",
+                    "kind": "full"
+                  }
+                ]
+              }
+            ],
+            "source_read_bytes": 0,
+            "archive_read_payload_bytes": 0
+          },
+          {
+            "index": 7,
+            "status": "submitted",
+            "value": 7324894,
+            "expected": 7324894,
+            "correct": true,
+            "wrong": false,
+            "authentication": [
+              {
+                "support": {
+                  "status": "unknown",
+                  "supported_value": null,
+                  "stale_receipts_present": 0,
+                  "unassessed_text": true,
+                  "parser_errors": []
+                },
+                "invalid_content": 0,
+                "unknown_sources": 0,
+                "conflicting_same_observation": 0,
+                "checks": [
+                  {
+                    "status": "authentic",
+                    "source_id": "288f058f25b6aa1c7df04981335e1b64f70ff4f1b0f534b55f117e1e323a7216",
+                    "kind": "margins"
+                  }
+                ]
+              },
+              {
+                "support": {
+                  "status": "unknown",
+                  "supported_value": null,
+                  "stale_receipts_present": 0,
+                  "unassessed_text": true,
+                  "parser_errors": []
+                },
+                "invalid_content": 0,
+                "unknown_sources": 0,
+                "conflicting_same_observation": 0,
+                "checks": [
+                  {
+                    "status": "authentic",
+                    "source_id": "288f058f25b6aa1c7df04981335e1b64f70ff4f1b0f534b55f117e1e323a7216",
+                    "kind": "margins"
+                  }
+                ]
+              },
+              {
+                "support": {
+                  "status": "sufficient",
+                  "supported_value": 7324894,
+                  "stale_receipts_present": 0,
+                  "unassessed_text": true,
+                  "parser_errors": []
+                },
+                "invalid_content": 0,
+                "unknown_sources": 0,
+                "conflicting_same_observation": 0,
+                "checks": [
+                  {
+                    "status": "authentic",
+                    "source_id": "288f058f25b6aa1c7df04981335e1b64f70ff4f1b0f534b55f117e1e323a7216",
+                    "kind": "margins"
+                  },
+                  {
+                    "status": "authentic",
+                    "source_id": "288f058f25b6aa1c7df04981335e1b64f70ff4f1b0f534b55f117e1e323a7216",
+                    "kind": "full"
+                  }
+                ]
+              }
+            ],
+            "source_read_bytes": 0,
+            "archive_read_payload_bytes": 58948
+          }
+        ]
+      }
+    },
+    {
+      "group": 1,
+      "backend": "mem0",
+      "mode": "free",
+      "case": "native-wiki",
+      "score": {
+        "planned": 8,
+        "executed": 8,
+        "not_run": 0,
+        "correct": 2,
+        "wrong": 0,
+        "unfinished": 6,
+        "abstained": 0,
+        "source_read_bytes": 45359446,
+        "archive_read_payload_bytes": 0,
+        "rows": [
+          {
+            "index": 0,
+            "status": "interface_failure",
+            "value": null,
+            "expected": 7510527,
+            "correct": false,
+            "wrong": false,
+            "authentication": [
+              {
+                "support": {
+                  "status": "not_certified",
+                  "supported_value": null,
+                  "stale_receipts_present": 0,
+                  "unassessed_text": false,
+                  "parser_errors": []
+                },
+                "invalid_content": 0,
+                "unknown_sources": 0,
+                "conflicting_same_observation": 0,
+                "checks": []
+              }
+            ],
+            "source_read_bytes": 0,
+            "archive_read_payload_bytes": 0
+          },
+          {
+            "index": 1,
+            "status": "submitted",
+            "value": 0,
+            "expected": 0,
+            "correct": true,
+            "wrong": false,
+            "authentication": [
+              {
+                "support": {
+                  "status": "not_certified",
+                  "supported_value": null,
+                  "stale_receipts_present": 0,
+                  "unassessed_text": false,
+                  "parser_errors": []
+                },
+                "invalid_content": 0,
+                "unknown_sources": 0,
+                "conflicting_same_observation": 0,
+                "checks": []
+              },
+              {
+                "support": {
+                  "status": "sufficient",
+                  "supported_value": 0,
+                  "stale_receipts_present": 0,
+                  "unassessed_text": false,
+                  "parser_errors": []
+                },
+                "invalid_content": 0,
+                "unknown_sources": 0,
+                "conflicting_same_observation": 0,
+                "checks": [
+                  {
+                    "status": "authentic",
+                    "source_id": "288f058f25b6aa1c7df04981335e1b64f70ff4f1b0f534b55f117e1e323a7216",
+                    "kind": "full"
+                  }
+                ]
+              }
+            ],
+            "source_read_bytes": 45359446,
+            "archive_read_payload_bytes": 0
+          },
+          {
+            "index": 2,
+            "status": "interface_failure",
+            "value": null,
+            "expected": 7324894,
+            "correct": false,
+            "wrong": false,
+            "authentication": [
+              {
+                "support": {
+                  "status": "not_certified",
+                  "supported_value": null,
+                  "stale_receipts_present": 0,
+                  "unassessed_text": false,
+                  "parser_errors": []
+                },
+                "invalid_content": 0,
+                "unknown_sources": 0,
+                "conflicting_same_observation": 0,
+                "checks": []
+              }
+            ],
+            "source_read_bytes": 0,
+            "archive_read_payload_bytes": 0
+          },
+          {
+            "index": 3,
+            "status": "interface_failure",
+            "value": null,
+            "expected": 7324894,
+            "correct": false,
+            "wrong": false,
+            "authentication": [
+              {
+                "support": {
+                  "status": "not_certified",
+                  "supported_value": null,
+                  "stale_receipts_present": 0,
+                  "unassessed_text": false,
+                  "parser_errors": []
+                },
+                "invalid_content": 0,
+                "unknown_sources": 0,
+                "conflicting_same_observation": 0,
+                "checks": []
+              }
+            ],
+            "source_read_bytes": 0,
+            "archive_read_payload_bytes": 0
+          },
+          {
+            "index": 4,
+            "status": "interface_failure",
+            "value": null,
+            "expected": 6337276,
+            "correct": false,
+            "wrong": false,
+            "authentication": [
+              {
+                "support": {
+                  "status": "not_certified",
+                  "supported_value": null,
+                  "stale_receipts_present": 0,
+                  "unassessed_text": false,
+                  "parser_errors": []
+                },
+                "invalid_content": 0,
+                "unknown_sources": 0,
+                "conflicting_same_observation": 0,
+                "checks": []
+              }
+            ],
+            "source_read_bytes": 0,
+            "archive_read_payload_bytes": 0
+          },
+          {
+            "index": 5,
+            "status": "interface_failure",
+            "value": null,
+            "expected": 6337276,
+            "correct": false,
+            "wrong": false,
+            "authentication": [
+              {
+                "support": {
+                  "status": "not_certified",
+                  "supported_value": null,
+                  "stale_receipts_present": 0,
+                  "unassessed_text": false,
+                  "parser_errors": []
+                },
+                "invalid_content": 0,
+                "unknown_sources": 0,
+                "conflicting_same_observation": 0,
+                "checks": []
+              }
+            ],
+            "source_read_bytes": 0,
+            "archive_read_payload_bytes": 0
+          },
+          {
+            "index": 6,
+            "status": "interface_failure",
+            "value": null,
+            "expected": 2931100,
+            "correct": false,
+            "wrong": false,
+            "authentication": [
+              {
+                "support": {
+                  "status": "not_certified",
+                  "supported_value": null,
+                  "stale_receipts_present": 0,
+                  "unassessed_text": false,
+                  "parser_errors": []
+                },
+                "invalid_content": 0,
+                "unknown_sources": 0,
+                "conflicting_same_observation": 0,
+                "checks": []
+              }
+            ],
+            "source_read_bytes": 0,
+            "archive_read_payload_bytes": 0
+          },
+          {
+            "index": 7,
+            "status": "submitted",
+            "value": 7324894,
+            "expected": 7324894,
+            "correct": true,
+            "wrong": false,
+            "authentication": [
+              {
+                "support": {
+                  "status": "not_certified",
+                  "supported_value": null,
+                  "stale_receipts_present": 0,
+                  "unassessed_text": false,
+                  "parser_errors": []
+                },
+                "invalid_content": 0,
+                "unknown_sources": 0,
+                "conflicting_same_observation": 0,
+                "checks": []
+              },
+              {
+                "support": {
+                  "status": "sufficient",
+                  "supported_value": 7324894,
+                  "stale_receipts_present": 0,
+                  "unassessed_text": false,
+                  "parser_errors": []
+                },
+                "invalid_content": 0,
+                "unknown_sources": 0,
+                "conflicting_same_observation": 0,
+                "checks": [
+                  {
+                    "status": "authentic",
+                    "source_id": "288f058f25b6aa1c7df04981335e1b64f70ff4f1b0f534b55f117e1e323a7216",
+                    "kind": "full"
+                  }
+                ]
+              }
+            ],
+            "source_read_bytes": 0,
+            "archive_read_payload_bytes": 0
+          }
+        ]
+      }
+    },
+    {
+      "group": 1,
+      "backend": "mem0",
+      "mode": "tool_first",
+      "case": "native-wiki",
+      "score": {
+        "planned": 8,
+        "executed": 8,
+        "not_run": 0,
+        "correct": 4,
+        "wrong": 0,
+        "unfinished": 4,
+        "abstained": 0,
+        "source_read_bytes": 45359446,
+        "archive_read_payload_bytes": 58948,
+        "rows": [
+          {
+            "index": 0,
+            "status": "submitted",
+            "value": 7510527,
+            "expected": 7510527,
+            "correct": true,
+            "wrong": false,
+            "authentication": [
+              {
+                "support": {
+                  "status": "not_certified",
+                  "supported_value": null,
+                  "stale_receipts_present": 0,
+                  "unassessed_text": false,
+                  "parser_errors": []
+                },
+                "invalid_content": 0,
+                "unknown_sources": 0,
+                "conflicting_same_observation": 0,
+                "checks": []
+              },
+              {
+                "support": {
+                  "status": "sufficient",
+                  "supported_value": 7510527,
+                  "stale_receipts_present": 0,
+                  "unassessed_text": false,
+                  "parser_errors": []
+                },
+                "invalid_content": 0,
+                "unknown_sources": 0,
+                "conflicting_same_observation": 0,
+                "checks": [
+                  {
+                    "status": "authentic",
+                    "source_id": "288f058f25b6aa1c7df04981335e1b64f70ff4f1b0f534b55f117e1e323a7216",
+                    "kind": "full"
+                  }
+                ]
+              }
+            ],
+            "source_read_bytes": 0,
+            "archive_read_payload_bytes": 58948
+          },
+          {
+            "index": 1,
+            "status": "submitted",
+            "value": 0,
+            "expected": 0,
+            "correct": true,
+            "wrong": false,
+            "authentication": [
+              {
+                "support": {
+                  "status": "not_certified",
+                  "supported_value": null,
+                  "stale_receipts_present": 0,
+                  "unassessed_text": false,
+                  "parser_errors": []
+                },
+                "invalid_content": 0,
+                "unknown_sources": 0,
+                "conflicting_same_observation": 0,
+                "checks": []
+              },
+              {
+                "support": {
+                  "status": "sufficient",
+                  "supported_value": 0,
+                  "stale_receipts_present": 0,
+                  "unassessed_text": false,
+                  "parser_errors": []
+                },
+                "invalid_content": 0,
+                "unknown_sources": 0,
+                "conflicting_same_observation": 0,
+                "checks": [
+                  {
+                    "status": "authentic",
+                    "source_id": "288f058f25b6aa1c7df04981335e1b64f70ff4f1b0f534b55f117e1e323a7216",
+                    "kind": "full"
+                  }
+                ]
+              }
+            ],
+            "source_read_bytes": 45359446,
+            "archive_read_payload_bytes": 0
+          },
+          {
+            "index": 2,
+            "status": "interface_failure",
+            "value": null,
+            "expected": 7324894,
+            "correct": false,
+            "wrong": false,
+            "authentication": [
+              {
+                "support": {
+                  "status": "not_certified",
+                  "supported_value": null,
+                  "stale_receipts_present": 0,
+                  "unassessed_text": false,
+                  "parser_errors": []
+                },
+                "invalid_content": 0,
+                "unknown_sources": 0,
+                "conflicting_same_observation": 0,
+                "checks": []
+              }
+            ],
+            "source_read_bytes": 0,
+            "archive_read_payload_bytes": 0
+          },
+          {
+            "index": 3,
+            "status": "submitted",
+            "value": 7324894,
+            "expected": 7324894,
+            "correct": true,
+            "wrong": false,
+            "authentication": [
+              {
+                "support": {
+                  "status": "not_certified",
+                  "supported_value": null,
+                  "stale_receipts_present": 0,
+                  "unassessed_text": false,
+                  "parser_errors": []
+                },
+                "invalid_content": 0,
+                "unknown_sources": 0,
+                "conflicting_same_observation": 0,
+                "checks": []
+              },
+              {
+                "support": {
+                  "status": "sufficient",
+                  "supported_value": 7324894,
+                  "stale_receipts_present": 0,
+                  "unassessed_text": false,
+                  "parser_errors": []
+                },
+                "invalid_content": 0,
+                "unknown_sources": 0,
+                "conflicting_same_observation": 0,
+                "checks": [
+                  {
+                    "status": "authentic",
+                    "source_id": "288f058f25b6aa1c7df04981335e1b64f70ff4f1b0f534b55f117e1e323a7216",
+                    "kind": "full"
+                  }
+                ]
+              }
+            ],
+            "source_read_bytes": 0,
+            "archive_read_payload_bytes": 0
+          },
+          {
+            "index": 4,
+            "status": "interface_failure",
+            "value": null,
+            "expected": 6337276,
+            "correct": false,
+            "wrong": false,
+            "authentication": [
+              {
+                "support": {
+                  "status": "not_certified",
+                  "supported_value": null,
+                  "stale_receipts_present": 0,
+                  "unassessed_text": false,
+                  "parser_errors": []
+                },
+                "invalid_content": 0,
+                "unknown_sources": 0,
+                "conflicting_same_observation": 0,
+                "checks": []
+              }
+            ],
+            "source_read_bytes": 0,
+            "archive_read_payload_bytes": 0
+          },
+          {
+            "index": 5,
+            "status": "interface_failure",
+            "value": null,
+            "expected": 6337276,
+            "correct": false,
+            "wrong": false,
+            "authentication": [
+              {
+                "support": {
+                  "status": "not_certified",
+                  "supported_value": null,
+                  "stale_receipts_present": 0,
+                  "unassessed_text": false,
+                  "parser_errors": []
+                },
+                "invalid_content": 0,
+                "unknown_sources": 0,
+                "conflicting_same_observation": 0,
+                "checks": []
+              }
+            ],
+            "source_read_bytes": 0,
+            "archive_read_payload_bytes": 0
+          },
+          {
+            "index": 6,
+            "status": "interface_failure",
+            "value": null,
+            "expected": 2931100,
+            "correct": false,
+            "wrong": false,
+            "authentication": [
+              {
+                "support": {
+                  "status": "not_certified",
+                  "supported_value": null,
+                  "stale_receipts_present": 0,
+                  "unassessed_text": false,
+                  "parser_errors": []
+                },
+                "invalid_content": 0,
+                "unknown_sources": 0,
+                "conflicting_same_observation": 0,
+                "checks": []
+              }
+            ],
+            "source_read_bytes": 0,
+            "archive_read_payload_bytes": 0
+          },
+          {
+            "index": 7,
+            "status": "submitted",
+            "value": 7324894,
+            "expected": 7324894,
+            "correct": true,
+            "wrong": false,
+            "authentication": [
+              {
+                "support": {
+                  "status": "not_certified",
+                  "supported_value": null,
+                  "stale_receipts_present": 0,
+                  "unassessed_text": false,
+                  "parser_errors": []
+                },
+                "invalid_content": 0,
+                "unknown_sources": 0,
+                "conflicting_same_observation": 0,
+                "checks": []
+              },
+              {
+                "support": {
+                  "status": "sufficient",
+                  "supported_value": 7324894,
+                  "stale_receipts_present": 0,
+                  "unassessed_text": false,
+                  "parser_errors": []
+                },
+                "invalid_content": 0,
+                "unknown_sources": 0,
+                "conflicting_same_observation": 0,
+                "checks": [
+                  {
+                    "status": "authentic",
+                    "source_id": "288f058f25b6aa1c7df04981335e1b64f70ff4f1b0f534b55f117e1e323a7216",
+                    "kind": "full"
+                  }
+                ]
+              }
+            ],
+            "source_read_bytes": 0,
+            "archive_read_payload_bytes": 0
+          }
+        ]
+      }
+    },
+    {
+      "group": 2,
+      "backend": "verbatim",
+      "mode": "free",
+      "case": "native-wiki",
+      "score": {
+        "planned": 8,
+        "executed": 8,
+        "not_run": 0,
+        "correct": 7,
+        "wrong": 1,
+        "unfinished": 0,
+        "abstained": 0,
+        "source_read_bytes": 89646823,
+        "archive_read_payload_bytes": 117896,
+        "rows": [
+          {
+            "index": 0,
+            "status": "submitted",
+            "value": 7510527,
+            "expected": 7510527,
+            "correct": true,
+            "wrong": false,
+            "authentication": [
+              {
+                "support": {
+                  "status": "sufficient",
+                  "supported_value": 7510527,
+                  "stale_receipts_present": 0,
+                  "unassessed_text": true,
+                  "parser_errors": []
+                },
+                "invalid_content": 0,
+                "unknown_sources": 0,
+                "conflicting_same_observation": 0,
+                "checks": [
+                  {
+                    "status": "authentic",
+                    "source_id": "288f058f25b6aa1c7df04981335e1b64f70ff4f1b0f534b55f117e1e323a7216",
+                    "kind": "margins"
+                  }
+                ]
+              }
+            ],
+            "source_read_bytes": 0,
+            "archive_read_payload_bytes": 0
+          },
+          {
+            "index": 1,
+            "status": "submitted",
+            "value": 0,
+            "expected": 0,
+            "correct": true,
+            "wrong": false,
+            "authentication": [
+              {
+                "support": {
+                  "status": "sufficient",
+                  "supported_value": 0,
+                  "stale_receipts_present": 0,
+                  "unassessed_text": true,
+                  "parser_errors": []
+                },
+                "invalid_content": 0,
+                "unknown_sources": 0,
+                "conflicting_same_observation": 0,
+                "checks": [
+                  {
+                    "status": "authentic",
+                    "source_id": "288f058f25b6aa1c7df04981335e1b64f70ff4f1b0f534b55f117e1e323a7216",
+                    "kind": "margins"
+                  }
+                ]
+              },
+              {
+                "support": {
+                  "status": "sufficient",
+                  "supported_value": 0,
+                  "stale_receipts_present": 0,
+                  "unassessed_text": true,
+                  "parser_errors": []
+                },
+                "invalid_content": 0,
+                "unknown_sources": 0,
+                "conflicting_same_observation": 0,
+                "checks": [
+                  {
+                    "status": "authentic",
+                    "source_id": "288f058f25b6aa1c7df04981335e1b64f70ff4f1b0f534b55f117e1e323a7216",
+                    "kind": "margins"
+                  },
+                  {
+                    "status": "authentic",
+                    "source_id": "288f058f25b6aa1c7df04981335e1b64f70ff4f1b0f534b55f117e1e323a7216",
+                    "kind": "full"
+                  }
+                ]
+              }
+            ],
+            "source_read_bytes": 45359446,
+            "archive_read_payload_bytes": 0
+          },
+          {
+            "index": 2,
+            "status": "submitted",
+            "value": 7324894,
+            "expected": 7324894,
+            "correct": true,
+            "wrong": false,
+            "authentication": [
+              {
+                "support": {
+                  "status": "unknown",
+                  "supported_value": null,
+                  "stale_receipts_present": 0,
+                  "unassessed_text": true,
+                  "parser_errors": []
+                },
+                "invalid_content": 0,
+                "unknown_sources": 0,
+                "conflicting_same_observation": 0,
+                "checks": [
+                  {
+                    "status": "authentic",
+                    "source_id": "288f058f25b6aa1c7df04981335e1b64f70ff4f1b0f534b55f117e1e323a7216",
+                    "kind": "margins"
+                  }
+                ]
+              },
+              {
+                "support": {
+                  "status": "sufficient",
+                  "supported_value": 7324894,
+                  "stale_receipts_present": 0,
+                  "unassessed_text": true,
+                  "parser_errors": []
+                },
+                "invalid_content": 0,
+                "unknown_sources": 0,
+                "conflicting_same_observation": 0,
+                "checks": [
+                  {
+                    "status": "authentic",
+                    "source_id": "288f058f25b6aa1c7df04981335e1b64f70ff4f1b0f534b55f117e1e323a7216",
+                    "kind": "margins"
+                  },
+                  {
+                    "status": "authentic",
+                    "source_id": "288f058f25b6aa1c7df04981335e1b64f70ff4f1b0f534b55f117e1e323a7216",
+                    "kind": "full"
+                  }
+                ]
+              }
+            ],
+            "source_read_bytes": 0,
+            "archive_read_payload_bytes": 0
+          },
+          {
+            "index": 3,
+            "status": "submitted",
+            "value": 7324894,
+            "expected": 7324894,
+            "correct": true,
+            "wrong": false,
+            "authentication": [
+              {
+                "support": {
+                  "status": "unknown",
+                  "supported_value": null,
+                  "stale_receipts_present": 0,
+                  "unassessed_text": true,
+                  "parser_errors": []
+                },
+                "invalid_content": 0,
+                "unknown_sources": 0,
+                "conflicting_same_observation": 0,
+                "checks": [
+                  {
+                    "status": "authentic",
+                    "source_id": "288f058f25b6aa1c7df04981335e1b64f70ff4f1b0f534b55f117e1e323a7216",
+                    "kind": "margins"
+                  }
+                ]
+              },
+              {
+                "support": {
+                  "status": "sufficient",
+                  "supported_value": 7324894,
+                  "stale_receipts_present": 0,
+                  "unassessed_text": true,
+                  "parser_errors": []
+                },
+                "invalid_content": 0,
+                "unknown_sources": 0,
+                "conflicting_same_observation": 0,
+                "checks": [
+                  {
+                    "status": "authentic",
+                    "source_id": "288f058f25b6aa1c7df04981335e1b64f70ff4f1b0f534b55f117e1e323a7216",
+                    "kind": "margins"
+                  },
+                  {
+                    "status": "authentic",
+                    "source_id": "288f058f25b6aa1c7df04981335e1b64f70ff4f1b0f534b55f117e1e323a7216",
+                    "kind": "full"
+                  }
+                ]
+              }
+            ],
+            "source_read_bytes": 0,
+            "archive_read_payload_bytes": 0
+          },
+          {
+            "index": 4,
+            "status": "submitted",
+            "value": 7324894,
+            "expected": 6337276,
+            "correct": false,
+            "wrong": true,
+            "authentication": [
+              {
+                "support": {
+                  "status": "unknown",
+                  "supported_value": null,
+                  "stale_receipts_present": 1,
+                  "unassessed_text": true,
+                  "parser_errors": []
+                },
+                "invalid_content": 0,
+                "unknown_sources": 0,
+                "conflicting_same_observation": 0,
+                "checks": [
+                  {
+                    "status": "authentic",
+                    "source_id": "288f058f25b6aa1c7df04981335e1b64f70ff4f1b0f534b55f117e1e323a7216",
+                    "kind": "margins"
+                  }
+                ]
+              },
+              {
+                "support": {
+                  "status": "unknown",
+                  "supported_value": null,
+                  "stale_receipts_present": 2,
+                  "unassessed_text": true,
+                  "parser_errors": []
+                },
+                "invalid_content": 0,
+                "unknown_sources": 0,
+                "conflicting_same_observation": 0,
+                "checks": [
+                  {
+                    "status": "authentic",
+                    "source_id": "288f058f25b6aa1c7df04981335e1b64f70ff4f1b0f534b55f117e1e323a7216",
+                    "kind": "margins"
+                  },
+                  {
+                    "status": "authentic",
+                    "source_id": "288f058f25b6aa1c7df04981335e1b64f70ff4f1b0f534b55f117e1e323a7216",
+                    "kind": "full"
+                  }
+                ]
+              }
+            ],
+            "source_read_bytes": 0,
+            "archive_read_payload_bytes": 58948
+          },
+          {
+            "index": 5,
+            "status": "submitted",
+            "value": 6337276,
+            "expected": 6337276,
+            "correct": true,
+            "wrong": false,
+            "authentication": [
+              {
+                "support": {
+                  "status": "unknown",
+                  "supported_value": null,
+                  "stale_receipts_present": 1,
+                  "unassessed_text": true,
+                  "parser_errors": []
+                },
+                "invalid_content": 0,
+                "unknown_sources": 0,
+                "conflicting_same_observation": 0,
+                "checks": [
+                  {
+                    "status": "authentic",
+                    "source_id": "288f058f25b6aa1c7df04981335e1b64f70ff4f1b0f534b55f117e1e323a7216",
+                    "kind": "margins"
+                  }
+                ]
+              },
+              {
+                "support": {
+                  "status": "unknown",
+                  "supported_value": null,
+                  "stale_receipts_present": 1,
+                  "unassessed_text": true,
+                  "parser_errors": []
+                },
+                "invalid_content": 0,
+                "unknown_sources": 0,
+                "conflicting_same_observation": 0,
+                "checks": [
+                  {
+                    "status": "authentic",
+                    "source_id": "288f058f25b6aa1c7df04981335e1b64f70ff4f1b0f534b55f117e1e323a7216",
+                    "kind": "margins"
+                  }
+                ]
+              },
+              {
+                "support": {
+                  "status": "sufficient",
+                  "supported_value": 6337276,
+                  "stale_receipts_present": 1,
+                  "unassessed_text": true,
+                  "parser_errors": []
+                },
+                "invalid_content": 0,
+                "unknown_sources": 0,
+                "conflicting_same_observation": 0,
+                "checks": [
+                  {
+                    "status": "authentic",
+                    "source_id": "288f058f25b6aa1c7df04981335e1b64f70ff4f1b0f534b55f117e1e323a7216",
+                    "kind": "margins"
+                  },
+                  {
+                    "status": "authentic",
+                    "source_id": "4375b54d20ec48e4086f4a4215a33b90e76513e801dd1d8cc918cf0640827f72",
+                    "kind": "full"
+                  }
+                ]
+              }
+            ],
+            "source_read_bytes": 44287377,
+            "archive_read_payload_bytes": 0
+          },
+          {
+            "index": 6,
+            "status": "submitted",
+            "value": 2931100,
+            "expected": 2931100,
+            "correct": true,
+            "wrong": false,
+            "authentication": [
+              {
+                "support": {
+                  "status": "unknown",
+                  "supported_value": null,
+                  "stale_receipts_present": 1,
+                  "unassessed_text": true,
+                  "parser_errors": []
+                },
+                "invalid_content": 0,
+                "unknown_sources": 0,
+                "conflicting_same_observation": 0,
+                "checks": [
+                  {
+                    "status": "authentic",
+                    "source_id": "288f058f25b6aa1c7df04981335e1b64f70ff4f1b0f534b55f117e1e323a7216",
+                    "kind": "margins"
+                  }
+                ]
+              },
+              {
+                "support": {
+                  "status": "sufficient",
+                  "supported_value": 2931100,
+                  "stale_receipts_present": 1,
+                  "unassessed_text": true,
+                  "parser_errors": []
+                },
+                "invalid_content": 0,
+                "unknown_sources": 0,
+                "conflicting_same_observation": 0,
+                "checks": [
+                  {
+                    "status": "authentic",
+                    "source_id": "288f058f25b6aa1c7df04981335e1b64f70ff4f1b0f534b55f117e1e323a7216",
+                    "kind": "margins"
+                  },
+                  {
+                    "status": "authentic",
+                    "source_id": "4375b54d20ec48e4086f4a4215a33b90e76513e801dd1d8cc918cf0640827f72",
+                    "kind": "full"
+                  }
+                ]
+              }
+            ],
+            "source_read_bytes": 0,
+            "archive_read_payload_bytes": 0
+          },
+          {
+            "index": 7,
+            "status": "submitted",
+            "value": 7324894,
+            "expected": 7324894,
+            "correct": true,
+            "wrong": false,
+            "authentication": [
+              {
+                "support": {
+                  "status": "unknown",
+                  "supported_value": null,
+                  "stale_receipts_present": 0,
+                  "unassessed_text": true,
+                  "parser_errors": []
+                },
+                "invalid_content": 0,
+                "unknown_sources": 0,
+                "conflicting_same_observation": 0,
+                "checks": [
+                  {
+                    "status": "authentic",
+                    "source_id": "288f058f25b6aa1c7df04981335e1b64f70ff4f1b0f534b55f117e1e323a7216",
+                    "kind": "margins"
+                  }
+                ]
+              },
+              {
+                "support": {
+                  "status": "sufficient",
+                  "supported_value": 7324894,
+                  "stale_receipts_present": 0,
+                  "unassessed_text": true,
+                  "parser_errors": []
+                },
+                "invalid_content": 0,
+                "unknown_sources": 0,
+                "conflicting_same_observation": 0,
+                "checks": [
+                  {
+                    "status": "authentic",
+                    "source_id": "288f058f25b6aa1c7df04981335e1b64f70ff4f1b0f534b55f117e1e323a7216",
+                    "kind": "margins"
+                  },
+                  {
+                    "status": "authentic",
+                    "source_id": "288f058f25b6aa1c7df04981335e1b64f70ff4f1b0f534b55f117e1e323a7216",
+                    "kind": "full"
+                  }
+                ]
+              }
+            ],
+            "source_read_bytes": 0,
+            "archive_read_payload_bytes": 58948
+          }
+        ]
+      }
+    },
+    {
+      "group": 2,
+      "backend": "verbatim",
+      "mode": "tool_first",
+      "case": "native-wiki",
+      "score": {
+        "planned": 8,
+        "executed": 8,
+        "not_run": 0,
+        "correct": 8,
+        "wrong": 0,
+        "unfinished": 0,
+        "abstained": 0,
+        "source_read_bytes": 89646823,
+        "archive_read_payload_bytes": 58948,
+        "rows": [
+          {
+            "index": 0,
+            "status": "submitted",
+            "value": 7510527,
+            "expected": 7510527,
+            "correct": true,
+            "wrong": false,
+            "authentication": [
+              {
+                "support": {
+                  "status": "sufficient",
+                  "supported_value": 7510527,
+                  "stale_receipts_present": 0,
+                  "unassessed_text": true,
+                  "parser_errors": []
+                },
+                "invalid_content": 0,
+                "unknown_sources": 0,
+                "conflicting_same_observation": 0,
+                "checks": [
+                  {
+                    "status": "authentic",
+                    "source_id": "288f058f25b6aa1c7df04981335e1b64f70ff4f1b0f534b55f117e1e323a7216",
+                    "kind": "margins"
+                  }
+                ]
+              }
+            ],
+            "source_read_bytes": 0,
+            "archive_read_payload_bytes": 0
+          },
+          {
+            "index": 1,
+            "status": "submitted",
+            "value": 0,
+            "expected": 0,
+            "correct": true,
+            "wrong": false,
+            "authentication": [
+              {
+                "support": {
+                  "status": "sufficient",
+                  "supported_value": 0,
+                  "stale_receipts_present": 0,
+                  "unassessed_text": true,
+                  "parser_errors": []
+                },
+                "invalid_content": 0,
+                "unknown_sources": 0,
+                "conflicting_same_observation": 0,
+                "checks": [
+                  {
+                    "status": "authentic",
+                    "source_id": "288f058f25b6aa1c7df04981335e1b64f70ff4f1b0f534b55f117e1e323a7216",
+                    "kind": "margins"
+                  }
+                ]
+              },
+              {
+                "support": {
+                  "status": "sufficient",
+                  "supported_value": 0,
+                  "stale_receipts_present": 0,
+                  "unassessed_text": true,
+                  "parser_errors": []
+                },
+                "invalid_content": 0,
+                "unknown_sources": 0,
+                "conflicting_same_observation": 0,
+                "checks": [
+                  {
+                    "status": "authentic",
+                    "source_id": "288f058f25b6aa1c7df04981335e1b64f70ff4f1b0f534b55f117e1e323a7216",
+                    "kind": "margins"
+                  },
+                  {
+                    "status": "authentic",
+                    "source_id": "288f058f25b6aa1c7df04981335e1b64f70ff4f1b0f534b55f117e1e323a7216",
+                    "kind": "full"
+                  }
+                ]
+              }
+            ],
+            "source_read_bytes": 45359446,
+            "archive_read_payload_bytes": 0
+          },
+          {
+            "index": 2,
+            "status": "submitted",
+            "value": 7324894,
+            "expected": 7324894,
+            "correct": true,
+            "wrong": false,
+            "authentication": [
+              {
+                "support": {
+                  "status": "unknown",
+                  "supported_value": null,
+                  "stale_receipts_present": 0,
+                  "unassessed_text": true,
+                  "parser_errors": []
+                },
+                "invalid_content": 0,
+                "unknown_sources": 0,
+                "conflicting_same_observation": 0,
+                "checks": [
+                  {
+                    "status": "authentic",
+                    "source_id": "288f058f25b6aa1c7df04981335e1b64f70ff4f1b0f534b55f117e1e323a7216",
+                    "kind": "margins"
+                  }
+                ]
+              },
+              {
+                "support": {
+                  "status": "unknown",
+                  "supported_value": null,
+                  "stale_receipts_present": 0,
+                  "unassessed_text": true,
+                  "parser_errors": []
+                },
+                "invalid_content": 0,
+                "unknown_sources": 0,
+                "conflicting_same_observation": 0,
+                "checks": [
+                  {
+                    "status": "authentic",
+                    "source_id": "288f058f25b6aa1c7df04981335e1b64f70ff4f1b0f534b55f117e1e323a7216",
+                    "kind": "margins"
+                  }
+                ]
+              },
+              {
+                "support": {
+                  "status": "sufficient",
+                  "supported_value": 7324894,
+                  "stale_receipts_present": 0,
+                  "unassessed_text": true,
+                  "parser_errors": []
+                },
+                "invalid_content": 0,
+                "unknown_sources": 0,
+                "conflicting_same_observation": 0,
+                "checks": [
+                  {
+                    "status": "authentic",
+                    "source_id": "288f058f25b6aa1c7df04981335e1b64f70ff4f1b0f534b55f117e1e323a7216",
+                    "kind": "margins"
+                  },
+                  {
+                    "status": "authentic",
+                    "source_id": "288f058f25b6aa1c7df04981335e1b64f70ff4f1b0f534b55f117e1e323a7216",
+                    "kind": "full"
+                  }
+                ]
+              }
+            ],
+            "source_read_bytes": 0,
+            "archive_read_payload_bytes": 0
+          },
+          {
+            "index": 3,
+            "status": "submitted",
+            "value": 7324894,
+            "expected": 7324894,
+            "correct": true,
+            "wrong": false,
+            "authentication": [
+              {
+                "support": {
+                  "status": "unknown",
+                  "supported_value": null,
+                  "stale_receipts_present": 0,
+                  "unassessed_text": true,
+                  "parser_errors": []
+                },
+                "invalid_content": 0,
+                "unknown_sources": 0,
+                "conflicting_same_observation": 0,
+                "checks": [
+                  {
+                    "status": "authentic",
+                    "source_id": "288f058f25b6aa1c7df04981335e1b64f70ff4f1b0f534b55f117e1e323a7216",
+                    "kind": "margins"
+                  }
+                ]
+              },
+              {
+                "support": {
+                  "status": "unknown",
+                  "supported_value": null,
+                  "stale_receipts_present": 0,
+                  "unassessed_text": true,
+                  "parser_errors": []
+                },
+                "invalid_content": 0,
+                "unknown_sources": 0,
+                "conflicting_same_observation": 0,
+                "checks": [
+                  {
+                    "status": "authentic",
+                    "source_id": "288f058f25b6aa1c7df04981335e1b64f70ff4f1b0f534b55f117e1e323a7216",
+                    "kind": "margins"
+                  }
+                ]
+              },
+              {
+                "support": {
+                  "status": "sufficient",
+                  "supported_value": 7324894,
+                  "stale_receipts_present": 0,
+                  "unassessed_text": true,
+                  "parser_errors": []
+                },
+                "invalid_content": 0,
+                "unknown_sources": 0,
+                "conflicting_same_observation": 0,
+                "checks": [
+                  {
+                    "status": "authentic",
+                    "source_id": "288f058f25b6aa1c7df04981335e1b64f70ff4f1b0f534b55f117e1e323a7216",
+                    "kind": "margins"
+                  },
+                  {
+                    "status": "authentic",
+                    "source_id": "288f058f25b6aa1c7df04981335e1b64f70ff4f1b0f534b55f117e1e323a7216",
+                    "kind": "full"
+                  }
+                ]
+              }
+            ],
+            "source_read_bytes": 0,
+            "archive_read_payload_bytes": 0
+          },
+          {
+            "index": 4,
+            "status": "submitted",
+            "value": 6337276,
+            "expected": 6337276,
+            "correct": true,
+            "wrong": false,
+            "authentication": [
+              {
+                "support": {
+                  "status": "unknown",
+                  "supported_value": null,
+                  "stale_receipts_present": 1,
+                  "unassessed_text": true,
+                  "parser_errors": []
+                },
+                "invalid_content": 0,
+                "unknown_sources": 0,
+                "conflicting_same_observation": 0,
+                "checks": [
+                  {
+                    "status": "authentic",
+                    "source_id": "288f058f25b6aa1c7df04981335e1b64f70ff4f1b0f534b55f117e1e323a7216",
+                    "kind": "margins"
+                  }
+                ]
+              },
+              {
+                "support": {
+                  "status": "unknown",
+                  "supported_value": null,
+                  "stale_receipts_present": 1,
+                  "unassessed_text": true,
+                  "parser_errors": []
+                },
+                "invalid_content": 0,
+                "unknown_sources": 0,
+                "conflicting_same_observation": 0,
+                "checks": [
+                  {
+                    "status": "authentic",
+                    "source_id": "288f058f25b6aa1c7df04981335e1b64f70ff4f1b0f534b55f117e1e323a7216",
+                    "kind": "margins"
+                  }
+                ]
+              },
+              {
+                "support": {
+                  "status": "sufficient",
+                  "supported_value": 6337276,
+                  "stale_receipts_present": 1,
+                  "unassessed_text": true,
+                  "parser_errors": []
+                },
+                "invalid_content": 0,
+                "unknown_sources": 0,
+                "conflicting_same_observation": 0,
+                "checks": [
+                  {
+                    "status": "authentic",
+                    "source_id": "288f058f25b6aa1c7df04981335e1b64f70ff4f1b0f534b55f117e1e323a7216",
+                    "kind": "margins"
+                  },
+                  {
+                    "status": "authentic",
+                    "source_id": "4375b54d20ec48e4086f4a4215a33b90e76513e801dd1d8cc918cf0640827f72",
+                    "kind": "full"
+                  }
+                ]
+              }
+            ],
+            "source_read_bytes": 44287377,
+            "archive_read_payload_bytes": 0
+          },
+          {
+            "index": 5,
+            "status": "submitted",
+            "value": 6337276,
+            "expected": 6337276,
+            "correct": true,
+            "wrong": false,
+            "authentication": [
+              {
+                "support": {
+                  "status": "unknown",
+                  "supported_value": null,
+                  "stale_receipts_present": 1,
+                  "unassessed_text": true,
+                  "parser_errors": []
+                },
+                "invalid_content": 0,
+                "unknown_sources": 0,
+                "conflicting_same_observation": 0,
+                "checks": [
+                  {
+                    "status": "authentic",
+                    "source_id": "288f058f25b6aa1c7df04981335e1b64f70ff4f1b0f534b55f117e1e323a7216",
+                    "kind": "margins"
+                  }
+                ]
+              },
+              {
+                "support": {
+                  "status": "sufficient",
+                  "supported_value": 6337276,
+                  "stale_receipts_present": 1,
+                  "unassessed_text": true,
+                  "parser_errors": []
+                },
+                "invalid_content": 0,
+                "unknown_sources": 0,
+                "conflicting_same_observation": 0,
+                "checks": [
+                  {
+                    "status": "authentic",
+                    "source_id": "288f058f25b6aa1c7df04981335e1b64f70ff4f1b0f534b55f117e1e323a7216",
+                    "kind": "margins"
+                  },
+                  {
+                    "status": "authentic",
+                    "source_id": "4375b54d20ec48e4086f4a4215a33b90e76513e801dd1d8cc918cf0640827f72",
+                    "kind": "full"
+                  }
+                ]
+              }
+            ],
+            "source_read_bytes": 0,
+            "archive_read_payload_bytes": 0
+          },
+          {
+            "index": 6,
+            "status": "submitted",
+            "value": 2931100,
+            "expected": 2931100,
+            "correct": true,
+            "wrong": false,
+            "authentication": [
+              {
+                "support": {
+                  "status": "unknown",
+                  "supported_value": null,
+                  "stale_receipts_present": 1,
+                  "unassessed_text": true,
+                  "parser_errors": []
+                },
+                "invalid_content": 0,
+                "unknown_sources": 0,
+                "conflicting_same_observation": 0,
+                "checks": [
+                  {
+                    "status": "authentic",
+                    "source_id": "288f058f25b6aa1c7df04981335e1b64f70ff4f1b0f534b55f117e1e323a7216",
+                    "kind": "margins"
+                  }
+                ]
+              },
+              {
+                "support": {
+                  "status": "sufficient",
+                  "supported_value": 2931100,
+                  "stale_receipts_present": 1,
+                  "unassessed_text": true,
+                  "parser_errors": []
+                },
+                "invalid_content": 0,
+                "unknown_sources": 0,
+                "conflicting_same_observation": 0,
+                "checks": [
+                  {
+                    "status": "authentic",
+                    "source_id": "288f058f25b6aa1c7df04981335e1b64f70ff4f1b0f534b55f117e1e323a7216",
+                    "kind": "margins"
+                  },
+                  {
+                    "status": "authentic",
+                    "source_id": "4375b54d20ec48e4086f4a4215a33b90e76513e801dd1d8cc918cf0640827f72",
+                    "kind": "full"
+                  }
+                ]
+              }
+            ],
+            "source_read_bytes": 0,
+            "archive_read_payload_bytes": 0
+          },
+          {
+            "index": 7,
+            "status": "submitted",
+            "value": 7324894,
+            "expected": 7324894,
+            "correct": true,
+            "wrong": false,
+            "authentication": [
+              {
+                "support": {
+                  "status": "unknown",
+                  "supported_value": null,
+                  "stale_receipts_present": 0,
+                  "unassessed_text": true,
+                  "parser_errors": []
+                },
+                "invalid_content": 0,
+                "unknown_sources": 0,
+                "conflicting_same_observation": 0,
+                "checks": [
+                  {
+                    "status": "authentic",
+                    "source_id": "288f058f25b6aa1c7df04981335e1b64f70ff4f1b0f534b55f117e1e323a7216",
+                    "kind": "margins"
+                  }
+                ]
+              },
+              {
+                "support": {
+                  "status": "sufficient",
+                  "supported_value": 7324894,
+                  "stale_receipts_present": 0,
+                  "unassessed_text": true,
+                  "parser_errors": []
+                },
+                "invalid_content": 0,
+                "unknown_sources": 0,
+                "conflicting_same_observation": 0,
+                "checks": [
+                  {
+                    "status": "authentic",
+                    "source_id": "288f058f25b6aa1c7df04981335e1b64f70ff4f1b0f534b55f117e1e323a7216",
+                    "kind": "margins"
+                  },
+                  {
+                    "status": "authentic",
+                    "source_id": "288f058f25b6aa1c7df04981335e1b64f70ff4f1b0f534b55f117e1e323a7216",
+                    "kind": "full"
+                  }
+                ]
+              }
+            ],
+            "source_read_bytes": 0,
+            "archive_read_payload_bytes": 58948
+          }
+        ]
+      }
+    }
+  ],
+  "executed_tasks": 48,
+  "prior_positions": 7,
+  "new_api_requests": 79,
+  "calls": 79,
+  "metrics": {
+    "external_model_calls": 79,
+    "external_model_cost": 0.3349478759999999,
+    "external_model_cost_currency": "USD",
+    "external_model_cost_kind": "estimated_peak_upper_bound",
+    "usage_unknown_reserved_usd": 0.0
+  },
+  "failure": null,
+  "parent_api_requests": 15,
+  "parent_reserved_and_estimated_usd": 0.089909688,
+  "scope": "one public-history adaptive development continuation; task-local errors retained, no retry"
+}

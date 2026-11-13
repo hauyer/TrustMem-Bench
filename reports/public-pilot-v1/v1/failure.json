@@ -1,0 +1,12 @@
+{
+  "stage": "zero-api-preflight",
+  "error_type": "TypeError",
+  "error": "defaultdict(set()) supplied an instance instead of factory; score could not start",
+  "test_errors": 3,
+  "unit_tests_run": 64,
+  "model_calls": 0,
+  "usd": 0,
+  "actual_preflight_session": 1646,
+  "preserved_frozen_inputs": true,
+  "recovery": "new separately frozen v2; no changes to v1 snapshot or acting traces"
+}

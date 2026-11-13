@@ -1,0 +1,22 @@
+{
+  "planned_streams": 12,
+  "planned_task_positions": 96,
+  "completed_streams": 0,
+  "executed_tasks": 0,
+  "completed": [],
+  "scored": [],
+  "failure": {
+    "type": "RuntimeError",
+    "message": "DeepSeek HTTP 400; see sanitized call log",
+    "calls": 1
+  },
+  "calls": 1,
+  "metrics": {
+    "external_model_calls": 1,
+    "external_model_cost": 0.0184866,
+    "external_model_cost_currency": "USD",
+    "external_model_cost_kind": "estimated_peak_upper_bound",
+    "usage_unknown_reserved_usd": 0.0184866
+  },
+  "scope": "two public histories, one joint-count mechanism, bounded pilot only"
+}

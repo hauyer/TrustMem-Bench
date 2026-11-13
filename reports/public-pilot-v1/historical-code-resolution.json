@@ -1,0 +1,29 @@
+{
+  "scope": "Historical manifests named then-current versioned source paths. Authorized source evolution is resolved to byte-identical historical Git blobs; no frozen manifest or raw task input is rewritten.",
+  "rows": [
+    {
+      "manifest": "artifacts/research_decisions/20261113-shared-reader-v1/freeze.json",
+      "original_versioned_path": "github-release/TrustMem-Bench/tests/test_reader.py",
+      "expected_sha256": "4cef2b4a840397f88a6a18b6a9d76884a49ce642ca0e24a9170c7202de959e53",
+      "current_working_copy_changed": true,
+      "immutable_resolution": "artifacts/research_decisions/20261113-versioned-input-resolution/f3dfad0/tests/test_reader.py",
+      "git_commit": "f3dfad0751ac2876290ff9bf7d352d64758fb940"
+    },
+    {
+      "manifest": "artifacts/research_decisions/20261113-confirmation-selection-v1/selection-freeze.json",
+      "original_versioned_path": "github-release/TrustMem-Bench/trustmem_runtime/reader.py",
+      "expected_sha256": "a19bf4b8173a375da9d5b8483b2e8fbcd3c418a2b0706468624412daa3bebcf6",
+      "current_working_copy_changed": true,
+      "immutable_resolution": "artifacts/research_decisions/20261113-versioned-input-resolution/f3dfad0/trustmem_runtime/reader.py",
+      "git_commit": "f3dfad0751ac2876290ff9bf7d352d64758fb940"
+    },
+    {
+      "manifest": "artifacts/research_decisions/20261113-confirmation-selection-v1/case-construction-freeze.json",
+      "original_versioned_path": "github-release/TrustMem-Bench/trustmem_runtime/reader.py",
+      "expected_sha256": "a19bf4b8173a375da9d5b8483b2e8fbcd3c418a2b0706468624412daa3bebcf6",
+      "current_working_copy_changed": true,
+      "immutable_resolution": "artifacts/research_decisions/20261113-versioned-input-resolution/f3dfad0/trustmem_runtime/reader.py",
+      "git_commit": "f3dfad0751ac2876290ff9bf7d352d64758fb940"
+    }
+  ]
+}

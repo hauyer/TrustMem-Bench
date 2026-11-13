@@ -1,0 +1,5 @@
+{
+  "type": "json_object",
+  "action": "query",
+  "scope": "full"
+}
