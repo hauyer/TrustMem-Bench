@@ -1,0 +1,8 @@
+slot,model,cohort,workflows,paired_openings,agreeing_terminal_controls,raw_outside_changes,strict_outside_changes,strict_outside_changes_missed_by_count,strict_outside_changes_missed_by_direct,strict_outside_changes_missed_by_both,strict_witnessed_target_inversions,verified_fee_pairs,fee_outside_additions,fee_net_decreases
+A,Qwen/Qwen3-32B,released,2,12,12,3,3,3,0,0,0,8,3,0
+A,Qwen/Qwen3-32B,candidate,1,8,6,1,1,1,0,0,1,4,0,1
+A_think,Qwen/Qwen3-32B,released,1,6,4,4,3,3,0,0,0,3,2,0
+B,LLM-Research/Llama-3.3-70B-Instruct,released,2,12,11,0,0,0,0,0,0,11,5,0
+B,LLM-Research/Llama-3.3-70B-Instruct,candidate,1,8,8,0,0,0,0,0,0,6,0,0
+C,mistralai/Mistral-Small-24B-Instruct-2501,released,2,12,6,10,5,1,3,0,0,11,5,0
+C,mistralai/Mistral-Small-24B-Instruct-2501,candidate,1,8,8,0,0,0,0,0,0,6,0,0

@@ -1,8 +1,5 @@
 __pycache__/
 *.py[cod]
-.env
-.env.*
-local-runs/
-*.sqlite
-*.gz
-*.parquet
+.venv/
+rendered/
+native-p3/

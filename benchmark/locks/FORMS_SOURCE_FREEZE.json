@@ -1,0 +1,338 @@
+{
+  "code": "4780ba60e61b8dd41e86a370560ca72de3e9ed61",
+  "files": {
+    "cases/__init__.py": {
+      "bytes": 50,
+      "sha256": "02c3c2afe3881fd34d6c213ff8ce1d28e4ef321b101b1363ad445db49c91fbb9"
+    },
+    "cases/oracle_clinical_one_data_collection/__init__.py": {
+      "bytes": 28,
+      "sha256": "f62af9128e4d8a5d66cf7bada7e0a2b78a5c15b00b770800a17c500fb244e569"
+    },
+    "cases/oracle_clinical_one_data_collection/case-manifest.json": {
+      "bytes": 9488,
+      "sha256": "5b8485d42f321e1375956167d3c5d314d933809616bfa256cd3e0ce5cf97c8bb"
+    },
+    "cases/oracle_clinical_one_data_collection/data/contract.json": {
+      "bytes": 657,
+      "sha256": "e76d080d6c7b80fc7ad6f200b4a797f5e00f0fcaf3457aac96a2076761abaa05"
+    },
+    "cases/oracle_clinical_one_data_collection/data/source-manifest.json": {
+      "bytes": 11460,
+      "sha256": "68196be50f9e24e3b6bbab07cc06fb3cac5e2f83fb5a81c1d2725b0b586e4065"
+    },
+    "cases/oracle_clinical_one_data_collection/driver.py": {
+      "bytes": 1913,
+      "sha256": "bd401b1bfed93270c984774cc0ca60e1b2e361a2a73d9d600957ee6dba7a7e8d"
+    },
+    "cases/oracle_clinical_one_data_collection/formal-binding.json": {
+      "bytes": 356,
+      "sha256": "396ca214d7deef5f14503daf9c330e03ff7949a3c3fc18fe93e8567443e1b279"
+    },
+    "cases/oracle_clinical_one_data_collection/raw/data/database/form.json": {
+      "bytes": 3532,
+      "sha256": "3f746a27480c9ca1aa62a4bb836c0c1b81703ebc27d570994c6289e4919a2c31"
+    },
+    "cases/oracle_clinical_one_data_collection/raw/data/database/kit.json": {
+      "bytes": 1858,
+      "sha256": "3b2c697f8397e1d84ed4a5bf6cd977d3513892e11f885f872192cae13de4304c"
+    },
+    "cases/oracle_clinical_one_data_collection/raw/data/database/query.json": {
+      "bytes": 2478,
+      "sha256": "ca9f7aaee312ba8ca0236c54b6522b068fbc1a75502286e5894cb94ac3ae6d5c"
+    },
+    "cases/oracle_clinical_one_data_collection/raw/data/database/question.json": {
+      "bytes": 592,
+      "sha256": "7774d5fabe4c66bf5c000be52c4fe2524436e5e058bbec2a8916ae808b1549bb"
+    },
+    "cases/oracle_clinical_one_data_collection/raw/data/database/repeating_form_instance.json": {
+      "bytes": 3224,
+      "sha256": "09802b96b03be9b981b8ceab9fcb5a8db4b03fc00123c3b7a3c6ed5a4d54e7e3"
+    },
+    "cases/oracle_clinical_one_data_collection/raw/data/database/seed.json": {
+      "bytes": 24839,
+      "sha256": "b2914dc941550aba06bd0e5179d856d93f7c770f42a16773b6590793503a6cc5"
+    },
+    "cases/oracle_clinical_one_data_collection/raw/data/database/shipment.json": {
+      "bytes": 2423,
+      "sha256": "1af2b04b6e8c734e81fdfcd9161a4bdf1f148babb37943c00ca6305d429d927a"
+    },
+    "cases/oracle_clinical_one_data_collection/raw/data/database/site.json": {
+      "bytes": 488,
+      "sha256": "b49581c696fb11b48b30cd9ca81fc8cabfe80edc78efeaf8f98d0b1ef4a64c95"
+    },
+    "cases/oracle_clinical_one_data_collection/raw/data/database/study.json": {
+      "bytes": 1938,
+      "sha256": "047514bc90cb284e1db26679b461e83ea4460f47dcd850f4b6b80172d75228bf"
+    },
+    "cases/oracle_clinical_one_data_collection/raw/data/database/subject.json": {
+      "bytes": 2283,
+      "sha256": "a654bb8918eb1a70d0a381276b7299f9a81c328913e01d455bd228ce6c69039f"
+    },
+    "cases/oracle_clinical_one_data_collection/raw/data/database/ui_context.json": {
+      "bytes": 1430,
+      "sha256": "5db425e6d702cd2e1967df9b95093c75c24bb17ec13640583f48c2a3dd356d4c"
+    },
+    "cases/oracle_clinical_one_data_collection/raw/data/database/visit.json": {
+      "bytes": 2327,
+      "sha256": "b50a942d839b2c83a0abce3098a6dcd8152cf62cc7d34a65cf61ddb75d34bc9f"
+    },
+    "cases/oracle_clinical_one_data_collection/raw/data/plan_runtime.json": {
+      "bytes": 810337,
+      "sha256": "193b0a9f4d2b1d708bedcf82a8d1628010ac6ecf81a8ac5c6033216abb19759a"
+    },
+    "cases/oracle_clinical_one_data_collection/raw/data/tasks/replay_tasks.json": {
+      "bytes": 201415,
+      "sha256": "7bf3b96ed0f08358dc8467b7c52be5dc051d92c4d83b7ee2c68516d5fac1547f"
+    },
+    "cases/oracle_clinical_one_data_collection/raw/data/tasks/runtime_probes.json": {
+      "bytes": 935958,
+      "sha256": "ea073cb41c983231b881ca45cc8e2863016ee9277637e54e7d8e91bf234bdd0f"
+    },
+    "cases/oracle_clinical_one_data_collection/raw/mcp_servers/__init__.py": {
+      "bytes": 1,
+      "sha256": "01ba4719c80b6fe911b091a7c05124b64eeece964e09c058ef8f9805daca546b"
+    },
+    "cases/oracle_clinical_one_data_collection/raw/mcp_servers/domain/__init__.py": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "cases/oracle_clinical_one_data_collection/raw/mcp_servers/domain/audit_log.py": {
+      "bytes": 187,
+      "sha256": "883eb2f995ea33ad24935b1a3f76fe30f641e520ca25293ab604156a619283f2"
+    },
+    "cases/oracle_clinical_one_data_collection/raw/mcp_servers/domain/workflow_engine.py": {
+      "bytes": 458,
+      "sha256": "ea13e00fa51dff4f79eb65b0263e8b7e74eadc7f307c86304cdfd19ea1f5a5d6"
+    },
+    "cases/oracle_clinical_one_data_collection/raw/mcp_servers/events/__init__.py": {
+      "bytes": 1,
+      "sha256": "01ba4719c80b6fe911b091a7c05124b64eeece964e09c058ef8f9805daca546b"
+    },
+    "cases/oracle_clinical_one_data_collection/raw/mcp_servers/events/event_dispatcher.py": {
+      "bytes": 3867,
+      "sha256": "714afc7ab67dfa2f3aaff3ce4f45589b594287998935f80c56988b8ec4407301"
+    },
+    "cases/oracle_clinical_one_data_collection/raw/mcp_servers/events/event_profile.json": {
+      "bytes": 2341,
+      "sha256": "5e91cb71867727eb4b25c80f189693b122dab4f4f622f0ddabde3b9e9bf9bcc2"
+    },
+    "cases/oracle_clinical_one_data_collection/raw/mcp_servers/runtime.py": {
+      "bytes": 17491,
+      "sha256": "e4942c50f07614c6f10907c6ce8386988d5b3ac33fd378e8488124d75ce73030"
+    },
+    "cases/oracle_clinical_one_data_collection/raw/mcp_servers/server.py": {
+      "bytes": 3219,
+      "sha256": "b8b37d18475bd2b36f03fb80e37309e58381f39a1504362c308b189c1eee9da6"
+    },
+    "cases/oracle_clinical_one_data_collection/raw/mcp_servers/state/__init__.py": {
+      "bytes": 1,
+      "sha256": "01ba4719c80b6fe911b091a7c05124b64eeece964e09c058ef8f9805daca546b"
+    },
+    "cases/oracle_clinical_one_data_collection/raw/mcp_servers/state/database.py": {
+      "bytes": 1613,
+      "sha256": "e98799c5753b32f2580dbb6a837827a6b67a611d2a024a2c781be4c45d2ee2d7"
+    },
+    "cases/oracle_clinical_one_data_collection/raw/mcp_servers/state/state_manager.py": {
+      "bytes": 2416,
+      "sha256": "a42845b32becbe86c971954053fdd711ccb228e734de4c4d31354c16f7635b3f"
+    },
+    "cases/oracle_clinical_one_data_collection/raw/mcp_servers/state/state_views.py": {
+      "bytes": 69,
+      "sha256": "620cfa0d2840419497a44019a17ca15a5a7f8edc83bed38d8c16082b586a7ea6"
+    },
+    "cases/oracle_clinical_one_data_collection/raw/mcp_servers/tools/__init__.py": {
+      "bytes": 1,
+      "sha256": "01ba4719c80b6fe911b091a7c05124b64eeece964e09c058ef8f9805daca546b"
+    },
+    "cases/oracle_clinical_one_data_collection/raw/mcp_servers/tools/add_subject.py": {
+      "bytes": 12651,
+      "sha256": "cc532979bb8139a4934a576c9a01675dcdecee684bc91c065eff985aa621525c"
+    },
+    "cases/oracle_clinical_one_data_collection/raw/mcp_servers/tools/answer_query.py": {
+      "bytes": 10650,
+      "sha256": "d67d68875451c29b4340468d57f07b41a694a7b94dfbaad061bc05c3c4249ae9"
+    },
+    "cases/oracle_clinical_one_data_collection/raw/mcp_servers/tools/clear_form_data.py": {
+      "bytes": 12988,
+      "sha256": "a0099382afb1756af09d450012cbea2a936aaa1dee76932c258eb963f77b7ac5"
+    },
+    "cases/oracle_clinical_one_data_collection/raw/mcp_servers/tools/count_forms_by_save_state.py": {
+      "bytes": 7276,
+      "sha256": "65581929ea94e8c5177e31db56fdb5278e34479b4596d394aab048486dec7eeb"
+    },
+    "cases/oracle_clinical_one_data_collection/raw/mcp_servers/tools/count_forms_by_status.py": {
+      "bytes": 7384,
+      "sha256": "15762f2470e9ed1ff9e1e3d1aab822a4e355298f150fc055075d0ae87b0264c1"
+    },
+    "cases/oracle_clinical_one_data_collection/raw/mcp_servers/tools/count_kits_by_status.py": {
+      "bytes": 7726,
+      "sha256": "93236c9da882a3dec544ddff19f4f2c4079c25e69bdcfddb5fa7734f728d5822"
+    },
+    "cases/oracle_clinical_one_data_collection/raw/mcp_servers/tools/count_randomized_subjects.py": {
+      "bytes": 7349,
+      "sha256": "7756377ef56c558aa7b0ff09f082f6b2adec321d0672f6491240585f1d836f0e"
+    },
+    "cases/oracle_clinical_one_data_collection/raw/mcp_servers/tools/count_repeating_forms.py": {
+      "bytes": 7009,
+      "sha256": "0f7c18b0811918896b5c992067f453d0a3ca05eed4f9f8994e3097adfbc82ff3"
+    },
+    "cases/oracle_clinical_one_data_collection/raw/mcp_servers/tools/count_shipments_by_status.py": {
+      "bytes": 7655,
+      "sha256": "0439dcfba1a2cb1f6997eb2fd73ee424ba3c5763081ccd228a81fa62a9aacacc"
+    },
+    "cases/oracle_clinical_one_data_collection/raw/mcp_servers/tools/count_subjects_by_status.py": {
+      "bytes": 7178,
+      "sha256": "4501ceea556edfb053077278b390a311470e0f06383bf7e3ba0191d433492bda"
+    },
+    "cases/oracle_clinical_one_data_collection/raw/mcp_servers/tools/count_visit_types.py": {
+      "bytes": 7939,
+      "sha256": "47277fb78508d87c9d882f6a24b5cdcae26284fab781f0489124441060436303"
+    },
+    "cases/oracle_clinical_one_data_collection/raw/mcp_servers/tools/count_visits_by_status.py": {
+      "bytes": 7679,
+      "sha256": "a802188a9930cbc4284f999f371815838deb52f0aec16e004ea4269d0f3d0b94"
+    },
+    "cases/oracle_clinical_one_data_collection/raw/mcp_servers/tools/dispense_kit.py": {
+      "bytes": 14893,
+      "sha256": "c5c69c74b0ec791831217e1b0d7f9ac2d4faa2237059fa10a1df8d0c28beaa15"
+    },
+    "cases/oracle_clinical_one_data_collection/raw/mcp_servers/tools/dispense_replacement_kit.py": {
+      "bytes": 13808,
+      "sha256": "2f8db58d83cd007552eaeb105dbc11928a7ea9a788ed28806da6e70e13aeaa73"
+    },
+    "cases/oracle_clinical_one_data_collection/raw/mcp_servers/tools/enter_repeating_form_data.py": {
+      "bytes": 14606,
+      "sha256": "f557c50f296625254a0e9ca3fd191a734a6e85c013b961072ab1ea91cc97b87f"
+    },
+    "cases/oracle_clinical_one_data_collection/raw/mcp_servers/tools/enter_visit_form_data.py": {
+      "bytes": 12584,
+      "sha256": "1873325cf409e9b8d7b17b439b05be3aad9364490076c28009ef5dd43dc8f215"
+    },
+    "cases/oracle_clinical_one_data_collection/raw/mcp_servers/tools/filter_subjects.py": {
+      "bytes": 12799,
+      "sha256": "35a12b78de6c1ee51ccc7150a5f9f43765f8d72b6cdd2201c0593b2978364182"
+    },
+    "cases/oracle_clinical_one_data_collection/raw/mcp_servers/tools/find_subject_numbers.py": {
+      "bytes": 9665,
+      "sha256": "ec0e7e4a086de894aee7ea4f8bbba02df47d9fb1bd00df57384710167bd42c01"
+    },
+    "cases/oracle_clinical_one_data_collection/raw/mcp_servers/tools/mark_subject_complete.py": {
+      "bytes": 12189,
+      "sha256": "1598759c2b989df40a54237f8fdd65b45ca584c1a5c83c0d7b883c2fee8540a3"
+    },
+    "cases/oracle_clinical_one_data_collection/raw/mcp_servers/tools/open_subject_visit.py": {
+      "bytes": 12526,
+      "sha256": "1dd0702d5d913de2ee574ad74f1a010ac50fb91768a23306a428ac4164971edb"
+    },
+    "cases/oracle_clinical_one_data_collection/raw/mcp_servers/tools/query_comments_by_status.py": {
+      "bytes": 7256,
+      "sha256": "40773ae8576ede272f6a5e618fad7eede358f2304b60b125d3576f8b9e3ed0b5"
+    },
+    "cases/oracle_clinical_one_data_collection/raw/mcp_servers/tools/randomize_subject.py": {
+      "bytes": 13524,
+      "sha256": "418dd45d4de9db4f10a8cc51ef65fa29825284d6f88d32f1ccc340d4ec65bea4"
+    },
+    "cases/oracle_clinical_one_data_collection/raw/mcp_servers/tools/reconcile_returned_kit.py": {
+      "bytes": 14107,
+      "sha256": "42acfa183ed7aa44352ffdbef8f42a65ddab0ab218530be2fbe4847888a54fa7"
+    },
+    "cases/oracle_clinical_one_data_collection/raw/mcp_servers/tools/register_shipment.py": {
+      "bytes": 14691,
+      "sha256": "bb4e34ec997f6cea7799ec7591476fa5c94151a6343f6fec2a585f3970d72acb"
+    },
+    "cases/oracle_clinical_one_data_collection/raw/mcp_servers/tools/repeating_answer_values.py": {
+      "bytes": 8022,
+      "sha256": "94288459a684c30168d360f124e5d6959d953500b29e76557b6c65669297a062"
+    },
+    "cases/oracle_clinical_one_data_collection/raw/mcp_servers/tools/save_close_visit_form.py": {
+      "bytes": 13170,
+      "sha256": "a3d9276696a3667c4fcbf071316fad44e0efc17d77a48bc0f4cfeafac230d83a"
+    },
+    "cases/oracle_clinical_one_data_collection/raw/mcp_servers/tools/screen_candidate.py": {
+      "bytes": 13026,
+      "sha256": "ee188202fb24cf911691e4b751ed42b3520d18ec80ac89877eabf681e2147fa6"
+    },
+    "cases/oracle_clinical_one_data_collection/raw/mcp_servers/tools/shipment_dispatch_dates.py": {
+      "bytes": 7703,
+      "sha256": "c6df67233193cba774a3137fee9200941d5aa5dad68dac79a27d2baf067a3380"
+    },
+    "cases/oracle_clinical_one_data_collection/raw/mcp_servers/tools/shipment_kit_count.py": {
+      "bytes": 7721,
+      "sha256": "db8ff93b775efa53978d4dca0650fcdbb028292e96cf317bf25161ed52a70ade"
+    },
+    "cases/oracle_clinical_one_data_collection/raw/mcp_servers/tools/skip_missed_visit.py": {
+      "bytes": 13097,
+      "sha256": "27a385fe1dcf0012f3891c2e38c5c7a8ea780559c101ad74a088695d5b1d7837"
+    },
+    "cases/oracle_clinical_one_data_collection/raw/mcp_servers/tools/subject_query_count.py": {
+      "bytes": 7568,
+      "sha256": "d7ff5c601f8f214d064752753846cf7aae2b8884ff5866d14e0835270320609d"
+    },
+    "cases/oracle_clinical_one_data_collection/raw/mcp_servers/tools/subject_visit_dates.py": {
+      "bytes": 7860,
+      "sha256": "d2d06b81260c090e34181af5a236ac468e60a89eb8b657b1ae81151222fca6ad"
+    },
+    "cases/oracle_clinical_one_data_collection/raw/mcp_servers/tools/subject_visit_statuses.py": {
+      "bytes": 7945,
+      "sha256": "7507586c26dc51a5dd1b8ce0435e6af9cb279767baa09827c71b87cef696a4dd"
+    },
+    "cases/oracle_clinical_one_data_collection/raw/mcp_servers/tools/sum_missing_kit_units.py": {
+      "bytes": 9052,
+      "sha256": "eb35a857d439b35a5673c6a799b70c1a005db0efc492c2bfe794753e7a67ecaf"
+    },
+    "cases/oracle_clinical_one_data_collection/raw/mcp_servers/tools/sum_returned_kit_units.py": {
+      "bytes": 7678,
+      "sha256": "7800c0bdc8762a798781d826a9e7479301a2ccd343b20d8212a1fb880c879b82"
+    },
+    "cases/oracle_clinical_one_data_collection/raw/mcp_servers/tools/update_completed_form_value.py": {
+      "bytes": 12692,
+      "sha256": "91232cffc48b87b3958da667b13564741e0b2a62f51c5060ac5ddbfca2f663ae"
+    },
+    "cases/oracle_clinical_one_data_collection/raw/mcp_servers/tools/view_dispensed_kit_instructions.py": {
+      "bytes": 12432,
+      "sha256": "65462d96864a4b013e8df3ecd2f0c18150bf30253be9c120cb445d3684dc9d73"
+    },
+    "cases/oracle_clinical_one_data_collection/raw/mcp_servers/tools/visit_answer_count.py": {
+      "bytes": 7700,
+      "sha256": "50082553f3c5f77dfbc5c3f70de0798f47deec71a637dafa431975748c3fecd4"
+    },
+    "cases/oracle_clinical_one_data_collection/raw/mcp_servers/tools/visit_answer_values.py": {
+      "bytes": 7863,
+      "sha256": "4c78c51c6f5cb1342f578b995786d1e3281526fad1f2bd013d20c2cdc7764250"
+    },
+    "cases/oracle_clinical_one_data_collection/raw/mcp_servers/tools/withdraw_subject.py": {
+      "bytes": 13105,
+      "sha256": "70e3053b98e0d23dafdecccb09557dbf3175cedbab570b243bf84f4ffe2f14fa"
+    },
+    "cases/oracle_clinical_one_data_collection/raw/requirements.txt": {
+      "bytes": 10,
+      "sha256": "e5d9943702bb51c0b13a5891bf396d41a5b0d269f583ad57534e5021a32af50d"
+    },
+    "cases/oracle_clinical_one_data_collection/raw/tool_classification.json": {
+      "bytes": 1305,
+      "sha256": "53b6336ced3efb98b34abd8767e9e0cd6ce354bd9f8caf8fbc138f06e58a1134"
+    },
+    "cases/oracle_clinical_one_data_collection/runtime.py": {
+      "bytes": 37696,
+      "sha256": "31b7d24f49c55c168d685c9c60c1c36465295d9f8ba800b50c22dd3e3a554267"
+    },
+    "cases/oracle_clinical_one_data_collection/spec.py": {
+      "bytes": 66741,
+      "sha256": "1881d62a8610b391c84cbc2bb7f1608df3fd84a8b1237e4d7ed9f85ea4e09cf1"
+    }
+  },
+  "pin": {
+    "manifest": "cases-manifest.json",
+    "manifest_sha256": "ccab283c8ead388bd8ae390d6284f2d0b38ea590a75019459f9c037902e637a4",
+    "repo_id": "JoeYing/ReScopeBench",
+    "revision": "f726fd6939a77440992dc433872acf2d2d03d158"
+  },
+  "shared": {
+    "__init__.py": "f28ecfb8eaf61bc9cde4c3ff517c67963e65dfcfd211089cc91efc78e460f2e6",
+    "case_validation.py": "c523190c476fb3c076ba27f79a4b5c6f5c8b47f4abe7430a5df6e890de0507d9",
+    "pathing.py": "a8eac167b42da4aba5946a414f018b4ecd68156bb32d2a05af640ba328428de9",
+    "public_projection.py": "5ea5f639782bf4015aff4b65d5982ce3a1e3318a7171d3f7ee70a61fd5002dba",
+    "raw_module_isolation.py": "3c09e1f3b797cc2918dc039d4cda38d58fc13d5c7dc6a361dd85a11051b723c1"
+  }
+}

@@ -1,0 +1,96 @@
+{
+  "analysis_units": [
+    "workflow_history",
+    "paired_cell"
+  ],
+  "api_usd_cap": 0,
+  "code_hashes": {
+    "eval_ext/__init__.py": "4aabee9ea07c1097b5179e264aef7a1e1739219c8be307f1e15ee8b7b8ea25fa",
+    "eval_ext/budget.py": "c3873c487eb6d9e50279ad923f74095b953e3bbbaafcbe914c05e02a5306f695",
+    "eval_ext/contracts.py": "496586e657a2140b74d707ea50fb65d565a914b253206ee7869d3ded7a610af5",
+    "eval_ext/native_audit.py": "0e7ae3cf12227c437a71756af14c4bba3d64472ab99a3491d8c9d19ad690f93d",
+    "eval_ext/native_audit_p4b.py": "dad9a50254507d7241b81b2fdbcd6dd24aa2127b69b3fb00214bb8bf90f6baee",
+    "eval_ext/openai_compatible.py": "97d268dbd546c282f99b4777b0e2e1aeb7b09639aa55fc2eb53983c955938050",
+    "eval_ext/recorded.py": "de7397539f370d0fc760e135db7d5c6284e72bdd170871283aaccc6bbf53d5c3",
+    "run_p4b_p3_extension.py": "5743b007ade435e707a4fe1c6d73cec1d32a33ae9b6727b52985df11feec5386"
+  },
+  "experiment_id": "P4B_P3_OFFICIAL_WORKFLOWS_NATIVE_AUDIT",
+  "keep_repeats": 3,
+  "local_gpu_compute_backend": "modelscope_free_gpu",
+  "matrix_attempt_cap_per_slot": 4000,
+  "max_output_tokens": 384,
+  "model_slots": [
+    {
+      "model_version": "Qwen/Qwen3-32B",
+      "provider": "openai_compatible_local",
+      "role": "Family 1 primary reference (Qwen3-32B, 192GB AMD)",
+      "slot": "A",
+      "vllm_tool_parser": "hermes"
+    },
+    {
+      "model_version": "mistralai/Mistral-Small-24B-Instruct-2501",
+      "provider": "openai_compatible_local",
+      "role": "Family 3 distinct family (Mistral-Small-24B, 192GB AMD)",
+      "slot": "C",
+      "vllm_tool_parser": "mistral"
+    },
+    {
+      "model_version": "LLM-Research/Llama-3.3-70B-Instruct",
+      "provider": "openai_compatible_local",
+      "role": "Family 2 distinct family (Llama-3.3-70B, 192GB AMD)",
+      "slot": "B",
+      "vllm_tool_parser": "llama3_json"
+    }
+  ],
+  "opening_snapshot_hashes": {
+    "backup_recovery-T05:world": "5c96c6b4dc68bb29ca238973bc40c99180cf637eef446d01a8b0a0484d48d1d0",
+    "backup_recovery-T06:world": "f30c3e7dd9a3af9a7035c398aee595a1377614d426a82cb3daafeacc028bd09b",
+    "backup_recovery-T08:world": "043ff2d6e02a782810cfb471b5663627d44c81c3166ddca0a7f2896a651607bf",
+    "backup_recovery-T09:world": "6ee27f0bad6ad7817a984917ca61cf1fb2f8bbac20e35be1baba2c3519b619e6",
+    "backup_recovery-T10:world": "bf0df9617e77e7153599ff66f0cad13d1cfc9da9dd6a2194984f38c3bf4c96ad",
+    "backup_recovery-T11:world": "a68f8c336f8b2ee4e089560f09e648a02f193deb27a423258d4fc56383d2e6cf",
+    "backup_recovery-T12:world": "5942f1b1fc1de5272e46620fe35d87d575f968788d0df8b16cf7416e2046fa76",
+    "backup_recovery-T13:world": "c38bb6c713e2b098b61ca04389cf72cd590ad851b92c95b36e0e0af758cfb6ad",
+    "backup_recovery-T14:world": "07cb369f19b6c247cc06cce6618a9a7d8a42014ca8efc2d40128cbac4a5b7361",
+    "backup_recovery-T15:world": "7cbdfa12fb01a10d3ffb104748a0b2ef8ca99d933ce9dd9f3fdfd2c0c292bd2c",
+    "railway_ticketing-T09:world": "99324920598830a15126e383fb53db0d5ea40b57a410e510a5783acc700147c5",
+    "railway_ticketing-T10:world": "760b48510fad02f44849e3c84264eef9cf4066a77bcf0049ceb94f8aed356ff8",
+    "railway_ticketing-T11:world": "400774169aaed3a9245e2d36f17e7d56db8dcfab33da5ecb696d70454d13544e",
+    "railway_ticketing-T12:world": "5e3721437213cd69c360ac77b300a24ad9d38091aba4c4073a5b0fb52ee866a2",
+    "railway_ticketing-T13:world": "d09a165cd57cd45a70089f6ef2bfbee8c24baf8b3e3a5066731f182890dfebf2",
+    "railway_ticketing-T14:world": "4bfcba04e561feaf3ea7ab6bc2a7be0a9ead76335bdbbfc4bab20ed9b50b48bf",
+    "railway_ticketing-T15:world": "8b7ca957a901fbcaf6490ef99797e424dc1786f2e80585818b0a42c0adca8796",
+    "railway_ticketing-T16:world": "4fddc9ca1fdb45b1141a33dcb974c38663702cc1ff5b7a4f14e2d5bc2238ca49"
+  },
+  "opening_snapshot_manifest_sha256": "978730fe30eab422528be8b9d6a7dd129a635904fc11d89b91854ea4ccd7e0fa",
+  "paid_api_funding_approved": false,
+  "protocol_path": "experiments/memory_correctability/P4B_P3_EXTENSION_PROTOCOL.md",
+  "protocol_sha256": "551b50387f7be7337dd0d6a52faedbe9034d3f9107986a8c9ee940b3f4e8cc18",
+  "qualification_attempt_cap": 250,
+  "qualification_cases": [
+    "backup_recovery-T11"
+  ],
+  "released_p3_extension_cases": [
+    "backup_recovery-T05",
+    "backup_recovery-T06",
+    "backup_recovery-T08",
+    "backup_recovery-T09",
+    "backup_recovery-T10",
+    "backup_recovery-T11",
+    "backup_recovery-T12",
+    "backup_recovery-T13",
+    "backup_recovery-T14",
+    "backup_recovery-T15",
+    "railway_ticketing-T09",
+    "railway_ticketing-T10",
+    "railway_ticketing-T11",
+    "railway_ticketing-T12",
+    "railway_ticketing-T13",
+    "railway_ticketing-T14",
+    "railway_ticketing-T15",
+    "railway_ticketing-T16"
+  ],
+  "schema": "trustmem/model-family-freeze/v1",
+  "session_protocol": "single_native_call_per_turn",
+  "status": "frozen_ready_for_local_gpu"
+}

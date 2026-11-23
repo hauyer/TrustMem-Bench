@@ -1,0 +1,91 @@
+phase,model,workflow,opening,direct_scope,keep_r0,keep_r1,keep_r2,sham,remove,fee_only,waived_units,verified_fee,control_group,observed_relation
+P4,Qwen3-32B,forms,11,q2,q2,q2,q2,q2,q2,q2,5,1,sham_matched,all_equal
+P4,Qwen3-32B,forms,12,q4,q4,q4,q4,q4,q4,q2 q4,5,1,sham_matched,fee_only_outside_gain
+P4,Qwen3-32B,forms,13,q2,q2,q2,q2,q2,q1,NA,NA,0,excluded,NA
+P4,Qwen3-32B,forms,14,q1,q1,q1,q1,q1,q3,NA,NA,0,excluded,NA
+P4,Qwen3-32B,forms,15,q4,q4,q4,q4,q4,q4,q3 q4,5,1,sham_matched,fee_only_outside_gain
+P4,Qwen3-32B,forms,16,q3,q3,q3,q3,q3,q2,NA,NA,0,excluded,NA
+P4,Qwen3-32B,medical_appointment,11,q2,q1,q1,NA,q1,q1,NA,NA,0,excluded,NA
+P4,Qwen3-32B,medical_appointment,12,q2,q2,q2,NA,q2,q2,q2,16,1,sham_matched,all_equal
+P4,Qwen3-32B,medical_appointment,13,q2,q2,q2,NA,q2,q2,q2,16,1,sham_matched,all_equal
+P4,Qwen3-32B,medical_appointment,14,q1,q1,q1,NA,q1,q1,q1,16,1,sham_matched,all_equal
+P4,Qwen3-32B,medical_appointment,15,q3,q3,q3,NA,q3,q3,q1 q3,16,1,sham_matched,fee_only_outside_gain
+P4,Qwen3-32B,medical_appointment,16,q2,q1,q1,NA,q1,q1,q1,16,1,sham_matched,all_equal
+P4,Llama-3.3-70B,forms,11,q2,q2,q2,q2,q2,q2,q2,5,1,sham_matched,all_equal
+P4,Llama-3.3-70B,forms,12,q4,q4,q4,q4,q4,q4,q2 q4,5,1,sham_matched,fee_only_outside_gain
+P4,Llama-3.3-70B,forms,13,q2,q2,q2,q2,q2,q2,q2,5,1,sham_matched,all_equal
+P4,Llama-3.3-70B,forms,14,q1,q1,q1,q1,q1,q1,q1 q3,5,1,sham_matched,fee_only_outside_gain
+P4,Llama-3.3-70B,forms,15,q4,q4,q4,q4,q4,q4,q3 q4,5,1,sham_matched,fee_only_outside_gain
+P4,Llama-3.3-70B,forms,16,q3,q3,q3,q3,q3,q3,q2 q3,5,1,sham_matched,fee_only_outside_gain
+P4,Llama-3.3-70B,medical_appointment,11,q2,{},{},NA,q1,{},NA,NA,0,excluded,NA
+P4,Llama-3.3-70B,medical_appointment,12,q2,{},{},NA,{},{},{},16,1,sham_matched,all_equal
+P4,Llama-3.3-70B,medical_appointment,13,q2,q2,q2,NA,q2,q2,q2,16,1,sham_matched,all_equal
+P4,Llama-3.3-70B,medical_appointment,14,q1,{},{},NA,{},{},{},16,1,sham_matched,all_equal
+P4,Llama-3.3-70B,medical_appointment,15,q3,q3,q3,NA,q3,q3,q1 q3,16,1,sham_matched,fee_only_outside_gain
+P4,Llama-3.3-70B,medical_appointment,16,q2,q1,q1,NA,q1,q1,q1,16,1,sham_matched,all_equal
+P4,Mistral-Small-24B,forms,11,q2,q1 q2,q1 q2,q1 q2,q1 q2,q2,q2,5,1,sham_matched,receipt_only
+P4,Mistral-Small-24B,forms,12,q4,q1 q2 q4,q1 q2 q4,q1 q2 q3 q4,q1 q2 q3 q4,q4,q2 q4,5,1,excluded,NA
+P4,Mistral-Small-24B,forms,13,q2,q1 q4,q1 q4,q1 q4,q1 q2,q2,q2,5,1,excluded,NA
+P4,Mistral-Small-24B,forms,14,q1,q2 q3 q4,q2 q3 q4,q2 q3 q4,q2 q3 q4,q1,q1,5,1,sham_matched,receipt_only
+P4,Mistral-Small-24B,forms,15,q4,q1 q2 q3 q4,q1 q2 q3 q4,q1 q2 q3 q4,q2 q3 q4,q4,q3 q4,5,1,excluded,NA
+P4,Mistral-Small-24B,forms,16,q3,q1 q2 q3,q1 q2 q3,q1 q2 q3,q1 q2 q3,q3,q2 q3,5,1,sham_matched,three_distinct
+P4,Mistral-Small-24B,medical_appointment,11,q2,{},{},NA,q1,q1,NA,NA,0,excluded,NA
+P4,Mistral-Small-24B,medical_appointment,12,q2,{},{},NA,q1,{},{},16,1,excluded,NA
+P4,Mistral-Small-24B,medical_appointment,13,q2,q1,q1,NA,q1,q2,q1 q2,16,1,sham_matched,three_distinct
+P4,Mistral-Small-24B,medical_appointment,14,q1,{},{},NA,{},q1,q1,16,1,sham_matched,receipt_only
+P4,Mistral-Small-24B,medical_appointment,15,q3,q2 q3,q2 q3,NA,q2 q3,q3,q1 q3,16,1,sham_matched,three_distinct
+P4,Mistral-Small-24B,medical_appointment,16,q2,{},q1,NA,{},q1,q1,16,1,excluded,NA
+P4b,Qwen3-32B,backup_recovery,5,q1,{},{},{},{},{},NA,NA,0,excluded,NA
+P4b,Qwen3-32B,backup_recovery,6,q2,{},{},{},NA,{},NA,NA,0,excluded,NA
+P4b,Qwen3-32B,backup_recovery,8,q1,{},{},{},NA,{},{},20,1,no_sham,all_equal
+P4b,Qwen3-32B,backup_recovery,9,q2,{},{},{},NA,{},NA,NA,0,excluded,NA
+P4b,Qwen3-32B,backup_recovery,10,q1,{},{},{},{},q2,NA,NA,0,excluded,NA
+P4b,Qwen3-32B,backup_recovery,11,q1,{},{},{},{},{},NA,NA,0,excluded,NA
+P4b,Qwen3-32B,backup_recovery,12,q1,{},{},{},NA,{},NA,NA,0,excluded,NA
+P4b,Qwen3-32B,backup_recovery,13,q1,{},{},{},{},{},NA,NA,0,excluded,NA
+P4b,Qwen3-32B,backup_recovery,14,q1,{},{},{},q1,{},NA,NA,0,excluded,NA
+P4b,Qwen3-32B,backup_recovery,15,q1,{},{},{},NA,{},NA,NA,0,excluded,NA
+P4b,Qwen3-32B,railway_ticketing,9,q1,q1,q1,q1,NA,q1,q1,8,1,no_sham,all_equal
+P4b,Qwen3-32B,railway_ticketing,10,q1,q2,q2,q2,NA,q2,NA,NA,0,excluded,NA
+P4b,Qwen3-32B,railway_ticketing,11,q1,q2 q3,q2 q3,q2 q3,NA,q4,NA,NA,0,excluded,NA
+P4b,Qwen3-32B,railway_ticketing,12,q1,q1 q2 q3,q1 q2 q3,q1 q2 q3,NA,q1,q1,8,1,no_sham,receipt_only
+P4b,Qwen3-32B,railway_ticketing,13,q1,q1 q2,q1 q2,q1 q2,NA,q1,q1,8,1,no_sham,receipt_only
+P4b,Qwen3-32B,railway_ticketing,14,q1,q1 q2 q3,q1 q2 q3,q1 q2 q3,NA,q3,NA,NA,0,excluded,NA
+P4b,Qwen3-32B,railway_ticketing,15,q2,q1,q1,q1,NA,{},{},8,1,no_sham,receipt_only
+P4b,Qwen3-32B,railway_ticketing,16,q1,q2,q2,q2,NA,{},NA,NA,0,excluded,NA
+P4b,Llama-3.3-70B,backup_recovery,5,q1,{},{},{},{},{},NA,NA,0,excluded,NA
+P4b,Llama-3.3-70B,backup_recovery,6,q2,{},{},{},NA,{},NA,NA,0,excluded,NA
+P4b,Llama-3.3-70B,backup_recovery,8,q1,{},{},{},NA,{},NA,NA,0,excluded,NA
+P4b,Llama-3.3-70B,backup_recovery,9,q2,{},{},{},NA,{},NA,NA,0,excluded,NA
+P4b,Llama-3.3-70B,backup_recovery,10,q1,{},{},{},{},{},NA,NA,0,excluded,NA
+P4b,Llama-3.3-70B,backup_recovery,11,q1,{},{},{},{},{},NA,NA,0,excluded,NA
+P4b,Llama-3.3-70B,backup_recovery,12,q1,{},{},{},NA,{},NA,NA,0,excluded,NA
+P4b,Llama-3.3-70B,backup_recovery,13,q1,{},{},{},{},{},NA,NA,0,excluded,NA
+P4b,Llama-3.3-70B,backup_recovery,14,q1,{},{},{},{},{},NA,NA,0,excluded,NA
+P4b,Llama-3.3-70B,backup_recovery,15,q1,{},{},{},NA,{},NA,NA,0,excluded,NA
+P4b,Llama-3.3-70B,railway_ticketing,9,q1,q1,q1,q1,NA,q1,q1,8,1,no_sham,all_equal
+P4b,Llama-3.3-70B,railway_ticketing,10,q1,q2,q2,q2,NA,q2,q2,8,1,no_sham,all_equal
+P4b,Llama-3.3-70B,railway_ticketing,11,q1,q3,q3,q3,NA,q2,q2,8,1,no_sham,receipt_only
+P4b,Llama-3.3-70B,railway_ticketing,12,q1,q1 q2 q3,q1 q2 q3,q1 q2 q3,NA,q1 q3,q1,8,1,no_sham,three_distinct
+P4b,Llama-3.3-70B,railway_ticketing,13,q1,q1 q2,q1 q2,q1 q2,NA,q1 q2,q1 q2,8,1,no_sham,all_equal
+P4b,Llama-3.3-70B,railway_ticketing,14,q1,q1 q2 q3,q1 q2 q3,q1 q2 q3,NA,q1 q3,q1 q3,8,1,no_sham,receipt_only
+P4b,Llama-3.3-70B,railway_ticketing,15,q2,q1,q1,q1,NA,{},{},8,1,no_sham,receipt_only
+P4b,Llama-3.3-70B,railway_ticketing,16,q1,q2,q2,q2,NA,q2,{},8,1,no_sham,fee_only_other
+P4b,Mistral-Small-24B,backup_recovery,5,q1,{},{},{},{},{},{},20,1,sham_matched,all_equal
+P4b,Mistral-Small-24B,backup_recovery,6,q2,q2,q1 q2,{},NA,{},{},20,1,excluded,NA
+P4b,Mistral-Small-24B,backup_recovery,8,q1,{},{},{},NA,{},{},20,1,no_sham,all_equal
+P4b,Mistral-Small-24B,backup_recovery,9,q2,{},{},{},NA,{},NA,NA,0,excluded,NA
+P4b,Mistral-Small-24B,backup_recovery,10,q1,{},{},{},{},{},NA,NA,0,excluded,NA
+P4b,Mistral-Small-24B,backup_recovery,11,q1,{},{},{},{},{},{},20,1,sham_matched,all_equal
+P4b,Mistral-Small-24B,backup_recovery,12,q1,{},{},{},NA,{},NA,NA,0,excluded,NA
+P4b,Mistral-Small-24B,backup_recovery,13,q1,{},{},{},{},q1,q1,20,1,sham_matched,receipt_only
+P4b,Mistral-Small-24B,backup_recovery,14,q1,q1,q1,q1,q1,{},{},20,1,sham_matched,receipt_only
+P4b,Mistral-Small-24B,backup_recovery,15,q1,{},{},{},NA,{},NA,NA,0,excluded,NA
+P4b,Mistral-Small-24B,railway_ticketing,9,q1,q1,q1,q1,NA,{},NA,NA,0,excluded,NA
+P4b,Mistral-Small-24B,railway_ticketing,10,q1,q2,q2,q2,NA,q2,NA,NA,0,excluded,NA
+P4b,Mistral-Small-24B,railway_ticketing,11,q1,q2,q2,q2,NA,{},NA,NA,0,excluded,NA
+P4b,Mistral-Small-24B,railway_ticketing,12,q1,q1 q3,q1 q3,q1 q3,NA,{},NA,NA,0,excluded,NA
+P4b,Mistral-Small-24B,railway_ticketing,13,q1,q1 q2,q1 q2,q1 q2,NA,q2,NA,NA,0,excluded,NA
+P4b,Mistral-Small-24B,railway_ticketing,14,q1,q1 q3,q1 q3,q1 q3,NA,{},NA,NA,0,excluded,NA
+P4b,Mistral-Small-24B,railway_ticketing,15,q2,{},{},{},NA,q1,NA,NA,0,excluded,NA
+P4b,Mistral-Small-24B,railway_ticketing,16,q1,q2,q2,q2,NA,q2,NA,NA,0,excluded,NA

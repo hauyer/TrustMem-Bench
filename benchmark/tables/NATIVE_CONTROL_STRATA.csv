@@ -1,0 +1,8 @@
+phase,cohort,slot,eligible,all_equal,same_changed_set,receipt_only,fee_only_outside_gain,fee_only_other,three_distinct,fee_net_down
+P4,sham_matched,A,8,5,0,0,3,0,0,0
+P4,sham_matched,B,11,6,0,0,5,0,0,0
+P4,sham_matched,C,6,0,0,3,0,0,3,0
+P4b,no_sham,A,5,2,0,3,0,0,0,0
+P4b,no_sham,B,8,3,0,3,0,1,1,2
+P4b,no_sham,C,1,1,0,0,0,0,0,0
+P4b,sham_matched,C,4,2,0,2,0,0,0,0

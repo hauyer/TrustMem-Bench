@@ -1,0 +1,12 @@
+table,pdf_page,tex_label,topic
+1,4,tab:audit-arms,Audit comparisons
+2,6,tab:metric-detection,Completed-set detection
+3,7,tab:p3-workflows,P3 workflow counts and controls
+4,8,tab:intervention-evidence,"Detection, attribution, and repair evidence"
+5,10,tab:diagnosis,Single-trajectory diagnosis
+6,11,tab:native-models,P4 native-model results
+7,12,tab:receipt-versus-fee,Receipt restoration versus a single fee waiver
+8,12,tab:memory-use,P4 reading and optional archive use
+9,12,tab:native-interface,Same-weight Qwen interface comparison
+10,16,tab:related-work,Related-work comparison
+11,17,tab:released-diagnosis,Released-only diagnostic scores

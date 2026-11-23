@@ -1,0 +1,8 @@
+cohort,eligible,keep_equals_archive,sham_available,sham_equals_keep,archive_changed,charge_eligible,fee_matches_archive,changes_with_charge,changes_without_charge,order_cross_checked,order_interaction,net_loss
+all_five,128,128,70,70,59,68,68,16,43,38,15,10
+api_reliability,16,16,16,16,13,8,8,6,7,6,4,0
+backup_recovery,20,20,10,10,8,12,12,1,7,4,1,1
+k8s_operations,32,32,32,32,3,18,18,0,3,3,0,2
+medical_appointment,12,12,12,12,7,6,6,1,6,5,3,3
+railway_ticketing,48,48,0,0,28,24,24,8,20,20,7,4
+released_four,112,112,54,54,46,60,60,10,36,32,11,10

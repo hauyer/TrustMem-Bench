@@ -1,0 +1,5 @@
+cohort,question,histories,screened,eligible,changes,outside_changes,no_change,miss_total_only,miss_direct_only,miss_both,miss_outside_net_count,static_d1_right_d2b_wrong,static_d1_wrong_d2b_right,other_d1_right_d2b_wrong,other_d1_wrong_d2b_right
+all_five,total,5,132,128,59,39,69,14,24,0,0,26,11,1,0
+all_five,fee,5,132,68,16,16,52,0,16,0,0,6,0,1,0
+released_four,total,4,116,112,46,29,66,10,18,0,0,25,6,1,0
+released_four,fee,4,116,60,10,10,50,0,10,0,0,6,0,1,0

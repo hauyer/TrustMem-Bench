@@ -1,0 +1,5 @@
+slot,model,fee_verified,eligible,keep_equals_fee,keep_equals_remove,null_with_outside_addition,null_with_outside_addition_and_net_gain
+P3,Fixed controllers,68,68,68,52,0,0
+A,Qwen/Qwen3-32B,8,8,5,8,3,3
+B,LLM-Research/Llama-3.3-70B-Instruct,11,11,6,11,5,5
+C,mistralai/Mistral-Small-24B-Instruct-2501,11,6,0,0,0,0

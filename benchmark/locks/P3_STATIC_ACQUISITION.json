@@ -1,0 +1,342 @@
+[
+  {
+    "name": "cases/api_reliability/case-manifest.json",
+    "sha256": "1cb6cd603c31b23352958e5a32ced808fe36b1bfc7b76e8368dc88330a626d9b",
+    "verified": true
+  },
+  {
+    "name": "cases/api_reliability/data/public/tasks/T01.json",
+    "sha256": "7d05c7750238df431102bcf39f1c3e51d086c3a3ecd84505d26e7ac43210aa72",
+    "verified": true
+  },
+  {
+    "name": "cases/api_reliability/data/public/tools.json",
+    "sha256": "15502e104f74039c9acf9c7ae9468da91771686a61dde4a3e7d25821c38ad051",
+    "verified": true
+  },
+  {
+    "name": "cases/api_reliability/driver.py",
+    "sha256": "054296560421daae3161a3834a3fe58957471a93b8dd9fdcd464403ae36950fd",
+    "verified": true
+  },
+  {
+    "name": "cases/api_reliability/formal-binding.json",
+    "sha256": "044d5576ba7b15e44138d0ba50e4167b0996905fa640d61369c6fee0a207a265",
+    "verified": true
+  },
+  {
+    "name": "cases/api_reliability/recovery_policy.py",
+    "sha256": "1e00f0e16f3dd77a5c77a9ae3c3352f1efd22ac7cceedb7f382f92175ad208a0",
+    "verified": true
+  },
+  {
+    "name": "cases/api_reliability/spec.py",
+    "sha256": "5aaaca91d5297d6cb8f71641d938f0eadce59e537349d91056232d41a1eec3b4",
+    "verified": true
+  },
+  {
+    "name": "cases/api_reliability/stream_runtime.py",
+    "sha256": "884a91a3ad5d142166e200672df7d32732baeca6a5e04e2fb88aae377fbf315e",
+    "verified": true
+  },
+  {
+    "name": "cases/backup_recovery/case-manifest.json",
+    "sha256": "1ff163ebbe9871126682c3a224366a39207af3a32691b24bf86620c576aa664f",
+    "verified": true
+  },
+  {
+    "name": "cases/backup_recovery/data/contract.json",
+    "sha256": "3d9c0f41692eb79aeadeb6892de1524355b4a1b15b28ee0c215dfa7578f32ee7",
+    "verified": true
+  },
+  {
+    "name": "cases/backup_recovery/driver.py",
+    "sha256": "ab7ea04b5cedc5f5ca6bdb698c1bc61cd4a73732e81b1c78bfd42e2262cb94da",
+    "verified": true
+  },
+  {
+    "name": "cases/backup_recovery/formal-binding.json",
+    "sha256": "f2c73964831fc716097608cc3e8ec80b11ff2fd5cf1acff6f5163f29b64fa43c",
+    "verified": true
+  },
+  {
+    "name": "cases/backup_recovery/runtime.py",
+    "sha256": "663e8f518c964d73c4f53df14f1fadd6c6e8e5f4062832cda21eb29f55569e55",
+    "verified": true
+  },
+  {
+    "name": "cases/backup_recovery/spec.py",
+    "sha256": "a58f325045a66bf8aa0a50ca6428f894597f8d4fe58245cba7eb5473bcadc66a",
+    "verified": true
+  },
+  {
+    "name": "cases/emergency_response/case-manifest.json",
+    "sha256": "fa682a9f75b25dd2061edbfbd200cf44c852273bdf11171cb122f3dc32f1413d",
+    "verified": true
+  },
+  {
+    "name": "cases/emergency_response/data/contract.json",
+    "sha256": "3c4f3c5ddc366be52592af2d52cd94ab071b222099ad119690de96bc30df59c2",
+    "verified": true
+  },
+  {
+    "name": "cases/emergency_response/driver.py",
+    "sha256": "d4f78874be092a731c04fce82a674f3c3438ea122a3f383afdbbb0c372b04fe4",
+    "verified": true
+  },
+  {
+    "name": "cases/emergency_response/formal-binding.json",
+    "sha256": "8db1cf55b4562cc0cfcc1cb9d2fa9f6252ee54254ba34de25bf1bc486b2a716c",
+    "verified": true
+  },
+  {
+    "name": "cases/emergency_response/runtime.py",
+    "sha256": "551f6b08e2cc38980510e4d78a84aa87a667f7af6e13582b3873b59eb7ebb7d2",
+    "verified": true
+  },
+  {
+    "name": "cases/emergency_response/spec.py",
+    "sha256": "b53796c4208ad16c2cad97ef4bbb34c4b45990529d3a6cc0572db53051e8ffca",
+    "verified": true
+  },
+  {
+    "name": "cases/k8s_operations/case-manifest.json",
+    "sha256": "2a861cc712750c49a3af2e8bdd66d59db02cd876efe6d8d0f9f881940a841cda",
+    "verified": true
+  },
+  {
+    "name": "cases/k8s_operations/data/contract.json",
+    "sha256": "571dd0cc6757801b1cee4485451f03dd1fe217e8b09dad2de7ae4b5c4346217c",
+    "verified": true
+  },
+  {
+    "name": "cases/k8s_operations/driver.py",
+    "sha256": "657ce5a941b926db871e557d6e2b782075d7bb3321972e22e6f1f5af201b105d",
+    "verified": true
+  },
+  {
+    "name": "cases/k8s_operations/formal-binding.json",
+    "sha256": "695f142ef20dfc5a440e948d24a92046e1bae770b03577246af51cf8e393e9ca",
+    "verified": true
+  },
+  {
+    "name": "cases/k8s_operations/runtime.py",
+    "sha256": "3d523b6dfbf55541a92cf4210ab55c40c7f16ab2d5ad7d3a8faa7ed27e957054",
+    "verified": true
+  },
+  {
+    "name": "cases/k8s_operations/spec.py",
+    "sha256": "e045605df63c3e58b9ce99f66533e153ddf107053af0aa4bd4bc8fd1998326af",
+    "verified": true
+  },
+  {
+    "name": "cases/medical_appointment/case-manifest.json",
+    "sha256": "6ad28cc001223ff7589771398626ee6894da3ea5b178c6b443d3af0f50d7407b",
+    "verified": true
+  },
+  {
+    "name": "cases/medical_appointment/data/contract.json",
+    "sha256": "78725a4f38079a7e73df56f285b4423584a8cd89cfcc92cb75bbdb367afb61c7",
+    "verified": true
+  },
+  {
+    "name": "cases/medical_appointment/driver.py",
+    "sha256": "3c8665502fb9cc6adbe86aadde3f7796d246c7fa604311d126538639d7c039e1",
+    "verified": true
+  },
+  {
+    "name": "cases/medical_appointment/formal-binding.json",
+    "sha256": "06fb027ead6776c15af2f227c56b7af72b1691b621083dd49ee8e936b47ef836",
+    "verified": true
+  },
+  {
+    "name": "cases/medical_appointment/runtime.py",
+    "sha256": "c2aefca39f888563ab8bf6af5c304a15d748730a8b1245792510b58c68ac0ddc",
+    "verified": true
+  },
+  {
+    "name": "cases/medical_appointment/spec.py",
+    "sha256": "fd0964ac9278a7f56d24c014879b46dbb230ae5b17fb160cd8ce4785f99ee116",
+    "verified": true
+  },
+  {
+    "name": "cases/mes_order_closeout/case-manifest.json",
+    "sha256": "207adaf43fb98676821c44fb1f69a27433b2ade6fe3f54d6977f9861dad97ed5",
+    "verified": true
+  },
+  {
+    "name": "cases/mes_order_closeout/data/contract.json",
+    "sha256": "c7486bfd52dabf06323e233d6a92bcc4725b68178e1e80838928abc37d2b7404",
+    "verified": true
+  },
+  {
+    "name": "cases/mes_order_closeout/driver.py",
+    "sha256": "95f0b6656a44a07b818f82d0288829f914d83c42caccf777eace5df0a695ee27",
+    "verified": true
+  },
+  {
+    "name": "cases/mes_order_closeout/formal-binding.json",
+    "sha256": "f8d7252a823641f627d33d3f2724357932d903deb5a87ffa954670d1f83a699d",
+    "verified": true
+  },
+  {
+    "name": "cases/mes_order_closeout/runtime.py",
+    "sha256": "f912f2021192f237e501156632e48fc9e8c1ea36ae83c477f10c73d27febe723",
+    "verified": true
+  },
+  {
+    "name": "cases/mes_order_closeout/spec.py",
+    "sha256": "35190f5ca272d7505ac7dcfef554c3b5537e5d2956a49c60295850bddce834ad",
+    "verified": true
+  },
+  {
+    "name": "cases/railway_ticketing/case-manifest.json",
+    "sha256": "1bfc9816c29532d2eb532713e8c95544bec8485582b9bb4027a1c46c6de2f08c",
+    "verified": true
+  },
+  {
+    "name": "cases/railway_ticketing/data/contract.json",
+    "sha256": "9dcc94d9caa1eb4f81948bc375b6ca37ef39bfd84f4335a50424f7790c6defc3",
+    "verified": true
+  },
+  {
+    "name": "cases/railway_ticketing/driver.py",
+    "sha256": "1568805a8ecc50a70b9b124efaa43c2f7cdd17e0017db5afa0cb6243b8167cc4",
+    "verified": true
+  },
+  {
+    "name": "cases/railway_ticketing/formal-binding.json",
+    "sha256": "5d12d8354cbaa7cd829f858f1bea6d708f9eaafc2eedf85be9fa6f6ae811f369",
+    "verified": true
+  },
+  {
+    "name": "cases/railway_ticketing/runtime.py",
+    "sha256": "26e28aaa72758f34e212596918629fcd59bfb4375a08cc94a1dc10d24eb6ce5d",
+    "verified": true
+  },
+  {
+    "name": "cases/railway_ticketing/spec.py",
+    "sha256": "397638084a3a0b783fd880ed3f0d40ef1b46845fe03137e25c060f3b77f1a2d9",
+    "verified": true
+  },
+  {
+    "name": "cases/redcap/case-manifest.json",
+    "sha256": "b6c367b8dc3b936fb31b26ce7ffcdf50e5b399e623f049ca03a3433198f07de3",
+    "verified": true
+  },
+  {
+    "name": "cases/redcap/data/contract.json",
+    "sha256": "bf097f0fafa1a047de70c3ae9011272e785fbca37ce5f578f50bbf16ed4e2a6d",
+    "verified": true
+  },
+  {
+    "name": "cases/redcap/driver.py",
+    "sha256": "4087590c8976e571dd9d8a760037d8bdb9eab9d9229dc2269e2ab499310885ad",
+    "verified": true
+  },
+  {
+    "name": "cases/redcap/formal-binding.json",
+    "sha256": "3d417284114da60df9604eb1fdf18394f8bc8d21afebf09df34b3d6590de7b1d",
+    "verified": true
+  },
+  {
+    "name": "cases/redcap/runtime.py",
+    "sha256": "5f5b8579b502e436504cc4d8d3c557866252ea0e637fb4dfbffcd192881fce0b",
+    "verified": true
+  },
+  {
+    "name": "cases/redcap/spec.py",
+    "sha256": "7dc8fb1f91a6988bb4fe460a99e4013ee7bb3b83d3caabe5b0f32b894197c595",
+    "verified": true
+  },
+  {
+    "name": "cases/robot/case-manifest.json",
+    "sha256": "2952a4b85ecbf8e830a41f5917bfbe52a309021ed8e25d2ab73a82d056775d70",
+    "verified": true
+  },
+  {
+    "name": "cases/robot/data/contract.json",
+    "sha256": "5aa1cf587ad26b3fd2c2da45b47fdc71788f5dcf52c62968b844fe015fbb4338",
+    "verified": true
+  },
+  {
+    "name": "cases/robot/driver.py",
+    "sha256": "a18eb70376a4068adb56c317b57ea68f305d7bba5e42c14a1c29ea7ff47f7d7c",
+    "verified": true
+  },
+  {
+    "name": "cases/robot/formal-binding.json",
+    "sha256": "6936b540e789c82d6dd4ee24250dbfd7430bb26585c218c9b238319478b94dee",
+    "verified": true
+  },
+  {
+    "name": "cases/robot/runtime.py",
+    "sha256": "e3b16f0b42fc59ada649d1a5a40fcab7e1303131b79a2dddfd1c7290c1ba930c",
+    "verified": true
+  },
+  {
+    "name": "cases/robot/spec.py",
+    "sha256": "d471b6b0f5ca03a0cb3aacf9ee28336659f97b5c5c9f54c42e0b887d8f6e08a8",
+    "verified": true
+  },
+  {
+    "name": "cases/sap_s4hana/case-manifest.json",
+    "sha256": "7564b55ad63f9df1e6c03ce42d57675d6cf48fa53cb116479e1a0e3e264c2c0c",
+    "verified": true
+  },
+  {
+    "name": "cases/sap_s4hana/data/contract.json",
+    "sha256": "516d35a5138f8ee7fec971f5d864be885f2eb891a25711eee2c73c125bc95c63",
+    "verified": true
+  },
+  {
+    "name": "cases/sap_s4hana/driver.py",
+    "sha256": "a0f7241cf288b71dec7730f012e756b80bfab9cdfdf765f9620106b5a4cddbb4",
+    "verified": true
+  },
+  {
+    "name": "cases/sap_s4hana/formal-binding.json",
+    "sha256": "bdb58b160fa4579c8990653b6cac41632c9549f5451cb271fbd1a059db566026",
+    "verified": true
+  },
+  {
+    "name": "cases/sap_s4hana/runtime.py",
+    "sha256": "0247ce7c9fda459ac0347e651ae5bada8061b98777fc49c332bd3bf3406285b0",
+    "verified": true
+  },
+  {
+    "name": "cases/sap_s4hana/spec.py",
+    "sha256": "f2d6d966fbfe8a7115a731e888f26188b693dcbdcc12ad267d21c505ce7aad64",
+    "verified": true
+  },
+  {
+    "name": "cases/supply_chain_finance/case-manifest.json",
+    "sha256": "ae81808377b2a1e1ee76c482c39e38b7f19f369038e05dc85577e22ad9b79eb9",
+    "verified": true
+  },
+  {
+    "name": "cases/supply_chain_finance/data/contract.json",
+    "sha256": "2235cc8af870273e5daafb98a83d53ea8fec2221373642035f59920f8b371edf",
+    "verified": true
+  },
+  {
+    "name": "cases/supply_chain_finance/driver.py",
+    "sha256": "61679a1797a3956f3896fe39b2c4547ae4efd53403117274e71ae1a37c51b9be",
+    "verified": true
+  },
+  {
+    "name": "cases/supply_chain_finance/formal-binding.json",
+    "sha256": "2c164de792ac4a3fff471d2c0986c97741575f148941f01f2bb71c5d2b8dd15e",
+    "verified": true
+  },
+  {
+    "name": "cases/supply_chain_finance/runtime.py",
+    "sha256": "aef9410b55fcfb54c58c01b51cd8ca0ce5f0308171ebbb9ec34a7910a5efaf2b",
+    "verified": true
+  },
+  {
+    "name": "cases/supply_chain_finance/spec.py",
+    "sha256": "7d12110fd2ffff6eb8700a9d7dd094d18f1226f5b078a65e7ad8977d6b27c8d9",
+    "verified": true
+  }
+]

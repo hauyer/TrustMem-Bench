@@ -1,0 +1,81 @@
+{
+  "results": [
+    {
+      "run": "p4b_slotA_Qwen_Qwen3-32B_main",
+      "branches": 126,
+      "ok": 100,
+      "fresh": 995,
+      "turns": 1006,
+      "parse_errors": 0,
+      "same_rows": true,
+      "mismatches": 0,
+      "fee_verified": 5
+    },
+    {
+      "run": "p4b_slotA_Qwen_Qwen3-32B_qualify",
+      "branches": 6,
+      "ok": 5,
+      "fresh": 22,
+      "turns": 22,
+      "parse_errors": 0,
+      "same_rows": true,
+      "mismatches": 0,
+      "fee_verified": 0
+    },
+    {
+      "run": "p4b_slotB_LLM-Research_Llama-3.3-70B-Instruct_main",
+      "branches": 126,
+      "ok": 103,
+      "fresh": 817,
+      "turns": 825,
+      "parse_errors": 0,
+      "same_rows": true,
+      "mismatches": 0,
+      "fee_verified": 8
+    },
+    {
+      "run": "p4b_slotB_LLM-Research_Llama-3.3-70B-Instruct_qualify",
+      "branches": 6,
+      "ok": 5,
+      "fresh": 25,
+      "turns": 25,
+      "parse_errors": 0,
+      "same_rows": true,
+      "mismatches": 0,
+      "fee_verified": 0
+    },
+    {
+      "run": "p4b_slotC_mistralai_Mistral-Small-24B-Instruct-2501_main",
+      "branches": 126,
+      "ok": 101,
+      "fresh": 831,
+      "turns": 849,
+      "parse_errors": 0,
+      "same_rows": true,
+      "mismatches": 0,
+      "fee_verified": 6
+    },
+    {
+      "run": "p4b_slotC_mistralai_Mistral-Small-24B-Instruct-2501_qualify",
+      "branches": 6,
+      "ok": 6,
+      "fresh": 32,
+      "turns": 34,
+      "parse_errors": 0,
+      "same_rows": true,
+      "mismatches": 0,
+      "fee_verified": 1
+    }
+  ],
+  "summary": {
+    "P4_MASTER_SUMMARY.md": {
+      "identical_bytes": false,
+      "identical_after_lf_normalization": true
+    },
+    "P4_MASTER_TABLE.csv": {
+      "identical_bytes": true,
+      "identical_after_lf_normalization": true
+    }
+  },
+  "verification": "Archived Linux and existing Windows replay rows checked against each other; recorded model decisions reused."
+}

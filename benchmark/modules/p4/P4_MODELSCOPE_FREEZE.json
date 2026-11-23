@@ -1,0 +1,121 @@
+{
+  "analysis_units": [
+    "workflow_history",
+    "paired_cell"
+  ],
+  "api_usd_cap": 0,
+  "code_hashes": {
+    "eval_ext/__init__.py": "4aabee9ea07c1097b5179e264aef7a1e1739219c8be307f1e15ee8b7b8ea25fa",
+    "eval_ext/budget.py": "c3873c487eb6d9e50279ad923f74095b953e3bbbaafcbe914c05e02a5306f695",
+    "eval_ext/contracts.py": "496586e657a2140b74d707ea50fb65d565a914b253206ee7869d3ded7a610af5",
+    "eval_ext/native_audit.py": "0e7ae3cf12227c437a71756af14c4bba3d64472ab99a3491d8c9d19ad690f93d",
+    "eval_ext/openai_compatible.py": "97d268dbd546c282f99b4777b0e2e1aeb7b09639aa55fc2eb53983c955938050",
+    "eval_ext/recorded.py": "de7397539f370d0fc760e135db7d5c6284e72bdd170871283aaccc6bbf53d5c3",
+    "run_p4_modelscope_audit.py": "6bfe85a819875c3647d1f29b19087080ab5a328e043296751c7aa8c1841237c7"
+  },
+  "experiment_id": "P4_MODELSCOPE_MULTIMODEL_NATIVE_AUDIT",
+  "local_gpu_compute_backend": "modelscope_free_gpu",
+  "matrix_attempt_cap_per_slot": 2000,
+  "matrix_cap_nano_usd_per_slot": 2000,
+  "mechanism_recheck_candidate_cases": [
+    "api_reliability-T09",
+    "api_reliability-T10",
+    "api_reliability-T11",
+    "api_reliability-T12",
+    "api_reliability-T13",
+    "api_reliability-T14",
+    "api_reliability-T15",
+    "api_reliability-T16"
+  ],
+  "mechanism_recheck_released_cases": [
+    "forms-T11",
+    "forms-T12",
+    "forms-T13",
+    "forms-T14",
+    "forms-T15",
+    "forms-T16",
+    "medical_appointment-T11",
+    "medical_appointment-T12",
+    "medical_appointment-T13",
+    "medical_appointment-T14",
+    "medical_appointment-T15",
+    "medical_appointment-T16"
+  ],
+  "model_slots": [
+    {
+      "model_version": "Qwen/Qwen2.5-7B-Instruct",
+      "provider": "openai_compatible_local",
+      "role": "Gate 1 CUDA qualification (24GB VRAM)",
+      "slot": "Q0",
+      "vllm_tool_parser": "hermes"
+    },
+    {
+      "backup_model": "Qwen/Qwen2.5-72B-Instruct",
+      "model_version": "Qwen/Qwen3-32B",
+      "provider": "openai_compatible_local",
+      "role": "Family 1 primary reference + same-weight menu-vs-native + thinking contrast (192GB AMD)",
+      "slot": "A",
+      "vllm_tool_parser": "hermes"
+    },
+    {
+      "model_version": "LLM-Research/Llama-3.3-70B-Instruct",
+      "provider": "openai_compatible_local",
+      "role": "Family 2 distinct family (Meta Llama, 192GB AMD)",
+      "slot": "B",
+      "vllm_tool_parser": "llama3_json"
+    },
+    {
+      "backup_model": "ZhipuAI/GLM-4-32B-0414",
+      "model_version": "mistralai/Mistral-Small-24B-Instruct-2501",
+      "provider": "openai_compatible_local",
+      "role": "Family 3 distinct family (Mistral or GLM-4, 192GB AMD)",
+      "slot": "C",
+      "vllm_tool_parser": "mistral"
+    }
+  ],
+  "opening_snapshot_hashes": {
+    "api_reliability-T09:world": "da22e3e2ea08832d0ff5291bf537c91e17b877745037223afb21941f2defa269",
+    "api_reliability-T10:world": "619651a3c4c01043ef6a391a0ba86db26c4fec8e1af35e6b8f6a7a3788529510",
+    "api_reliability-T11:world": "3efa981a6b02acae4c4419fddcd438242d93ee23f312d481ab8a01e8cc6bca6c",
+    "api_reliability-T12:world": "4843b8c6036658a753608d6f4f117d545b61dbf16fb208bb368108a385484b18",
+    "api_reliability-T13:world": "b1a11349b1e4f086b6badd41552a19fb0df9ee631cf89e5bb03c2b448d53c750",
+    "api_reliability-T14:world": "cc0afb80cc6c527d52339ea9b5eb9f831239cd386de5169c35a8587c75f138c3",
+    "api_reliability-T15:world": "384382495aaa40fc1b41da3a49591c1425fe11dbe168015a5fdd65d7f46e41ec",
+    "api_reliability-T16:world": "6a66029f88ddb1ed8df8c3432f11107455c369e8be6a2a0cd6b0d6778d9e61a4",
+    "forms-T11:memory": "52e5de8fa6b9db7f79c9e8bbd6f162cb0df4ca24fedd8ef427b90017ece94cb0",
+    "forms-T11:world": "24e0b9e896d8ec24f5b08355cd3461bd459c843ff8c71ee3ed421a41dcda8ba5",
+    "forms-T12:memory": "962d3992e54010fb9dccf3c757a62171958c028d8fb2fcee58453ed444fbb0a4",
+    "forms-T12:world": "56f1e048df98410501252a4f6148431c9facaa5df8e6d3a23661281096af2a32",
+    "forms-T13:memory": "962d3992e54010fb9dccf3c757a62171958c028d8fb2fcee58453ed444fbb0a4",
+    "forms-T13:world": "1262a017aa0896b858181f1d1c417011d0bea2b243126cd0e02bad68a857879b",
+    "forms-T14:memory": "7ec55cc50c9763283d68af5f1062d2d1e62e083e1e1d8bc08f10332afa54ee49",
+    "forms-T14:world": "d2c5ae4073ee4ec90ef3c750f718dea3112b5efa968daab47af56d9114dd4e56",
+    "forms-T15:memory": "b0498519514e8469d6ced13d5c71224593dd4d1f2fe535311813f02646909c89",
+    "forms-T15:world": "8f234c97cd8b37b4aeee210d7894644a1455df8ba9047d8b232ceca8834349be",
+    "forms-T16:memory": "b0498519514e8469d6ced13d5c71224593dd4d1f2fe535311813f02646909c89",
+    "forms-T16:world": "3b1c8f7ef567cf91c56c359a9f92dc20f2269cf6d3cc59137bab3057e9af957d",
+    "medical_appointment-T11:world": "9da4e2887fc6db7f55f57486267104a866b25459a6b7a9db22000223f49695e8",
+    "medical_appointment-T12:world": "c63d916f0305872c9ec71c47958f8ab585d927d5f7d3b668c86a1f9210c8bfcf",
+    "medical_appointment-T13:world": "e065f91f0dae9864abf611c0d70f4cec71f44a5323d0203f3b3b863d7ebde0c1",
+    "medical_appointment-T14:world": "406093a67c94c44256837096b6d0efd9231251ccf1f28cfde0987fcd64737189",
+    "medical_appointment-T15:world": "20da3b5b76f75e53d6e356acc15a8118415284334c537bd54a9d984e2ebbbccc",
+    "medical_appointment-T16:world": "f4316abc4e3e1884beb7b5a71a8fadb2e8d03bf4c1da22c4ce8a895e65c5e465"
+  },
+  "opening_snapshot_manifest_sha256": "250877746c297af1db21971b317fd37f7ea64921e98231d7a62510e575fe99ec",
+  "paid_api_funding_approved": false,
+  "protocol_path": "experiments/memory_correctability/P4_MODELSCOPE_MULTIMODEL_AUDIT_PROTOCOL.md",
+  "protocol_sha256": "f1619e5dfab2aa53ecbbc23fb33cdeabadcbeb0b505fed82d456709778107900",
+  "qualification_attempt_cap": 150,
+  "qualification_cap_nano_usd": 150,
+  "qualification_cases": [
+    "forms-T11"
+  ],
+  "schema": "trustmem/model-family-freeze/v1",
+  "session_protocol": "single_native_call_per_turn",
+  "status": "frozen_ready_for_local_gpu",
+  "stopping_gates": {
+    "gate_0": "offline unit + real-world integration tests pass and bundle SHA-256 verified",
+    "gate_1": "24GB CUDA forms-T11 qualification has 0 transport crashes and 100% offline tape replay match",
+    "gate_2": "per-slot AMD forms-T11 parse error rate <= 25% and >= 1 legal completion in keep repeats"
+  }
+}

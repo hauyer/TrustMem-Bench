@@ -1,0 +1,17 @@
+cohort,question,history_count,scored_cells,diagnostic,class_correct,exact_verdict_correct,abstained,decided_incorrect
+all_five,total,5,128,D0,35,0,6,122
+all_five,total,5,128,D1,46,46,0,82
+all_five,total,5,128,D2a,8,8,109,11
+all_five,total,5,128,D2b,47,30,0,98
+all_five,fee,5,68,D0,15,0,5,63
+all_five,fee,5,68,D1,29,29,0,39
+all_five,fee,5,68,D2a,13,13,44,11
+all_five,fee,5,68,D2b,28,22,0,46
+released_four,total,4,112,D0,26,0,6,106
+released_four,total,4,112,D1,37,37,0,75
+released_four,total,4,112,D2a,7,7,94,11
+released_four,total,4,112,D2b,34,17,0,95
+released_four,fee,4,60,D0,9,0,5,55
+released_four,fee,4,60,D1,21,21,0,39
+released_four,fee,4,60,D2a,11,11,38,11
+released_four,fee,4,60,D2b,20,14,0,46

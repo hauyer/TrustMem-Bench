@@ -1,0 +1,28 @@
+{
+  "api_usd": 0,
+  "arm_threshold_cells": 150,
+  "complete_packages_and_publication_cells": 150,
+  "confirmation_only_cells": 6,
+  "dynamic_milestone_deltas": [
+    {
+      "loss_minus_archive_acceptance_calls": 1,
+      "loss_minus_archive_first_output_calls": 61,
+      "loss_minus_archive_publication_calls": 1,
+      "refund_minus_archive_acceptance_charged": 0
+    },
+    {
+      "loss_minus_archive_acceptance_calls": 1,
+      "loss_minus_archive_first_output_calls": 57,
+      "loss_minus_archive_publication_calls": 1,
+      "refund_minus_archive_acceptance_charged": 0
+    },
+    {
+      "loss_minus_archive_acceptance_calls": 1,
+      "loss_minus_archive_first_output_calls": 61,
+      "loss_minus_archive_publication_calls": 1,
+      "refund_minus_archive_acceptance_charged": 0
+    }
+  ],
+  "histories": 3,
+  "new_model_calls": 0
+}

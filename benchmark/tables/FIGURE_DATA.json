@@ -1,0 +1,153 @@
+{
+  "p3": {
+    "eligible": 128,
+    "keep_equals_archive": 128,
+    "sham_available": 70,
+    "sham_equals_keep": 70,
+    "archive_changed": 59,
+    "charge_eligible": 68,
+    "fee_matches_archive": 68,
+    "changes_with_charge": 16,
+    "changes_without_charge": 43,
+    "order_cross_checked": 38,
+    "order_interaction": 15,
+    "net_loss": 10
+  },
+  "fixed_admission": 5,
+  "backup": {
+    "waived": 20,
+    "loss_balance": 39,
+    "entry": 40,
+    "fee_balance": 59,
+    "later_balance": 19,
+    "later_floor": 20,
+    "loss_completions": 2,
+    "fee_completions": 1
+  },
+  "forms": [
+    {
+      "day": "T11",
+      "ordered_loss": 1,
+      "ordered_fee": 2,
+      "low_count": 2
+    },
+    {
+      "day": "T13",
+      "ordered_loss": 2,
+      "ordered_fee": 3,
+      "low_count": 3
+    }
+  ],
+  "p4": [
+    {
+      "name": "Qwen3-32B",
+      "slot": "A",
+      "reread": 12,
+      "archive_uses": 7,
+      "forms": {
+        "keep": 6,
+        "remove": 6,
+        "archive": 14,
+        "archive_used": 4,
+        "menu": 18
+      },
+      "combinations": [
+        7,
+        5,
+        0,
+        0
+      ],
+      "outside": 3,
+      "fee_added": 3,
+      "fee_eligible": 8
+    },
+    {
+      "name": "Llama-3.3-70B",
+      "slot": "B",
+      "reread": 11,
+      "archive_uses": 4,
+      "forms": {
+        "keep": 6,
+        "remove": 6,
+        "archive": 6,
+        "archive_used": 2
+      },
+      "combinations": [
+        4,
+        7,
+        0,
+        1
+      ],
+      "outside": 0,
+      "fee_added": 5,
+      "fee_eligible": 11
+    },
+    {
+      "name": "Mistral-Small-24B",
+      "slot": "C",
+      "reread": 1,
+      "archive_uses": 6,
+      "forms": {
+        "keep": 17,
+        "remove": 6,
+        "archive": 6,
+        "archive_used": 0
+      },
+      "combinations": [
+        1,
+        0,
+        5,
+        6
+      ],
+      "outside": 5,
+      "fee_added": 5,
+      "fee_eligible": 11
+    }
+  ],
+  "forms_t14": {
+    "budget": 17,
+    "requests": 4,
+    "charge": 5,
+    "model_outcomes": [
+      {
+        "model": "Llama-3.3-70B",
+        "keep": 1,
+        "remove": 1,
+        "fee_only": 2,
+        "keep_matches_remove": true,
+        "fee_matches_remove": false
+      },
+      {
+        "model": "Mistral-Small-24B",
+        "keep": 3,
+        "remove": 1,
+        "fee_only": 1,
+        "keep_matches_remove": false,
+        "fee_matches_remove": true
+      }
+    ]
+  },
+  "railway": [
+    {
+      "name": "Qwen3-32B",
+      "keep": 14,
+      "requests": 32,
+      "remove": 6,
+      "archive": 14
+    },
+    {
+      "name": "Llama-3.3-70B",
+      "keep": 13,
+      "requests": 32,
+      "remove": 10,
+      "archive": 9
+    },
+    {
+      "name": "Mistral-Small-24B",
+      "keep": 10,
+      "requests": 32,
+      "remove": 4,
+      "archive": 7
+    }
+  ]
+}

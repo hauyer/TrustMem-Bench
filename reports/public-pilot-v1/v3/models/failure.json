@@ -1,5 +1,0 @@
-{
-  "type": "RuntimeError",
-  "message": "Preserved reader/writer failure; stop batch",
-  "calls": 14
-}

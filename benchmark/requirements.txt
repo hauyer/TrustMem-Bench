@@ -1,0 +1,2 @@
+jsonschema==4.26.0
+# matplotlib==3.10.8  # optional: only needed to redraw figures via scripts/plot_trustmem_submission.py
